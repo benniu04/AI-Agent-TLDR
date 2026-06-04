@@ -65,7 +65,7 @@ EDITORIAL STANDARDS
 
 BEAT PRIORITIES (what counts as significant in each section)
 - FINANCE: prioritize market-moving events — central-bank/Fed decisions and rate moves,
-  major earnings surprises, large M&A, and major economic data (jobs, CPI). Deprioritize
+  major earnings surprises, IPOs, large M&A, and major economic data (jobs, CPI). Deprioritize
   analyst opinion, price-target changes, and single-stock punditry.
 - AI: weight toward concrete capability releases (new models, major features, benchmarks),
   major funding rounds, and regulation/policy. Deprioritize think-pieces, op-eds, and
