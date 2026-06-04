@@ -69,9 +69,10 @@ def dispatch(name: str, tool_input: dict) -> tuple[str, bool]:
 
 TOOLS = [
     # Server tool: Anthropic runs the search loop (capped by max_uses). $10/1k searches.
-    # Needs enough budget to run a dedicated search per section PLUS drill-downs for
-    # specific article URLs — too low a cap starves coverage (sections end up with 2 items).
-    {"type": "web_search_20250305", "name": "web_search", "max_uses": 12},
+    # All results land in ONE turn, so this is a balance: too low (5) starves coverage to
+    # ~2/section; too high (12) dumps ~228k tokens into one turn and the final answer
+    # truncates. 8 is the sweet spot — reliably ~4-5/section at ~140k tokens.
+    {"type": "web_search_20250305", "name": "web_search", "max_uses": 8},
     # Server tool: read a specific page the agent decides is worth investigating.
     # Can only fetch URLs already seen in context (built-in exfiltration guardrail).
     {"type": "web_fetch_20250910", "name": "web_fetch", "max_uses": 5},

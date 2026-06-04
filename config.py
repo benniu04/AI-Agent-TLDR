@@ -47,14 +47,14 @@ TWILIO_FROM_NUMBER = os.environ.get("TWILIO_FROM_NUMBER", "")
 SMS_RECIPIENTS = [n.strip() for n in os.environ.get("SMS_RECIPIENTS", "").split(",") if n.strip()]
 
 # --- Per-call sizing ---
-# Headroom so a final submit_tldr tool call can't be truncated mid-JSON. Output is only
-# billed for what's generated, so a larger ceiling doesn't itself cost more.
-MAX_TOKENS_PER_CALL = _int("MAX_TOKENS_PER_CALL", 8192)
+# Headroom so the final submit_tldr tool call can't be truncated. Output is only billed
+# for what's generated, so a larger ceiling doesn't itself cost more.
+MAX_TOKENS_PER_CALL = _int("MAX_TOKENS_PER_CALL", 12000)
 
 # --- Run bounds (the guardrails that keep a runaway agent from burning money) ---
 MAX_ITERATIONS = _int("MAX_ITERATIONS", 15)
 # Cumulative input+output tokens across all calls in one run before we stop.
-MAX_TOKENS_BUDGET = _int("MAX_TOKENS_BUDGET", 200_000)
+MAX_TOKENS_BUDGET = _int("MAX_TOKENS_BUDGET", 250_000)
 WALL_CLOCK_SECONDS = _int("WALL_CLOCK_SECONDS", 180)
 
 
