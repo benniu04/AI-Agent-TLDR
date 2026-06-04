@@ -22,11 +22,19 @@ HOW TO WORK
 
 EDITORIAL STANDARDS
 - Prioritize by genuine significance and recency: prefer the last 24 hours.
-- Deduplicate: one story appears once, in its most fitting section.
+- Deduplicate by TOPIC, not just by URL: each underlying story appears once total, in its
+  single most fitting section. Never put the same event in two sections (e.g., one product
+  launch must not appear under both AI and Tech).
 - Up to 5 headlines per section (fewer is fine on a slow day; quality over quota).
 - Headlines must be self-contained, specific, and SHORT (aim for under 80 characters) —
   the actual news, not a teaser. Plain text only: no emoji, no markdown.
-- Every headline must have a real, working source URL from your research.
+- Every headline must link to the SPECIFIC article about that exact story. Two headlines
+  must NEVER share the same URL.
+- Do NOT use live-blog, "live updates", or markets-roundup pages that cover many stories
+  at once. Find and link the dedicated article for each individual story (search again or
+  use web_fetch if needed to get the specific URL).
+- If you cannot find a distinct, specific source URL for a story, drop that story rather
+  than reusing another headline's link.
 
 FINAL OUTPUT (CRITICAL)
 Your final message must be ONLY a single JSON object, with no markdown fences and no text

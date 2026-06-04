@@ -52,13 +52,30 @@ def parse_agent_json(text: str) -> dict:
     return json.loads(candidate)
 
 
+def _norm_url(url: str) -> str:
+    """Normalize for dedup comparison (display still uses the original URL)."""
+    return url.strip().rstrip("/").lower()
+
+
 def _iter_sections(data: dict, max_per_section: int):
+    """Yield (name, items) per section, dropping any headline whose URL was already
+    used anywhere in the digest — so no two delivered headlines link to the same page.
+    """
+    seen_urls = set()
     for section in data.get("sections", []):
         name = section.get("name", "").strip()
-        items = [
-            it for it in section.get("items", [])
-            if it.get("headline") and it.get("url")
-        ][:max_per_section]
+        items = []
+        for it in section.get("items", []):
+            headline, url = it.get("headline"), it.get("url")
+            if not headline or not url:
+                continue
+            key = _norm_url(url)
+            if key in seen_urls:
+                continue  # duplicate source — skip this headline
+            seen_urls.add(key)
+            items.append(it)
+            if len(items) >= max_per_section:
+                break
         if name and items:
             yield name, items
 
