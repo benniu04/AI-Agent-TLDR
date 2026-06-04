@@ -32,7 +32,7 @@ def send_telegram(text: str) -> None:
     for chunk in _chunks(text):
         resp = requests.post(
             url,
-            json={"chat_id": chat_id, "text": chunk, "parse_mode": "Markdown",
+            json={"chat_id": chat_id, "text": chunk, "parse_mode": "HTML",
                   "disable_web_page_preview": True},
             timeout=HTTP_TIMEOUT,
         )

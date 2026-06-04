@@ -10,9 +10,13 @@ em–dash, •) forces the WHOLE message into UCS-2, which bills at 70 chars/seg
 of 160 — roughly doubling cost. So the SMS formatter hard-sanitizes to ASCII.
 """
 
+import html
 import json
 import re
 import unicodedata
+
+# Per-section emoji for the Telegram digest header.
+_SECTION_EMOJI = {"finance": "💰", "ai": "🤖", "tech": "💻", "technology": "💻"}
 
 # Common non-GSM punctuation -> ASCII equivalents (applied before stripping the rest).
 _REPLACEMENTS = {
@@ -115,12 +119,21 @@ def format_sms(data: dict, max_per_section: int = 5) -> str:
 
 
 def format_telegram(data: dict, max_per_section: int = 5) -> str:
-    """Markdown headlines with inline links (free fallback channel)."""
-    date = str(data.get("date", "")).strip()
-    lines = [f"*📰 TLDR — {date}*"]
+    """Clean & minimal HTML digest: emoji section headers, bold titles, linked bullets.
+
+    Uses Telegram HTML (send with parse_mode='HTML') — more robust than Markdown, which
+    breaks on headlines/URLs containing _ * [ ] ( ). All text is HTML-escaped.
+    """
+    date = html.escape(str(data.get("date", "")).strip())
+    lines = ["📰 <b>Daily TLDR</b>"]
+    if date:
+        lines.append(f"<i>{date}</i>")
     for name, items in _iter_sections(data, max_per_section):
+        emoji = _SECTION_EMOJI.get(name.lower(), "•")
         lines.append("")
-        lines.append(f"*{name}*")
+        lines.append(f"{emoji} <b>{html.escape(name)}</b>")
         for it in items:
-            lines.append(f"• [{it['headline'].strip()}]({it['url'].strip()})")
+            headline = html.escape(it["headline"].strip())
+            url = html.escape(it["url"].strip(), quote=True)
+            lines.append(f'• <a href="{url}">{headline}</a>')
     return "\n".join(lines)
