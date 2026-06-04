@@ -44,9 +44,15 @@ EDITORIAL STANDARDS
 - VERIFY before finalizing: re-read each item and confirm its URL is a dedicated article
   about that headline (not a recap/aggregator, not a different story's page).
 - NEVER substitute an unrelated article's URL for a story. The URL must be about THAT
-  headline. Some stories (e.g., a daily index move like "Dow hits record") exist only on
-  recap/live pages — if a story has no dedicated article, DROP it entirely. Do not attach a
-  different story's link to it.
+  headline. Do not attach a different story's link to it.
+- For a SPECIFIC EVENT (IPO, earnings, M&A, product launch, funding round, regulation), a
+  dedicated article almost always exists — if your first result is a recap/live page, search
+  again or use web_fetch to find the dedicated article. Do NOT drop an important specific
+  story just because the first link was a recap; find the real one. (Example: a SpaceX IPO
+  pricing has a dedicated article — use it, don't drop the story.)
+- Only DROP a story when it is a generic, index-level daily move (e.g., "Dow hits record",
+  "Nasdaq slips") that genuinely has no dedicated article — those live only on recap pages
+  and are low-value anyway.
 - If you cannot find a distinct, dedicated source URL for a story, DROP that story rather
   than linking a roundup or reusing another headline's link.
 - Favor stories covered by multiple major outlets over single-source reports; broad
