@@ -47,9 +47,11 @@ def _create_with_retry(client, log, **kwargs):
 
 
 class AgentResult:
-    def __init__(self, text: str, stop: str, iterations: int, tokens: int, log_path: str):
+    def __init__(self, text: str, stop: str, iterations: int, tokens: int, log_path: str,
+                 data: dict | None = None):
         self.text = text
-        self.stop = stop  # why the loop ended: end_turn | max_iterations | budget | timeout
+        self.data = data  # structured briefing captured from the submit_tldr tool, if any
+        self.stop = stop  # end_turn | submitted | max_iterations | budget | timeout
         self.iterations = iterations
         self.tokens = tokens
         self.log_path = log_path
@@ -99,6 +101,7 @@ def run_agent(
     started = time.monotonic()
     total_tokens = 0
     stop = "max_iterations"
+    final_data = None
 
     log({"event": "run_start", "model": config.MODEL, "goal": goal,
          "bounds": {"max_iterations": config.MAX_ITERATIONS,
@@ -143,6 +146,17 @@ def run_agent(
             continue
 
         if resp.stop_reason == "tool_use":
+            # Terminal case: the agent submitted the finished briefing. Capture it and stop.
+            submit = next((b for b in resp.content
+                           if getattr(b, "type", None) == "tool_use" and b.name == "submit_tldr"),
+                          None)
+            if submit is not None:
+                final_data = submit.input
+                stop = "submitted"
+                log({"event": "submitted", "i": i,
+                     "sections": [s.get("name") for s in final_data.get("sections", [])]})
+                break
+
             tool_results = []
             for block in resp.content:
                 if getattr(block, "type", None) != "tool_use":
@@ -166,10 +180,11 @@ def run_agent(
 
     text = _final_text(messages[-1]["content"]) if messages[-1]["role"] == "assistant" else ""
     log({"event": "run_end", "stop": stop, "iterations": i + 1,
-         "total_tokens": total_tokens, "final_text_chars": len(text)})
+         "total_tokens": total_tokens, "final_text_chars": len(text),
+         "submitted": final_data is not None})
 
     return AgentResult(text=text, stop=stop, iterations=i + 1,
-                       tokens=total_tokens, log_path=log_path)
+                       tokens=total_tokens, log_path=log_path, data=final_data)
 
 
 if __name__ == "__main__":

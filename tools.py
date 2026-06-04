@@ -69,10 +69,52 @@ def dispatch(name: str, tool_input: dict) -> tuple[str, bool]:
 
 TOOLS = [
     # Server tool: Anthropic runs the search loop (capped by max_uses). $10/1k searches.
-    {"type": "web_search_20250305", "name": "web_search", "max_uses": 8},
+    # Lower cap = fewer results pulled into context = lower token cost per run.
+    {"type": "web_search_20250305", "name": "web_search", "max_uses": 5},
     # Server tool: read a specific page the agent decides is worth investigating.
     # Can only fetch URLs already seen in context (built-in exfiltration guardrail).
-    {"type": "web_fetch_20250910", "name": "web_fetch", "max_uses": 5},
+    {"type": "web_fetch_20250910", "name": "web_fetch", "max_uses": 3},
+    # Terminal "structured output" tool. The agent calls this once, as its final action,
+    # to hand back the finished briefing. The API enforces this schema, so we never have to
+    # parse free-form text — the agent's prose reasoning can't corrupt the output. The loop
+    # captures the tool input and stops; it is NOT dispatched like a normal tool.
+    {
+        "name": "submit_tldr",
+        "description": (
+            "Submit the finished daily briefing. Call this exactly ONCE, as your final "
+            "action, with the complete TLDR. Do not call any other tool in the same turn. "
+            "After you call this, you are done."
+        ),
+        "input_schema": {
+            "type": "object",
+            "properties": {
+                "date": {"type": "string", "description": "Short date label, e.g. 'Thu, Jun 4'"},
+                "sections": {
+                    "type": "array",
+                    "description": "The Finance, AI, and Tech sections, in that order.",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "name": {"type": "string", "description": "Section name: Finance, AI, or Tech"},
+                            "items": {
+                                "type": "array",
+                                "items": {
+                                    "type": "object",
+                                    "properties": {
+                                        "headline": {"type": "string"},
+                                        "url": {"type": "string"},
+                                    },
+                                    "required": ["headline", "url"],
+                                },
+                            },
+                        },
+                        "required": ["name", "items"],
+                    },
+                },
+            },
+            "required": ["date", "sections"],
+        },
+    },
     # Custom client tool: seed tech coverage + exercise the hand-written tool loop.
     {
         "name": "get_hacker_news",

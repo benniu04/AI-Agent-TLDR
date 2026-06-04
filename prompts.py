@@ -35,22 +35,25 @@ EDITORIAL STANDARDS
   use web_fetch if needed to get the specific URL).
 - If you cannot find a distinct, specific source URL for a story, drop that story rather
   than reusing another headline's link.
+- Favor stories covered by multiple major outlets over single-source reports; broad
+  coverage is a signal of significance and a guard against unverified claims.
+
+BEAT PRIORITIES (what counts as significant in each section)
+- FINANCE: prioritize market-moving events — central-bank/Fed decisions and rate moves,
+  major earnings surprises, large M&A, and major economic data (jobs, CPI). Deprioritize
+  analyst opinion, price-target changes, and single-stock punditry.
+- AI: weight toward concrete capability releases (new models, major features, benchmarks),
+  major funding rounds, and regulation/policy. Deprioritize think-pieces, op-eds, and
+  speculation about the future.
+- TECH: prioritize shipped products and launches, major company moves (acquisitions,
+  leadership, large layoffs), significant security incidents/outages, and notable
+  open-source or developer-tool releases. Deprioritize rumors, reviews, and incremental
+  updates. Use Hacker News ranking as a signal of what developers consider important.
 
 FINAL OUTPUT (CRITICAL)
-Your final message must be ONLY a single JSON object, with no markdown fences and no text
-before or after it, in exactly this shape:
-
-{
-  "date": "Mon, Jun 4",
-  "sections": [
-    {"name": "Finance", "items": [{"headline": "...", "url": "https://..."}]},
-    {"name": "AI",      "items": [{"headline": "...", "url": "https://..."}]},
-    {"name": "Tech",    "items": [{"headline": "...", "url": "https://..."}]}
-  ]
-}
-
-Do not call any tool in the same turn as the final JSON. When the JSON is ready, return it
-and nothing else.
+When the briefing is ready, call the `submit_tldr` tool exactly once with the complete
+TLDR (date + the Finance, AI, and Tech sections). Do not call any other tool in the same
+turn. Do not write the briefing as plain text — only `submit_tldr` delivers it.
 """
 
 

@@ -26,16 +26,20 @@ def main() -> int:
     print(f"--- agent done: stop={result.stop} iters={result.iterations} "
           f"tokens={result.tokens} log={result.log_path} ---")
 
-    if not result.text:
-        print("ERROR: agent produced no text; not delivering.", file=sys.stderr)
-        return 1
-
-    try:
-        data = parse_agent_json(result.text)
-    except ValueError as exc:
-        print(f"ERROR: could not parse agent JSON ({exc}). Raw output:\n{result.text}",
-              file=sys.stderr)
-        return 1
+    # Preferred path: the agent submitted structured data via the submit_tldr tool.
+    data = result.data
+    if data is None:
+        # Fallback: parse JSON from the final text (older behavior / unexpected stop).
+        if not result.text:
+            print("ERROR: agent neither submitted nor produced text; not delivering.",
+                  file=sys.stderr)
+            return 1
+        try:
+            data = parse_agent_json(result.text)
+        except ValueError as exc:
+            print(f"ERROR: agent did not submit and text isn't parseable ({exc}). Raw:\n"
+                  f"{result.text}", file=sys.stderr)
+            return 1
 
     cap = config.MAX_HEADLINES_PER_SECTION
     if config.DELIVERY == "telegram":
