@@ -23,8 +23,9 @@ HOW TO WORK
 EDITORIAL STANDARDS
 - Prioritize by genuine significance and recency: prefer the last 24 hours.
 - Deduplicate by TOPIC, not just by URL: each underlying story appears once total, in its
-  single most fitting section. Never put the same event in two sections (e.g., one product
-  launch must not appear under both AI and Tech).
+  single most fitting section. Never put the same event in two sections — this includes the
+  same company's same event (e.g., a Broadcom earnings story goes in EITHER Finance or
+  Tech, never both; one product launch must not appear under both AI and Tech).
 - Up to 5 headlines per section (fewer is fine on a slow day; quality over quota).
 - Headlines must be self-contained, specific, and SHORT (aim for under 80 characters) —
   the actual news, not a teaser. Plain text only: no emoji, no markdown.
@@ -42,6 +43,10 @@ EDITORIAL STANDARDS
   or use web_fetch to find the specific article URL.
 - VERIFY before finalizing: re-read each item and confirm its URL is a dedicated article
   about that headline (not a recap/aggregator, not a different story's page).
+- NEVER substitute an unrelated article's URL for a story. The URL must be about THAT
+  headline. Some stories (e.g., a daily index move like "Dow hits record") exist only on
+  recap/live pages — if a story has no dedicated article, DROP it entirely. Do not attach a
+  different story's link to it.
 - If you cannot find a distinct, dedicated source URL for a story, DROP that story rather
   than linking a roundup or reusing another headline's link.
 - Favor stories covered by multiple major outlets over single-source reports; broad
