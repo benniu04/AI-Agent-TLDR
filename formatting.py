@@ -72,6 +72,7 @@ _BANNED_URL_PATTERNS = (
     "/ai-news", "ai-news-today", "ai-news-brief", "news-briefs", "news-bulletin",
     "/markets/stocks/articles",            # Yahoo daily markets recap stream
     "llm-stats.com", "buildfastwithai.com",  # known aggregator/newsletter blogs
+    "youtube.com", "youtu.be",             # videos, not readable articles
 )
 
 
