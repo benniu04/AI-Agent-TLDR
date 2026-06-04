@@ -81,6 +81,41 @@ def _is_banned(url: str) -> bool:
     return any(p in u for p in _BANNED_URL_PATTERNS)
 
 
+# Generic filler words that aren't distinctive enough to confirm a headline<->URL match.
+_STOPWORDS = frozenset("""
+the a an and or to of in on for with at by as after amid over into from its it is are was
+new news this that these those will would could may might has have had not but than then
+up down off out about more most less least first last next over under top best big major
+today day week year report reports say says said unveils unveil launches launch hits hit
+set sets amid ahead vs via per inc corp co ltd group plc
+""".split())
+
+
+def _significant_words(text: str) -> set:
+    """Distinctive lowercase words (>=4 chars, non-stopword) usable to confirm a URL match."""
+    return {w for w in re.findall(r"[a-z0-9]+", text.lower())
+            if len(w) >= 4 and w not in _STOPWORDS}
+
+
+def _is_index_only(url: str) -> bool:
+    """True for bare section/index pages (domain root or a single generic section), which
+    are not dedicated articles (e.g. openai.com/news/, example.com/blog)."""
+    return bool(re.match(
+        r"^https?://[^/]+/(news|blog|press|press-releases|newsroom|articles|index|home)?/?$",
+        url.strip(), re.I))
+
+
+def _headline_matches_url(headline: str, url: str) -> bool:
+    """Conservative relevance check: keep unless NONE of the headline's significant words
+    appear anywhere in the URL. Catches a wrong URL pasted on a headline (e.g. a SpaceX
+    headline linking to an Anthropic article) while passing any genuinely related link."""
+    words = _significant_words(headline)
+    if not words:
+        return True  # nothing distinctive to check — don't risk a false drop
+    u = url.lower()
+    return any(w in u for w in words)
+
+
 def _iter_sections(data: dict, max_per_section: int):
     """Yield (name, items) per section, dropping any headline whose URL was already
     used anywhere in the digest — so no two delivered headlines link to the same page.
@@ -93,8 +128,10 @@ def _iter_sections(data: dict, max_per_section: int):
             headline, url = it.get("headline"), it.get("url")
             if not headline or not url:
                 continue
-            if _is_banned(url):
-                continue  # aggregator / live-blog / recap — drop outright
+            if _is_banned(url) or _is_index_only(url):
+                continue  # aggregator / live-blog / recap / bare index page — drop outright
+            if not _headline_matches_url(headline, url):
+                continue  # URL doesn't match this headline (wrong article) — drop
             key = _norm_url(url)
             if key in seen_urls:
                 continue  # duplicate source — skip this headline
