@@ -71,7 +71,19 @@ def _block_to_jsonable(block):
     if btype == "server_tool_use":
         return {"type": "server_tool_use", "name": block.name, "input": getattr(block, "input", None)}
     if btype in ("web_search_tool_result", "web_fetch_tool_result"):
-        return {"type": btype, "tool_use_id": getattr(block, "tool_use_id", None)}
+        out = {"type": btype, "tool_use_id": getattr(block, "tool_use_id", None)}
+        # Capture the URLs/titles the search returned, so we can see what the model had to
+        # work with (and later validate submitted URLs against real results).
+        content = getattr(block, "content", None)
+        if isinstance(content, list):
+            results = []
+            for r in content[:10]:
+                url = getattr(r, "url", None)
+                if url:
+                    results.append({"url": url, "title": (getattr(r, "title", "") or "")[:90]})
+            if results:
+                out["results"] = results
+        return out
     return {"type": btype}
 
 

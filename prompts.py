@@ -48,6 +48,10 @@ EDITORIAL STANDARDS
   or use web_fetch to find the specific article URL.
 - VERIFY before finalizing: re-read each item and confirm its URL is a dedicated article
   about that headline (not a recap/aggregator, not a different story's page).
+- SOURCE BEFORE YOU INCLUDE: only include a story if you have actually seen its dedicated
+  article in a search result THIS run. If you recall a story is important (e.g., a SpaceX
+  IPO) but have not searched for it, run a dedicated search for it first. If no dedicated
+  article turns up, DROP the story — do NOT include it from memory with a borrowed link.
 - NEVER substitute an unrelated article's URL for a story. The URL must be about THAT
   headline. Do not attach a different story's link to it.
 - For a SPECIFIC EVENT (IPO, earnings, M&A, product launch, funding round, regulation), a
