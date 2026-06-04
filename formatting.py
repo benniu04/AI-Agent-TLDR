@@ -57,6 +57,25 @@ def _norm_url(url: str) -> str:
     return url.strip().rstrip("/").lower()
 
 
+# Hard backstop for the prompt's "no aggregator/live-blog" rule. The model (especially
+# weaker ones) ignores the instruction sometimes, so we drop any URL matching these
+# substrings outright — guaranteeing live blogs, daily recaps, and news-aggregator
+# bulletins never reach the delivered digest. Patterns are specific enough that a
+# dedicated article URL won't match them by accident.
+_BANNED_URL_PATTERNS = (
+    "live-updates", "live-blog", "liveblog",
+    "stock-market-today", "stock-market-update", "market-update",
+    "/ai-news", "ai-news-today", "ai-news-brief", "news-briefs", "news-bulletin",
+    "/markets/stocks/articles",            # Yahoo daily markets recap stream
+    "llm-stats.com", "buildfastwithai.com",  # known aggregator/newsletter blogs
+)
+
+
+def _is_banned(url: str) -> bool:
+    u = url.lower()
+    return any(p in u for p in _BANNED_URL_PATTERNS)
+
+
 def _iter_sections(data: dict, max_per_section: int):
     """Yield (name, items) per section, dropping any headline whose URL was already
     used anywhere in the digest — so no two delivered headlines link to the same page.
@@ -69,6 +88,8 @@ def _iter_sections(data: dict, max_per_section: int):
             headline, url = it.get("headline"), it.get("url")
             if not headline or not url:
                 continue
+            if _is_banned(url):
+                continue  # aggregator / live-blog / recap — drop outright
             key = _norm_url(url)
             if key in seen_urls:
                 continue  # duplicate source — skip this headline

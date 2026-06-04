@@ -28,13 +28,22 @@ EDITORIAL STANDARDS
 - Up to 5 headlines per section (fewer is fine on a slow day; quality over quota).
 - Headlines must be self-contained, specific, and SHORT (aim for under 80 characters) —
   the actual news, not a teaser. Plain text only: no emoji, no markdown.
-- Every headline must link to the SPECIFIC article about that exact story. Two headlines
-  must NEVER share the same URL.
-- Do NOT use live-blog, "live updates", or markets-roundup pages that cover many stories
-  at once. Find and link the dedicated article for each individual story (search again or
-  use web_fetch if needed to get the specific URL).
-- If you cannot find a distinct, specific source URL for a story, drop that story rather
-  than reusing another headline's link.
+- URL-MATCH RULE: the linked page's PRIMARY subject must BE that headline's story — a
+  dedicated article about that exact event. If a page only mentions the story among many
+  others, it does not qualify. Two headlines must NEVER share the same URL.
+- BANNED PAGE TYPES — never link these, even if they mention the story:
+  * live blogs / "live updates" / minute-by-minute pages
+    (e.g. URLs containing "live-updates", "live-blog", "stock-market-today",
+     "stock-market-update", "/markets/.../articles" daily recaps)
+  * market/news roundups, daily wrap-ups, or "today in X" recap pages
+  * news-aggregator or newsletter bulletin pages
+    (e.g. "ai-news", "news-briefs", llm-stats.com, aggregator blogs)
+  Prefer a recognizable primary source or major outlet's dedicated article. Search again
+  or use web_fetch to find the specific article URL.
+- VERIFY before finalizing: re-read each item and confirm its URL is a dedicated article
+  about that headline (not a recap/aggregator, not a different story's page).
+- If you cannot find a distinct, dedicated source URL for a story, DROP that story rather
+  than linking a roundup or reusing another headline's link.
 - Favor stories covered by multiple major outlets over single-source reports; broad
   coverage is a signal of significance and a guard against unverified claims.
 
