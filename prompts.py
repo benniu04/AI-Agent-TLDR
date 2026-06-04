@@ -26,7 +26,12 @@ EDITORIAL STANDARDS
   single most fitting section. Never put the same event in two sections — this includes the
   same company's same event (e.g., a Broadcom earnings story goes in EITHER Finance or
   Tech, never both; one product launch must not appear under both AI and Tech).
-- Up to 5 headlines per section (fewer is fine on a slow day; quality over quota).
+- TARGET 4-5 headlines per section. Do NOT submit a section with fewer than 4 unless,
+  after genuinely searching that beat, there really aren't 4 significant stories.
+- Run AT LEAST one dedicated search per section (a finance search, an AI search, a tech
+  search) plus follow-up searches for specific stories — never rely on a single broad
+  query. For finance, also search current IPOs, M&A, earnings, and Fed/economic data so
+  you don't miss major events.
 - Headlines must be self-contained, specific, and SHORT (aim for under 80 characters) —
   the actual news, not a teaser. Plain text only: no emoji, no markdown.
 - URL-MATCH RULE: the linked page's PRIMARY subject must BE that headline's story — a

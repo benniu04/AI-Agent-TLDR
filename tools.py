@@ -69,11 +69,12 @@ def dispatch(name: str, tool_input: dict) -> tuple[str, bool]:
 
 TOOLS = [
     # Server tool: Anthropic runs the search loop (capped by max_uses). $10/1k searches.
-    # Lower cap = fewer results pulled into context = lower token cost per run.
-    {"type": "web_search_20250305", "name": "web_search", "max_uses": 5},
+    # Needs enough budget to run a dedicated search per section PLUS drill-downs for
+    # specific article URLs — too low a cap starves coverage (sections end up with 2 items).
+    {"type": "web_search_20250305", "name": "web_search", "max_uses": 12},
     # Server tool: read a specific page the agent decides is worth investigating.
     # Can only fetch URLs already seen in context (built-in exfiltration guardrail).
-    {"type": "web_fetch_20250910", "name": "web_fetch", "max_uses": 3},
+    {"type": "web_fetch_20250910", "name": "web_fetch", "max_uses": 5},
     # Terminal "structured output" tool. The agent calls this once, as its final action,
     # to hand back the finished briefing. The API enforces this schema, so we never have to
     # parse free-form text — the agent's prose reasoning can't corrupt the output. The loop
