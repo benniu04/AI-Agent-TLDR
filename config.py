@@ -31,9 +31,20 @@ def _int(name: str, default: int) -> int:
 ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY", "")
 MODEL = os.environ.get("MODEL", "claude-sonnet-4-6")
 
-# Telegram is only needed at delivery time, so don't hard-require it on import.
+# Delivery channel: "sms" (Twilio) or "telegram". Validated at delivery time only.
+DELIVERY = os.environ.get("DELIVERY", "sms").lower()
+# How many headlines per section make it into the delivered briefing.
+MAX_HEADLINES_PER_SECTION = _int("MAX_HEADLINES_PER_SECTION", 5)
+
+# Telegram (free fallback channel).
 TELEGRAM_BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", "")
 TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID", "")
+
+# Twilio SMS. SMS_RECIPIENTS is a comma-separated list of E.164 numbers (+15551234567).
+TWILIO_ACCOUNT_SID = os.environ.get("TWILIO_ACCOUNT_SID", "")
+TWILIO_AUTH_TOKEN = os.environ.get("TWILIO_AUTH_TOKEN", "")
+TWILIO_FROM_NUMBER = os.environ.get("TWILIO_FROM_NUMBER", "")
+SMS_RECIPIENTS = [n.strip() for n in os.environ.get("SMS_RECIPIENTS", "").split(",") if n.strip()]
 
 # --- Per-call sizing ---
 MAX_TOKENS_PER_CALL = _int("MAX_TOKENS_PER_CALL", 4096)
@@ -53,3 +64,13 @@ def require_anthropic_key() -> str:
 def require_telegram() -> tuple[str, str]:
     """Validate Telegram creds right before we actually try to deliver."""
     return _require("TELEGRAM_BOT_TOKEN"), _require("TELEGRAM_CHAT_ID")
+
+
+def require_twilio() -> tuple[str, str, str, list[str]]:
+    """Validate Twilio creds + at least one recipient right before delivery."""
+    sid = _require("TWILIO_ACCOUNT_SID")
+    token = _require("TWILIO_AUTH_TOKEN")
+    from_number = _require("TWILIO_FROM_NUMBER")
+    if not SMS_RECIPIENTS:
+        raise RuntimeError("Missing SMS_RECIPIENTS (comma-separated E.164 numbers).")
+    return sid, token, from_number, SMS_RECIPIENTS
