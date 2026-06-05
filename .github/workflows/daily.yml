@@ -9,9 +9,11 @@ on:
     # or silently dropped. An off-peak minute plus the pre-9 buffer keeps it reliable.
     # GitHub cron is UTC and does NOT follow DST, so after the Nov switch to EST this arrives
     # at 7:20 AM. For ~8:20 AM in winter, change to "20 13 * * 1-5".
-    # WEEKDAYS ONLY (Mon-Fri = 1-5): markets are closed on weekends and finance news is
-    # sparse, so a weekday-only run saves ~28% cost and fits a TLDR.
-    - cron: "20 12 * * 1-5"
+    # TEMPORARY: running EVERY day (incl. weekends) to confirm the schedule fires reliably
+    # before relying on it. Revert to weekdays-only with "20 12 * * 1-5" (Mon-Fri) once
+    # confirmed — markets are closed on weekends and finance news is sparse, so weekday-only
+    # saves ~28% cost and fits a TLDR.
+    - cron: "20 12 * * *"
   workflow_dispatch: {}  # allow manual runs from the Actions tab
 
 jobs:
