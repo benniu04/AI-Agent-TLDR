@@ -49,7 +49,7 @@ SMS_RECIPIENTS = [n.strip() for n in os.environ.get("SMS_RECIPIENTS", "").split(
 # --- Per-call sizing ---
 # Headroom so the final submit_tldr tool call can't be truncated. Output is only billed
 # for what's generated, so a larger ceiling doesn't itself cost more.
-MAX_TOKENS_PER_CALL = _int("MAX_TOKENS_PER_CALL", 12000)
+MAX_TOKENS_PER_CALL = _int("MAX_TOKENS_PER_CALL", 16000)
 
 # --- Run bounds (the guardrails that keep a runaway agent from burning money) ---
 MAX_ITERATIONS = _int("MAX_ITERATIONS", 15)

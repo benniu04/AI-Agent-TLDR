@@ -61,6 +61,19 @@ def _norm_url(url: str) -> str:
     return url.strip().rstrip("/").lower()
 
 
+def canonical_url(url: str) -> str:
+    """Looser normalization for provenance matching: compare an output URL against the
+    URLs search actually returned, tolerating cosmetic differences (scheme, leading www,
+    query string, fragment, trailing slash). Used by both the agent (to build the seen-set)
+    and the provenance filter, so the two sides normalize identically.
+    """
+    u = url.strip().lower()
+    u = re.sub(r"^https?://", "", u)      # drop scheme
+    u = re.sub(r"^www\.", "", u)          # drop leading www.
+    u = u.split("#", 1)[0].split("?", 1)[0]  # drop fragment + query
+    return u.rstrip("/")
+
+
 # Hard backstop for the prompt's "no aggregator/live-blog" rule. The model (especially
 # weaker ones) ignores the instruction sometimes, so we drop any URL matching these
 # substrings outright — guaranteeing live blogs, daily recaps, and news-aggregator
@@ -109,18 +122,26 @@ def _headline_matches_url(headline: str, url: str) -> bool:
     """Conservative relevance check: keep unless NONE of the headline's significant words
     appear anywhere in the URL. Catches a wrong URL pasted on a headline (e.g. a SpaceX
     headline linking to an Anthropic article) while passing any genuinely related link."""
+    u = url.lower()
+    # Trust government primary sources — they use opaque coded slugs (e.g.
+    # bls.gov/news.release/empsit.nr0.htm) that share no words with the headline.
+    host = re.sub(r"^https?://", "", u).split("/", 1)[0]
+    if host.endswith(".gov") or host.endswith(".gov/"):
+        return True
     words = _significant_words(headline)
     if not words:
         return True  # nothing distinctive to check — don't risk a false drop
-    u = url.lower()
     return any(w in u for w in words)
 
 
-def _iter_sections(data: dict, max_per_section: int):
-    """Yield (name, items) per section, dropping any headline whose URL was already
-    used anywhere in the digest — so no two delivered headlines link to the same page.
+def _iter_sections(data: dict, max_per_section: int, allowed_urls=None):
+    """Yield (name, items) per section after the link-integrity filter chain.
+
+    `allowed_urls`, when truthy, is the set of canonical URLs that search actually returned
+    this run; any item whose URL isn't in it was fabricated by the model and is dropped.
+    Fails open: if `allowed_urls` is falsy (not captured), provenance is not checked.
     """
-    seen_urls = set()
+    seen_urls = set()  # for in-digest dedup (distinct from the provenance allowlist)
     for section in data.get("sections", []):
         name = section.get("name", "").strip()
         items = []
@@ -132,6 +153,8 @@ def _iter_sections(data: dict, max_per_section: int):
                 continue  # aggregator / live-blog / recap / bare index page — drop outright
             if not _headline_matches_url(headline, url):
                 continue  # URL doesn't match this headline (wrong article) — drop
+            if allowed_urls and canonical_url(url) not in allowed_urls:
+                continue  # URL never appeared in search results (fabricated) — drop
             key = _norm_url(url)
             if key in seen_urls:
                 continue  # duplicate source — skip this headline
@@ -143,11 +166,16 @@ def _iter_sections(data: dict, max_per_section: int):
             yield name, items
 
 
-def format_sms(data: dict, max_per_section: int = 5) -> str:
+def delivered_count(data: dict, max_per_section: int = 5, allowed_urls=None) -> int:
+    """How many items survive the filter chain — for reporting dropped counts."""
+    return sum(len(items) for _, items in _iter_sections(data, max_per_section, allowed_urls))
+
+
+def format_sms(data: dict, max_per_section: int = 5, allowed_urls=None) -> str:
     """Plain-ASCII headlines + links, grouped by section. Glanceable, tappable."""
     date = to_ascii(str(data.get("date", ""))).strip()
     lines = [f"TLDR {date}".strip()]
-    for name, items in _iter_sections(data, max_per_section):
+    for name, items in _iter_sections(data, max_per_section, allowed_urls):
         lines.append("")
         lines.append(to_ascii(name).upper())
         for it in items:
@@ -156,7 +184,7 @@ def format_sms(data: dict, max_per_section: int = 5) -> str:
     return "\n".join(lines)
 
 
-def format_telegram(data: dict, max_per_section: int = 5) -> str:
+def format_telegram(data: dict, max_per_section: int = 5, allowed_urls=None) -> str:
     """Clean & minimal HTML digest: emoji section headers, bold titles, linked bullets.
 
     Uses Telegram HTML (send with parse_mode='HTML') — more robust than Markdown, which
@@ -166,7 +194,7 @@ def format_telegram(data: dict, max_per_section: int = 5) -> str:
     lines = ["📰 <b>Daily TLDR</b>"]
     if date:
         lines.append(f"<i>{date}</i>")
-    for name, items in _iter_sections(data, max_per_section):
+    for name, items in _iter_sections(data, max_per_section, allowed_urls):
         emoji = _SECTION_EMOJI.get(name.lower(), "•")
         lines.append("")
         lines.append(f"{emoji} <b>{html.escape(name)}</b>")

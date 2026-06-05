@@ -80,9 +80,11 @@ BEAT PRIORITIES (what counts as significant in each section)
   updates. Use Hacker News ranking as a signal of what developers consider important.
 
 FINAL OUTPUT (CRITICAL)
-When the briefing is ready, call the `submit_tldr` tool exactly once with the complete
-TLDR (date + the Finance, AI, and Tech sections). Do not call any other tool in the same
-turn. Do not write the briefing as plain text — only `submit_tldr` delivers it.
+Keep your reasoning brief — do NOT write long analysis or commentary in your messages.
+As soon as you have your stories and their URLs, call the `submit_tldr` tool exactly once
+with the complete TLDR (date + the Finance, AI, and Tech sections). Do not call any other
+tool in the same turn. Do not write the briefing as plain text — only `submit_tldr`
+delivers it.
 """
 
 

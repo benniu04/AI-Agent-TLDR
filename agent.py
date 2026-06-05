@@ -17,15 +17,20 @@ logged to a JSONL trajectory so the run is debuggable.
 
 import json
 import os
+import re
 import time
 
 import anthropic
 
 import config
+from formatting import canonical_url
 from tools import TOOLS, dispatch
 
 # How much of a tool result we keep in the log (full result still goes to the model).
 _LOG_RESULT_CHARS = 500
+
+# Extract URLs from client tool results (e.g. get_hacker_news) for the provenance allowlist.
+_URL_RE = re.compile(r"https?://[^\s\"'<>)\]]+")
 
 # Rate-limit handling: a single run pulls a lot of search-result tokens, which can hit
 # a per-minute input-token cap. Retry on 429 honoring Retry-After, with bounded backoff.
@@ -48,9 +53,10 @@ def _create_with_retry(client, log, **kwargs):
 
 class AgentResult:
     def __init__(self, text: str, stop: str, iterations: int, tokens: int, log_path: str,
-                 data: dict | None = None):
+                 data: dict | None = None, seen_urls: set | None = None):
         self.text = text
         self.data = data  # structured briefing captured from the submit_tldr tool, if any
+        self.seen_urls = seen_urls or set()  # canonical URLs search actually returned
         self.stop = stop  # end_turn | submitted | max_iterations | budget | timeout
         self.iterations = iterations
         self.tokens = tokens
@@ -59,6 +65,24 @@ class AgentResult:
 
 def _final_text(content) -> str:
     return "\n".join(b.text for b in content if getattr(b, "type", None) == "text").strip()
+
+
+def _collect_result_urls(content, into: set) -> None:
+    """Add the canonical URL of every web_search/web_fetch result in `content` to `into`.
+
+    This is the provenance allowlist: the set of URLs search actually returned this run.
+    Output URLs not in this set were fabricated by the model. No cap — collect them all.
+    """
+    for block in content or []:
+        if getattr(block, "type", None) not in ("web_search_tool_result", "web_fetch_tool_result"):
+            continue
+        results = getattr(block, "content", None)
+        if not isinstance(results, list):
+            continue  # error results (e.g. max_uses_exceeded) aren't a list of results
+        for r in results:
+            url = getattr(r, "url", None)
+            if url:
+                into.add(canonical_url(url))
 
 
 def _block_to_jsonable(block):
@@ -114,6 +138,7 @@ def run_agent(
     total_tokens = 0
     stop = "max_iterations"
     final_data = None
+    seen_urls = set()  # canonical URLs search actually returned (provenance allowlist)
 
     log({"event": "run_start", "model": config.MODEL, "goal": goal,
          "bounds": {"max_iterations": config.MAX_ITERATIONS,
@@ -148,6 +173,7 @@ def run_agent(
              "cumulative_tokens": total_tokens, "server_searches": server_searches})
 
         messages.append({"role": "assistant", "content": resp.content})
+        _collect_result_urls(resp.content, seen_urls)  # grow the provenance allowlist
 
         if resp.stop_reason == "end_turn":
             stop = "end_turn"
@@ -174,6 +200,11 @@ def run_agent(
                 if getattr(block, "type", None) != "tool_use":
                     continue  # text + server_tool_use blocks are not ours to run
                 content, is_error = dispatch(block.name, block.input)
+                if not is_error:
+                    # Client tools (get_hacker_news) return URLs too — add them to the
+                    # provenance allowlist so HN-sourced stories aren't seen as fabricated.
+                    for m in _URL_RE.findall(content):
+                        seen_urls.add(canonical_url(m))
                 log({"event": "tool_call", "i": i, "name": block.name,
                      "input": block.input, "is_error": is_error,
                      "result_preview": content[:_LOG_RESULT_CHARS]})
@@ -186,17 +217,34 @@ def run_agent(
             messages.append({"role": "user", "content": tool_results})
             continue
 
-        # max_tokens or anything unexpected: stop cleanly rather than loop blindly.
+        if resp.stop_reason == "max_tokens":
+            # The turn was cut off (often: model narrated heavily while gathering and ran
+            # out of output room before calling submit_tldr). It already has the search
+            # results in context, so nudge it to just submit. Bounded by MAX_ITERATIONS.
+            log({"event": "max_tokens_recover", "i": i})
+            # The API requires a tool_result for every (client) tool_use in the turn —
+            # the truncation may have left one dangling, so satisfy those first.
+            recovery = [{"type": "tool_result", "tool_use_id": b.id, "is_error": True,
+                         "content": "Previous turn was cut off; ignore and resubmit."}
+                        for b in resp.content if getattr(b, "type", None) == "tool_use"]
+            recovery.append({"type": "text", "text":
+                "Your previous message was cut off before you finished. You already have all "
+                "the information you need. Call the submit_tldr tool now with the final "
+                "briefing — do not write any analysis or commentary first."})
+            messages.append({"role": "user", "content": recovery})
+            continue
+
+        # Anything unexpected: stop cleanly rather than loop blindly.
         stop = resp.stop_reason or "unknown"
         break
 
     text = _final_text(messages[-1]["content"]) if messages[-1]["role"] == "assistant" else ""
     log({"event": "run_end", "stop": stop, "iterations": i + 1,
          "total_tokens": total_tokens, "final_text_chars": len(text),
-         "submitted": final_data is not None})
+         "submitted": final_data is not None, "result_urls_seen": len(seen_urls)})
 
-    return AgentResult(text=text, stop=stop, iterations=i + 1,
-                       tokens=total_tokens, log_path=log_path, data=final_data)
+    return AgentResult(text=text, stop=stop, iterations=i + 1, tokens=total_tokens,
+                       log_path=log_path, data=final_data, seen_urls=seen_urls)
 
 
 if __name__ == "__main__":

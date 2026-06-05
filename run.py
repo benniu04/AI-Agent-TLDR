@@ -15,7 +15,7 @@ import config
 from agent import run_agent
 from deliver import send_telegram
 from deliver_sms import send_sms
-from formatting import format_sms, format_telegram, parse_agent_json
+from formatting import delivered_count, format_sms, format_telegram, parse_agent_json
 from prompts import SYSTEM, build_goal
 
 
@@ -42,13 +42,19 @@ def main() -> int:
             return 1
 
     cap = config.MAX_HEADLINES_PER_SECTION
+    allowed = result.seen_urls  # provenance allowlist (fail-open if empty)
     if config.DELIVERY == "telegram":
-        message = format_telegram(data, cap)
+        message = format_telegram(data, cap, allowed)
         sender = send_telegram
     else:  # default: sms
-        message = format_sms(data, cap)
+        message = format_sms(data, cap, allowed)
         sender = send_sms
 
+    # Report how many items the filters dropped (banned/mismatch/provenance/dup).
+    submitted = sum(len(s.get("items", [])) for s in data.get("sections", []))
+    delivered = delivered_count(data, cap, allowed)
+    print(f"--- items: {submitted} submitted, {delivered} delivered, "
+          f"{submitted - delivered} dropped | {len(allowed)} result URLs seen ---")
     print(f"\n--- formatted for {config.DELIVERY} ({len(message)} chars) ---\n{message}")
 
     if result.stop in ("max_iterations", "unknown"):
