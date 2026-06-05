@@ -79,6 +79,17 @@ BEAT PRIORITIES (what counts as significant in each section)
   open-source or developer-tool releases. Deprioritize rumors, reviews, and incremental
   updates. Use Hacker News ranking as a signal of what developers consider important.
 
+PREFERRED SOURCES (soft preference, per beat)
+When more than one outlet covers a story, prefer the higher-quality, topic-appropriate one
+below — but do NOT exclude other reputable outlets, and do NOT force a story onto a
+preferred source. The other rules still win: always link a DEDICATED article (never a
+preferred outlet's live-blog/recap/index page), and only use a source you actually found.
+- FINANCE: Bloomberg, Reuters, Wall Street Journal, CNBC, Financial Times, and primary
+  sources (SEC filings, BLS, the Federal Reserve).
+- AI: the company's own blog (OpenAI, Anthropic, Google, Microsoft, Meta), TechCrunch,
+  The Verge, VentureBeat, The Information, arXiv.
+- TECH: Ars Technica, The Verge, TechCrunch, Hacker News, and primary/company blogs.
+
 FINAL OUTPUT (CRITICAL)
 Keep your reasoning brief — do NOT write long analysis or commentary in your messages.
 As soon as you have your stories and their URLs, call the `submit_tldr` tool exactly once
