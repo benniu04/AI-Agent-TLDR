@@ -54,8 +54,9 @@ MAX_TOKENS_PER_CALL = _int("MAX_TOKENS_PER_CALL", 16000)
 # --- Run bounds (the guardrails that keep a runaway agent from burning money) ---
 MAX_ITERATIONS = _int("MAX_ITERATIONS", 15)
 # Cumulative input+output tokens across all calls in one run before we stop.
-MAX_TOKENS_BUDGET = _int("MAX_TOKENS_BUDGET", 250_000)
-WALL_CLOCK_SECONDS = _int("WALL_CLOCK_SECONDS", 180)
+# ~140k for a normal 8-search run; headroom covers a max_tokens recovery turn.
+MAX_TOKENS_BUDGET = _int("MAX_TOKENS_BUDGET", 300_000)
+WALL_CLOCK_SECONDS = _int("WALL_CLOCK_SECONDS", 300)
 
 
 def require_anthropic_key() -> str:
