@@ -102,6 +102,9 @@ new news this that these those will would could may might has have had not but t
 up down off out about more most less least first last next over under top best big major
 today day week year report reports say says said unveils unveil launches launch hits hit
 set sets amid ahead vs via per inc corp co ltd group plc
+earnings revenue revenues shares share stock stocks quarter quarterly guidance results
+sales growth market markets price prices profit profits billion million trillion percent
+rise rises rose fall falls fell drop drops jump jumps gain gains surge surges plunge slide
 """.split())
 
 
