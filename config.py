@@ -39,6 +39,11 @@ MAX_HEADLINES_PER_SECTION = _int("MAX_HEADLINES_PER_SECTION", 5)
 # the date ourselves). Default Eastern to match the 9am-ET schedule.
 TIMEZONE = os.environ.get("TIMEZONE", "America/New_York")
 
+# Hard recency backstop: drop any story whose source publish date is older than this many
+# days (only applies to items with a known timestamp; web_search items fail open). 3 days
+# catches clearly-stale events (e.g. a 4-day-old filing) without nixing weekend stories.
+MAX_STORY_AGE_DAYS = _int("MAX_STORY_AGE_DAYS", 3)
+
 # Telegram (free fallback channel).
 TELEGRAM_BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", "")
 TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID", "")

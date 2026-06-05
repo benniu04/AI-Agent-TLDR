@@ -18,6 +18,7 @@ All are free (no per-call fee), so leaning on them lowers cost vs web_search ($1
 name to the Python function that implements it.
 """
 
+import calendar
 import html
 import json
 import time
@@ -69,21 +70,22 @@ def _parse_feeds(feeds: dict, limit: int, keywords=None) -> list:
             title = html.unescape(title)  # RSS titles carry entities like &#8217;
             if keywords and not any(k in title.lower() for k in keywords):
                 continue
+            pp = e.get("published_parsed") or e.get("updated_parsed")
             entries.append({
                 "title": title,
                 "url": link,
                 "source": source,
                 "published": e.get("published", e.get("updated", "")),
-                "_ts": time.mktime(e.published_parsed) if e.get("published_parsed") else 0,
+                "ts": calendar.timegm(pp) if pp else 0,  # epoch UTC, for recency
             })
     # newest first, dedupe by URL
-    entries.sort(key=lambda x: x["_ts"], reverse=True)
+    entries.sort(key=lambda x: x["ts"], reverse=True)
     seen, out = set(), []
     for e in entries:
         if e["url"] in seen:
             continue
         seen.add(e["url"])
-        out.append({k: e[k] for k in ("title", "url", "source", "published")})
+        out.append({k: e[k] for k in ("title", "url", "source", "published", "ts")})
     return out[:limit]
 
 
@@ -116,7 +118,13 @@ def get_hacker_news(limit: int = 20) -> str:
     stories = []
     for h in hits:
         url = h.get("url") or f"https://news.ycombinator.com/item?id={h.get('objectID')}"
-        stories.append({"title": h.get("title"), "url": url, "score": h.get("points", 0)})
+        stories.append({
+            "title": h.get("title"),
+            "url": url,
+            "score": h.get("points", 0),
+            "published": (h.get("created_at", "") or "")[:10],  # ISO date for the agent
+            "ts": h.get("created_at_i", 0),                     # epoch UTC, for recency
+        })
     return json.dumps([s for s in stories if s["title"]])
 
 
@@ -127,11 +135,13 @@ def _finnhub_news(limit: int) -> list:
     items = r.json() if isinstance(r.json(), list) else []
     out = []
     for it in items[:limit]:
+        ts = int(it.get("datetime", 0) or 0)  # Finnhub datetime is already epoch UTC
         out.append({
             "headline": it.get("headline"),
             "url": it.get("url"),
             "source": it.get("source"),
-            "datetime": time.strftime("%Y-%m-%d", time.gmtime(it.get("datetime", 0))) if it.get("datetime") else "",
+            "datetime": time.strftime("%Y-%m-%d", time.gmtime(ts)) if ts else "",
+            "ts": ts,
         })
     return [o for o in out if o["headline"] and o["url"]]
 
@@ -144,11 +154,17 @@ def _alphavantage_news(limit: int) -> list:
     feed = r.json().get("feed", [])  # missing/empty when rate-limited
     out = []
     for it in feed[:limit]:
+        tp = it.get("time_published", "")  # "YYYYMMDDTHHMMSS"
+        try:
+            ts = calendar.timegm(time.strptime(tp, "%Y%m%dT%H%M%S")) if tp else 0
+        except ValueError:
+            ts = 0
         out.append({
             "headline": it.get("title"),
             "url": it.get("url"),
             "source": it.get("source"),
-            "datetime": (it.get("time_published", "")[:8] or ""),
+            "datetime": tp[:8],
+            "ts": ts,
             "sentiment": it.get("overall_sentiment_label"),
             "sentiment_score": it.get("overall_sentiment_score"),
         })

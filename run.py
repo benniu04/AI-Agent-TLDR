@@ -52,18 +52,23 @@ def main() -> int:
 
     cap = config.MAX_HEADLINES_PER_SECTION
     allowed = result.seen_urls  # provenance allowlist (fail-open if empty)
+    # Deterministic recency backstop: URLs whose known publish time is older than the cutoff.
+    cutoff = now.timestamp() - config.MAX_STORY_AGE_DAYS * 86400
+    stale = {u for u, ts in result.url_ts.items() if ts and ts < cutoff}
+
     if config.DELIVERY == "telegram":
-        message = format_telegram(data, cap, allowed)
+        message = format_telegram(data, cap, allowed, stale)
         sender = send_telegram
     else:  # default: sms
-        message = format_sms(data, cap, allowed)
+        message = format_sms(data, cap, allowed, stale)
         sender = send_sms
 
-    # Report how many items the filters dropped (banned/mismatch/provenance/dup).
+    # Report how many items the filters dropped (banned/mismatch/provenance/dup/stale).
     submitted = sum(len(s.get("items", [])) for s in data.get("sections", []))
-    delivered = delivered_count(data, cap, allowed)
+    delivered = delivered_count(data, cap, allowed, stale)
     print(f"--- items: {submitted} submitted, {delivered} delivered, "
-          f"{submitted - delivered} dropped | {len(allowed)} result URLs seen ---")
+          f"{submitted - delivered} dropped | {len(allowed)} URLs seen, "
+          f"{len(stale)} stale (>{config.MAX_STORY_AGE_DAYS}d) ---")
     print(f"\n--- formatted for {config.DELIVERY} ({len(message)} chars) ---\n{message}")
 
     if result.stop in ("max_iterations", "unknown"):

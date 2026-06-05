@@ -32,6 +32,23 @@ _LOG_RESULT_CHARS = 500
 # Extract URLs from client tool results (e.g. get_hacker_news) for the provenance allowlist.
 _URL_RE = re.compile(r"https?://[^\s\"'<>)\]]+")
 
+
+def _collect_dates(content: str, into: dict) -> None:
+    """Map canonical_url -> epoch publish time from a client tool's JSON result.
+
+    Source tools (RSS/finance/HN) include a `ts` field per item; capturing it lets the
+    recency filter deterministically drop stale stories. Best-effort: ignore bad JSON.
+    """
+    try:
+        items = json.loads(content)
+    except (ValueError, TypeError):
+        return
+    if not isinstance(items, list):
+        return
+    for it in items:
+        if isinstance(it, dict) and it.get("url") and it.get("ts"):
+            into[canonical_url(it["url"])] = int(it["ts"])
+
 # Rate-limit handling: a single run pulls a lot of search-result tokens, which can hit
 # a per-minute input-token cap. Retry on 429 honoring Retry-After, with bounded backoff.
 _RATE_LIMIT_RETRIES = 4
@@ -53,10 +70,12 @@ def _create_with_retry(client, log, **kwargs):
 
 class AgentResult:
     def __init__(self, text: str, stop: str, iterations: int, tokens: int, log_path: str,
-                 data: dict | None = None, seen_urls: set | None = None):
+                 data: dict | None = None, seen_urls: set | None = None,
+                 url_ts: dict | None = None):
         self.text = text
         self.data = data  # structured briefing captured from the submit_tldr tool, if any
         self.seen_urls = seen_urls or set()  # canonical URLs search actually returned
+        self.url_ts = url_ts or {}  # canonical URL -> epoch publish time (for recency)
         self.stop = stop  # end_turn | submitted | max_iterations | budget | timeout
         self.iterations = iterations
         self.tokens = tokens
@@ -139,6 +158,7 @@ def run_agent(
     stop = "max_iterations"
     final_data = None
     seen_urls = set()  # canonical URLs search actually returned (provenance allowlist)
+    url_ts = {}        # canonical URL -> epoch publish time (for recency filtering)
 
     log({"event": "run_start", "model": config.MODEL, "goal": goal,
          "bounds": {"max_iterations": config.MAX_ITERATIONS,
@@ -201,10 +221,10 @@ def run_agent(
                     continue  # text + server_tool_use blocks are not ours to run
                 content, is_error = dispatch(block.name, block.input)
                 if not is_error:
-                    # Client tools (get_hacker_news) return URLs too — add them to the
-                    # provenance allowlist so HN-sourced stories aren't seen as fabricated.
+                    # Client tools return URLs (provenance) and publish timestamps (recency).
                     for m in _URL_RE.findall(content):
                         seen_urls.add(canonical_url(m))
+                    _collect_dates(content, url_ts)
                 log({"event": "tool_call", "i": i, "name": block.name,
                      "input": block.input, "is_error": is_error,
                      "result_preview": content[:_LOG_RESULT_CHARS]})
@@ -244,7 +264,7 @@ def run_agent(
          "submitted": final_data is not None, "result_urls_seen": len(seen_urls)})
 
     return AgentResult(text=text, stop=stop, iterations=i + 1, tokens=total_tokens,
-                       log_path=log_path, data=final_data, seen_urls=seen_urls)
+                       log_path=log_path, data=final_data, seen_urls=seen_urls, url_ts=url_ts)
 
 
 if __name__ == "__main__":
