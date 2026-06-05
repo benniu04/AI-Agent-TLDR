@@ -26,7 +26,11 @@ then use web_search to fill gaps or catch breaking stories the feeds haven't pic
 - You decide when you have enough. Don't pad; stop once each section has solid headlines.
 
 EDITORIAL STANDARDS
-- Prioritize by genuine significance and recency: prefer the last 24 hours.
+- RECENCY IS A HARD REQUIREMENT, not just a preference. Every story must be about something
+  that happened in roughly the last 24-48 hours relative to today's date (given above).
+  Judge by the EVENT date, not just the article: if the underlying event is older than that
+  — even if it's significant and keeps reappearing in the feeds (e.g., an IPO filing or
+  earnings from several days ago) — EXCLUDE it. Old news is not news. Check publish dates.
 - Deduplicate by TOPIC, not just by URL: each underlying story appears once total, in its
   single most fitting section. Never put the same event in two sections — this includes the
   same company's same event (e.g., a Broadcom earnings story goes in EITHER Finance or
