@@ -110,6 +110,16 @@ def _significant_words(text: str) -> set:
             if len(w) >= 4 and w not in _STOPWORDS}
 
 
+# Two headlines sharing this many distinctive words are treated as the same underlying topic.
+_TOPIC_OVERLAP_MIN = 2
+
+
+def _topic_words(text: str) -> set:
+    """Distinctive non-numeric words for same-topic detection (drop pure numbers/years so
+    a shared '2026' doesn't count toward the overlap)."""
+    return {w for w in _significant_words(text) if not w.isdigit()}
+
+
 def _is_index_only(url: str) -> bool:
     """True for bare section/index pages (domain root or a single generic section), which
     are not dedicated articles (e.g. openai.com/news/, example.com/blog)."""
@@ -141,7 +151,8 @@ def _iter_sections(data: dict, max_per_section: int, allowed_urls=None):
     this run; any item whose URL isn't in it was fabricated by the model and is dropped.
     Fails open: if `allowed_urls` is falsy (not captured), provenance is not checked.
     """
-    seen_urls = set()  # for in-digest dedup (distinct from the provenance allowlist)
+    seen_urls = set()      # exact-URL dedup
+    kept_topics = []       # topic-word sets of kept items (cross-section), for topic dedup
     for section in data.get("sections", []):
         name = section.get("name", "").strip()
         items = []
@@ -158,7 +169,11 @@ def _iter_sections(data: dict, max_per_section: int, allowed_urls=None):
             key = _norm_url(url)
             if key in seen_urls:
                 continue  # duplicate source — skip this headline
+            topic = _topic_words(headline)
+            if any(len(topic & kept) >= _TOPIC_OVERLAP_MIN for kept in kept_topics):
+                continue  # same underlying story as one already kept (diff URL) — drop
             seen_urls.add(key)
+            kept_topics.append(topic)
             items.append(it)
             if len(items) >= max_per_section:
                 break
