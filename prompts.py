@@ -108,12 +108,23 @@ BEAT PRIORITIES (what counts as significant in each section)
   RTP) and rails changes, card-network moves and interchange/fee or regulation news (Visa,
   Mastercard), Zelle and account-to-account transfers, stablecoin & digital-payment
   settlement, cross-border/remittances, and treasury & cash-management services. This is the
-  industry domain, not just Bank of America itself. Deprioritize token-price moves and
-  generic crypto speculation.
+  industry domain, not just Bank of America itself.
+  RELEVANCE LENS — rank by usefulness to a professional at a major US bank (e.g. Bank of
+  America). Strongly prefer stories that touch US large banks (BofA, JPMorgan, Citi, Wells
+  Fargo), the card networks, US payment rails (FedNow/RTP/Zelle), the clearing/settlement
+  system, or US payments regulation. Deprioritize — and only include to round out a thin
+  section — pure venture/funding rounds for fintech startups (e.g. "X raises $Ymm") and
+  niche regional/overseas retail-banking schemes that don't affect major US institutions.
+  Deprioritize token-price moves and generic crypto speculation entirely.
 - LIQUIDITY (funding / monetary): prioritize Fed & central-bank rate decisions and guidance,
   QT/QE and balance-sheet moves, repo & reverse repo, bank reserves and deposit trends,
   money-market funds, Treasury issuance, credit spreads & bond-market funding conditions, and
-  LCR/Basel liquidity regulation. Deprioritize single-stock punditry and pure equity moves.
+  LCR/Basel liquidity regulation.
+  RELEVANCE LENS — rank by usefulness to a professional at a major US bank. Strongly prefer
+  stories about US rates/Treasuries/funding markets, bank deposits and reserves, credit
+  conditions, and Fed/Treasury actions. Deprioritize commodity-price recaps (e.g. gold/oil
+  moves), single-stock punditry, and pure equity moves unless they are a direct read on
+  funding or rate conditions.
 - AI: weight toward concrete capability releases (new models, major features, benchmarks),
   major funding rounds, and regulation/policy. Deprioritize think-pieces, op-eds, and
   speculation about the future.
