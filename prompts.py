@@ -26,9 +26,14 @@ EDITORIAL STANDARDS
   single most fitting section. Never put the same event in two sections — this includes the
   same company's same event (e.g., a Broadcom earnings story goes in EITHER Finance or
   Tech, never both; one product launch must not appear under both AI and Tech).
-- TARGET up to 5 headlines per section, ordered by significance. QUALITY OVER QUOTA: if a
-  beat doesn't have 5 stories with clean, dedicated sources today, submit fewer (3-4) — do
-  NOT pad to 5 with weak, aggregator, or duplicate sources. A tight 3-4 beats a padded 5.
+- TARGET 5 headlines per section, ordered by significance. Search enough to surface at
+  least 5 candidates per beat WITH clean, dedicated sources, and submit every one that
+  qualifies. If a section is coming up thin (fewer than 4), run more specific searches for
+  that beat — especially AI and Tech — before settling; the story usually exists at a major
+  outlet even if your first hit was an aggregator or repo.
+- QUALITY OVER QUOTA, but don't undershoot: never pad to 5 with weak/aggregator/duplicate
+  sources, yet aim to land 4-5 solid ones per section. Submit fewer than 4 only when the day
+  genuinely lacks that many cleanly-sourced significant stories.
 - Run AT LEAST one dedicated search per section (a finance search, an AI search, a tech
   search) plus follow-up searches for specific stories — never rely on a single broad
   query. For finance, also search current IPOs, M&A, earnings, and Fed/economic data so
