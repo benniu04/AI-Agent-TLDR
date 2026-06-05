@@ -212,8 +212,10 @@ def _custom_tool(name, description, extra_props=None):
 # --- Tool declarations passed to the API ------------------------------------
 
 TOOLS = [
-    # Server tools — now FALLBACK / gap-filler (dedicated source tools are primary).
-    {"type": "web_search_20250305", "name": "web_search", "max_uses": 8},
+    # Server tools — FALLBACK / gap-filler only (dedicated source tools are primary and
+    # nearly free). Capped low: a run's cost is ~all web_search tokens (~23k each), and the
+    # feeds already supply most coverage, so 3 keeps cost ~halved with little coverage loss.
+    {"type": "web_search_20250305", "name": "web_search", "max_uses": 3},
     {"type": "web_fetch_20250910", "name": "web_fetch", "max_uses": 5},
     # Terminal structured-output tool. The loop captures its input and stops; NOT dispatched.
     {
