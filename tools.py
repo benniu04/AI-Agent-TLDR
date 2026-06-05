@@ -50,6 +50,31 @@ _AI_KEYWORDS = (
     "model", "agentic", "agent", "transformer", "inference", "nvidia",
 )
 
+# Money Movement (payments / transaction banking). Payments has no dedicated finance-API
+# topic, so it's sourced RSS-first from payments outlets. The Block is crypto-broad, so it's
+# keyword-filtered to settlement/stablecoin stories to keep token-price noise out.
+_PAYMENTS_FEEDS = {
+    "Finextra": "https://www.finextra.com/rss/headlines.aspx",
+    "PYMNTS": "https://www.pymnts.com/feed/",
+    "Payments Dive": "https://www.paymentsdive.com/feeds/news/",
+}
+_PAYMENTS_BLOCK_FEED = {"The Block": "https://www.theblock.co/rss.xml"}
+_PAYMENTS_KEYWORDS = (
+    "stablecoin", "stable coin", "usdc", "usdt", "payment", "payments", "settle",
+    "settlement", "remittance", "cross-border", "tokenized deposit", "fednow", "rtp",
+)
+
+# Liquidity (funding / monetary). AV/Finnhub skew equities, so a markets RSS feed is added
+# and keyword-filtered to funding/monetary stories (rates, bonds, repo, deposits, credit).
+_LIQUIDITY_FEEDS = {"WSJ Markets": "https://feeds.content.dowjones.io/public/rss/RSSMarketsMain"}
+_LIQUIDITY_KEYWORDS = (
+    "fed", "federal reserve", "rate", "rates", "treasury", "treasuries", "yield",
+    "yields", "repo", "reserve", "reserves", "liquidity", "deposit", "deposits",
+    "credit", "basel", "money market", "bond", "bonds", "central bank", "qt", "qe",
+)
+# Alpha Vantage NEWS_SENTIMENT topics for the Liquidity beat (monetary/funding slice).
+_LIQUIDITY_AV_TOPICS = "economy_monetary,financial_markets,economy_macro"
+
 
 def _parse_feeds(feeds: dict, limit: int, keywords=None) -> list:
     """Fetch + parse RSS feeds into [{title, url, source, published}], newest first.
@@ -108,6 +133,49 @@ def get_ai_news(limit: int = 20) -> str:
     return json.dumps(out[: int(limit)])
 
 
+def get_payments_news(limit: int = 20) -> str:
+    """Money Movement: payments / transaction-banking headlines (RSS).
+
+    Payments outlets (Finextra, PYMNTS, Payments Dive) unfiltered, plus The Block filtered to
+    stablecoin/settlement stories. Merged + URL-deduped, newest first.
+    """
+    limit = int(limit)
+    items = _parse_feeds(_PAYMENTS_FEEDS, limit) + \
+        _parse_feeds(_PAYMENTS_BLOCK_FEED, limit, _PAYMENTS_KEYWORDS)
+    seen, out = set(), []
+    for it in items:
+        if it["url"] in seen:
+            continue
+        seen.add(it["url"])
+        out.append(it)
+    out.sort(key=lambda x: x["ts"], reverse=True)  # The Block items may pre-date feed items
+    return json.dumps(out[:limit])
+
+
+def get_liquidity_news(limit: int = 20) -> str:
+    """Liquidity: funding / monetary headlines.
+
+    Alpha Vantage `economy_monetary` slice + Finnhub (via get_finance_news) merged with a
+    keyword-filtered WSJ Markets feed (bonds/Treasuries/rates/credit). Degrades gracefully:
+    with no finance API keys the AV/Finnhub side is empty and WSJ still fills the section.
+    """
+    limit = int(limit)
+    items = []
+    try:
+        items += json.loads(get_finance_news(limit, topics=_LIQUIDITY_AV_TOPICS))
+    except Exception:
+        pass  # no keys / API down — WSJ feed below still supplies the section
+    items += _parse_feeds(_LIQUIDITY_FEEDS, limit, _LIQUIDITY_KEYWORDS)
+    seen, out = set(), []
+    for it in items:
+        if it["url"] in seen:
+            continue
+        seen.add(it["url"])
+        out.append(it)
+    out.sort(key=lambda x: x.get("ts", 0), reverse=True)
+    return json.dumps(out[:limit])
+
+
 def get_hacker_news(limit: int = 20) -> str:
     """HN front page via the Algolia API (one call, no key). Returns {title, url, score}."""
     limit = max(1, min(int(limit), 50))
@@ -146,10 +214,12 @@ def _finnhub_news(limit: int) -> list:
     return [o for o in out if o["headline"] and o["url"]]
 
 
-def _alphavantage_news(limit: int) -> list:
+_FINANCE_AV_TOPICS = "financial_markets,economy_macro,mergers_and_acquisitions,ipo,earnings"
+
+
+def _alphavantage_news(limit: int, topics: str = _FINANCE_AV_TOPICS) -> list:
     r = requests.get("https://www.alphavantage.co/query", timeout=HTTP_TIMEOUT,
-                     params={"function": "NEWS_SENTIMENT",
-                             "topics": "financial_markets,economy_macro,mergers_and_acquisitions,ipo,earnings",
+                     params={"function": "NEWS_SENTIMENT", "topics": topics,
                              "sort": "LATEST", "limit": limit, "apikey": config.ALPHAVANTAGE_API_KEY})
     feed = r.json().get("feed", [])  # missing/empty when rate-limited
     out = []
@@ -171,16 +241,18 @@ def _alphavantage_news(limit: int) -> list:
     return [o for o in out if o["headline"] and o["url"]]
 
 
-def get_finance_news(limit: int = 20) -> str:
+def get_finance_news(limit: int = 20, topics: str = _FINANCE_AV_TOPICS) -> str:
     """Structured financial news from Finnhub + Alpha Vantage (with sentiment scores).
 
     Uses whichever API keys are configured. Raises if neither is set so the agent falls
     back to web_search. Alpha Vantage items include sentiment you can rank/filter by.
+    `topics` selects the Alpha Vantage NEWS_SENTIMENT slice (default = the general finance
+    set; get_liquidity_news passes the monetary/funding topics).
     """
     limit = int(limit)
     items = []
     if config.ALPHAVANTAGE_API_KEY:
-        items += _alphavantage_news(limit)  # first, so sentiment-bearing items win dedupe
+        items += _alphavantage_news(limit, topics)  # first, so sentiment-bearing items win dedupe
     if config.FINNHUB_API_KEY:
         items += _finnhub_news(limit)
     if not config.ALPHAVANTAGE_API_KEY and not config.FINNHUB_API_KEY:
@@ -197,6 +269,8 @@ def get_finance_news(limit: int = 20) -> str:
 # Registry of custom (client-executed) tools: name -> callable(**input) -> str
 CLIENT_TOOLS = {
     "get_finance_news": get_finance_news,
+    "get_payments_news": get_payments_news,
+    "get_liquidity_news": get_liquidity_news,
     "get_tech_news": get_tech_news,
     "get_ai_news": get_ai_news,
     "get_hacker_news": get_hacker_news,
@@ -230,8 +304,9 @@ def _custom_tool(name, description, extra_props=None):
 TOOLS = [
     # Server tools — FALLBACK / gap-filler only (dedicated source tools are primary and
     # nearly free). Capped low: a run's cost is ~all web_search tokens (~23k each), and the
-    # feeds already supply most coverage, so 3 keeps cost ~halved with little coverage loss.
-    {"type": "web_search_20250305", "name": "web_search", "max_uses": 3},
+    # feeds already supply most coverage. Capped at 5 (one fallback per section across the
+    # five beats) — still fallback-only in the brief, so most runs use far fewer.
+    {"type": "web_search_20250305", "name": "web_search", "max_uses": 5},
     {"type": "web_fetch_20250910", "name": "web_fetch", "max_uses": 5},
     # Terminal structured-output tool. The loop captures its input and stops; NOT dispatched.
     {
@@ -247,11 +322,11 @@ TOOLS = [
                 "date": {"type": "string", "description": "Short date label, e.g. 'Thu, Jun 4'"},
                 "sections": {
                     "type": "array",
-                    "description": "The Finance, AI, and Tech sections, in that order.",
+                    "description": "The Finance, Money Movement, Liquidity, AI, and Tech sections, in that order.",
                     "items": {
                         "type": "object",
                         "properties": {
-                            "name": {"type": "string", "description": "Section name: Finance, AI, or Tech"},
+                            "name": {"type": "string", "description": "Section name: Finance, Money Movement, Liquidity, AI, or Tech"},
                             "items": {
                                 "type": "array",
                                 "items": {
@@ -277,6 +352,16 @@ TOOLS = [
         "Vantage; Alpha Vantage items include an AI sentiment label/score you can use to "
         "rank or filter. Use this first for the Finance section, then web_search to fill "
         "gaps or confirm. Returns JSON {headline, url, source, datetime, sentiment?}."),
+    _custom_tool("get_payments_news",
+        "PRIMARY Money Movement source. Recent payments / transaction-banking headlines from "
+        "Finextra, PYMNTS, and Payments Dive, plus stablecoin/settlement stories. Use for the "
+        "Money Movement section (FedNow/RTP, card networks, Zelle, stablecoins, cross-border, "
+        "treasury services). Returns JSON {title, url, source, published}, newest first."),
+    _custom_tool("get_liquidity_news",
+        "PRIMARY Liquidity source. Recent funding / monetary headlines: Alpha Vantage monetary "
+        "policy + Finnhub + a WSJ markets feed (rates, repo, reserves, deposits, money-market "
+        "funds, Treasuries, credit spreads, Fed actions). Use for the Liquidity section. "
+        "Returns JSON {headline/title, url, source, datetime/published}."),
     _custom_tool("get_tech_news",
         "PRIMARY tech source. Recent headlines from TechCrunch, The Verge, Ars Technica, "
         "and VentureBeat (RSS). Use for the Tech section. Returns JSON "

@@ -16,7 +16,8 @@ import re
 import unicodedata
 
 # Per-section emoji for the Telegram digest header.
-_SECTION_EMOJI = {"finance": "💰", "ai": "🤖", "tech": "💻", "technology": "💻"}
+_SECTION_EMOJI = {"finance": "💰", "money movement": "💸", "liquidity": "🌊",
+                  "ai": "🤖", "tech": "💻", "technology": "💻"}
 
 # Common non-GSM punctuation -> ASCII equivalents (applied before stripping the rest).
 _REPLACEMENTS = {
