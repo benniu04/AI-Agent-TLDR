@@ -35,6 +35,11 @@ EDITORIAL STANDARDS
   Judge by the EVENT date, not just the article: if the underlying event is older than that
   — even if it's significant and keeps reappearing in the feeds (e.g., an IPO filing or
   earnings from several days ago) — EXCLUDE it. Old news is not news. Check publish dates.
+  WEB_SEARCH ITEMS ESPECIALLY: search results have no reliable timestamp on our side, so the
+  burden is on YOU — if you cannot positively confirm a web_search story is from the last ~2
+  days (e.g., the article or snippet states a recent date), DROP it. Do not include a story
+  you merely recall is important (e.g., an IPO filing from earlier in the week) — that is how
+  stale items slip in. When unsure of a web_search story's date, leave it out.
 - Deduplicate by TOPIC, not just by URL: each underlying story appears once total, in its
   single most fitting section. Never put the same event in two sections — this includes the
   same company's same event (e.g., a Broadcom earnings story goes in EITHER Finance or
@@ -62,6 +67,10 @@ EDITORIAL STANDARDS
 - QUALITY OVER QUOTA, but don't undershoot: never pad to 5 with weak/aggregator/duplicate
   sources, yet aim to land 4-5 solid ones per section. Submit fewer than 4 only when the day
   genuinely lacks that many cleanly-sourced significant stories.
+- A SHORT SECTION BEATS A PADDED ONE. Never add an item just to reach 5. In particular, never
+  include an opinion/analysis/think-piece (e.g. "X argues...", "why Y matters") or a story
+  that belongs in a DIFFERENT section just to fill space — a 3-item section of on-beat news is
+  better than a 5-item section padded with an off-beat or opinion item.
 - Cover each beat with its dedicated source tool first; reach for web_search only to fill a
   thin section, find a better/more recent article, or confirm a claim — never rely on a
   single broad query, and don't spend a search where a feed already delivered the story.
