@@ -2,10 +2,13 @@ name: Daily TLDR
 
 on:
   schedule:
-    # 13:00 UTC = 9:00 AM Eastern during daylight time (EDT, Mar-Nov).
+    # 13:07 UTC = 9:07 AM Eastern during daylight time (EDT, Mar-Nov).
+    # NOTE: minute is deliberately :07, not :00 — GitHub's scheduled runs are
+    # best-effort and the top of the hour is the most congested slot, so :00 jobs
+    # are frequently delayed or silently dropped. An off-peak minute runs reliably.
     # GitHub cron is UTC and does NOT follow DST, so after the Nov switch to EST
-    # this arrives at 8:00 AM. For exact 9 AM in winter, change to "0 14 * * *".
-    - cron: "0 13 * * *"
+    # this arrives at 8:07 AM. For ~9 AM in winter, change to "7 14 * * *".
+    - cron: "7 13 * * *"
   workflow_dispatch: {}  # allow manual runs from the Actions tab
 
 jobs:
