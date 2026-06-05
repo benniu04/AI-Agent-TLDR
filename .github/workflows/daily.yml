@@ -27,6 +27,7 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           MODEL: ${{ vars.MODEL || 'claude-haiku-4-5' }}
           DELIVERY: ${{ vars.DELIVERY || 'telegram' }}
+          TIMEZONE: ${{ vars.TIMEZONE || 'America/New_York' }}
           # Twilio (DELIVERY=sms)
           TWILIO_ACCOUNT_SID: ${{ secrets.TWILIO_ACCOUNT_SID }}
           TWILIO_AUTH_TOKEN: ${{ secrets.TWILIO_AUTH_TOKEN }}

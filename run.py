@@ -10,6 +10,8 @@ Channel is set by the DELIVERY env var: "sms" (Twilio) or "telegram".
 """
 
 import sys
+from datetime import datetime
+from zoneinfo import ZoneInfo
 
 import config
 from agent import run_agent
@@ -40,6 +42,10 @@ def main() -> int:
             print(f"ERROR: agent did not submit and text isn't parseable ({exc}). Raw:\n"
                   f"{result.text}", file=sys.stderr)
             return 1
+
+    # Stamp the date ourselves in the configured timezone — the model has no reliable clock
+    # and tends to guess the UTC date (e.g. "Fri" at 9pm ET Thursday).
+    data["date"] = datetime.now(ZoneInfo(config.TIMEZONE)).strftime("%a, %b %-d")
 
     cap = config.MAX_HEADLINES_PER_SECTION
     allowed = result.seen_urls  # provenance allowlist (fail-open if empty)
