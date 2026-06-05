@@ -51,29 +51,81 @@ _AI_KEYWORDS = (
 )
 
 # Money Movement (payments / transaction banking). Payments has no dedicated finance-API
-# topic, so it's sourced RSS-first from payments outlets. The Block is crypto-broad, so it's
-# keyword-filtered to settlement/stablecoin stories to keep token-price noise out.
+# topic, so it's sourced RSS-first from payments outlets (taken unfiltered — they're already
+# payments-focused).
 _PAYMENTS_FEEDS = {
     "Finextra": "https://www.finextra.com/rss/headlines.aspx",
     "PYMNTS": "https://www.pymnts.com/feed/",
     "Payments Dive": "https://www.paymentsdive.com/feeds/news/",
 }
-_PAYMENTS_BLOCK_FEED = {"The Block": "https://www.theblock.co/rss.xml"}
+# Broad outlets that carry SOME payments news among other stories — keyword-filtered to keep
+# only payments-relevant items. The Block (crypto) -> settlement/stablecoin; Banking Dive
+# (general US banking) -> payments/rails stories, adding harder US-bank coverage.
+_PAYMENTS_FILTERED_FEEDS = {
+    "The Block": "https://www.theblock.co/rss.xml",
+    "Banking Dive": "https://www.bankingdive.com/feeds/news/",
+}
 _PAYMENTS_KEYWORDS = (
     "stablecoin", "stable coin", "usdc", "usdt", "payment", "payments", "settle",
     "settlement", "remittance", "cross-border", "tokenized deposit", "fednow", "rtp",
+    "zelle", "card network", "interchange", "visa", "mastercard", "wire transfer",
 )
 
-# Liquidity (funding / monetary). AV/Finnhub skew equities, so a markets RSS feed is added
-# and keyword-filtered to funding/monetary stories (rates, bonds, repo, deposits, credit).
-_LIQUIDITY_FEEDS = {"WSJ Markets": "https://feeds.content.dowjones.io/public/rss/RSSMarketsMain"}
+# Liquidity (funding / monetary). AV/Finnhub skew equities, so RSS feeds are added and
+# keyword-filtered to funding/monetary stories (rates, bonds, repo, deposits, credit):
+# WSJ Markets (bonds/Treasuries), Banking Dive (deposits/funding at US banks), and the Fed's
+# own monetary-policy press feed (FOMC/rate decisions — quiet between meetings, gold on the day;
+# the recency filter drops it when stale).
+_LIQUIDITY_FEEDS = {
+    "WSJ Markets": "https://feeds.content.dowjones.io/public/rss/RSSMarketsMain",
+    "Banking Dive": "https://www.bankingdive.com/feeds/news/",
+    "Federal Reserve": "https://www.federalreserve.gov/feeds/press_monetary.xml",
+}
 _LIQUIDITY_KEYWORDS = (
     "fed", "federal reserve", "rate", "rates", "treasury", "treasuries", "yield",
     "yields", "repo", "reserve", "reserves", "liquidity", "deposit", "deposits",
     "credit", "basel", "money market", "bond", "bonds", "central bank", "qt", "qe",
 )
 # Alpha Vantage NEWS_SENTIMENT topics for the Liquidity beat (monetary/funding slice).
-_LIQUIDITY_AV_TOPICS = "economy_monetary,financial_markets,economy_macro"
+# Deliberately excludes `financial_markets` — it floods the pool with equity-recap aggregator
+# noise (StockStory, Simply Wall Street, etc.); WSJ Markets RSS covers bonds/Treasuries instead.
+_LIQUIDITY_AV_TOPICS = "economy_monetary,economy_macro"
+
+
+def _dedupe_by_url(items: list) -> list:
+    """Drop items with a duplicate URL, keeping first occurrence (order preserved)."""
+    seen, out = set(), []
+    for it in items:
+        if it.get("url") and it["url"] not in seen:
+            seen.add(it["url"])
+            out.append(it)
+    return out
+
+
+def _text_matches(item: dict, keywords) -> bool:
+    """True if the item's headline/title contains any keyword (case-insensitive)."""
+    text = (item.get("headline") or item.get("title") or "").lower()
+    return any(k in text for k in keywords)
+
+
+def _cap_per_source(items: list, per_source: int, total: int) -> list:
+    """Return up to `total` items, newest-first, with at most `per_source` from any one source.
+
+    Prevents a single high-volume feed (e.g. Finextra think-pieces, or an aggregator that
+    floods the finance APIs) from crowding every other source out of the candidate pool the
+    agent gets to choose from.
+    """
+    ranked = sorted(items, key=lambda x: x.get("ts", 0), reverse=True)
+    counts, out = {}, []
+    for it in ranked:
+        src = it.get("source", "")
+        if counts.get(src, 0) >= per_source:
+            continue
+        counts[src] = counts.get(src, 0) + 1
+        out.append(it)
+        if len(out) >= total:
+            break
+    return out
 
 
 def _parse_feeds(feeds: dict, limit: int, keywords=None) -> list:
@@ -136,20 +188,15 @@ def get_ai_news(limit: int = 20) -> str:
 def get_payments_news(limit: int = 20) -> str:
     """Money Movement: payments / transaction-banking headlines (RSS).
 
-    Payments outlets (Finextra, PYMNTS, Payments Dive) unfiltered, plus The Block filtered to
-    stablecoin/settlement stories. Merged + URL-deduped, newest first.
+    Payments outlets (Finextra, PYMNTS, Payments Dive) unfiltered, plus The Block and Banking
+    Dive keyword-filtered to payments-relevant stories. Merged + URL-deduped, newest first.
     """
     limit = int(limit)
     items = _parse_feeds(_PAYMENTS_FEEDS, limit) + \
-        _parse_feeds(_PAYMENTS_BLOCK_FEED, limit, _PAYMENTS_KEYWORDS)
-    seen, out = set(), []
-    for it in items:
-        if it["url"] in seen:
-            continue
-        seen.add(it["url"])
-        out.append(it)
-    out.sort(key=lambda x: x["ts"], reverse=True)  # The Block items may pre-date feed items
-    return json.dumps(out[:limit])
+        _parse_feeds(_PAYMENTS_FILTERED_FEEDS, limit, _PAYMENTS_KEYWORDS)
+    # Cap per source so high-volume Finextra doesn't crowd out Payments Dive / Banking Dive / etc.
+    out = _cap_per_source(_dedupe_by_url(items), per_source=4, total=limit)
+    return json.dumps(out)
 
 
 def get_liquidity_news(limit: int = 20) -> str:
@@ -161,19 +208,21 @@ def get_liquidity_news(limit: int = 20) -> str:
     """
     limit = int(limit)
     items = []
-    try:
-        items += json.loads(get_finance_news(limit, topics=_LIQUIDITY_AV_TOPICS))
-    except Exception:
-        pass  # no keys / API down — WSJ feed below still supplies the section
+    # Alpha Vantage monetary topics ONLY — deliberately NOT Finnhub's `general` category, which
+    # is equity-recap heavy ("X stock trades down") and can't be topic-scoped to monetary news.
+    if config.ALPHAVANTAGE_API_KEY:
+        try:
+            items += _alphavantage_news(limit, _LIQUIDITY_AV_TOPICS)
+        except Exception:
+            pass  # API down/rate-limited — the RSS feeds below still supply the section
     items += _parse_feeds(_LIQUIDITY_FEEDS, limit, _LIQUIDITY_KEYWORDS)
-    seen, out = set(), []
-    for it in items:
-        if it["url"] in seen:
-            continue
-        seen.add(it["url"])
-        out.append(it)
-    out.sort(key=lambda x: x.get("ts", 0), reverse=True)
-    return json.dumps(out[:limit])
+    # Alpha Vantage tags single-stock recaps as macro, so keyword-filter EVERYTHING here (not
+    # just the RSS) to keep only genuinely funding/monetary headlines. (RSS is already filtered;
+    # re-applying is harmless.)
+    items = [it for it in items if _text_matches(it, _LIQUIDITY_KEYWORDS)]
+    # Cap per source so any one outlet can't bury WSJ / Banking Dive / Fed.
+    out = _cap_per_source(_dedupe_by_url(items), per_source=4, total=limit)
+    return json.dumps(out)
 
 
 def get_hacker_news(limit: int = 20) -> str:
