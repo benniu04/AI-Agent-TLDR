@@ -43,6 +43,11 @@ TIMEZONE = os.environ.get("TIMEZONE", "America/New_York")
 TELEGRAM_BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", "")
 TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID", "")
 
+# Finance news APIs (free tiers). Optional — get_finance_news uses whichever keys are set
+# and falls back to web_search if neither is configured.
+FINNHUB_API_KEY = os.environ.get("FINNHUB_API_KEY", "")
+ALPHAVANTAGE_API_KEY = os.environ.get("ALPHAVANTAGE_API_KEY", "")
+
 # Twilio SMS. SMS_RECIPIENTS is a comma-separated list of E.164 numbers (+15551234567).
 TWILIO_ACCOUNT_SID = os.environ.get("TWILIO_ACCOUNT_SID", "")
 TWILIO_AUTH_TOKEN = os.environ.get("TWILIO_AUTH_TOKEN", "")
