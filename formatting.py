@@ -86,6 +86,7 @@ _BANNED_URL_PATTERNS = (
     "/markets/stocks/articles",            # Yahoo daily markets recap stream
     "llm-stats.com", "buildfastwithai.com",  # known aggregator/newsletter blogs
     "youtube.com", "youtu.be",             # videos, not readable articles
+    "github.com",                          # code repos/gists, not readable news articles
 )
 
 
