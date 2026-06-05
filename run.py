@@ -24,7 +24,11 @@ from prompts import SYSTEM, build_goal
 def main() -> int:
     dry_run = "--dry-run" in sys.argv
 
-    result = run_agent(goal=build_goal(), system=SYSTEM)
+    # One timestamp in the user's timezone, used both to anchor the agent's recency and to
+    # stamp the display label — so the model never has to guess the date.
+    now = datetime.now(ZoneInfo(config.TIMEZONE))
+
+    result = run_agent(goal=build_goal(now.strftime("%A, %B %-d, %Y")), system=SYSTEM)
     print(f"--- agent done: stop={result.stop} iters={result.iterations} "
           f"tokens={result.tokens} log={result.log_path} ---")
 
@@ -43,9 +47,8 @@ def main() -> int:
                   f"{result.text}", file=sys.stderr)
             return 1
 
-    # Stamp the date ourselves in the configured timezone — the model has no reliable clock
-    # and tends to guess the UTC date (e.g. "Fri" at 9pm ET Thursday).
-    data["date"] = datetime.now(ZoneInfo(config.TIMEZONE)).strftime("%a, %b %-d")
+    # Stamp the display date ourselves (same timestamp used to anchor the agent above).
+    data["date"] = now.strftime("%a, %b %-d")
 
     cap = config.MAX_HEADLINES_PER_SECTION
     allowed = result.seen_urls  # provenance allowlist (fail-open if empty)

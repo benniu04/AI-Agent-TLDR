@@ -105,10 +105,15 @@ delivers it.
 """
 
 
-def build_goal() -> str:
-    """The per-run user message that kicks off the agent."""
+def build_goal(today: str) -> str:
+    """The per-run user message that kicks off the agent.
+
+    `today` is the real current date (in the user's timezone) so the agent anchors
+    recency correctly instead of guessing the date from search snippets.
+    """
     return (
-        "Assemble today's Daily TLDR covering finance, AI, and technology. "
-        "Research the most significant headlines from the last 24 hours, then return the "
-        "final JSON object exactly as specified — headlines and source URLs only."
+        f"Today is {today} (US Eastern). Assemble today's Daily TLDR covering finance, AI, "
+        "and technology. Prioritize the most significant news from roughly the last 24 "
+        "hours; do not include older stories unless they are genuinely breaking today. "
+        "When the briefing is ready, call the submit_tldr tool as specified."
     )
