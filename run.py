@@ -14,10 +14,11 @@ from datetime import datetime
 from zoneinfo import ZoneInfo
 
 import config
+import memory
 from agent import run_agent
 from deliver import send_telegram
 from deliver_sms import send_sms
-from formatting import delivered_count, format_sms, format_telegram, parse_agent_json
+from formatting import delivered_count, delivered_items, format_sms, format_telegram, parse_agent_json
 from prompts import SYSTEM, build_goal
 
 
@@ -28,7 +29,14 @@ def main() -> int:
     # stamp the display label — so the model never has to guess the date.
     now = datetime.now(ZoneInfo(config.TIMEZONE))
 
-    result = run_agent(goal=build_goal(now.strftime("%A, %B %-d, %Y")), system=SYSTEM)
+    # Cross-run memory: what we've already delivered recently. Used as a soft signal in the
+    # goal (skip repeats) and a hard filter below (drop URLs we've already sent).
+    mem_entries = memory.load_entries(config.MEMORY_PATH)
+    mem_cutoff = now.timestamp() - config.MEMORY_KEEP_DAYS * 86400
+    recent = memory.recent_headlines(mem_entries, mem_cutoff)
+    repeats = memory.seen_url_set(mem_entries)
+
+    result = run_agent(goal=build_goal(now.strftime("%A, %B %-d, %Y"), recent=recent), system=SYSTEM)
     print(f"--- agent done: stop={result.stop} iters={result.iterations} "
           f"tokens={result.tokens} log={result.log_path} ---")
 
@@ -57,29 +65,39 @@ def main() -> int:
     stale = {u for u, ts in result.url_ts.items() if ts and ts < cutoff}
 
     if config.DELIVERY == "telegram":
-        message = format_telegram(data, cap, allowed, stale)
+        message = format_telegram(data, cap, allowed, stale, repeats)
         sender = send_telegram
     else:  # default: sms
-        message = format_sms(data, cap, allowed, stale)
+        message = format_sms(data, cap, allowed, stale, repeats)
         sender = send_sms
 
-    # Report how many items the filters dropped (banned/mismatch/provenance/dup/stale).
+    # Report how many items the filters dropped (banned/mismatch/provenance/dup/stale/repeat).
     submitted = sum(len(s.get("items", [])) for s in data.get("sections", []))
-    delivered = delivered_count(data, cap, allowed, stale)
+    delivered = delivered_count(data, cap, allowed, stale, repeats)
+    repeats_hit = sum(1 for s in data.get("sections", []) for it in s.get("items", [])
+                      if it.get("url") and memory.canonical_url(it["url"]) in repeats)
     print(f"--- items: {submitted} submitted, {delivered} delivered, "
           f"{submitted - delivered} dropped | {len(allowed)} URLs seen, "
-          f"{len(stale)} stale (>{config.MAX_STORY_AGE_DAYS}d) ---")
+          f"{len(stale)} stale (>{config.MAX_STORY_AGE_DAYS}d), "
+          f"{repeats_hit} repeats (memory: {len(repeats)} URLs) ---")
     print(f"\n--- formatted for {config.DELIVERY} ({len(message)} chars) ---\n{message}")
 
     if result.stop in ("max_iterations", "unknown"):
         print(f"\nWARNING: agent stopped on '{result.stop}'; delivering anyway.", file=sys.stderr)
 
     if dry_run:
-        print(f"\n(--dry-run: skipping {config.DELIVERY} send)")
+        print(f"\n(--dry-run: skipping {config.DELIVERY} send and memory update)")
         return 0
 
     sender(message)
     print(f"\nDelivered via {config.DELIVERY}.")
+
+    # Record what we delivered so future runs don't repeat it (only after a real send).
+    shown = delivered_items(data, cap, allowed, stale, repeats)
+    kept = memory.update(config.MEMORY_PATH, shown, now.strftime("%Y-%m-%d"),
+                         now.timestamp(), config.MEMORY_KEEP_DAYS)
+    print(f"Memory: recorded {len(shown)} delivered, {kept} total in "
+          f"{config.MEMORY_PATH} (last {config.MEMORY_KEEP_DAYS}d).")
     return 0
 
 

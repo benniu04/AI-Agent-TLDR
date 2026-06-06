@@ -44,6 +44,14 @@ TIMEZONE = os.environ.get("TIMEZONE", "America/New_York")
 # catches clearly-stale events (e.g. a 4-day-old filing) without nixing weekend stories.
 MAX_STORY_AGE_DAYS = _int("MAX_STORY_AGE_DAYS", 3)
 
+# Cross-run memory: a rolling JSON record of delivered items so the agent doesn't repeat
+# stories day to day (committed back to the repo by CI since Actions is ephemeral).
+MEMORY_PATH = os.environ.get("MEMORY_PATH", "memory/seen.json")
+# How many days of delivered items to remember (the hard repeat filter + the goal's
+# "already covered" list both look back this far). Slightly longer than MAX_STORY_AGE_DAYS so
+# a story can't drop out of memory while it's still recent enough to resurface.
+MEMORY_KEEP_DAYS = _int("MEMORY_KEEP_DAYS", 7)
+
 # Telegram (free fallback channel).
 TELEGRAM_BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", "")
 TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID", "")

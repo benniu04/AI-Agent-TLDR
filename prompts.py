@@ -166,16 +166,28 @@ plain text — only `submit_tldr` delivers it.
 """
 
 
-def build_goal(today: str) -> str:
+def build_goal(today: str, recent: list | None = None) -> str:
     """The per-run user message that kicks off the agent.
 
     `today` is the real current date (in the user's timezone) so the agent anchors
-    recency correctly instead of guessing the date from search snippets.
+    recency correctly instead of guessing the date from search snippets. `recent`, if given,
+    is the list of headlines we already delivered in the last few days (cross-run memory) so
+    the agent can avoid repeating stories.
     """
-    return (
+    goal = (
         f"Today is {today} (US Eastern). Assemble today's Daily TLDR covering finance, money "
         "movement (payments), liquidity (funding/monetary), AI, and technology. Prioritize the "
         "most significant news from roughly the last 24 hours; do not include older stories "
         "unless they are genuinely breaking today. When the briefing is ready, call the "
         "submit_tldr tool as specified."
     )
+    if recent:
+        covered = "\n".join(f"- {h}" for h in recent)
+        goal += (
+            "\n\nALREADY COVERED in the last few days (do NOT repeat any of these — they were "
+            "in recent briefings). Only include a story matching one of these if there is a "
+            "genuinely NEW development today (a new event, not the same one resurfacing); if "
+            "so, frame the headline around the new fact. Otherwise skip it and find fresh "
+            f"news:\n{covered}"
+        )
+    return goal

@@ -149,13 +149,15 @@ def _headline_matches_url(headline: str, url: str) -> bool:
     return any(w in u for w in words)
 
 
-def _iter_sections(data: dict, max_per_section: int, allowed_urls=None, stale_urls=None):
+def _iter_sections(data: dict, max_per_section: int, allowed_urls=None, stale_urls=None,
+                   repeat_urls=None):
     """Yield (name, items) per section after the link-integrity filter chain.
 
     `allowed_urls`, when truthy, is the set of canonical URLs that search actually returned
     this run; any item whose URL isn't in it was fabricated by the model and is dropped.
     `stale_urls`, when truthy, is the set of canonical URLs whose publish date is older than
-    the recency cutoff. Both fail open: a falsy set means that check is skipped.
+    the recency cutoff. `repeat_urls`, when truthy, is the set of canonical URLs we already
+    delivered on a previous run (cross-run memory). All fail open: a falsy set skips its check.
     """
     seen_urls = set()      # exact-URL dedup
     kept_topics = []       # topic-word sets of kept items (cross-section), for topic dedup
@@ -174,6 +176,8 @@ def _iter_sections(data: dict, max_per_section: int, allowed_urls=None, stale_ur
                 continue  # URL never appeared in search results (fabricated) — drop
             if stale_urls and canonical_url(url) in stale_urls:
                 continue  # publish date older than the recency cutoff — drop
+            if repeat_urls and canonical_url(url) in repeat_urls:
+                continue  # already delivered on a previous run (cross-run memory) — drop
             key = _norm_url(url)
             if key in seen_urls:
                 continue  # duplicate source — skip this headline
@@ -189,16 +193,28 @@ def _iter_sections(data: dict, max_per_section: int, allowed_urls=None, stale_ur
             yield name, items
 
 
-def delivered_count(data: dict, max_per_section: int = 5, allowed_urls=None, stale_urls=None) -> int:
+def delivered_items(data: dict, max_per_section: int = 5, allowed_urls=None, stale_urls=None,
+                    repeat_urls=None) -> list:
+    """Flat list of the items that survive the filter chain — for recording into memory."""
+    out = []
+    for _, items in _iter_sections(data, max_per_section, allowed_urls, stale_urls, repeat_urls):
+        out.extend(items)
+    return out
+
+
+def delivered_count(data: dict, max_per_section: int = 5, allowed_urls=None, stale_urls=None,
+                    repeat_urls=None) -> int:
     """How many items survive the filter chain — for reporting dropped counts."""
-    return sum(len(items) for _, items in _iter_sections(data, max_per_section, allowed_urls, stale_urls))
+    return sum(len(items) for _, items in
+               _iter_sections(data, max_per_section, allowed_urls, stale_urls, repeat_urls))
 
 
-def format_sms(data: dict, max_per_section: int = 5, allowed_urls=None, stale_urls=None) -> str:
+def format_sms(data: dict, max_per_section: int = 5, allowed_urls=None, stale_urls=None,
+               repeat_urls=None) -> str:
     """Plain-ASCII headlines + links, grouped by section. Glanceable, tappable."""
     date = to_ascii(str(data.get("date", ""))).strip()
     lines = [f"TLDR {date}".strip()]
-    for name, items in _iter_sections(data, max_per_section, allowed_urls, stale_urls):
+    for name, items in _iter_sections(data, max_per_section, allowed_urls, stale_urls, repeat_urls):
         lines.append("")
         lines.append(to_ascii(name).upper())
         for it in items:
@@ -207,7 +223,8 @@ def format_sms(data: dict, max_per_section: int = 5, allowed_urls=None, stale_ur
     return "\n".join(lines)
 
 
-def format_telegram(data: dict, max_per_section: int = 5, allowed_urls=None, stale_urls=None) -> str:
+def format_telegram(data: dict, max_per_section: int = 5, allowed_urls=None, stale_urls=None,
+                    repeat_urls=None) -> str:
     """Clean & minimal HTML digest: emoji section headers, bold titles, linked bullets.
 
     Uses Telegram HTML (send with parse_mode='HTML') — more robust than Markdown, which
@@ -217,7 +234,7 @@ def format_telegram(data: dict, max_per_section: int = 5, allowed_urls=None, sta
     lines = ["📰 <b>Daily TLDR</b>"]
     if date:
         lines.append(f"<i>{date}</i>")
-    for name, items in _iter_sections(data, max_per_section, allowed_urls, stale_urls):
+    for name, items in _iter_sections(data, max_per_section, allowed_urls, stale_urls, repeat_urls):
         emoji = _SECTION_EMOJI.get(name.lower(), "•")
         lines.append("")
         lines.append(f"{emoji} <b>{html.escape(name)}</b>")
