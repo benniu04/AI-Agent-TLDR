@@ -69,6 +69,10 @@ _PAYMENTS_KEYWORDS = (
     "stablecoin", "stable coin", "usdc", "usdt", "payment", "payments", "settle",
     "settlement", "remittance", "cross-border", "tokenized deposit", "fednow", "rtp",
     "zelle", "card network", "interchange", "visa", "mastercard", "wire transfer",
+    # P2P / consumer instant payments + fraud (Zelle-team focus)
+    "venmo", "cash app", "paypal", "p2p", "peer-to-peer", "instant payment",
+    "real-time payment", "faster payments", "early warning", "apple cash", "google pay",
+    "fraud", "scam",
 )
 
 # Liquidity (funding / monetary). AV/Finnhub skew equities, so RSS feeds are added and

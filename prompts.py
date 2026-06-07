@@ -48,14 +48,19 @@ EDITORIAL STANDARDS
   story to EXACTLY ONE by this precedence so they don't overlap or duplicate):
   * LIQUIDITY wins any story whose core subject is monetary policy, interest rates, funding,
     bonds/Treasuries, bank reserves, repo/reverse repo, deposits, money-market funds, or
-    credit conditions. (A Fed rate decision -> Liquidity, NOT Finance.)
-  * MONEY MOVEMENT wins any story whose core subject is payment rails, card networks, Zelle,
-    stablecoin/digital settlement, cross-border/remittances, or transaction banking. (A
-    stablecoin-as-payment story -> Money Movement; a crypto token-price story does NOT belong
-    in Money Movement — drop it or, if truly market-moving, Finance.)
+    credit conditions — INCLUDING the rate/bond-market reaction to economic data (e.g. "10-yr
+    Treasury yield jumps on hot jobs report", "rate-cut odds collapse after CPI"). A Fed rate
+    decision, a yields/Treasury move, or a jobs/CPI story framed around rates -> Liquidity,
+    NOT Finance.
+  * MONEY MOVEMENT wins any story whose core subject is payment rails, P2P (Zelle, Venmo,
+    Cash App), card networks, stablecoin/digital settlement, cross-border/remittances, or
+    payments fraud/regulation. (A stablecoin-as-payment story -> Money Movement; a crypto
+    token-price story does NOT belong here. A cybersecurity / data-breach / hacking story is
+    NOT Money Movement even if it mentions "financial data" or names a bank -> that goes to
+    TECH.)
   * FINANCE takes everything else financial: earnings, IPOs, M&A, equity-market moves,
-    single-company results, and broad economic data (jobs, CPI) that is NOT itself a rate
-    decision. (A bank's earnings -> Finance, not Liquidity; Visa/Mastercard EARNINGS ->
+    single-company results, and economic data framed around STOCKS/companies rather than
+    rates. (A bank's earnings -> Finance, not Liquidity; Visa/Mastercard EARNINGS ->
     Finance, but a Visa/Mastercard network/fee/regulation story -> Money Movement.)
   Because dedup is global, each section must surface its OWN distinct stories — don't let one
   event fill a slot in two of these three sections.
@@ -113,18 +118,21 @@ BEAT PRIORITIES (what counts as significant in each section)
 - FINANCE: prioritize market-moving events — major earnings surprises, IPOs, large M&A, and
   major economic data (jobs, CPI). (Rate moves themselves belong in LIQUIDITY — see ownership
   rules.) Deprioritize analyst opinion, price-target changes, and single-stock punditry.
-- MONEY MOVEMENT (payments / transaction banking): prioritize real-time payments (FedNow,
-  RTP) and rails changes, card-network moves and interchange/fee or regulation news (Visa,
-  Mastercard), Zelle and account-to-account transfers, stablecoin & digital-payment
-  settlement, cross-border/remittances, and treasury & cash-management services. This is the
-  industry domain, not just Bank of America itself.
-  RELEVANCE LENS — rank by usefulness to a professional at a major US bank (e.g. Bank of
-  America). Strongly prefer stories that touch US large banks (BofA, JPMorgan, Citi, Wells
-  Fargo), the card networks, US payment rails (FedNow/RTP/Zelle), the clearing/settlement
-  system, or US payments regulation. Deprioritize — and only include to round out a thin
-  section — pure venture/funding rounds for fintech startups (e.g. "X raises $Ymm") and
-  niche regional/overseas retail-banking schemes that don't affect major US institutions.
-  Deprioritize token-price moves and generic crypto speculation entirely.
+- MONEY MOVEMENT (consumer payments / P2P — tuned for a Bank of America Zelle team):
+  TOP priority — Zelle, Early Warning Services (Zelle's operator), and bank-owned P2P; direct
+  P2P competitors (Venmo/PayPal, Cash App/Block, Apple Cash, Google Pay); real-time and
+  instant payment rails (FedNow, RTP/The Clearing House); and payments FRAUD & SCAMS plus the
+  regulation around them (CFPB, Reg E, scam-reimbursement liability, digital-wallet rules).
+  SECONDARY (landscape awareness, lower priority) — broader payments: card-network/interchange
+  moves (Visa, Mastercard), stablecoin-as-payment & settlement, account-to-account transfers,
+  cross-border/remittances.
+  RELEVANCE LENS — rank by usefulness to someone on Bank of America's Zelle / consumer-payments
+  team. Strongly prefer P2P, instant-payments, and payments-fraud stories, and anything
+  touching US large banks (BofA, JPMorgan, Citi, Wells Fargo) or the bank-owned payment
+  networks. Deprioritize — include only to round out a thin section — corporate-spend/expense
+  tools (e.g. Ramp), B2B treasury or cross-border-only plays (e.g. Airwallex), wholesale
+  settlement that doesn't touch consumers, and fintech VC funding rounds ("X raises $Ymm").
+  Exclude token-price moves and generic crypto speculation entirely.
 - LIQUIDITY (funding / monetary): prioritize Fed & central-bank rate decisions and guidance,
   QT/QE and balance-sheet moves, repo & reverse repo, bank reserves and deposit trends,
   money-market funds, Treasury issuance, credit spreads & bond-market funding conditions, and
@@ -176,7 +184,7 @@ def build_goal(today: str, recent: list | None = None) -> str:
     """
     goal = (
         f"Today is {today} (US Eastern). Assemble today's Daily TLDR covering finance, money "
-        "movement (payments), liquidity (funding/monetary), AI, and technology. Prioritize the "
+        "movement (consumer payments / P2P), liquidity (funding/monetary), AI, and technology. Prioritize the "
         "most significant news from roughly the last 24 hours; do not include older stories "
         "unless they are genuinely breaking today. When the briefing is ready, call the "
         "submit_tldr tool as specified."
