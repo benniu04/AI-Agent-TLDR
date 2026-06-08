@@ -5,7 +5,12 @@ on:
   # at 8:20 AM ET on weekdays. GitHub's native `schedule:` cron was removed because it ran
   # 1-2 hours late (best-effort scheduler) — too late for a pre-commute read. cron-job.org
   # fires the dispatch within seconds and is timezone-aware (no DST drift).
-  workflow_dispatch: {}  # external trigger (cron-job.org) + manual runs from the Actions tab
+  workflow_dispatch:  # external trigger (cron-job.org) + manual runs from the Actions tab
+    inputs:
+      smoke:
+        description: "Smoke test only — skip the paid agent run, verify plumbing for $0"
+        type: boolean
+        default: false
 
 # Serialize runs so two overlapping runs can't race on the memory commit/push.
 concurrency:
@@ -30,7 +35,16 @@ jobs:
 
       - run: pip install -r requirements.txt
 
+      - name: Smoke test (no agent, no API cost)
+        if: ${{ inputs.smoke }}  # verify plumbing (actions, deps, push auth) for $0
+        run: |
+          python -c "import agent, run, tools, memory, formatting, config, prompts; print('imports OK')"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git push --dry-run origin HEAD:main && echo "push auth OK on checkout v6 (writes nothing)"
+
       - name: Run agent and deliver
+        if: ${{ !inputs.smoke }}  # the only paid step — skipped in smoke mode
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           MODEL: ${{ vars.MODEL || 'claude-haiku-4-5' }}
