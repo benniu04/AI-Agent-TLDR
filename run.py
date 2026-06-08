@@ -72,9 +72,9 @@ def main() -> int:
         sender = send_sms
 
     # Report how many items the filters dropped (banned/mismatch/provenance/dup/stale/repeat).
-    submitted = sum(len(s.get("items", [])) for s in data.get("sections", []))
+    submitted = sum(len(s.get("items") or []) for s in data.get("sections") or [])
     delivered = delivered_count(data, cap, allowed, stale, repeats)
-    repeats_hit = sum(1 for s in data.get("sections", []) for it in s.get("items", [])
+    repeats_hit = sum(1 for s in data.get("sections") or [] for it in s.get("items") or []
                       if it.get("url") and memory.canonical_url(it["url"]) in repeats)
     print(f"--- items: {submitted} submitted, {delivered} delivered, "
           f"{submitted - delivered} dropped | {len(allowed)} URLs seen, "

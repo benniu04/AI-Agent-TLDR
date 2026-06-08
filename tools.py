@@ -19,14 +19,33 @@ name to the Python function that implements it.
 """
 
 import calendar
+import functools
 import html
 import json
+import re
 import time
 
 import feedparser
 import requests
 
 import config
+
+
+@functools.lru_cache(maxsize=None)
+def _keyword_re(keywords: tuple):
+    """Compile a keyword set into a left-word-boundary, case-insensitive regex.
+
+    Left boundary `(?<!\\w)` means a keyword matches at the start of a word but NOT mid-word:
+    "visa" matches "Visa"/"Visa's" but not "revisable"; "fed" still matches "Federal" and
+    "scam" still matches "scams" (inflections preserved). There is no right boundary (that's
+    what preserves inflections), and the left boundary only inspects the immediately preceding
+    char — so a keyword still matches at the start of a hyphen segment ("visa" in "re-visa-ble")
+    and can prefix-collide with an unrelated word ("scam" in "scampi"). Both are rare and
+    low-impact, since these only populate the candidate pool the agent/section-ownership rules
+    then filter.
+    """
+    return re.compile(r"(?<!\w)(?:" + "|".join(re.escape(k) for k in keywords) + r")",
+                      re.IGNORECASE)
 
 HTTP_TIMEOUT = 12
 _UA = "Mozilla/5.0 (compatible; DailyTLDR/1.0)"  # some feeds reject the default UA
@@ -107,9 +126,9 @@ def _dedupe_by_url(items: list) -> list:
 
 
 def _text_matches(item: dict, keywords) -> bool:
-    """True if the item's headline/title contains any keyword (case-insensitive)."""
-    text = (item.get("headline") or item.get("title") or "").lower()
-    return any(k in text for k in keywords)
+    """True if the item's headline/title matches any keyword (left-word-boundary, case-insens)."""
+    text = item.get("headline") or item.get("title") or ""
+    return bool(_keyword_re(tuple(keywords)).search(text))
 
 
 def _cap_per_source(items: list, per_source: int, total: int) -> list:
@@ -122,7 +141,9 @@ def _cap_per_source(items: list, per_source: int, total: int) -> list:
     ranked = sorted(items, key=lambda x: x.get("ts", 0), reverse=True)
     counts, out = {}, []
     for it in ranked:
-        src = it.get("source", "")
+        # Use the URL host as a fallback key so source-less items don't all share the "" bucket
+        # (which would let one quota cover many unrelated items and defeat diversity).
+        src = it.get("source") or it.get("url", "")
         if counts.get(src, 0) >= per_source:
             continue
         counts[src] = counts.get(src, 0) + 1
@@ -152,7 +173,7 @@ def _parse_feeds(feeds: dict, limit: int, keywords=None) -> list:
             if not title or not link:
                 continue
             title = html.unescape(title)  # RSS titles carry entities like &#8217;
-            if keywords and not any(k in title.lower() for k in keywords):
+            if keywords and not _keyword_re(tuple(keywords)).search(title):
                 continue
             pp = e.get("published_parsed") or e.get("updated_parsed")
             ts = calendar.timegm(pp) if pp else 0  # epoch UTC, for recency
@@ -262,7 +283,10 @@ def _finnhub_news(limit: int) -> list:
     items = r.json() if isinstance(r.json(), list) else []
     out = []
     for it in items[:limit]:
-        ts = int(it.get("datetime", 0) or 0)  # Finnhub datetime is already epoch UTC
+        try:
+            ts = int(it.get("datetime", 0) or 0)  # Finnhub datetime is already epoch UTC
+        except (ValueError, TypeError):
+            ts = 0  # malformed datetime — treat as undated rather than crash
         out.append({
             "headline": it.get("headline"),
             "url": it.get("url"),

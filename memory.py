@@ -29,15 +29,23 @@ def load_entries(path: str) -> list:
     return data if isinstance(data, list) else []
 
 
+def _ts(entry: dict) -> float:
+    """Numeric timestamp for an entry, or 0 — tolerates a missing/None/non-numeric ts so a
+    hand-edited or corrupt memory file can't crash sorting/comparison."""
+    v = entry.get("ts")
+    return v if isinstance(v, (int, float)) else 0
+
+
 def seen_url_set(entries: list) -> set:
     """Canonical URLs we've already delivered (for the hard repeat filter)."""
-    return {canonical_url(e["url"]) for e in entries if e.get("url")}
+    return {canonical_url(e["url"]) for e in entries
+            if isinstance(e.get("url"), str) and e["url"].strip()}
 
 
 def recent_headlines(entries: list, cutoff_ts: float, limit: int = 40) -> list:
     """Headlines delivered since cutoff_ts, newest first, capped — for the agent's goal."""
-    recent = [e for e in entries if e.get("headline") and (e.get("ts") or 0) >= cutoff_ts]
-    recent.sort(key=lambda e: e.get("ts") or 0, reverse=True)
+    recent = [e for e in entries if isinstance(e.get("headline"), str) and _ts(e) >= cutoff_ts]
+    recent.sort(key=_ts, reverse=True)
     return [e["headline"] for e in recent[:limit]]
 
 
@@ -55,11 +63,11 @@ def update(path: str, delivered: list, run_iso: str, run_ts: float, keep_days: i
 
     cutoff = run_ts - keep_days * 86400
     by_url = {}  # canonical url -> newest entry within the window
-    for e in sorted(entries, key=lambda e: e.get("ts") or 0):  # oldest first; newest wins
-        if not e.get("url") or (e.get("ts") or 0) < cutoff:
+    for e in sorted(entries, key=_ts):  # oldest first; newest wins
+        if not (isinstance(e.get("url"), str) and e["url"].strip()) or _ts(e) < cutoff:
             continue
         by_url[canonical_url(e["url"])] = e
-    kept = sorted(by_url.values(), key=lambda e: e.get("ts") or 0, reverse=True)
+    kept = sorted(by_url.values(), key=_ts, reverse=True)
 
     os.makedirs(os.path.dirname(path) or ".", exist_ok=True)
     with open(path, "w", encoding="utf-8") as fh:

@@ -7,10 +7,15 @@ on:
   # fires the dispatch within seconds and is timezone-aware (no DST drift).
   workflow_dispatch: {}  # external trigger (cron-job.org) + manual runs from the Actions tab
 
+# Serialize runs so two overlapping runs can't race on the memory commit/push.
+concurrency:
+  group: daily-tldr
+  cancel-in-progress: false
+
 jobs:
   tldr:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 12  # > WALL_CLOCK_SECONDS (480s/8min) so the agent's graceful stop wins
     permissions:
       contents: write  # allow committing the updated memory file back to the repo
     steps:
@@ -50,10 +55,22 @@ jobs:
           git add memory/seen.json
           if git diff --cached --quiet; then
             echo "No memory changes to commit."
-          else
-            git commit -m "Update memory [skip ci]"
-            git push origin HEAD:main
+            exit 0
           fi
+          git commit -m "Update memory [skip ci]"
+          # Rebase onto latest main before pushing in case it moved (human push / prior run);
+          # retry a few times. A push failure is NON-fatal — the digest already delivered, and
+          # the next run will re-record — so never red-X the job over a lost memory commit.
+          ok=0
+          for attempt in 1 2 3; do
+            git rebase --abort 2>/dev/null || true
+            if git pull --rebase origin main && git push origin HEAD:main; then
+              ok=1; break
+            fi
+            echo "memory push attempt $attempt failed; retrying in 3s..."
+            sleep 3
+          done
+          [ "$ok" = "1" ] || echo "::warning::could not push memory update after 3 tries (non-fatal; next run re-records)"
 
       - name: Upload trajectory logs
         if: always()  # keep logs even when the run fails, for debugging

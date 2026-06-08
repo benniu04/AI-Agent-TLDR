@@ -47,7 +47,10 @@ def _collect_dates(content: str, into: dict) -> None:
         return
     for it in items:
         if isinstance(it, dict) and it.get("url") and it.get("ts"):
-            into[canonical_url(it["url"])] = int(it["ts"])
+            try:
+                into[canonical_url(it["url"])] = int(it["ts"])
+            except (ValueError, TypeError):
+                continue  # malformed ts — skip rather than crash the run
 
 # Rate-limit handling: a single run pulls a lot of search-result tokens, which can hit
 # a per-minute input-token cap. Retry on 429 honoring Retry-After, with bounded backoff.
@@ -157,6 +160,7 @@ def run_agent(
     total_tokens = 0
     stop = "max_iterations"
     final_data = None
+    nudged = False     # whether we've sent the soft-deadline "wrap up now" nudge yet
     seen_urls = set()  # canonical URLs search actually returned (provenance allowlist)
     url_ts = {}        # canonical URL -> epoch publish time (for recency filtering)
 
@@ -234,6 +238,16 @@ def run_agent(
                     "content": content,
                     "is_error": is_error,
                 })
+            # Soft deadline: if we're low on wall-clock, tell the agent (once) to wrap up now,
+            # so a slow run submits a partial digest instead of timing out with nothing. Safe to
+            # piggyback on this tool_result user message (valid: tool_result blocks + a text block).
+            if not nudged and time.monotonic() - started > config.WALL_CLOCK_SECONDS * 0.85:
+                tool_results.append({"type": "text", "text":
+                    "You are almost out of time. Stop gathering and call the submit_tldr tool "
+                    "NOW with the best briefing you have so far — do not run more tools or write "
+                    "commentary first."})
+                nudged = True
+                log({"event": "soft_deadline_nudge", "i": i})
             messages.append({"role": "user", "content": tool_results})
             continue
 

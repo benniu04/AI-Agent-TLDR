@@ -77,7 +77,10 @@ MAX_ITERATIONS = _int("MAX_ITERATIONS", 15)
 # Cumulative input+output tokens across all calls in one run before we stop.
 # ~140k for a normal 8-search run; headroom covers a max_tokens recovery turn.
 MAX_TOKENS_BUDGET = _int("MAX_TOKENS_BUDGET", 300_000)
-WALL_CLOCK_SECONDS = _int("WALL_CLOCK_SECONDS", 300)
+# Normal runs take ~4 min; 8 min gives headroom so a slow run isn't killed mid-gather before
+# it can submit. The agent also self-nudges to wrap up at 85% of this. Keep below the
+# workflow's job timeout-minutes (12) so our graceful stop fires before GitHub's hard kill.
+WALL_CLOCK_SECONDS = _int("WALL_CLOCK_SECONDS", 480)
 
 
 def require_anthropic_key() -> str:

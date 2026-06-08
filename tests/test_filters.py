@@ -216,6 +216,17 @@ def test_items_missing_headline_or_url_are_skipped():
     assert delivered_count(data) == 1
 
 
+def test_null_items_and_sections_do_not_crash():
+    # The agent can emit JSON null for items/sections; .get(...) returns None, not [].
+    assert delivered_count({"sections": None}) == 0
+    assert delivered_count({"sections": [{"name": "Finance", "items": None}]}) == 0
+    mixed = {"sections": [
+        {"name": "Finance", "items": None},
+        _section("Tech", [_item("Real story", "https://verge.com/real-story")]),
+    ]}
+    assert delivered_count(mixed) == 1
+
+
 # --------------------------------------------------------------------------- ASCII / GSM-7 sanitization
 
 @pytest.mark.parametrize("raw, expected", [

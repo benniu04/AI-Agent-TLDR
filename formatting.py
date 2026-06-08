@@ -161,10 +161,10 @@ def _iter_sections(data: dict, max_per_section: int, allowed_urls=None, stale_ur
     """
     seen_urls = set()      # exact-URL dedup
     kept_topics = []       # topic-word sets of kept items (cross-section), for topic dedup
-    for section in data.get("sections", []):
+    for section in data.get("sections") or []:  # `or []` tolerates a null sections value
         name = section.get("name", "").strip()
         items = []
-        for it in section.get("items", []):
+        for it in section.get("items") or []:   # `or []` tolerates a null items value
             headline, url = it.get("headline"), it.get("url")
             if not headline or not url:
                 continue
