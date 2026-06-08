@@ -19,9 +19,11 @@ jobs:
     permissions:
       contents: write  # allow committing the updated memory file back to the repo
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
+        with:
+          persist-credentials: true  # the Persist-memory step pushes via this token
 
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
           cache: pip
@@ -74,8 +76,20 @@ jobs:
 
       - name: Upload trajectory logs
         if: always()  # keep logs even when the run fails, for debugging
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: tldr-logs
           path: logs/
           if-no-files-found: ignore
+
+      - name: Alert on failure
+        if: failure()  # a prior step failed -> no digest went out; tell the user why
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          # Pure curl (no Python/deps) so the alert fires even if the failure was the agent/deps.
+          curl -s -X POST "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
+            -d chat_id="${TELEGRAM_CHAT_ID}" \
+            --data-urlencode "text=⚠️ Daily TLDR run failed — no digest today. Logs: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}" \
+            >/dev/null || true
