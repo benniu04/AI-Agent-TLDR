@@ -139,9 +139,11 @@ BEAT PRIORITIES (what counts as significant in each section)
   LCR/Basel liquidity regulation.
   RELEVANCE LENS — rank by usefulness to a professional at a major US bank. Strongly prefer
   stories about US rates/Treasuries/funding markets, bank deposits and reserves, credit
-  conditions, and Fed/Treasury actions. Deprioritize commodity-price recaps (e.g. gold/oil
-  moves), single-stock punditry, and pure equity moves unless they are a direct read on
-  funding or rate conditions.
+  conditions, and Fed/Treasury actions. EXCLUDE commodity-price stories (gold, oil) entirely —
+  a gold or oil price move is NOT a liquidity story even if the article blames "rate-hike
+  fears"; only include a story whose CORE subject IS rates/funding (a yield move, a Fed action,
+  a credit event), not a commodity whose price is merely reacting. Also deprioritize
+  single-stock punditry and pure equity/ETF moves.
 - AI: weight toward concrete capability releases (new models, major features, benchmarks),
   major funding rounds, and regulation/policy. Deprioritize think-pieces, op-eds, and
   speculation about the future.

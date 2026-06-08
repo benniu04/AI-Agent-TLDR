@@ -138,6 +138,9 @@ def _parse_feeds(feeds: dict, limit: int, keywords=None) -> list:
     keywords (optional): keep only entries whose title contains one of them (for AI).
     """
     entries = []
+    # Items dated more than a day in the future aren't news — they're event/webinar/whitepaper
+    # listings (e.g. Finextra) that would otherwise dodge the recency filter and sort to the top.
+    future_cutoff = time.time() + 86400
     for source, url in feeds.items():
         try:
             resp = requests.get(url, timeout=HTTP_TIMEOUT, headers={"User-Agent": _UA})
@@ -152,12 +155,15 @@ def _parse_feeds(feeds: dict, limit: int, keywords=None) -> list:
             if keywords and not any(k in title.lower() for k in keywords):
                 continue
             pp = e.get("published_parsed") or e.get("updated_parsed")
+            ts = calendar.timegm(pp) if pp else 0  # epoch UTC, for recency
+            if ts and ts > future_cutoff:
+                continue  # future-dated listing (webinar/event), not news — skip
             entries.append({
                 "title": title,
                 "url": link,
                 "source": source,
                 "published": e.get("published", e.get("updated", "")),
-                "ts": calendar.timegm(pp) if pp else 0,  # epoch UTC, for recency
+                "ts": ts,
             })
     # newest first, dedupe by URL
     entries.sort(key=lambda x: x["ts"], reverse=True)
