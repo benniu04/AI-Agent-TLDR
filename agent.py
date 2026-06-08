@@ -85,6 +85,28 @@ class AgentResult:
         self.log_path = log_path
 
 
+def _apply_cache_breakpoint(messages: list) -> None:
+    """Keep ONE rolling prompt-cache breakpoint on the most recent user message we built.
+
+    Combined with the breakpoint on system+tools, this caches the whole conversation prefix up
+    to the latest user turn — so re-sent web_search/feed history is billed as cheap cache reads
+    (~10%) instead of full input on every turn. Only touches dict content blocks we construct;
+    SDK assistant blocks are left untouched. Stays at 2 breakpoints total (under the 4 limit).
+    """
+    for m in messages:  # clear any previous rolling breakpoint
+        content = m.get("content")
+        if isinstance(content, list):
+            for blk in content:
+                if isinstance(blk, dict):
+                    blk.pop("cache_control", None)
+    for m in reversed(messages):  # set it on the latest user message with markable content
+        if m.get("role") == "user":
+            content = m.get("content")
+            if isinstance(content, list) and content and isinstance(content[-1], dict):
+                content[-1]["cache_control"] = {"type": "ephemeral"}
+            break
+
+
 def _final_text(content) -> str:
     return "\n".join(b.text for b in content if getattr(b, "type", None) == "text").strip()
 
@@ -155,7 +177,11 @@ def run_agent(
         with open(log_path, "a", encoding="utf-8") as fh:
             fh.write(json.dumps(event) + "\n")
 
-    messages = [{"role": "user", "content": goal}]
+    # Goal in block form so it can carry a cache_control breakpoint (see _apply_cache_breakpoint).
+    messages = [{"role": "user", "content": [{"type": "text", "text": goal}]}]
+    # Cache the static prefix (tools + system) — identical every call, so it's read from cache
+    # after the first turn instead of re-sent at full price.
+    cached_system = [{"type": "text", "text": system, "cache_control": {"type": "ephemeral"}}]
     started = time.monotonic()
     total_tokens = 0
     stop = "max_iterations"
@@ -179,12 +205,13 @@ def run_agent(
             stop = "budget"
             break
 
+        _apply_cache_breakpoint(messages)  # roll the conversation cache breakpoint forward
         resp = _create_with_retry(
             client,
             log,
             model=config.MODEL,
             max_tokens=config.MAX_TOKENS_PER_CALL,
-            system=system,
+            system=cached_system,
             tools=tools,
             messages=messages,
         )
@@ -194,7 +221,9 @@ def run_agent(
         server_searches = getattr(getattr(usage, "server_tool_use", None), "web_search_requests", None)
         log({"event": "step", "i": i, "stop_reason": resp.stop_reason,
              "content": [_block_to_jsonable(b) for b in resp.content],
-             "cumulative_tokens": total_tokens, "server_searches": server_searches})
+             "cumulative_tokens": total_tokens, "server_searches": server_searches,
+             "cache_read": getattr(usage, "cache_read_input_tokens", None),
+             "cache_creation": getattr(usage, "cache_creation_input_tokens", None)})
 
         messages.append({"role": "assistant", "content": resp.content})
         _collect_result_urls(resp.content, seen_urls)  # grow the provenance allowlist
