@@ -12,10 +12,8 @@ import pytest
 from formatting import (
     canonical_url,
     delivered_count,
-    format_sms,
     format_telegram,
     parse_agent_json,
-    to_ascii,
     _headline_matches_url,
     _is_banned,
     _is_index_only,
@@ -225,31 +223,6 @@ def test_null_items_and_sections_do_not_crash():
         _section("Tech", [_item("Real story", "https://verge.com/real-story")]),
     ]}
     assert delivered_count(mixed) == 1
-
-
-# --------------------------------------------------------------------------- ASCII / GSM-7 sanitization
-
-@pytest.mark.parametrize("raw, expected", [
-    ("em—dash", "em-dash"),
-    ("“curly”", '"curly"'),
-    ("it’s", "it's"),
-    ("ellipsis…", "ellipsis..."),
-    ("café", "cafe"),
-])
-def test_to_ascii_maps_punctuation_and_strips_accents(raw, expected):
-    assert to_ascii(raw) == expected
-
-
-def test_to_ascii_strips_emoji():
-    assert to_ascii("Finance \U0001F4B0 update") == "Finance  update"
-
-
-def test_sms_output_is_pure_ascii():
-    data = {"date": "Fri, Jun 5", "sections": [_section("Finance", [
-        _item("Café chain — record “quarter”", "https://reuters.com/cafe-quarter"),
-    ])]}
-    out = format_sms(data)
-    out.encode("ascii")  # raises UnicodeEncodeError if any non-ASCII slipped through
 
 
 # --------------------------------------------------------------------------- Telegram formatting

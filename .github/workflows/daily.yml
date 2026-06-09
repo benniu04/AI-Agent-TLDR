@@ -48,17 +48,11 @@ jobs:
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           MODEL: ${{ vars.MODEL || 'claude-haiku-4-5' }}
-          DELIVERY: ${{ vars.DELIVERY || 'telegram' }}
           TIMEZONE: ${{ vars.TIMEZONE || 'America/New_York' }}
           # Finance news APIs (get_finance_news)
           FINNHUB_API_KEY: ${{ secrets.FINNHUB_API_KEY }}
           ALPHAVANTAGE_API_KEY: ${{ secrets.ALPHAVANTAGE_API_KEY }}
-          # Twilio (DELIVERY=sms)
-          TWILIO_ACCOUNT_SID: ${{ secrets.TWILIO_ACCOUNT_SID }}
-          TWILIO_AUTH_TOKEN: ${{ secrets.TWILIO_AUTH_TOKEN }}
-          TWILIO_FROM_NUMBER: ${{ secrets.TWILIO_FROM_NUMBER }}
-          SMS_RECIPIENTS: ${{ secrets.SMS_RECIPIENTS }}
-          # Telegram (DELIVERY=telegram)
+          # Telegram delivery
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: python run.py

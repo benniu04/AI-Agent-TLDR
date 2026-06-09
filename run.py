@@ -1,12 +1,10 @@
-"""Entrypoint: build the goal, run the agent, format, and deliver.
+"""Entrypoint: build the goal, run the agent, format, and deliver to Telegram.
 
 Order matters: deliver only AFTER the agent has fully finished. The send is the harness's
-job, not the agent's. The agent returns JSON; we format it for the chosen channel.
+job, not the agent's. The agent returns JSON; we format it as a Telegram message.
 
 Flags:
   --dry-run   run the agent and print the formatted output, but do NOT deliver.
-
-Channel is set by the DELIVERY env var: "sms" (Twilio) or "telegram".
 """
 
 import sys
@@ -17,8 +15,7 @@ import config
 import memory
 from agent import run_agent
 from deliver import send_telegram
-from deliver_sms import send_sms
-from formatting import delivered_count, delivered_items, format_sms, format_telegram, parse_agent_json
+from formatting import delivered_count, delivered_items, format_telegram, parse_agent_json
 from prompts import SYSTEM, build_goal
 
 
@@ -64,12 +61,7 @@ def main() -> int:
     cutoff = now.timestamp() - config.MAX_STORY_AGE_DAYS * 86400
     stale = {u for u, ts in result.url_ts.items() if ts and ts < cutoff}
 
-    if config.DELIVERY == "telegram":
-        message = format_telegram(data, cap, allowed, stale, repeats)
-        sender = send_telegram
-    else:  # default: sms
-        message = format_sms(data, cap, allowed, stale, repeats)
-        sender = send_sms
+    message = format_telegram(data, cap, allowed, stale, repeats)
 
     # Report how many items the filters dropped (banned/mismatch/provenance/dup/stale/repeat).
     submitted = sum(len(s.get("items") or []) for s in data.get("sections") or [])
@@ -80,17 +72,17 @@ def main() -> int:
           f"{submitted - delivered} dropped | {len(allowed)} URLs seen, "
           f"{len(stale)} stale (>{config.MAX_STORY_AGE_DAYS}d), "
           f"{repeats_hit} repeats (memory: {len(repeats)} URLs) ---")
-    print(f"\n--- formatted for {config.DELIVERY} ({len(message)} chars) ---\n{message}")
+    print(f"\n--- formatted for telegram ({len(message)} chars) ---\n{message}")
 
     if result.stop in ("max_iterations", "unknown"):
         print(f"\nWARNING: agent stopped on '{result.stop}'; delivering anyway.", file=sys.stderr)
 
     if dry_run:
-        print(f"\n(--dry-run: skipping {config.DELIVERY} send and memory update)")
+        print("\n(--dry-run: skipping Telegram send and memory update)")
         return 0
 
-    sender(message)
-    print(f"\nDelivered via {config.DELIVERY}.")
+    send_telegram(message)
+    print("\nDelivered via Telegram.")
 
     # Record what we delivered so future runs don't repeat it (only after a real send).
     shown = delivered_items(data, cap, allowed, stale, repeats)

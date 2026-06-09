@@ -1,42 +1,17 @@
-"""Turn the agent's final JSON into deliverable text.
+"""Turn the agent's final JSON into a deliverable Telegram message.
 
-The agent returns a JSON object (date + sections of {headline, url}). We:
-  - parse it defensively (tolerating stray ```json fences or surrounding prose),
-  - format it for SMS (plain ASCII, so it stays in cheap 160-char GSM-7 segments),
-  - or format it for Telegram (Markdown with tappable links).
-
-Why ASCII matters for SMS: a single non-GSM-7 character (emoji, “smart quotes”, an
-em–dash, •) forces the WHOLE message into UCS-2, which bills at 70 chars/segment instead
-of 160 — roughly doubling cost. So the SMS formatter hard-sanitizes to ASCII.
+The agent returns a JSON object (date + sections of {headline, url}). We parse it
+defensively (tolerating stray ```json fences or surrounding prose) and format it as a
+clean Telegram HTML message with tappable links.
 """
 
 import html
 import json
 import re
-import unicodedata
 
 # Per-section emoji for the Telegram digest header.
 _SECTION_EMOJI = {"finance": "💰", "money movement": "💸", "liquidity": "🌊",
                   "ai": "🤖", "tech": "💻", "technology": "💻"}
-
-# Common non-GSM punctuation -> ASCII equivalents (applied before stripping the rest).
-_REPLACEMENTS = {
-    "—": "-", "–": "-",            # em / en dash
-    "‘": "'", "’": "'",            # curly single quotes
-    "“": '"', "”": '"',            # curly double quotes
-    "…": "...", "•": "-",          # ellipsis, bullet
-    "·": "-", "→": "->", "€": "EUR",
-    " ": " ",                            # non-breaking space
-}
-
-
-def to_ascii(text: str) -> str:
-    """Best-effort GSM-7-safe ASCII: map known punctuation, drop everything else."""
-    for bad, good in _REPLACEMENTS.items():
-        text = text.replace(bad, good)
-    # Decompose accents (café -> cafe), then drop any remaining non-ASCII (emoji, etc.).
-    text = unicodedata.normalize("NFKD", text).encode("ascii", "ignore").decode("ascii")
-    return text
 
 
 def parse_agent_json(text: str) -> dict:
@@ -207,20 +182,6 @@ def delivered_count(data: dict, max_per_section: int = 5, allowed_urls=None, sta
     """How many items survive the filter chain — for reporting dropped counts."""
     return sum(len(items) for _, items in
                _iter_sections(data, max_per_section, allowed_urls, stale_urls, repeat_urls))
-
-
-def format_sms(data: dict, max_per_section: int = 5, allowed_urls=None, stale_urls=None,
-               repeat_urls=None) -> str:
-    """Plain-ASCII headlines + links, grouped by section. Glanceable, tappable."""
-    date = to_ascii(str(data.get("date", ""))).strip()
-    lines = [f"TLDR {date}".strip()]
-    for name, items in _iter_sections(data, max_per_section, allowed_urls, stale_urls, repeat_urls):
-        lines.append("")
-        lines.append(to_ascii(name).upper())
-        for it in items:
-            lines.append(f"- {to_ascii(it['headline']).strip()}")
-            lines.append(f"  {it['url'].strip()}")  # URLs are already ASCII
-    return "\n".join(lines)
 
 
 def format_telegram(data: dict, max_per_section: int = 5, allowed_urls=None, stale_urls=None,

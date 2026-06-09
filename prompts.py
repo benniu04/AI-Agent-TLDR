@@ -4,7 +4,7 @@ This is where agent quality lives — expect to iterate on this far more than th
 SYSTEM is the standing editorial policy; build_goal() is the per-run task.
 
 The agent's FINAL output is a single JSON object (headlines + links, no prose
-summaries) so the harness can format it precisely for SMS or Telegram.
+summaries) so the harness can format it precisely for Telegram.
 """
 
 SYSTEM = """\
