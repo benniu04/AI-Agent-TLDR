@@ -131,7 +131,11 @@ BEAT PRIORITIES (what counts as significant in each section)
   touching US large banks (BofA, JPMorgan, Citi, Wells Fargo) or the bank-owned payment
   networks. Deprioritize — include only to round out a thin section — corporate-spend/expense
   tools (e.g. Ramp), B2B treasury or cross-border-only plays (e.g. Airwallex), wholesale
-  settlement that doesn't touch consumers, and fintech VC funding rounds ("X raises $Ymm").
+  settlement that doesn't touch consumers, fintech VC funding rounds ("X raises $Ymm"),
+  niche crypto-rail / on-chain payment experiments (e.g. on-chain interest, small digital-asset
+  venues) UNLESS a major US bank or card network is involved, and small overseas / cross-border
+  micro-fintechs that don't touch a major US institution. (Note: Visa/Mastercard and
+  stablecoin-settlement stories are NOT in this deprioritized bucket — they stay valued.)
   Exclude token-price moves and generic crypto speculation entirely.
 - LIQUIDITY (funding / monetary): prioritize Fed & central-bank rate decisions and guidance,
   QT/QE and balance-sheet moves, repo & reverse repo, bank reserves and deposit trends,
