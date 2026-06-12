@@ -1,5 +1,107 @@
 [
   {
+    "url": "https://finance.yahoo.com/markets/article/spacex-set-for-market-debut-following-largest-ipo-ever-101955363.html",
+    "headline": "SpaceX (SPCX) begins trading on Nasdaq in record $75B IPO debut",
+    "date": "2026-06-12",
+    "ts": 1781266828.025555
+  },
+  {
+    "url": "https://www.cnbc.com/2026/06/11/oracle-shares-tumble-on-earnings-but-theres-a-silver-lining-for-our-ai-chip-and-power-stocks.html",
+    "headline": "Oracle shares tumble on earnings despite AI chip and power tailwinds",
+    "date": "2026-06-12",
+    "ts": 1781266828.025555
+  },
+  {
+    "url": "https://www.paymentsdive.com/news/fta-sues-to-block-tennessee-law/822641/",
+    "headline": "FTA sues Tennessee over $10-per-transfer cross-border remittance tax, citing Commerce Clause",
+    "date": "2026-06-12",
+    "ts": 1781266828.025555
+  },
+  {
+    "url": "https://www.pymnts.com/digital-payments/2026/square-financial-services-launches-high-yield-savings-to-draw-seller-deposits/",
+    "headline": "Square Financial Services launches high-yield savings to draw seller deposits",
+    "date": "2026-06-12",
+    "ts": 1781266828.025555
+  },
+  {
+    "url": "https://www.finextra.com/newsarticle/47908/spacex-ipo-uk-retail-investors-boost-account-funding-by-27-truelayer-data-shows",
+    "headline": "SpaceX IPO frenzy drives UK retail investors to boost account funding by 27%",
+    "date": "2026-06-12",
+    "ts": 1781266828.025555
+  },
+  {
+    "url": "https://www.finextra.com/newsarticle/47909/barclays-to-acquire-gohenry-expand-youth-financial-education-offering-in-uk",
+    "headline": "Barclays acquires GoHenry to build lifetime youth banking relationships in UK",
+    "date": "2026-06-12",
+    "ts": 1781266828.025555
+  },
+  {
+    "url": "https://www.theblock.co/post/404439/community-bank-group-ad-campaign-targeting-clarity-act-stablecoin-reward-language",
+    "headline": "Community bank group launches ad campaign targeting GENIUS Act stablecoin reward language",
+    "date": "2026-06-12",
+    "ts": 1781266828.025555
+  },
+  {
+    "url": "https://www.wsj.com/finance/investing/jgb-futures-fall-tracking-declines-in-u-s-treasury-market-c4408466",
+    "headline": "Treasury yields and dollar fall as Trump calls off Iran strikes",
+    "date": "2026-06-12",
+    "ts": 1781266828.025555
+  },
+  {
+    "url": "https://nationalmortgageprofessional.com/news/high-income-borrowers-pull-back-credit-demand-softens-transunion",
+    "headline": "High-income borrowers pull back as credit demand softens: TransUnion",
+    "date": "2026-06-12",
+    "ts": 1781266828.025555
+  },
+  {
+    "url": "https://www.theverge.com/ai-artificial-intelligence/948280/anthropic-claude-fable-invisible-distillation-guardrail",
+    "headline": "Anthropic apologizes for invisible Claude Fable 5 guardrails, will make distillation blocks visible",
+    "date": "2026-06-12",
+    "ts": 1781266828.025555
+  },
+  {
+    "url": "https://techcrunch.com/2026/06/11/jeff-bezoss-prometheus-raises-12b-to-build-an-artificial-general-engineer-for-the-physical-world/",
+    "headline": "Jeff Bezos's Prometheus raises $12B to build an artificial general engineer for the physical world",
+    "date": "2026-06-12",
+    "ts": 1781266828.025555
+  },
+  {
+    "url": "https://venturebeat.com/orchestration/microsofts-open-source-skillopt-automatically-upgrades-ai-agent-skills-without-touching-model-weights",
+    "headline": "Microsoft open-sources SkillOpt to auto-upgrade AI agent skills without touching model weights",
+    "date": "2026-06-12",
+    "ts": 1781266828.025555
+  },
+  {
+    "url": "https://techcrunch.com/2026/06/12/us-spy-law-to-expire-for-first-time-after-lawmakers-reject-trumps-controversial-pick-to-lead-spy-agencies/",
+    "headline": "US surveillance law (FISA) to expire for first time after lawmakers reject Trump's spy chief pick",
+    "date": "2026-06-12",
+    "ts": 1781266828.025555
+  },
+  {
+    "url": "https://brew.sh/2026/06/11/homebrew-6.0.0/",
+    "headline": "Homebrew 6.0.0 released",
+    "date": "2026-06-12",
+    "ts": 1781266828.025555
+  },
+  {
+    "url": "https://www.phoronix.com/news/macOS-27-Beta-Breaks-Asahi",
+    "headline": "macOS 27 Beta breaks ability to boot Asahi Linux",
+    "date": "2026-06-12",
+    "ts": 1781266828.025555
+  },
+  {
+    "url": "https://arstechnica.com/tech-policy/2026/06/verizon-sent-man-a-refurbished-phone-with-mdm-then-deleted-his-data-remotely/",
+    "headline": "Verizon sent man a refurbished phone with MDM installed, then deleted his data remotely",
+    "date": "2026-06-12",
+    "ts": 1781266828.025555
+  },
+  {
+    "url": "https://techcrunch.com/2026/06/11/bluesky-launches-group-chats-as-company-shifts-focus-to-community-features/",
+    "headline": "Bluesky launches group chats as company shifts focus to community features",
+    "date": "2026-06-12",
+    "ts": 1781266828.025555
+  },
+  {
     "url": "https://www.cnbc.com/2026/06/11/spacex-ipo-wont-break-the-bull-market-but-investors-are-worried-about-what-comes-next.html",
     "headline": "SpaceX prices tonight at $135/share ahead of record $75B Nasdaq debut tomorrow",
     "date": "2026-06-11",
