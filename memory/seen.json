@@ -1,5 +1,119 @@
 [
   {
+    "url": "https://www.cnbc.com/2026/06/17/carmax-kmx-q1-earnings.html",
+    "headline": "CarMax shares fall after used-car retailer reports earnings beat; CEO details turnaround plan",
+    "date": "2026-06-18",
+    "ts": 1781785227.049253
+  },
+  {
+    "url": "https://www.cnbc.com/2026/06/18/here-are-the-odds-of-spacex-becoming-the-worlds-most-valuable-company.html",
+    "headline": "Here are the odds of SpaceX becoming the world's most valuable company",
+    "date": "2026-06-18",
+    "ts": 1781785227.049253
+  },
+  {
+    "url": "https://www.theblock.co/post/405190/tether-winds-down-ausdt?utm_source=rss&utm_medium=rss",
+    "headline": "Tether winds down aUSDT stablecoin and Alloy platform to sharpen focus",
+    "date": "2026-06-18",
+    "ts": 1781785227.049253
+  },
+  {
+    "url": "https://www.finextra.com/newsarticle/47953/hong-kong-pilots-wholesale-application-of-cbdc-in-a-live-market-environment?utm_medium=rssfinextra&utm_source=finextrafeed",
+    "headline": "Hong Kong pilots wholesale CBDC application in a live market environment",
+    "date": "2026-06-18",
+    "ts": 1781785227.049253
+  },
+  {
+    "url": "https://www.theblock.co/post/405197/bitcoin-rodney-pleads-guilty-in-1-8-billion-crypto-fraud-case?utm_source=rss&utm_medium=rss",
+    "headline": "'Bitcoin Rodney' pleads guilty in $1.8 billion crypto fraud case",
+    "date": "2026-06-18",
+    "ts": 1781785227.049253
+  },
+  {
+    "url": "https://www.theblock.co/post/405205/stablecoin-compliance-startup-range-fintech-crypto-vcs-series-a?utm_source=rss&utm_medium=rss",
+    "headline": "Stablecoin compliance startup Range raises $8.3M from fintech and crypto VCs",
+    "date": "2026-06-18",
+    "ts": 1781785227.049253
+  },
+  {
+    "url": "https://www.theblock.co/post/405207/aztec-investigates-2-million-exploit-of-deprecated-payments-product?utm_source=rss&utm_medium=rss",
+    "headline": "Aztec investigates $2 million exploit of deprecated payments product",
+    "date": "2026-06-18",
+    "ts": 1781785227.049253
+  },
+  {
+    "url": "https://www.wsj.com/finance/currencies/asian-currencies-consolidate-may-be-weighed-by-fed-rate-hike-expectations-50220365?mod=rss_markets_main",
+    "headline": "Short-end US Treasury yields and dollar rise after Fed hints at rate hikes",
+    "date": "2026-06-18",
+    "ts": 1781785227.049253
+  },
+  {
+    "url": "https://www.morningstar.com/economy/warshs-tenure-starts-with-fed-seen-laying-groundwork-rate-hike",
+    "headline": "Warsh's tenure starts with Fed seen laying groundwork for a rate hike",
+    "date": "2026-06-18",
+    "ts": 1781785227.049253
+  },
+  {
+    "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260617b.htm",
+    "headline": "Fed releases FOMC economic projections from June 16-17 meeting",
+    "date": "2026-06-18",
+    "ts": 1781785227.049253
+  },
+  {
+    "url": "https://www.theverge.com/ai-artificial-intelligence/952011/midjourney-medical-ai-ultrasound-scan",
+    "headline": "Midjourney goes from generating cat images to full-body ultrasound scans",
+    "date": "2026-06-18",
+    "ts": 1781785227.049253
+  },
+  {
+    "url": "https://www.cnbc.com/2026/06/18/yann-lecun-elon-musk-xai-failure-ai-labs-bubble-risk.html",
+    "headline": "Yann LeCun blasts Musk's xAI as 'failure,' warns AI labs risk a 'big bubble explosion'",
+    "date": "2026-06-18",
+    "ts": 1781785227.049253
+  },
+  {
+    "url": "https://www.reuters.com/world/china/us-holds-off-blacklisting-chinas-deepseek-more-than-100-firms-deemed-security-2026-06-17/",
+    "headline": "US holds off blacklisting DeepSeek, flags more than 100 firms as security risks",
+    "date": "2026-06-18",
+    "ts": 1781785227.049253
+  },
+  {
+    "url": "https://techcrunch.com/2026/06/17/world-model-maker-odyssey-nabs-1-45b-valuation-backed-by-amazon-and-other-big-names/",
+    "headline": "World model maker Odyssey nabs $1.45B valuation backed by Amazon",
+    "date": "2026-06-18",
+    "ts": 1781785227.049253
+  },
+  {
+    "url": "https://venturebeat.com/technology/anthropic-ships-major-claude-design-overhaul-with-design-system-imports-code-round-trips-and-a-fix-for-its-token-burning-problem",
+    "headline": "Anthropic ships major Claude Design overhaul with code round-trips and token-burn fix",
+    "date": "2026-06-18",
+    "ts": 1781785227.049253
+  },
+  {
+    "url": "https://techcrunch.com/2026/06/18/waymo-recalls-nearly-4000-robotaxis-to-stop-them-driving-into-highway-construction-zones/",
+    "headline": "Waymo recalls nearly 4,000 robotaxis to stop them driving into highway construction zones",
+    "date": "2026-06-18",
+    "ts": 1781785227.049253
+  },
+  {
+    "url": "https://www.tomshardware.com/pc-components/cpus/amd-silently-removes-memory-encryption-from-consumer-ryzen-cpus-leaving-users-unaware-that-they-may-be-vulnerable-security-feature-vanishes-after-newer-agesa-firmware-amd-engineers-go-radio-silent-when-pressed-about-the-change",
+    "headline": "AMD silently removes memory encryption from consumer Ryzen CPUs, leaving users vulnerable",
+    "date": "2026-06-18",
+    "ts": 1781785227.049253
+  },
+  {
+    "url": "https://arstechnica.com/security/2026/06/massive-breach-spills-credentials-for-thousands-of-sensitive-networks/",
+    "headline": "Massive breach spills credentials for thousands of sensitive networks",
+    "date": "2026-06-18",
+    "ts": 1781785227.049253
+  },
+  {
+    "url": "https://arstechnica.com/tech-policy/2026/06/california-says-att-lied-to-fcc-in-attempt-to-shut-off-old-phone-network/",
+    "headline": "California says AT&T lied to FCC in attempt to shut off old phone network",
+    "date": "2026-06-18",
+    "ts": 1781785227.049253
+  },
+  {
     "url": "https://finance.yahoo.com/markets/article/spacex-closes-in-on-amazon-in-sprint-toward-3-trillion-164918333.html",
     "headline": "SpaceX hits $2.6T valuation, surpasses Amazon after options trading ignites surge",
     "date": "2026-06-17",
@@ -484,191 +598,5 @@
     "headline": "Bluesky launches group chats as company shifts focus to community features",
     "date": "2026-06-12",
     "ts": 1781266828.025555
-  },
-  {
-    "url": "https://www.cnbc.com/2026/06/11/spacex-ipo-wont-break-the-bull-market-but-investors-are-worried-about-what-comes-next.html",
-    "headline": "SpaceX prices tonight at $135/share ahead of record $75B Nasdaq debut tomorrow",
-    "date": "2026-06-11",
-    "ts": 1781180422.326526
-  },
-  {
-    "url": "https://www.theblock.co/post/404288/mastercard-agent-pay-machines-support-autonomous-ai-transactions-stablecoins",
-    "headline": "Mastercard unveils Agent Pay to support autonomous AI transactions and stablecoins",
-    "date": "2026-06-11",
-    "ts": 1781180422.326526
-  },
-  {
-    "url": "https://www.theblock.co/post/404376/visa-stablecoins-reshaping-back-end-of-commerce",
-    "headline": "Visa says stablecoins are reshaping the back end of commerce as it expands tokenization",
-    "date": "2026-06-11",
-    "ts": 1781180422.326526
-  },
-  {
-    "url": "https://www.finextra.com/pressarticle/110114/archax-enables-real-time-interest-payments-on-hedera",
-    "headline": "Archax enables real-time interest payments on Hedera blockchain",
-    "date": "2026-06-11",
-    "ts": 1781180422.326526
-  },
-  {
-    "url": "https://www.finextra.com/pressarticle/110113/bamboo-and-centiglobe-to-simplify-cross-border-payments-to-and-from-latin-america",
-    "headline": "Bamboo and Centiglobe partner to simplify cross-border payments to/from Latin America",
-    "date": "2026-06-11",
-    "ts": 1781180422.326526
-  },
-  {
-    "url": "https://www.cnbc.com/2026/06/11/treasury-yields-flat-as-investors-monitor-inflation-data-us-strikes-in-iran.html",
-    "headline": "Treasury yields hold steady as investors monitor Iran strikes and inflation data",
-    "date": "2026-06-11",
-    "ts": 1781180422.326526
-  },
-  {
-    "url": "https://techcrunch.com/2026/06/10/fresh-off-bond-sale-amazon-borrows-17-5-billion-from-banks-as-ai-spending-continues/",
-    "headline": "Amazon borrows $17.5B from banks fresh off bond sale to fund AI spending",
-    "date": "2026-06-11",
-    "ts": 1781180422.326526
-  },
-  {
-    "url": "https://techcrunch.com/2026/06/11/anthropic-taps-tcs-to-scale-its-enterprise-ai-deployments/",
-    "headline": "Anthropic taps Tata Consultancy Services to scale enterprise AI deployments",
-    "date": "2026-06-11",
-    "ts": 1781180422.326526
-  },
-  {
-    "url": "https://techcrunch.com/2026/06/10/xai-fired-an-engineer-who-raised-alarms-about-grok-safety-new-lawsuit-claims/",
-    "headline": "xAI fired engineer who raised Grok safety alarms, new lawsuit claims",
-    "date": "2026-06-11",
-    "ts": 1781180422.326526
-  },
-  {
-    "url": "https://venturebeat.com/technology/surprise-upset-gpt-5-5-beats-claude-fable-5-on-brutal-new-agents-last-exam-benchmark",
-    "headline": "GPT-5.5 beats Claude Fable 5 on brutal new Agents Last Exam benchmark",
-    "date": "2026-06-11",
-    "ts": 1781180422.326526
-  },
-  {
-    "url": "https://venturebeat.com/technology/researchers-say-they-trained-a-foundation-model-from-scratch-for-about-1-500",
-    "headline": "Researchers say they trained a foundation model from scratch for about $1,500",
-    "date": "2026-06-11",
-    "ts": 1781180422.326526
-  },
-  {
-    "url": "https://techcrunch.com/2026/06/10/warner-music-acquires-ai-attribution-startup-sureel-ai/",
-    "headline": "Warner Music acquires AI attribution startup Sureel AI",
-    "date": "2026-06-11",
-    "ts": 1781180422.326526
-  },
-  {
-    "url": "https://techcrunch.com/2026/06/10/cybercriminals-claim-breach-of-oracle-peoplesoft-servers-at-100-plus-organizations/",
-    "headline": "Cybercriminals claim breach of Oracle PeopleSoft servers at 100-plus organizations",
-    "date": "2026-06-11",
-    "ts": 1781180422.326526
-  },
-  {
-    "url": "https://techcrunch.com/2026/06/10/north-koreans-behind-nearly-half-of-us-tech-industry-hacks-says-crowdstrike/",
-    "headline": "North Koreans behind nearly half of US tech industry hacks, CrowdStrike says",
-    "date": "2026-06-11",
-    "ts": 1781180422.326526
-  },
-  {
-    "url": "https://www.theverge.com/games/948142/microsoft-xbox-layoffs-reset-asha-sharma",
-    "headline": "Xbox warns of a reset as it prepares for layoffs",
-    "date": "2026-06-11",
-    "ts": 1781180422.326526
-  },
-  {
-    "url": "https://www.theverge.com/streaming/948256/youtube-brings-back-private-messaging-feature-availability",
-    "headline": "YouTube is reintroducing private direct messages",
-    "date": "2026-06-11",
-    "ts": 1781180422.326526
-  },
-  {
-    "url": "https://www.cnbc.com/2026/06/09/another-jump-in-boeing-deliveries-shows-why-we-got-into-the-stock-and-want-to-stay-in.html",
-    "headline": "Boeing deliveries jump again, reinforcing the bull case for the stock",
-    "date": "2026-06-10",
-    "ts": 1781094029.269637
-  },
-  {
-    "url": "https://www.theblock.co/post/404223/new-york-regulator-proposes-stablecoin-rule-to-align-with-federal-genius-act-adds-reserve-limits",
-    "headline": "NY DFS proposes stablecoin rule to align with federal GENIUS Act, adds reserve limits",
-    "date": "2026-06-10",
-    "ts": 1781094029.269637
-  },
-  {
-    "url": "https://www.theblock.co/post/404212/japans-three-megabanks-stablecoin-march-2027",
-    "headline": "Japan's three megabanks to debut live stablecoin transactions by March 2027",
-    "date": "2026-06-10",
-    "ts": 1781094029.269637
-  },
-  {
-    "url": "https://www.pymnts.com/bank-regulation/2026/revoluts-rapid-product-approvals-caught-eye-of-eu-regulators/",
-    "headline": "Revolut's rapid product approvals caught the eye of EU regulators",
-    "date": "2026-06-10",
-    "ts": 1781094029.269637
-  },
-  {
-    "url": "https://www.pymnts.com/news/investment-tracker/2026/ant-group-looks-to-raise-1-billion-for-international-growth/",
-    "headline": "Ant Group looks to raise $1B to fund international payments expansion",
-    "date": "2026-06-10",
-    "ts": 1781094029.269637
-  },
-  {
-    "url": "https://www.investing.com/news/forex-news/morgan-stanley-sees-us-dollar-weakening-as-fed-holds-rates-93CH-4733811",
-    "headline": "Morgan Stanley sees US dollar weakening as Fed holds rates steady",
-    "date": "2026-06-10",
-    "ts": 1781094029.269637
-  },
-  {
-    "url": "https://www.anthropic.com/news/claude-fable-5-mythos-5",
-    "headline": "Anthropic Claude Fable 5 now publicly available; Mythos 5 opens to vetted Glasswing partners",
-    "date": "2026-06-10",
-    "ts": 1781094029.269637
-  },
-  {
-    "url": "https://techcrunch.com/2026/06/10/meta-signs-first-ai-data-center-deal-in-india-with-reliance/",
-    "headline": "Meta signs first AI data center deal in India with Reliance",
-    "date": "2026-06-10",
-    "ts": 1781094029.269637
-  },
-  {
-    "url": "https://techcrunch.com/2026/06/09/google-just-fired-a-warning-shot-in-the-ai-subscription-price-wars/",
-    "headline": "Google fires warning shot in the AI subscription price wars",
-    "date": "2026-06-10",
-    "ts": 1781094029.269637
-  },
-  {
-    "url": "https://techcrunch.com/2026/06/09/lovable-says-it-has-hit-500m-in-annualized-revenue-with-1-million-new-projects-a-week/",
-    "headline": "Lovable hits $500M annualized revenue with 1 million new AI projects per week",
-    "date": "2026-06-10",
-    "ts": 1781094029.269637
-  },
-  {
-    "url": "https://www.theverge.com/tech/947516/meta-whatsapp-eu-third-party-ai-chatbot-ban-order",
-    "headline": "EU orders WhatsApp to host rival AI assistants on its platform for free",
-    "date": "2026-06-10",
-    "ts": 1781094029.269637
-  },
-  {
-    "url": "https://the-decoder.com/landmark-german-ruling-declares-googles-ai-overviews-are-googles-own-words-and-makes-it-liable-for-false-answers/",
-    "headline": "German court rules Google liable for false answers in AI Overviews",
-    "date": "2026-06-10",
-    "ts": 1781094029.269637
-  },
-  {
-    "url": "https://www.theverge.com/news/947537/microsoft-xbox-console-hardware-price-changes-ramageddon",
-    "headline": "Xbox exploring radically different console business models amid hardware price pressures",
-    "date": "2026-06-10",
-    "ts": 1781094029.269637
-  },
-  {
-    "url": "https://arstechnica.com/security/2026/06/locked-in-heated-rivalry-with-researcher-microsoft-fixes-0-day-they-disclosed/",
-    "headline": "Microsoft patches Windows 0-day after heated public dispute with discovering researcher",
-    "date": "2026-06-10",
-    "ts": 1781094029.269637
-  },
-  {
-    "url": "https://arstechnica.com/tech-policy/2026/06/starlink-takes-page-from-cable-firms-with-10-monthly-rental-fee-for-hardware/",
-    "headline": "Starlink charges $10 monthly hardware rental fee, moving away from one-time purchases",
-    "date": "2026-06-10",
-    "ts": 1781094029.269637
   }
 ]
