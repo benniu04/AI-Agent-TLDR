@@ -1,13 +1,13 @@
 # Daily TLDR Agent
 
 An autonomous agent that assembles a glanceable daily finance/markets/tech news briefing and
-delivers it to your phone via **Telegram** every weekday morning. Built as a **true agent** —
-the model decides which tools to call and when it's done — with a **hand-written tool-use loop**
+delivers it to your phone via **Telegram** every weekday morning. Built as a **true agent**, 
+the model decides which tools to call and when it's done, with a **hand-written tool-use loop**
 (Anthropic Messages API), not an off-the-shelf framework. The goal was to understand agent
 mechanics end-to-end and wrap them in the deterministic guardrails a real product needs: link
 integrity, recency, repeat-suppression, cost control, and observability.
 
-The digest is **headlines only** — no summaries. You skim five sections in a few seconds and
+The digest is **headlines only** and no summaries. You skim five sections in a few seconds and
 tap a link only if a story is worth your time.
 
 ```
