@@ -1,5 +1,101 @@
 [
   {
+    "url": "https://www.npr.org/2026/06/21/g-s1-129222/us-iran-deal-lebanon-israel-strait-hormuz-jd-vance",
+    "headline": "US-Iran Switzerland talks conclude with 60-day roadmap to final deal",
+    "date": "2026-06-22",
+    "ts": 1782130830.538234
+  },
+  {
+    "url": "https://www.theblock.co/post/405545/bank-of-england-drops-proposed-individual-holding-caps-for-sterling-stablecoins-sets-40-billion-issuance-guardrail",
+    "headline": "Bank of England drops sterling stablecoin holding caps, sets £40B issuance guardrail",
+    "date": "2026-06-22",
+    "ts": 1782130830.538234
+  },
+  {
+    "url": "https://www.theblock.co/post/405477/altura-winds-down-stablecoin-vault",
+    "headline": "Altura winds down stablecoin vault after unprecedented surge in withdrawal requests",
+    "date": "2026-06-22",
+    "ts": 1782130830.538234
+  },
+  {
+    "url": "https://www.finextra.com/pressarticle/110204/volume-secures-fca-authorisation",
+    "headline": "Volume secures FCA authorisation for UK payments operations",
+    "date": "2026-06-22",
+    "ts": 1782130830.538234
+  },
+  {
+    "url": "https://www.theblock.co/post/405468/fentanyl-linked-chinese-network-tied-to-crypto-fraud-from-japan-involving-fake-zksync-jp-token-nikkei",
+    "headline": "Fentanyl-linked Chinese network tied to fake ZKSync.jp crypto fraud scheme in Japan",
+    "date": "2026-06-22",
+    "ts": 1782130830.538234
+  },
+  {
+    "url": "https://investinglive.com/news/bofa-now-expects-fed-to-hike-interest-rates-three-times-this-year-20260622/",
+    "headline": "BofA now expects Fed to hike rates three times this year, no cuts until 2028",
+    "date": "2026-06-22",
+    "ts": 1782130830.538234
+  },
+  {
+    "url": "https://www.wsj.com/finance/investing/jgb-yields-higher-amid-middle-east-uncertainty-ca344a8a",
+    "headline": "Gilt yields fall after UK Labour's Streeting endorses Burnham for party leadership",
+    "date": "2026-06-22",
+    "ts": 1782130830.538234
+  },
+  {
+    "url": "https://www.marketwatch.com/story/a-major-test-is-coming-for-the-stock-market-and-morgan-stanley-warns-the-fed-wont-rescue-investors-2ae93faa",
+    "headline": "Morgan Stanley warns Fed won't rescue investors as major test looms for equities",
+    "date": "2026-06-22",
+    "ts": 1782130830.538234
+  },
+  {
+    "url": "https://finance.yahoo.com/economy/policy/articles/barclays-warns-hawkish-central-banks-153500332.html",
+    "headline": "Barclays warns hawkish central banks could challenge equity market momentum",
+    "date": "2026-06-22",
+    "ts": 1782130830.538234
+  },
+  {
+    "url": "https://techcrunch.com/2026/06/20/nobel-laureate-john-jumper-is-leaving-deepmind-for-rival-anthropic/",
+    "headline": "Nobel laureate John Jumper leaves DeepMind to join rival Anthropic",
+    "date": "2026-06-22",
+    "ts": 1782130830.538234
+  },
+  {
+    "url": "https://sakana.ai/fugu/",
+    "headline": "Sakana AI releases Fugu open-source reasoning model",
+    "date": "2026-06-22",
+    "ts": 1782130830.538234
+  },
+  {
+    "url": "https://techcrunch.com/2026/06/21/beyond-siri-here-are-the-practical-ai-features-coming-to-your-iphone-in-ios-27/",
+    "headline": "iOS 27 preview: practical on-device AI features set to go beyond Siri",
+    "date": "2026-06-22",
+    "ts": 1782130830.538234
+  },
+  {
+    "url": "https://docs.deno.com/runtime/desktop/",
+    "headline": "Deno Desktop launches, bringing the JS/TS runtime to a native app experience",
+    "date": "2026-06-22",
+    "ts": 1782130830.538234
+  },
+  {
+    "url": "https://www.theverge.com/ai-artificial-intelligence/950844/vibe-coding-security-risks-apps",
+    "headline": "Vibe-coded apps carry serious security risks developers are ignoring",
+    "date": "2026-06-22",
+    "ts": 1782130830.538234
+  },
+  {
+    "url": "https://www.theverge.com/tech/953285/polymarket-fake-viral-video-bets",
+    "headline": "Polymarket reportedly paid creators to post deceptive videos of fake bets",
+    "date": "2026-06-22",
+    "ts": 1782130830.538234
+  },
+  {
+    "url": "https://techcrunch.com/2026/06/21/ubisoft-co-founder-claude-guillemot-dies-in-plane-crash/",
+    "headline": "Ubisoft co-founder Claude Guillemot killed in plane crash",
+    "date": "2026-06-22",
+    "ts": 1782130830.538234
+  },
+  {
     "url": "https://www.cnbc.com/2026/06/19/us-iran-talks-switzerland-canceled-interim-deal-markets.html",
     "headline": "US-Iran accord hits snag after Swiss follow-up talks cancelled",
     "date": "2026-06-19",
