@@ -1,5 +1,101 @@
 [
   {
+    "url": "https://www.aol.com/articles/cerebras-set-report-first-earnings-221256000.html",
+    "headline": "Cerebras (CBRS) reports first earnings as public company after close, options imply 13% swing",
+    "date": "2026-06-23",
+    "ts": 1782228331.525199
+  },
+  {
+    "url": "https://www.proactiveinvestors.com/companies/news/1094288/cerebras-gets-set-for-inaugural-earnings-with-upside-potential-wedbush-says-1094288.html",
+    "headline": "Wedbush sees upside potential as Cerebras enters inaugural earnings with execution as key test",
+    "date": "2026-06-23",
+    "ts": 1782228331.525199
+  },
+  {
+    "url": "https://www.paymentsdive.com/news/nachas-fraud-rules-land/823378/",
+    "headline": "Nacha's ACH fraud rules take effect, tightening account validation requirements",
+    "date": "2026-06-23",
+    "ts": 1782228331.525199
+  },
+  {
+    "url": "https://www.paymentsdive.com/news/visa-mastercard-fend-off-fee-foes/823395/",
+    "headline": "Visa and Mastercard fend off interchange fee challengers in court",
+    "date": "2026-06-23",
+    "ts": 1782228331.525199
+  },
+  {
+    "url": "https://www.digitaltransactions.net/a-startup-works-with-visa-to-offer-real-time-payouts-cross-border/",
+    "headline": "Startup partners with Visa to offer real-time cross-border payouts",
+    "date": "2026-06-23",
+    "ts": 1782228331.525199
+  },
+  {
+    "url": "https://www.pymnts.com/news/artificial-intelligence/2026/sofi-ventures-into-ai-investing-with-composer-acquisition/",
+    "headline": "SoFi ventures into AI investing with Composer acquisition",
+    "date": "2026-06-23",
+    "ts": 1782228331.525199
+  },
+  {
+    "url": "https://www.finextra.com/blogposting/32082/why-banks-cannot-leave-stablecoin-acceptance-to-others",
+    "headline": "Why banks cannot afford to leave stablecoin acceptance to others",
+    "date": "2026-06-23",
+    "ts": 1782228331.525199
+  },
+  {
+    "url": "https://www.investing.com/news/stock-market-news/morgan-stanley-says-warsh-fed-is-a-credibility-boost-but-liquidity-risks-loom-4751882",
+    "headline": "Morgan Stanley: Warsh Fed is a credibility boost, but liquidity risks loom",
+    "date": "2026-06-23",
+    "ts": 1782228331.525199
+  },
+  {
+    "url": "https://mistral.ai/news/ocr-4/",
+    "headline": "Mistral releases OCR 4, its most capable document-parsing model yet",
+    "date": "2026-06-23",
+    "ts": 1782228331.525199
+  },
+  {
+    "url": "https://techcrunch.com/2026/06/22/spacex-inks-compute-deal-with-reflection-ai-an-open-source-ai-lab/",
+    "headline": "SpaceX inks compute deal with Reflection AI, an open-source AI lab",
+    "date": "2026-06-23",
+    "ts": 1782228331.525199
+  },
+  {
+    "url": "https://status.claude.com/incidents/jbhf20wjmzrf",
+    "headline": "Claude experiences elevated error rates across multiple models",
+    "date": "2026-06-23",
+    "ts": 1782228331.525199
+  },
+  {
+    "url": "https://techcrunch.com/2026/06/23/password-manager-maker-lastpass-says-hackers-stole-customer-support-case-data-during-klue-breach/",
+    "headline": "LastPass says hackers stole customer support data in Klue breach",
+    "date": "2026-06-23",
+    "ts": 1782228331.525199
+  },
+  {
+    "url": "https://techcrunch.com/2026/06/23/meta-debuts-new-cheaper-smart-glasses-under-its-own-brand/",
+    "headline": "Meta debuts cheaper smart glasses under its own brand, dropping Ray-Ban",
+    "date": "2026-06-23",
+    "ts": 1782228331.525199
+  },
+  {
+    "url": "https://www.theverge.com/games/952634/valve-intel-nvidia-steamos-gpus-linux",
+    "headline": "Valve confirms SteamOS expansion to Intel and Nvidia GPUs beyond Steam Deck",
+    "date": "2026-06-23",
+    "ts": 1782228331.525199
+  },
+  {
+    "url": "https://techcrunch.com/2026/06/22/tesla-pushes-back-on-autopilot-narrative-after-fatal-texas-crash/",
+    "headline": "Tesla pushes back on Autopilot narrative after fatal Texas crash",
+    "date": "2026-06-23",
+    "ts": 1782228331.525199
+  },
+  {
+    "url": "https://arstechnica.com/space/2026/06/with-starfall-spacex-eyes-an-edge-in-global-cargo-delivery-from-orbit/",
+    "headline": "SpaceX's Starfall aims to deliver cargo anywhere on Earth from orbit",
+    "date": "2026-06-23",
+    "ts": 1782228331.525199
+  },
+  {
     "url": "https://www.usnews.com/news/world/articles/2026-06-23/us-waives-iran-sanctions-trump-says-he-will-do-what-i-have-to-if-tehran-misbehaves",
     "headline": "US waives Iran oil sanctions for 60 days as Vance hails peace progress",
     "date": "2026-06-23",
