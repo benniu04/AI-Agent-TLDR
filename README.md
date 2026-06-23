@@ -154,7 +154,7 @@ pytest -q
 `workflow_dispatch` (keys from repo **secrets**, model/timezone from repo **variables**) and:
 
 - **Scheduling is external** — an off-platform scheduler (e.g. [cron-job.org](https://cron-job.org))
-  calls the `workflow_dispatch` API at **8:20 AM ET on weekdays**. GitHub's native `schedule:`
+  calls the `workflow_dispatch` API at **9:00 AM ET on weekdays**. GitHub's native `schedule:`
   cron was removed because it fired 1–2 hours late (best-effort scheduler); an external trigger
   is on time and timezone-aware (no DST drift).
 - **Cross-run memory persists** — after a successful run a step commits the updated

@@ -2,7 +2,7 @@ name: Daily TLDR
 
 on:
   # Scheduling is handled EXTERNALLY by cron-job.org, which calls the workflow_dispatch API
-  # at 8:20 AM ET on weekdays. GitHub's native `schedule:` cron was removed because it ran
+  # at 9:00 AM ET on weekdays. GitHub's native `schedule:` cron was removed because it ran
   # 1-2 hours late (best-effort scheduler) — too late for a pre-commute read. cron-job.org
   # fires the dispatch within seconds and is timezone-aware (no DST drift).
   workflow_dispatch:  # external trigger (cron-job.org) + manual runs from the Actions tab
