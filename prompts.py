@@ -156,9 +156,10 @@ BEAT PRIORITIES (what counts as significant in each section)
   conditions, and Fed/Treasury actions. EXCLUDE commodity-price stories (gold, oil) entirely —
   a gold or oil price move is NOT a liquidity story even if the article blames "rate-hike
   fears"; only include a story whose CORE subject IS rates/funding (a yield move, a Fed action,
-  a credit event), not a commodity whose price is merely reacting. Also deprioritize
-  single-stock punditry and pure equity/ETF moves. FILL this section with all genuinely relevant
-  items up to the cap (aim for 4-5 on a normal day), favoring today's / this-week's developments.
+  a credit event), not a commodity whose price is merely reacting. Also EXCLUDE single-stock
+  punditry, pure equity/ETF moves, and crypto/token-price stories (e.g. Bitcoin/ETF price moves)
+  — even when framed around the Fed. FILL this section with every genuinely relevant item up to
+  the cap (commonly 5-8 when supply allows), favoring today's / this-week's developments.
 - AI: weight toward concrete capability releases (new models, major features, benchmarks),
   major funding rounds, and regulation/policy. Deprioritize think-pieces, op-eds, and
   speculation about the future.

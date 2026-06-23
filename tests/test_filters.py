@@ -255,6 +255,12 @@ def test_section_cap_override_raises_money_movement_ceiling():
     assert delivered_count(data, 5, section_caps={"money movement": 8}) == 8  # override lifts it
 
 
+def test_section_cap_override_raises_liquidity_ceiling():
+    data = {"sections": [_section("Liquidity", _EIGHT_DISTINCT)]}
+    assert delivered_count(data, 5) == 5
+    assert delivered_count(data, 5, section_caps={"liquidity": 8}) == 8
+
+
 def test_section_cap_override_does_not_affect_other_sections():
     # An MM override must not raise the ceiling for other sections.
     data = {"sections": [_section("Tech", _EIGHT_DISTINCT)]}

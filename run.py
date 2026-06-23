@@ -56,8 +56,9 @@ def main() -> int:
     data["date"] = now.strftime("%a, %b %-d")
 
     cap = config.MAX_HEADLINES_PER_SECTION
-    # Per-section cap overrides (Money Movement gets a higher ceiling — the priority beat).
-    section_caps = {"money movement": config.MAX_HEADLINES_MONEY_MOVEMENT}
+    # Per-section cap overrides (the priority finance beats get higher ceilings).
+    section_caps = {"money movement": config.MAX_HEADLINES_MONEY_MOVEMENT,
+                    "liquidity": config.MAX_HEADLINES_LIQUIDITY}
     allowed = result.seen_urls  # provenance allowlist (fail-open if empty)
     # Deterministic recency backstop: URLs whose known publish time is older than the cutoff.
     cutoff = now.timestamp() - config.MAX_STORY_AGE_DAYS * 86400
