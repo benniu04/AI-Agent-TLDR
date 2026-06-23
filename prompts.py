@@ -127,8 +127,11 @@ BEAT PRIORITIES (what counts as significant in each section)
   moves (Visa, Mastercard), stablecoin-as-payment & settlement, account-to-account transfers,
   cross-border/remittances.
   RELEVANCE LENS — rank by usefulness to someone on Bank of America's Zelle / consumer-payments
-  team. Money Movement should be SHORT and high-signal: if only 2-3 items qualify, deliver 2-3;
-  do NOT pad to 5. Use these tiers:
+  team. FILL this section with current, relevant news: include EVERY genuinely relevant item up
+  to the cap (aim for 4-5 on a normal news day), and favor today's / this-week's developments —
+  current events, not evergreen explainers or older roundups. Never pad with the EXCLUDE buckets
+  below, but do NOT hold back relevant US-payments/funding stories just to keep it short. Use
+  these tiers:
   * STRONGLY PREFER: US P2P (Zelle, Venmo, Cash App), instant-payment rails (FedNow, RTP), card
     networks (Visa, Mastercard) and their fee/network/regulation moves, payments fraud & scams
     (esp. US/elder fraud, scam-reimbursement), US payments & stablecoin regulation (e.g. GENIUS
@@ -153,7 +156,8 @@ BEAT PRIORITIES (what counts as significant in each section)
   a gold or oil price move is NOT a liquidity story even if the article blames "rate-hike
   fears"; only include a story whose CORE subject IS rates/funding (a yield move, a Fed action,
   a credit event), not a commodity whose price is merely reacting. Also deprioritize
-  single-stock punditry and pure equity/ETF moves.
+  single-stock punditry and pure equity/ETF moves. FILL this section with all genuinely relevant
+  items up to the cap (aim for 4-5 on a normal day), favoring today's / this-week's developments.
 - AI: weight toward concrete capability releases (new models, major features, benchmarks),
   major funding rounds, and regulation/policy. Deprioritize think-pieces, op-eds, and
   speculation about the future.

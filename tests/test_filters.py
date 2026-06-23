@@ -178,13 +178,45 @@ def test_exact_duplicate_url_is_dropped():
     assert delivered_count(data) == 1
 
 
-def test_topic_dedup_collapses_same_event_across_sections():
-    # Same Fed event submitted in two sections (different URLs) -> kept once total.
+def test_topic_dedup_collapses_same_event_across_global_sections():
+    # Same event in two GLOBAL-dedup sections (Finance + AI), different URLs -> kept once total.
+    data = {"sections": [
+        _section("Finance", [_item("Federal Reserve holds interest rates steady",
+                                   "https://wsj.com/fed-holds-rates")]),
+        _section("AI", [_item("Federal Reserve interest rates unchanged at meeting",
+                              "https://reuters.com/fed-rates-decision")]),
+    ]}
+    assert delivered_count(data) == 1
+
+
+def test_per_section_sections_are_exempt_from_global_topic_dedup():
+    # MM & Liquidity dedup WITHIN-section only, so a topically-similar Finance item no longer
+    # suppresses them. Same Fed event in Finance + Liquidity -> BOTH kept (2).
     data = {"sections": [
         _section("Finance", [_item("Federal Reserve holds interest rates steady",
                                    "https://wsj.com/fed-holds-rates")]),
         _section("Liquidity", [_item("Federal Reserve interest rates unchanged at meeting",
                                      "https://reuters.com/fed-rates-decision")]),
+    ]}
+    assert delivered_count(data) == 2
+
+
+def test_within_section_topic_dedup_still_applies_for_per_section():
+    # Two same-topic items WITHIN Money Movement still collapse to one.
+    data = {"sections": [_section("Money Movement", [
+        _item("Zelle rolls out new fraud protection for users",
+              "https://finextra.com/zelle-fraud-protection"),
+        _item("Zelle adds fraud protection in new user rollout",
+              "https://pymnts.com/zelle-fraud-rollout"),
+    ])]}
+    assert delivered_count(data) == 1
+
+
+def test_exact_url_dedup_is_global_even_for_per_section():
+    # The literal same URL must not appear in two sections, even MM/Liquidity (global URL dedup).
+    data = {"sections": [
+        _section("Money Movement", [_item("Visa launches instant payout", "https://visa.com/instant")]),
+        _section("Liquidity", [_item("Visa instant payout details", "https://visa.com/instant")]),
     ]}
     assert delivered_count(data) == 1
 

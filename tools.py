@@ -226,7 +226,7 @@ def get_payments_news(limit: int = 20) -> str:
     items = _parse_feeds(_PAYMENTS_FEEDS, limit) + \
         _parse_feeds(_PAYMENTS_FILTERED_FEEDS, limit, _PAYMENTS_KEYWORDS)
     # Cap per source so high-volume Finextra doesn't crowd out Payments Dive / Banking Dive / etc.
-    out = _cap_per_source(_dedupe_by_url(items), per_source=4, total=limit)
+    out = _cap_per_source(_dedupe_by_url(items), per_source=6, total=limit)
     return json.dumps(out)
 
 
@@ -252,7 +252,7 @@ def get_liquidity_news(limit: int = 20) -> str:
     # re-applying is harmless.)
     items = [it for it in items if _text_matches(it, _LIQUIDITY_KEYWORDS)]
     # Cap per source so any one outlet can't bury WSJ / Banking Dive / Fed.
-    out = _cap_per_source(_dedupe_by_url(items), per_source=4, total=limit)
+    out = _cap_per_source(_dedupe_by_url(items), per_source=6, total=limit)
     return json.dumps(out)
 
 

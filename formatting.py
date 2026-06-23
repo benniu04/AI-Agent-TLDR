@@ -134,10 +134,15 @@ def _iter_sections(data: dict, max_per_section: int, allowed_urls=None, stale_ur
     the recency cutoff. `repeat_urls`, when truthy, is the set of canonical URLs we already
     delivered on a previous run (cross-run memory). All fail open: a falsy set skips its check.
     """
-    seen_urls = set()      # exact-URL dedup
-    kept_topics = []       # topic-word sets of kept items (cross-section), for topic dedup
+    seen_urls = set()       # exact-URL dedup (global — no literal repeat anywhere)
+    global_topics = []      # shared topic-dedup for the finance-trio guard (Finance/AI/Tech)
+    # MM & Liquidity dedup WITHIN-section only: they're emitted after Finance and were getting
+    # starved when a Finance item shared >=2 finance buzzwords. Per-section means they're not
+    # checked against (nor added to) the global set, so they keep their own distinct stories.
+    per_section_dedup = {"money movement", "liquidity"}
     for section in data.get("sections") or []:  # `or []` tolerates a null sections value
         name = section.get("name", "").strip()
+        kept_topics = [] if name.lower() in per_section_dedup else global_topics
         items = []
         for it in section.get("items") or []:   # `or []` tolerates a null items value
             headline, url = it.get("headline"), it.get("url")
