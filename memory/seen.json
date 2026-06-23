@@ -1,5 +1,113 @@
 [
   {
+    "url": "https://www.usnews.com/news/world/articles/2026-06-23/us-waives-iran-sanctions-trump-says-he-will-do-what-i-have-to-if-tehran-misbehaves",
+    "headline": "US waives Iran oil sanctions for 60 days as Vance hails peace progress",
+    "date": "2026-06-23",
+    "ts": 1782217231.989407
+  },
+  {
+    "url": "https://www.bloomberg.com/news/articles/2026-06-22/spacex-shares-poised-to-slide-again-as-us-market-reopens",
+    "headline": "SpaceX falls 23% in three days, erases $600B after first-ever bond plan",
+    "date": "2026-06-23",
+    "ts": 1782217231.989407
+  },
+  {
+    "url": "https://www.cnbc.com/2026/06/22/keir-starmer-resigns-uk-prime-minister.html",
+    "headline": "UK PM Starmer resigns, clearing path for Andy Burnham as next leader",
+    "date": "2026-06-23",
+    "ts": 1782217231.989407
+  },
+  {
+    "url": "https://www.cnbc.com/2026/06/22/apple-is-a-notable-outlier-in-mondays-drubbing-of-mega-cap-tech-stocks-.html",
+    "headline": "Apple bucks megacap rout as Alphabet, Amazon, Meta drop 2–5%",
+    "date": "2026-06-23",
+    "ts": 1782217231.989407
+  },
+  {
+    "url": "https://www.pymnts.com/consumer-finance/2026/subprime-revolvers-fall-12-points-as-borrowers-shift-how-they-pay/",
+    "headline": "Subprime revolvers fall 12 points as borrowers shift how they pay",
+    "date": "2026-06-23",
+    "ts": 1782217231.989407
+  },
+  {
+    "url": "https://www.pymnts.com/news/acquiring/2026/backbase-acquires-kasisto-to-promote-agentic-banking/",
+    "headline": "Backbase acquires Kasisto to advance agentic banking capabilities",
+    "date": "2026-06-23",
+    "ts": 1782217231.989407
+  },
+  {
+    "url": "https://www.pymnts.com/legal/2026/fintechs-face-a-tougher-road-on-cross-border-deals/",
+    "headline": "Fintechs face tougher road on cross-border deals amid regulatory headwinds",
+    "date": "2026-06-23",
+    "ts": 1782217231.989407
+  },
+  {
+    "url": "https://www.pymnts.com/news/payments-innovation/2026/payment-processors-cant-win-on-uptime-alone-anymore/",
+    "headline": "Payment processors can't win on uptime alone anymore",
+    "date": "2026-06-23",
+    "ts": 1782217231.989407
+  },
+  {
+    "url": "https://www.wsj.com/finance/jgb-futures-fall-tracking-declines-in-u-s-treasury-market-fe9eb621?mod=rss_markets_main",
+    "headline": "US Treasury yields decline on easing rate-hike expectations",
+    "date": "2026-06-23",
+    "ts": 1782217231.989407
+  },
+  {
+    "url": "https://siliconangle.com/2026/06/22/openai-expands-daybreak-patch-planet-full-gpt-5-5-cyber-release/",
+    "headline": "OpenAI expands Daybreak with GPT-5.5-Cyber and Patch the Planet open-source initiative",
+    "date": "2026-06-23",
+    "ts": 1782217231.989407
+  },
+  {
+    "url": "https://techcrunch.com/2026/06/22/ai-chipmaker-groq-confirms-650m-raise-re-staffs-after-nvidias-20b-not-acqui-hire-deal/",
+    "headline": "AI chipmaker Groq confirms $650M raise, re-staffs after Nvidia's $20B not-acqui-hire",
+    "date": "2026-06-23",
+    "ts": 1782217231.989407
+  },
+  {
+    "url": "https://techcrunch.com/2026/06/22/google-deepmind-bets-75m-on-ais-future-in-hollywood-with-a24-deal/",
+    "headline": "Google DeepMind bets $75M on AI's future in Hollywood via A24 deal",
+    "date": "2026-06-23",
+    "ts": 1782217231.989407
+  },
+  {
+    "url": "https://venturebeat.com/technology/alibabas-ai-video-model-rises-to-no-2-in-global-rankings-as-openais-sora-and-bytedances-seedance-fall-away",
+    "headline": "Alibaba AI video model rises to global No. 2 as OpenAI Sora and Seedance slip",
+    "date": "2026-06-23",
+    "ts": 1782217231.989407
+  },
+  {
+    "url": "https://unsloth.ai/docs/models/glm-5.2",
+    "headline": "GLM-5.2 open reasoning model draws developer interest on Hacker News",
+    "date": "2026-06-23",
+    "ts": 1782217231.989407
+  },
+  {
+    "url": "https://store.steampowered.com/news/group/45479024/view/685257114654870245",
+    "headline": "Valve's Steam Machine launches today to top of Hacker News",
+    "date": "2026-06-23",
+    "ts": 1782217231.989407
+  },
+  {
+    "url": "https://techcrunch.com/2026/06/22/tata-electronics-a-major-tech-supplier-to-apple-and-tesla-confirms-data-breach/",
+    "headline": "Tata Electronics, key Apple and Tesla supplier, confirms data breach",
+    "date": "2026-06-23",
+    "ts": 1782217231.989407
+  },
+  {
+    "url": "https://arstechnica.com/ai/2026/06/gm-installs-robots-at-flagship-ev-factory-after-laying-off-1300-workers/",
+    "headline": "GM installs robots at flagship EV factory after laying off 1,300 workers",
+    "date": "2026-06-23",
+    "ts": 1782217231.989407
+  },
+  {
+    "url": "https://techcrunch.com/2026/06/22/microsoft-and-chevron-plan-one-of-the-largest-gas-powered-data-center-projects-in-us/",
+    "headline": "Microsoft and Chevron plan one of the largest gas-powered data center projects in US",
+    "date": "2026-06-23",
+    "ts": 1782217231.989407
+  },
+  {
     "url": "https://www.npr.org/2026/06/21/g-s1-129222/us-iran-deal-lebanon-israel-strait-hormuz-jd-vance",
     "headline": "US-Iran Switzerland talks conclude with 60-day roadmap to final deal",
     "date": "2026-06-22",
@@ -472,245 +580,5 @@
     "headline": "Uber to bring premium robotaxi service to Houston in 2027",
     "date": "2026-06-17",
     "ts": 1781698828.531059
-  },
-  {
-    "url": "https://techcrunch.com/2026/06/16/spacex-to-acquire-cursor-for-60b-in-stock-days-after-blockbuster-ipo/",
-    "headline": "SpaceX acquires Cursor AI code editor for $60B in stock, days after IPO",
-    "date": "2026-06-16",
-    "ts": 1781612427.659078
-  },
-  {
-    "url": "https://techcrunch.com/2026/06/15/salesforce-acquires-ai-customer-service-platform-fin-for-3-6b/",
-    "headline": "Salesforce acquires AI customer service platform Fin for $3.6B",
-    "date": "2026-06-16",
-    "ts": 1781612427.659078
-  },
-  {
-    "url": "https://www.cnbc.com/2026/06/16/trump-g7-summit-iran-zelenskyy-macron.html",
-    "headline": "Trump at G7 denies US will put 'any money' into Iran post-deal",
-    "date": "2026-06-16",
-    "ts": 1781612427.659078
-  },
-  {
-    "url": "https://www.wsj.com/finance/investing/spacex-supplier-stmicroelectronics-plans-to-raise-1-5-billion-through-bond-sale-9d53ab08",
-    "headline": "SpaceX supplier STMicroelectronics plans $1.5B bond sale",
-    "date": "2026-06-16",
-    "ts": 1781612427.659078
-  },
-  {
-    "url": "https://www.pymnts.com/news/banking/2026/jpmorgan-eyes-major-expansion-of-chase-in-europe/",
-    "headline": "JPMorgan eyes major expansion of Chase into Europe",
-    "date": "2026-06-16",
-    "ts": 1781612427.659078
-  },
-  {
-    "url": "https://www.theblock.co/post/404872/india-files-charges-against-8-defendants-in-alleged-20-million-coinbase-spoofing-scam",
-    "headline": "India files charges against 8 in alleged $20M Coinbase spoofing scam",
-    "date": "2026-06-16",
-    "ts": 1781612427.659078
-  },
-  {
-    "url": "https://www.finextra.com/pressarticle/110150/swift-appoints-michael-manos-as-chief-information-officer",
-    "headline": "Swift appoints Michael Manos as chief information officer",
-    "date": "2026-06-16",
-    "ts": 1781612427.659078
-  },
-  {
-    "url": "https://www.theblock.co/post/404862/imf-nigeria-stablecoin-adoption-testing-limits-monetary-regulatory-frameworks",
-    "headline": "IMF says Nigeria's stablecoin adoption is 'testing the limits' of monetary frameworks",
-    "date": "2026-06-16",
-    "ts": 1781612427.659078
-  },
-  {
-    "url": "https://www.pymnts.com/news/payments-innovation/2026/tokenization-moves-from-security-tool-to-checkout-strategy/",
-    "headline": "Tokenization moves from security tool to checkout strategy",
-    "date": "2026-06-16",
-    "ts": 1781612427.659078
-  },
-  {
-    "url": "https://www.bloomberg.com/news/articles/2026-06-14/boj-set-to-hike-rates-to-highest-since-1995-despite-ueda-absence",
-    "headline": "BOJ hikes rate to 1%, highest since 1995, as Governor Ueda misses meeting",
-    "date": "2026-06-16",
-    "ts": 1781612427.659078
-  },
-  {
-    "url": "https://www.cnbc.com/2026/06/16/treasury-yields-investors-await-warsh-first-fed-meeting.html",
-    "headline": "Treasury yields edge lower as investors await Warsh's first press conference",
-    "date": "2026-06-16",
-    "ts": 1781612427.659078
-  },
-  {
-    "url": "https://sg.finance.yahoo.com/news/morgan-stanley-drops-stark-warning-090300849.html",
-    "headline": "Morgan Stanley drops stark warning about Warsh's Fed",
-    "date": "2026-06-16",
-    "ts": 1781612427.659078
-  },
-  {
-    "url": "https://arstechnica.com/ai/2026/06/chipmaker-nvidia-seeks-to-raise-over-25b-in-first-bond-deal-since-2021/",
-    "headline": "Nvidia seeks $25B+ bond deal, its first since 2021",
-    "date": "2026-06-16",
-    "ts": 1781612427.659078
-  },
-  {
-    "url": "https://techcrunch.com/2026/06/16/chatgpts-market-share-slips-below-50-for-first-time/",
-    "headline": "ChatGPT market share slips below 50% for first time as Gemini and Claude gain",
-    "date": "2026-06-16",
-    "ts": 1781612427.659078
-  },
-  {
-    "url": "https://techcrunch.com/2026/06/15/metas-new-ai-mode-on-facebook-pulls-from-public-info-across-its-platforms/",
-    "headline": "Meta launches AI Mode on Facebook, drawing from public posts across its platforms",
-    "date": "2026-06-16",
-    "ts": 1781612427.659078
-  },
-  {
-    "url": "https://techcrunch.com/2026/06/15/sarvam-becomes-indias-newest-ai-unicorn-with-234-million-funding-round-led-by-hcltech/",
-    "headline": "Sarvam becomes India's newest AI unicorn with $234M round led by HCLTech",
-    "date": "2026-06-16",
-    "ts": 1781612427.659078
-  },
-  {
-    "url": "https://techcrunch.com/2026/06/15/ai-agents-are-becoming-employees-newcore-emerges-with-66m-to-give-them-identities/",
-    "headline": "NewCore raises $66M to give AI agents employee-like identities",
-    "date": "2026-06-16",
-    "ts": 1781612427.659078
-  },
-  {
-    "url": "https://techcrunch.com/2026/06/16/india-temporarily-blocks-access-to-telegram-over-exam-fraud-concerns/",
-    "headline": "India orders temporary ban on Telegram over exam fraud concerns",
-    "date": "2026-06-16",
-    "ts": 1781612427.659078
-  },
-  {
-    "url": "https://techcrunch.com/2026/06/16/threads-adds-new-personalization-and-community-features-as-it-reaches-500m-monthly-users/",
-    "headline": "Threads hits 500M monthly users, rolls out personalization and community features",
-    "date": "2026-06-16",
-    "ts": 1781612427.659078
-  },
-  {
-    "url": "https://roman.pt/posts/linkedin-backdoor/",
-    "headline": "Backdoor found hidden inside a LinkedIn job offer",
-    "date": "2026-06-16",
-    "ts": 1781612427.659078
-  },
-  {
-    "url": "https://www.iroh.computer/blog/v1",
-    "headline": "Iroh 1.0 released: peer-to-peer networking library goes stable",
-    "date": "2026-06-16",
-    "ts": 1781612427.659078
-  },
-  {
-    "url": "https://www.theverge.com/games/950204/xbox-ninja-theory-shutdown-hellblade-senua",
-    "headline": "Xbox shuts down Ninja Theory, the studio behind Hellblade",
-    "date": "2026-06-16",
-    "ts": 1781612427.659078
-  },
-  {
-    "url": "https://variety.com/2026/tv/news/fox-acquiring-roku-1236781308/",
-    "headline": "Fox buys Roku in $22B cash-and-stock deal, creating third-largest US TV player",
-    "date": "2026-06-15",
-    "ts": 1781526034.468799
-  },
-  {
-    "url": "https://www.pymnts.com/news/ipo/2026/indian-payment-fintech-razorplay-planning-600-million-ipo/",
-    "headline": "Indian payments fintech Razorpay plans $600M IPO",
-    "date": "2026-06-15",
-    "ts": 1781526034.468799
-  },
-  {
-    "url": "https://www.cnbc.com/2026/06/14/charlie-javice-reportedly-seeking-a-pardon-from-trump-.html",
-    "headline": "Frank founder Charlie Javice reportedly seeking a presidential pardon from Trump",
-    "date": "2026-06-15",
-    "ts": 1781526034.468799
-  },
-  {
-    "url": "https://www.pymnts.com/news/artificial-intelligence/2026/ant-group-plans-agentic-focused-upgrade-of-alipay-super-app/",
-    "headline": "Ant Group plans agentic-focused upgrade of Alipay super app",
-    "date": "2026-06-15",
-    "ts": 1781526034.468799
-  },
-  {
-    "url": "https://www.pymnts.com/cybersecurity/fraud-prevention/2026/faster-payments-give-ar-teams-less-time-to-be-wrong/",
-    "headline": "Faster payments give accounts-receivable teams less time to be wrong on fraud",
-    "date": "2026-06-15",
-    "ts": 1781526034.468799
-  },
-  {
-    "url": "https://www.finextra.com/newsarticle/47913/rain-brings-integrated-loyalty-to-stablecoin-card-programmes",
-    "headline": "Rain brings integrated loyalty rewards to stablecoin card programmes",
-    "date": "2026-06-15",
-    "ts": 1781526034.468799
-  },
-  {
-    "url": "https://www.theblock.co/post/404697/trump-backed-world-liberty-financial-to-fund-ufc-fighter-bonuses-in-usd1-stablecoin-at-white-house-event",
-    "headline": "Trump-backed World Liberty Financial to pay UFC fighter bonuses in USD1 stablecoin at White House",
-    "date": "2026-06-15",
-    "ts": 1781526034.468799
-  },
-  {
-    "url": "https://www.cnbc.com/2026/06/15/treasury-yields-peace-deal-investor-fears-interest-rates.html",
-    "headline": "Treasury yields slide as Iran peace deal drives rethink on Fed rate hikes",
-    "date": "2026-06-15",
-    "ts": 1781526034.468799
-  },
-  {
-    "url": "https://www.aktiencheck.de/news/Artikel-Global_X_SuperDividend_ETF_Hawkish_Fed_Risk_Compounds_Conflicting_Technical_Signals_for_High_Yield_Play-19848907",
-    "headline": "Hawkish Fed risk compounds conflicting signals for high-yield credit plays",
-    "date": "2026-06-15",
-    "ts": 1781526034.468799
-  },
-  {
-    "url": "https://www.finextra.com/newsarticle/47918/anthropic-shutdown-shines-spotlight-on-eu-tech-sovereignty-push",
-    "headline": "Anthropic EU tech sovereignty debate intensifies after US forces model shutdown",
-    "date": "2026-06-15",
-    "ts": 1781526034.468799
-  },
-  {
-    "url": "https://techcrunch.com/2026/06/13/openai-faces-investigation-from-state-attorneys-general/",
-    "headline": "OpenAI hit with multi-state attorney general investigation, NY subpoena seeks broad data",
-    "date": "2026-06-15",
-    "ts": 1781526034.468799
-  },
-  {
-    "url": "https://techcrunch.com/2026/06/15/the-ai-layoff-wave-is-becoming-a-powder-keg/",
-    "headline": "The AI layoff wave is becoming a powder keg",
-    "date": "2026-06-15",
-    "ts": 1781526034.468799
-  },
-  {
-    "url": "https://techcrunch.com/2026/06/13/meta-reportedly-moves-to-unwind-2b-manus-deal-after-beijings-demand/",
-    "headline": "Meta moves to unwind $2B Manus deal after Beijing demands model transfer",
-    "date": "2026-06-15",
-    "ts": 1781526034.468799
-  },
-  {
-    "url": "https://www.theverge.com/policy/949679/uk-under-16-social-media-ban-announcement",
-    "headline": "UK government announces ban on social media for children under 16",
-    "date": "2026-06-15",
-    "ts": 1781526034.468799
-  },
-  {
-    "url": "https://techcrunch.com/2026/06/15/a-satellite-just-learned-to-find-things-on-its-own-heres-what-that-means/",
-    "headline": "A satellite just learned to find objects on its own — autonomous detection in orbit",
-    "date": "2026-06-15",
-    "ts": 1781526034.468799
-  },
-  {
-    "url": "https://daniel.haxx.se/blog/2026/06/15/curl-summer-of-bliss/",
-    "headline": "Curl will not accept vulnerability reports during July 2026",
-    "date": "2026-06-15",
-    "ts": 1781526034.468799
-  },
-  {
-    "url": "https://www.windowscentral.com/microsoft/windows-11/windows-11-users-are-tired-of-microsoft-account-requirements-and-workarounds",
-    "headline": "Windows 11 users revolt over Microsoft account requirements creeping into everything",
-    "date": "2026-06-15",
-    "ts": 1781526034.468799
-  },
-  {
-    "url": "https://www.theverge.com/tech/949648/fbi-fake-town-cyberattacks-kinetic-cyber-range",
-    "headline": "FBI built a fake small town to simulate and study real-world cyberattacks",
-    "date": "2026-06-15",
-    "ts": 1781526034.468799
   }
 ]
