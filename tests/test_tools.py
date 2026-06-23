@@ -22,10 +22,21 @@ def test_keyword_left_boundary_blocks_embedded_substrings():
 
 
 def test_keyword_preserves_inflections():
-    # left-boundary keeps prefixes: 'scam'->'scams', 'fed'->'Federal', 'deposit'->'deposits'
+    # left-boundary keeps prefixes for loose keywords: 'scam'->'scams', 'deposit'->'deposits'
     assert _matches("Zelle scams surge this quarter", ("scam",))
-    assert _matches("Federal Reserve holds rates", ("fed",))
     assert _matches("Bank deposits climb", ("deposit",))
+
+
+def test_whole_word_keywords_block_substrings():
+    # 'fed' is a whole-word keyword: matches 'Fed'/'Fed's' but NOT inside 'Federal'
+    assert _matches("The Fed holds rates steady", ("fed",))
+    assert _matches("The Fed's decision looms", ("fed",))         # possessive
+    assert not _matches("Navy Federal launches pilot", ("fed",))  # the reported false-positive
+    assert not _matches("Federal agencies meet", ("fed",))
+    # 'repo' whole-word: matches 'repo'/'repos' but not 'report'
+    assert _matches("Repo market stress builds", ("repo",))
+    assert _matches("Overnight repos surge", ("repos",))
+    assert not _matches("Company reports strong earnings", ("repo",))
 
 
 def test_keyword_multiword_and_hyphenated():

@@ -31,21 +31,37 @@ import requests
 import config
 
 
+# Short, ambiguous tokens that must match as WHOLE words. Without a right boundary "fed"
+# matches inside "Federal" (e.g. "Navy Federal"), "qt" inside "qty", "repo" inside "report".
+# Listing a keyword here adds a right word-boundary so it matches "Fed"/"Fed's"/"Fed-funds"
+# but not "Federal". Longer keywords stay suffix-matching so inflections work; that's why both
+# "repo" and "repos" are kept as keywords (the plural can't be reached by suffix once "repo"
+# is whole-word).
+_WHOLE_WORD_KEYWORDS = frozenset({"fed", "qt", "qe", "repo", "repos"})
+
+
 @functools.lru_cache(maxsize=None)
 def _keyword_re(keywords: tuple):
     """Compile a keyword set into a left-word-boundary, case-insensitive regex.
 
     Left boundary `(?<!\\w)` means a keyword matches at the start of a word but NOT mid-word:
-    "visa" matches "Visa"/"Visa's" but not "revisable"; "fed" still matches "Federal" and
-    "scam" still matches "scams" (inflections preserved). There is no right boundary (that's
-    what preserves inflections), and the left boundary only inspects the immediately preceding
-    char — so a keyword still matches at the start of a hyphen segment ("visa" in "re-visa-ble")
-    and can prefix-collide with an unrelated word ("scam" in "scampi"). Both are rare and
-    low-impact, since these only populate the candidate pool the agent/section-ownership rules
-    then filter.
+    "visa" matches "Visa"/"Visa's" but not "revisable"; "scam" still matches "scams"
+    (inflections preserved). Most keywords have NO right boundary (that's what preserves
+    inflections) — the left boundary only inspects the immediately preceding char, so a keyword
+    still matches at the start of a hyphen segment ("visa" in "re-visa-ble") and can
+    prefix-collide with an unrelated word ("scam" in "scampi"). Keywords in
+    _WHOLE_WORD_KEYWORDS additionally get a RIGHT boundary so short ambiguous tokens match as
+    whole words only ("fed" -> "Fed"/"Fed's" but not "Federal"). These only populate the
+    candidate pool the agent/section-ownership rules then filter.
     """
-    return re.compile(r"(?<!\w)(?:" + "|".join(re.escape(k) for k in keywords) + r")",
-                      re.IGNORECASE)
+    loose = [k for k in keywords if k not in _WHOLE_WORD_KEYWORDS]
+    strict = [k for k in keywords if k in _WHOLE_WORD_KEYWORDS]
+    parts = []
+    if loose:
+        parts.append(r"(?<!\w)(?:" + "|".join(re.escape(k) for k in loose) + r")")
+    if strict:
+        parts.append(r"(?<!\w)(?:" + "|".join(re.escape(k) for k in strict) + r")(?!\w)")
+    return re.compile("|".join(parts) or r"(?!x)x", re.IGNORECASE)
 
 HTTP_TIMEOUT = 12
 _UA = "Mozilla/5.0 (compatible; DailyTLDR/1.0)"  # some feeds reject the default UA
@@ -119,7 +135,7 @@ _LIQUIDITY_FEEDS = {
 }
 _LIQUIDITY_KEYWORDS = (
     "fed", "federal reserve", "rate", "rates", "treasury", "treasuries", "yield",
-    "yields", "repo", "reserve", "reserves", "liquidity", "deposit", "deposits",
+    "yields", "repo", "repos", "reserve", "reserves", "liquidity", "deposit", "deposits",
     "credit", "basel", "money market", "bond", "bonds", "central bank", "qt", "qe",
 )
 # Alpha Vantage NEWS_SENTIMENT topics for the Liquidity beat (monetary/funding slice).
