@@ -112,6 +112,8 @@ _PAYMENTS_KEYWORDS = (
 # the recency filter drops it when stale).
 _LIQUIDITY_FEEDS = {
     "WSJ Markets": "https://feeds.content.dowjones.io/public/rss/RSSMarketsMain",
+    "WSJ Economy": "https://feeds.content.dowjones.io/public/rss/socialeconomyfeed",
+    "CNBC Economy": "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=20910258",
     "Banking Dive": "https://www.bankingdive.com/feeds/news/",
     "Federal Reserve": "https://www.federalreserve.gov/feeds/press_monetary.xml",
 }
