@@ -49,6 +49,10 @@ def _keyword_re(keywords: tuple):
 
 HTTP_TIMEOUT = 12
 _UA = "Mozilla/5.0 (compatible; DailyTLDR/1.0)"  # some feeds reject the default UA
+# How many items to pull per feed-group BEFORE per-source balancing. Must be generous so a
+# high-volume feed (e.g. Finextra) can't crowd low-volume ones (Payments Dive, Digital
+# Transactions) out of the pool before _cap_per_source gets to balance by source.
+_FEED_POOL = 60
 
 
 # --- RSS sources ------------------------------------------------------------
@@ -69,20 +73,24 @@ _AI_KEYWORDS = (
     "model", "agentic", "agent", "transformer", "inference", "nvidia",
 )
 
-# Money Movement (payments / transaction banking). Payments has no dedicated finance-API
-# topic, so it's sourced RSS-first from payments outlets (taken unfiltered — they're already
-# payments-focused).
+# Money Movement (payments / transaction banking). Sourced RSS-first. These US-payments pubs
+# are taken UNFILTERED (already US-centric and payments-focused) — multiple of them so no single
+# outlet (e.g. PYMNTS) dominates.
 _PAYMENTS_FEEDS = {
-    "Finextra": "https://www.finextra.com/rss/headlines.aspx",
     "PYMNTS": "https://www.pymnts.com/feed/",
     "Payments Dive": "https://www.paymentsdive.com/feeds/news/",
+    "Digital Transactions": "https://www.digitaltransactions.net/feed/",
 }
-# Broad outlets that carry SOME payments news among other stories — keyword-filtered to keep
-# only payments-relevant items. The Block (crypto) -> settlement/stablecoin; Banking Dive
-# (general US banking) -> payments/rails stories, adding harder US-bank coverage.
+# Broad / global / crypto / regulator feeds — keyword-filtered to payments-relevant items so
+# their off-topic bulk doesn't crowd the pool. Finextra (global fintech) -> US/payments items;
+# The Block (crypto) -> settlement/stablecoin; Banking Dive (US banking) -> payments/rails;
+# CFPB (consumer-finance regulator) -> payments/fraud/scam enforcement (low-frequency but
+# high-signal for the Zelle beat; recency filter drops stale).
 _PAYMENTS_FILTERED_FEEDS = {
+    "Finextra": "https://www.finextra.com/rss/headlines.aspx",
     "The Block": "https://www.theblock.co/rss.xml",
     "Banking Dive": "https://www.bankingdive.com/feeds/news/",
+    "CFPB": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
 }
 _PAYMENTS_KEYWORDS = (
     "stablecoin", "stable coin", "usdc", "usdt", "payment", "payments", "settle",
@@ -219,13 +227,15 @@ def get_ai_news(limit: int = 20) -> str:
 def get_payments_news(limit: int = 20) -> str:
     """Money Movement: payments / transaction-banking headlines (RSS).
 
-    Payments outlets (Finextra, PYMNTS, Payments Dive) unfiltered, plus The Block and Banking
-    Dive keyword-filtered to payments-relevant stories. Merged + URL-deduped, newest first.
+    US-payments pubs (PYMNTS, Payments Dive, Digital Transactions) unfiltered, plus broad/
+    global/crypto/regulator feeds (Finextra, The Block, Banking Dive, CFPB) keyword-filtered to
+    payments-relevant items. Balanced per-source so no single outlet dominates.
     """
     limit = int(limit)
-    items = _parse_feeds(_PAYMENTS_FEEDS, limit) + \
-        _parse_feeds(_PAYMENTS_FILTERED_FEEDS, limit, _PAYMENTS_KEYWORDS)
-    # Cap per source so high-volume Finextra doesn't crowd out Payments Dive / Banking Dive / etc.
+    # Pull a generous pool per group, THEN balance by source — so low-volume US feeds aren't
+    # crowded out by a high-volume one before _cap_per_source runs.
+    items = _parse_feeds(_PAYMENTS_FEEDS, _FEED_POOL) + \
+        _parse_feeds(_PAYMENTS_FILTERED_FEEDS, _FEED_POOL, _PAYMENTS_KEYWORDS)
     out = _cap_per_source(_dedupe_by_url(items), per_source=6, total=limit)
     return json.dumps(out)
 
@@ -243,10 +253,10 @@ def get_liquidity_news(limit: int = 20) -> str:
     # is equity-recap heavy ("X stock trades down") and can't be topic-scoped to monetary news.
     if config.ALPHAVANTAGE_API_KEY:
         try:
-            items += _alphavantage_news(limit, _LIQUIDITY_AV_TOPICS)
+            items += _alphavantage_news(_FEED_POOL, _LIQUIDITY_AV_TOPICS)
         except Exception:
             pass  # API down/rate-limited — the RSS feeds below still supply the section
-    items += _parse_feeds(_LIQUIDITY_FEEDS, limit, _LIQUIDITY_KEYWORDS)
+    items += _parse_feeds(_LIQUIDITY_FEEDS, _FEED_POOL, _LIQUIDITY_KEYWORDS)
     # Alpha Vantage tags single-stock recaps as macro, so keyword-filter EVERYTHING here (not
     # just the RSS) to keep only genuinely funding/monetary headlines. (RSS is already filtered;
     # re-applying is harmless.)
