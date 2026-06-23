@@ -33,6 +33,9 @@ MODEL = os.environ.get("MODEL", "claude-sonnet-4-6")
 
 # How many headlines per section make it into the delivered briefing.
 MAX_HEADLINES_PER_SECTION = _int("MAX_HEADLINES_PER_SECTION", 5)
+# Money Movement gets a higher cap — it's the user's priority beat and we want it fuller when
+# supply allows. It's a ceiling, not a target (the brief still says don't pad with junk).
+MAX_HEADLINES_MONEY_MOVEMENT = _int("MAX_HEADLINES_MONEY_MOVEMENT", 8)
 # IANA timezone for the digest's date label (the model has no reliable clock, so we stamp
 # the date ourselves). Default Eastern to match the 9am-ET schedule.
 TIMEZONE = os.environ.get("TIMEZONE", "America/New_York")

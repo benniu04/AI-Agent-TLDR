@@ -56,16 +56,18 @@ def main() -> int:
     data["date"] = now.strftime("%a, %b %-d")
 
     cap = config.MAX_HEADLINES_PER_SECTION
+    # Per-section cap overrides (Money Movement gets a higher ceiling — the priority beat).
+    section_caps = {"money movement": config.MAX_HEADLINES_MONEY_MOVEMENT}
     allowed = result.seen_urls  # provenance allowlist (fail-open if empty)
     # Deterministic recency backstop: URLs whose known publish time is older than the cutoff.
     cutoff = now.timestamp() - config.MAX_STORY_AGE_DAYS * 86400
     stale = {u for u, ts in result.url_ts.items() if ts and ts < cutoff}
 
-    message = format_telegram(data, cap, allowed, stale, repeats)
+    message = format_telegram(data, cap, allowed, stale, repeats, section_caps)
 
     # Report how many items the filters dropped (banned/mismatch/provenance/dup/stale/repeat).
     submitted = sum(len(s.get("items") or []) for s in data.get("sections") or [])
-    delivered = delivered_count(data, cap, allowed, stale, repeats)
+    delivered = delivered_count(data, cap, allowed, stale, repeats, section_caps)
     repeats_hit = sum(1 for s in data.get("sections") or [] for it in s.get("items") or []
                       if it.get("url") and memory.canonical_url(it["url"]) in repeats)
     print(f"--- items: {submitted} submitted, {delivered} delivered, "
@@ -85,7 +87,7 @@ def main() -> int:
     print("\nDelivered via Telegram.")
 
     # Record what we delivered so future runs don't repeat it (only after a real send).
-    shown = delivered_items(data, cap, allowed, stale, repeats)
+    shown = delivered_items(data, cap, allowed, stale, repeats, section_caps)
     kept = memory.update(config.MEMORY_PATH, shown, now.strftime("%Y-%m-%d"),
                          now.timestamp(), config.MEMORY_KEEP_DAYS)
     print(f"Memory: recorded {len(shown)} delivered, {kept} total in "

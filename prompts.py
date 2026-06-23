@@ -127,8 +127,9 @@ BEAT PRIORITIES (what counts as significant in each section)
   moves (Visa, Mastercard), stablecoin-as-payment & settlement, account-to-account transfers,
   cross-border/remittances.
   RELEVANCE LENS — rank by usefulness to someone on Bank of America's Zelle / consumer-payments
-  team. FILL this section with current, relevant news: include EVERY genuinely relevant item up
-  to the cap (aim for 4-5 on a normal news day), and favor today's / this-week's developments —
+  team. FILL this section with current, relevant news — this is the priority beat, so go broad:
+  include EVERY genuinely relevant item up to the cap (commonly 5-8 when supply allows), and
+  favor today's / this-week's developments —
   current events, not evergreen explainers or older roundups. Never pad with the EXCLUDE buckets
   below, but do NOT hold back relevant US-payments/funding stories just to keep it short. Use
   these tiers:

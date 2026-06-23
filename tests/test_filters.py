@@ -237,6 +237,30 @@ def test_per_section_cap_is_enforced():
     assert delivered_count(data, 5) == 5
 
 
+_EIGHT_DISTINCT = [
+    _item("Apple unveils foldable laptop", "https://reuters.com/apple-foldable-laptop"),
+    _item("Tesla recalls pickup fleet", "https://reuters.com/tesla-pickup-recall"),
+    _item("Spotify expands podcast tools", "https://reuters.com/spotify-podcast-tools"),
+    _item("Nvidia announces gaming chip", "https://reuters.com/nvidia-gaming-chip"),
+    _item("Reddit redesigns mobile interface", "https://reuters.com/reddit-mobile-redesign"),
+    _item("Dropbox shutters legacy service", "https://reuters.com/dropbox-legacy-shutdown"),
+    _item("Figma rebuilds plugin engine", "https://reuters.com/figma-plugin-engine"),
+    _item("Stripe enters lending business", "https://reuters.com/stripe-lending-launch"),
+]
+
+
+def test_section_cap_override_raises_money_movement_ceiling():
+    data = {"sections": [_section("Money Movement", _EIGHT_DISTINCT)]}
+    assert delivered_count(data, 5) == 5  # default cap still applies without override
+    assert delivered_count(data, 5, section_caps={"money movement": 8}) == 8  # override lifts it
+
+
+def test_section_cap_override_does_not_affect_other_sections():
+    # An MM override must not raise the ceiling for other sections.
+    data = {"sections": [_section("Tech", _EIGHT_DISTINCT)]}
+    assert delivered_count(data, 5, section_caps={"money movement": 8}) == 5
+
+
 def test_items_missing_headline_or_url_are_skipped():
     data = {"sections": [_section("Finance", [
         {"headline": "No url"},

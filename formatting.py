@@ -125,7 +125,7 @@ def _headline_matches_url(headline: str, url: str) -> bool:
 
 
 def _iter_sections(data: dict, max_per_section: int, allowed_urls=None, stale_urls=None,
-                   repeat_urls=None):
+                   repeat_urls=None, section_caps=None):
     """Yield (name, items) per section after the link-integrity filter chain.
 
     `allowed_urls`, when truthy, is the set of canonical URLs that search actually returned
@@ -133,7 +133,10 @@ def _iter_sections(data: dict, max_per_section: int, allowed_urls=None, stale_ur
     `stale_urls`, when truthy, is the set of canonical URLs whose publish date is older than
     the recency cutoff. `repeat_urls`, when truthy, is the set of canonical URLs we already
     delivered on a previous run (cross-run memory). All fail open: a falsy set skips its check.
+    `section_caps`, when given, is a {lowercase-section-name: cap} dict overriding
+    `max_per_section` for specific sections (e.g. a higher Money Movement cap).
     """
+    section_caps = section_caps or {}
     seen_urls = set()       # exact-URL dedup (global — no literal repeat anywhere)
     global_topics = []      # shared topic-dedup for the finance-trio guard (Finance/AI/Tech)
     # MM & Liquidity dedup WITHIN-section only: they're emitted after Finance and were getting
@@ -143,6 +146,7 @@ def _iter_sections(data: dict, max_per_section: int, allowed_urls=None, stale_ur
     for section in data.get("sections") or []:  # `or []` tolerates a null sections value
         name = section.get("name", "").strip()
         kept_topics = [] if name.lower() in per_section_dedup else global_topics
+        cap = section_caps.get(name.lower(), max_per_section)  # per-section override, else default
         items = []
         for it in section.get("items") or []:   # `or []` tolerates a null items value
             headline, url = it.get("headline"), it.get("url")
@@ -167,30 +171,32 @@ def _iter_sections(data: dict, max_per_section: int, allowed_urls=None, stale_ur
             seen_urls.add(key)
             kept_topics.append(topic)
             items.append(it)
-            if len(items) >= max_per_section:
+            if len(items) >= cap:
                 break
         if name and items:
             yield name, items
 
 
 def delivered_items(data: dict, max_per_section: int = 5, allowed_urls=None, stale_urls=None,
-                    repeat_urls=None) -> list:
+                    repeat_urls=None, section_caps=None) -> list:
     """Flat list of the items that survive the filter chain — for recording into memory."""
     out = []
-    for _, items in _iter_sections(data, max_per_section, allowed_urls, stale_urls, repeat_urls):
+    for _, items in _iter_sections(data, max_per_section, allowed_urls, stale_urls,
+                                   repeat_urls, section_caps):
         out.extend(items)
     return out
 
 
 def delivered_count(data: dict, max_per_section: int = 5, allowed_urls=None, stale_urls=None,
-                    repeat_urls=None) -> int:
+                    repeat_urls=None, section_caps=None) -> int:
     """How many items survive the filter chain — for reporting dropped counts."""
     return sum(len(items) for _, items in
-               _iter_sections(data, max_per_section, allowed_urls, stale_urls, repeat_urls))
+               _iter_sections(data, max_per_section, allowed_urls, stale_urls,
+                              repeat_urls, section_caps))
 
 
 def format_telegram(data: dict, max_per_section: int = 5, allowed_urls=None, stale_urls=None,
-                    repeat_urls=None) -> str:
+                    repeat_urls=None, section_caps=None) -> str:
     """Clean & minimal HTML digest: emoji section headers, bold titles, linked bullets.
 
     Uses Telegram HTML (send with parse_mode='HTML') — more robust than Markdown, which
@@ -200,7 +206,8 @@ def format_telegram(data: dict, max_per_section: int = 5, allowed_urls=None, sta
     lines = ["📰 <b>Daily TLDR</b>"]
     if date:
         lines.append(f"<i>{date}</i>")
-    for name, items in _iter_sections(data, max_per_section, allowed_urls, stale_urls, repeat_urls):
+    for name, items in _iter_sections(data, max_per_section, allowed_urls, stale_urls,
+                                      repeat_urls, section_caps):
         emoji = _SECTION_EMOJI.get(name.lower(), "•")
         lines.append("")
         lines.append(f"{emoji} <b>{html.escape(name)}</b>")
