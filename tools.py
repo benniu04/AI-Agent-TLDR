@@ -80,17 +80,20 @@ _PAYMENTS_FEEDS = {
     "PYMNTS": "https://www.pymnts.com/feed/",
     "Payments Dive": "https://www.paymentsdive.com/feeds/news/",
     "Digital Transactions": "https://www.digitaltransactions.net/feed/",
+    "PaymentsJournal": "https://www.paymentsjournal.com/feed/",
 }
-# Broad / global / crypto / regulator feeds — keyword-filtered to payments-relevant items so
-# their off-topic bulk doesn't crowd the pool. Finextra (global fintech) -> US/payments items;
-# The Block (crypto) -> settlement/stablecoin; Banking Dive (US banking) -> payments/rails;
-# CFPB (consumer-finance regulator) -> payments/fraud/scam enforcement (low-frequency but
-# high-signal for the Zelle beat; recency filter drops stale).
+# Broad / global / crypto / regulator / banking feeds — keyword-filtered to payments-relevant
+# items so their off-topic bulk doesn't crowd the pool. Finextra (global fintech) -> US/payments;
+# The Block (crypto) -> settlement/stablecoin; Banking Dive (US banking) -> payments/rails; CFPB
+# (consumer-finance regulator) -> payments/fraud enforcement; Tearsheet + Bank Automation News
+# (US fintech/banking) -> their payments stories.
 _PAYMENTS_FILTERED_FEEDS = {
     "Finextra": "https://www.finextra.com/rss/headlines.aspx",
     "The Block": "https://www.theblock.co/rss.xml",
     "Banking Dive": "https://www.bankingdive.com/feeds/news/",
     "CFPB": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
+    "Tearsheet": "https://tearsheet.co/feed/",
+    "Bank Automation News": "https://bankautomationnews.com/feed/",
 }
 _PAYMENTS_KEYWORDS = (
     "stablecoin", "stable coin", "usdc", "usdt", "payment", "payments", "settle",
