@@ -52,22 +52,28 @@ def _collect_dates(content: str, into: dict) -> None:
             except (ValueError, TypeError):
                 continue  # malformed ts — skip rather than crash the run
 
-# Rate-limit handling: a single run pulls a lot of search-result tokens, which can hit
-# a per-minute input-token cap. Retry on 429 honoring Retry-After, with bounded backoff.
-_RATE_LIMIT_RETRIES = 4
-_RATE_LIMIT_DEFAULT_WAIT = 20  # seconds, if no Retry-After header is provided
+# Transient-API handling: a run can hit a per-minute token cap (429) OR a server-side
+# overload/error (529/500/502/503) — and the network can blip. All are transient, so retry
+# with bounded backoff honoring Retry-After when present. Non-transient errors (400/401/404)
+# re-raise immediately. Without this, a single 529 "Overloaded" kills the whole daily run.
+_API_RETRIES = 4
+_RETRY_BASE_WAIT = 20  # seconds base; backs off as base*(attempt+1) when no Retry-After header
+_RETRYABLE_STATUS = {429, 500, 502, 503, 529}
 
 
 def _create_with_retry(client, log, **kwargs):
-    for attempt in range(_RATE_LIMIT_RETRIES + 1):
+    for attempt in range(_API_RETRIES + 1):
         try:
             return client.messages.create(**kwargs)
-        except anthropic.RateLimitError as exc:
-            if attempt == _RATE_LIMIT_RETRIES:
-                raise
-            retry_after = getattr(getattr(exc, "response", None), "headers", {}) or {}
-            wait = int(retry_after.get("retry-after", _RATE_LIMIT_DEFAULT_WAIT))
-            log({"event": "rate_limited", "attempt": attempt, "wait_seconds": wait})
+        except (anthropic.APIStatusError, anthropic.APIConnectionError) as exc:
+            status = getattr(exc, "status_code", None)  # None for connection errors
+            transient = status is None or status in _RETRYABLE_STATUS
+            if attempt == _API_RETRIES or not transient:
+                raise  # out of retries, or a non-transient error (400/401/404) — don't loop
+            hdrs = getattr(getattr(exc, "response", None), "headers", {}) or {}
+            wait = int(hdrs.get("retry-after", _RETRY_BASE_WAIT * (attempt + 1)))
+            log({"event": "api_retry", "status": status, "type": type(exc).__name__,
+                 "attempt": attempt, "wait_seconds": wait})
             time.sleep(wait)
 
 
