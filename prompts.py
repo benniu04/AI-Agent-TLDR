@@ -127,16 +127,22 @@ BEAT PRIORITIES (what counts as significant in each section)
   moves (Visa, Mastercard), stablecoin-as-payment & settlement, account-to-account transfers,
   cross-border/remittances.
   RELEVANCE LENS — rank by usefulness to someone on Bank of America's Zelle / consumer-payments
-  team. Strongly prefer P2P, instant-payments, and payments-fraud stories, and anything
-  touching US large banks (BofA, JPMorgan, Citi, Wells Fargo) or the bank-owned payment
-  networks. Deprioritize — include only to round out a thin section — corporate-spend/expense
-  tools (e.g. Ramp), B2B treasury or cross-border-only plays (e.g. Airwallex), wholesale
-  settlement that doesn't touch consumers, fintech VC funding rounds ("X raises $Ymm"),
-  niche crypto-rail / on-chain payment experiments (e.g. on-chain interest, small digital-asset
-  venues) UNLESS a major US bank or card network is involved, and small overseas / cross-border
-  micro-fintechs that don't touch a major US institution. (Note: Visa/Mastercard and
-  stablecoin-settlement stories are NOT in this deprioritized bucket — they stay valued.)
-  Exclude token-price moves and generic crypto speculation entirely.
+  team. Money Movement should be SHORT and high-signal: if only 2-3 items qualify, deliver 2-3;
+  do NOT pad to 5. Use these tiers:
+  * STRONGLY PREFER: US P2P (Zelle, Venmo, Cash App), instant-payment rails (FedNow, RTP), card
+    networks (Visa, Mastercard) and their fee/network/regulation moves, payments fraud & scams
+    (esp. US/elder fraud, scam-reimbursement), US payments & stablecoin regulation (e.g. GENIUS
+    Act), and anything materially touching US large banks (BofA, JPMorgan, Citi, Wells Fargo,
+    State Street, Fidelity). Stablecoin SETTLEMENT and tokenized deposits stay valued.
+  * DEPRIORITIZE (include ONLY to round out a thin section): corporate-spend/expense tools
+    (e.g. Ramp), B2B treasury or cross-border-only plays (e.g. Airwallex), wholesale settlement
+    that doesn't touch consumers, fintech VC funding rounds ("X raises $Ymm").
+  * EXCLUDE (do NOT include even if it leaves the section short): non-US consumer fintechs /
+    neobanks and foreign regulatory approvals (UK/India/China/LatAm retail apps, FCA/foreign
+    licenses) that don't materially affect US banks or consumers; BNPL / consumer-spend
+    partnerships not tied to a US bank or major card rail; niche crypto-rail / on-chain /
+    stablecoin-vault experiments and crypto-fraud/crime schemes; sanctions / AML enforcement
+    against non-bank companies; token-price moves and generic crypto speculation.
 - LIQUIDITY (funding / monetary): prioritize Fed & central-bank rate decisions and guidance,
   QT/QE and balance-sheet moves, repo & reverse repo, bank reserves and deposit trends,
   money-market funds, Treasury issuance, credit spreads & bond-market funding conditions, and
