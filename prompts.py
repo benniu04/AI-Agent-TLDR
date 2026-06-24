@@ -137,13 +137,17 @@ BEAT PRIORITIES (what counts as significant in each section)
     networks (Visa, Mastercard) and their fee/network/regulation moves, payments fraud & scams
     (esp. US/elder fraud, scam-reimbursement), US payments & stablecoin regulation (e.g. GENIUS
     Act), and anything materially touching US large banks (BofA, JPMorgan, Citi, Wells Fargo,
-    State Street, Fidelity). Stablecoin SETTLEMENT and tokenized deposits stay valued.
+    State Street, Fidelity). Stablecoin SETTLEMENT and tokenized deposits stay valued. Also
+    valued: cross-border payments & remittances and MAJOR international settlement / CBDC /
+    foreign-bank stablecoin developments (e.g. the Digital Euro, a trust-bank-backed yen
+    stablecoin) — the reader works on cross-border, so these are relevant, not filler.
   * DEPRIORITIZE (include ONLY to round out a thin section): corporate-spend/expense tools
-    (e.g. Ramp), B2B treasury or cross-border-only plays (e.g. Airwallex), wholesale settlement
+    (e.g. Ramp), B2B treasury/expense plays (e.g. Airwallex), wholesale settlement
     that doesn't touch consumers, fintech VC funding rounds ("X raises $Ymm").
-  * EXCLUDE (do NOT include even if it leaves the section short): non-US consumer fintechs /
-    neobanks and foreign regulatory approvals (UK/India/China/LatAm retail apps, FCA/foreign
-    licenses) that don't materially affect US banks or consumers; BNPL / consumer-spend
+  * EXCLUDE (do NOT include even if it leaves the section short): SMALL non-US consumer
+    fintechs / neobanks and foreign regulatory approvals (UK/India/China/LatAm retail apps,
+    FCA/foreign licenses) that don't touch a major institution or cross-border flow (major
+    cross-border / CBDC / settlement stories are KEPT — see above); BNPL / consumer-spend
     partnerships not tied to a US bank or major card rail; niche crypto-rail / on-chain /
     stablecoin-vault experiments and crypto-fraud/crime schemes; sanctions / AML enforcement
     against non-bank companies; token-price moves and generic crypto speculation.
