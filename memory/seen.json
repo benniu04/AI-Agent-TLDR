@@ -1,5 +1,137 @@
 [
   {
+    "url": "https://www.cnbc.com/2026/06/25/micron-stock-3q-earnings-memory.html",
+    "headline": "Micron Q3 revenue quadruples to $41.5B, stock jumps 15% on AI memory demand",
+    "date": "2026-06-25",
+    "ts": 1782396036.002439
+  },
+  {
+    "url": "https://www.cnbc.com/2026/06/24/jpmorgan-goldman-sachs-fed-stress-test.html",
+    "headline": "JPMorgan unveils $50B buyback, Goldman raises dividend after all 32 banks clear Fed stress test",
+    "date": "2026-06-25",
+    "ts": 1782396036.002439
+  },
+  {
+    "url": "https://www.pymnts.com/personnel/2026/jpmorgan-names-2-potential-ceo-successors-as-co-presidents/",
+    "headline": "JPMorgan names 2 co-presidents as potential successors to Jamie Dimon",
+    "date": "2026-06-25",
+    "ts": 1782396036.002439
+  },
+  {
+    "url": "https://techcrunch.com/2026/06/24/cerebras-stock-plunges-after-earnings-as-ceo-says-margin-outlook-was-misunderstood/",
+    "headline": "Cerebras stock plunges after earnings as CEO says margin outlook was misunderstood",
+    "date": "2026-06-25",
+    "ts": 1782396036.002439
+  },
+  {
+    "url": "https://www.paymentsdive.com/news/boston-fed-forms-payments-council/823641/",
+    "headline": "Boston Fed forms payments council to advance industry coordination",
+    "date": "2026-06-25",
+    "ts": 1782396036.002439
+  },
+  {
+    "url": "https://www.theblock.co/post/406067/ripple-launches-rlusd-stablecoin-japan",
+    "headline": "Ripple launches RLUSD stablecoin in Japan after regulatory approval",
+    "date": "2026-06-25",
+    "ts": 1782396036.002439
+  },
+  {
+    "url": "https://www.theblock.co/post/406154/spark-uniswap-build-stablecoin-fx-layer-seeded-with-150-million-liquidity-migration",
+    "headline": "Spark and Uniswap build stablecoin FX Layer seeded with $150M in liquidity",
+    "date": "2026-06-25",
+    "ts": 1782396036.002439
+  },
+  {
+    "url": "https://www.finextra.com/newsarticle/47987/stablecore-launches-stablecoin-and-digital-asset-programme-for-credit-unions",
+    "headline": "Stablecore launches stablecoin and digital asset program for credit unions",
+    "date": "2026-06-25",
+    "ts": 1782396036.002439
+  },
+  {
+    "url": "https://www.finextra.com/pressarticle/110245/modern-treasury-partners-sardine-to-help-businesses-detect-fraud-earlier",
+    "headline": "Modern Treasury partners Sardine to help businesses detect payments fraud earlier",
+    "date": "2026-06-25",
+    "ts": 1782396036.002439
+  },
+  {
+    "url": "https://www.cnbc.com/2026/06/25/pce-inflation-report-may-2026-.html",
+    "headline": "PCE core inflation hits 3.4% in May, highest since October 2023",
+    "date": "2026-06-25",
+    "ts": 1782396036.002439
+  },
+  {
+    "url": "https://www.wsj.com/economy/central-banking/hawkish-boj-member-sees-scope-to-bring-policy-rate-closer-to-2-736e76ee",
+    "headline": "Hawkish BoJ member sees scope to bring policy rate closer to 2%",
+    "date": "2026-06-25",
+    "ts": 1782396036.002439
+  },
+  {
+    "url": "https://www.bankingdive.com/news/banks-overdraft-fees-credit-card-interest-cap-senate-banking/823661/",
+    "headline": "GOP senator slams banks over deposit posting and overdraft fee practices",
+    "date": "2026-06-25",
+    "ts": 1782396036.002439
+  },
+  {
+    "url": "https://www.reuters.com/world/china/anthropic-says-alibaba-illicitly-extracted-claude-ai-model-capabilities-2026-06-24/",
+    "headline": "Anthropic accuses Alibaba of largest known Claude distillation attack via 28.8M fraudulent exchanges",
+    "date": "2026-06-25",
+    "ts": 1782396036.002439
+  },
+  {
+    "url": "https://techcrunch.com/2026/06/25/amazon-ups-india-bet-with-fresh-13b-ai-infrastructure-investment/",
+    "headline": "Amazon ups India bet with fresh $13B AI infrastructure investment",
+    "date": "2026-06-25",
+    "ts": 1782396036.002439
+  },
+  {
+    "url": "https://techcrunch.com/2026/06/25/adobe-acquires-image-and-video-enhancement-tool-maker-topaz-labs/",
+    "headline": "Adobe acquires Topaz Labs, an image and video AI enhancement tool maker",
+    "date": "2026-06-25",
+    "ts": 1782396036.002439
+  },
+  {
+    "url": "https://techcrunch.com/2026/06/24/agility-robotics-plans-to-go-public-via-spac-in-a-2-5b-deal/",
+    "headline": "Agility Robotics plans to go public via SPAC in a $2.5B deal",
+    "date": "2026-06-25",
+    "ts": 1782396036.002439
+  },
+  {
+    "url": "https://techcrunch.com/2026/06/24/figma-adds-code-layers-support-for-animations-more-ai-features-in-new-update/",
+    "headline": "Figma adds code layers, animations, and AI features in major design tool update",
+    "date": "2026-06-25",
+    "ts": 1782396036.002439
+  },
+  {
+    "url": "https://www.theverge.com/tech/952162/apple-price-increase-ram-shortage",
+    "headline": "Apple raises prices on Macs and iPads by hundreds of dollars due to memory shortage",
+    "date": "2026-06-25",
+    "ts": 1782396036.002439
+  },
+  {
+    "url": "https://arstechnica.com/gadgets/2026/06/ibm-claims-worlds-first-sub-1-nanometer-chip-technology/",
+    "headline": "IBM claims world's first sub-1 nanometer chip technology",
+    "date": "2026-06-25",
+    "ts": 1782396036.002439
+  },
+  {
+    "url": "https://techcrunch.com/2026/06/25/trump-admin-proposes-axing-brake-pedal-requirement-for-avs-in-a-boost-for-tesla/",
+    "headline": "Trump admin proposes axing brake pedal requirement for autonomous vehicles",
+    "date": "2026-06-25",
+    "ts": 1782396036.002439
+  },
+  {
+    "url": "https://arstechnica.com/gaming/2026/06/grand-theft-auto-vi-will-cost-80-without-a-physical-disc/",
+    "headline": "GTA VI will cost $80 without a physical disc, more than other AAA games",
+    "date": "2026-06-25",
+    "ts": 1782396036.002439
+  },
+  {
+    "url": "https://www.theverge.com/streaming/956712/disney-youtube-tv-directv-streaming-settlement",
+    "headline": "Disney agrees to pay $50M settlement to YouTube TV and DirecTV subscribers",
+    "date": "2026-06-25",
+    "ts": 1782396036.002439
+  },
+  {
     "url": "https://www.cnbc.com/2026/06/24/qualcomm-ai-chip-modular-software.html",
     "headline": "Qualcomm acquires AI software firm Modular in ~$3.9B stock deal",
     "date": "2026-06-24",
@@ -538,119 +670,5 @@
     "headline": "Elastic acquires AI data-reasoning startup DeductiveAI for up to $85M",
     "date": "2026-06-19",
     "ts": 1781871628.052792
-  },
-  {
-    "url": "https://www.cnbc.com/2026/06/17/carmax-kmx-q1-earnings.html",
-    "headline": "CarMax shares fall after used-car retailer reports earnings beat; CEO details turnaround plan",
-    "date": "2026-06-18",
-    "ts": 1781785227.049253
-  },
-  {
-    "url": "https://www.cnbc.com/2026/06/18/here-are-the-odds-of-spacex-becoming-the-worlds-most-valuable-company.html",
-    "headline": "Here are the odds of SpaceX becoming the world's most valuable company",
-    "date": "2026-06-18",
-    "ts": 1781785227.049253
-  },
-  {
-    "url": "https://www.theblock.co/post/405190/tether-winds-down-ausdt?utm_source=rss&utm_medium=rss",
-    "headline": "Tether winds down aUSDT stablecoin and Alloy platform to sharpen focus",
-    "date": "2026-06-18",
-    "ts": 1781785227.049253
-  },
-  {
-    "url": "https://www.finextra.com/newsarticle/47953/hong-kong-pilots-wholesale-application-of-cbdc-in-a-live-market-environment?utm_medium=rssfinextra&utm_source=finextrafeed",
-    "headline": "Hong Kong pilots wholesale CBDC application in a live market environment",
-    "date": "2026-06-18",
-    "ts": 1781785227.049253
-  },
-  {
-    "url": "https://www.theblock.co/post/405197/bitcoin-rodney-pleads-guilty-in-1-8-billion-crypto-fraud-case?utm_source=rss&utm_medium=rss",
-    "headline": "'Bitcoin Rodney' pleads guilty in $1.8 billion crypto fraud case",
-    "date": "2026-06-18",
-    "ts": 1781785227.049253
-  },
-  {
-    "url": "https://www.theblock.co/post/405205/stablecoin-compliance-startup-range-fintech-crypto-vcs-series-a?utm_source=rss&utm_medium=rss",
-    "headline": "Stablecoin compliance startup Range raises $8.3M from fintech and crypto VCs",
-    "date": "2026-06-18",
-    "ts": 1781785227.049253
-  },
-  {
-    "url": "https://www.theblock.co/post/405207/aztec-investigates-2-million-exploit-of-deprecated-payments-product?utm_source=rss&utm_medium=rss",
-    "headline": "Aztec investigates $2 million exploit of deprecated payments product",
-    "date": "2026-06-18",
-    "ts": 1781785227.049253
-  },
-  {
-    "url": "https://www.wsj.com/finance/currencies/asian-currencies-consolidate-may-be-weighed-by-fed-rate-hike-expectations-50220365?mod=rss_markets_main",
-    "headline": "Short-end US Treasury yields and dollar rise after Fed hints at rate hikes",
-    "date": "2026-06-18",
-    "ts": 1781785227.049253
-  },
-  {
-    "url": "https://www.morningstar.com/economy/warshs-tenure-starts-with-fed-seen-laying-groundwork-rate-hike",
-    "headline": "Warsh's tenure starts with Fed seen laying groundwork for a rate hike",
-    "date": "2026-06-18",
-    "ts": 1781785227.049253
-  },
-  {
-    "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260617b.htm",
-    "headline": "Fed releases FOMC economic projections from June 16-17 meeting",
-    "date": "2026-06-18",
-    "ts": 1781785227.049253
-  },
-  {
-    "url": "https://www.theverge.com/ai-artificial-intelligence/952011/midjourney-medical-ai-ultrasound-scan",
-    "headline": "Midjourney goes from generating cat images to full-body ultrasound scans",
-    "date": "2026-06-18",
-    "ts": 1781785227.049253
-  },
-  {
-    "url": "https://www.cnbc.com/2026/06/18/yann-lecun-elon-musk-xai-failure-ai-labs-bubble-risk.html",
-    "headline": "Yann LeCun blasts Musk's xAI as 'failure,' warns AI labs risk a 'big bubble explosion'",
-    "date": "2026-06-18",
-    "ts": 1781785227.049253
-  },
-  {
-    "url": "https://www.reuters.com/world/china/us-holds-off-blacklisting-chinas-deepseek-more-than-100-firms-deemed-security-2026-06-17/",
-    "headline": "US holds off blacklisting DeepSeek, flags more than 100 firms as security risks",
-    "date": "2026-06-18",
-    "ts": 1781785227.049253
-  },
-  {
-    "url": "https://techcrunch.com/2026/06/17/world-model-maker-odyssey-nabs-1-45b-valuation-backed-by-amazon-and-other-big-names/",
-    "headline": "World model maker Odyssey nabs $1.45B valuation backed by Amazon",
-    "date": "2026-06-18",
-    "ts": 1781785227.049253
-  },
-  {
-    "url": "https://venturebeat.com/technology/anthropic-ships-major-claude-design-overhaul-with-design-system-imports-code-round-trips-and-a-fix-for-its-token-burning-problem",
-    "headline": "Anthropic ships major Claude Design overhaul with code round-trips and token-burn fix",
-    "date": "2026-06-18",
-    "ts": 1781785227.049253
-  },
-  {
-    "url": "https://techcrunch.com/2026/06/18/waymo-recalls-nearly-4000-robotaxis-to-stop-them-driving-into-highway-construction-zones/",
-    "headline": "Waymo recalls nearly 4,000 robotaxis to stop them driving into highway construction zones",
-    "date": "2026-06-18",
-    "ts": 1781785227.049253
-  },
-  {
-    "url": "https://www.tomshardware.com/pc-components/cpus/amd-silently-removes-memory-encryption-from-consumer-ryzen-cpus-leaving-users-unaware-that-they-may-be-vulnerable-security-feature-vanishes-after-newer-agesa-firmware-amd-engineers-go-radio-silent-when-pressed-about-the-change",
-    "headline": "AMD silently removes memory encryption from consumer Ryzen CPUs, leaving users vulnerable",
-    "date": "2026-06-18",
-    "ts": 1781785227.049253
-  },
-  {
-    "url": "https://arstechnica.com/security/2026/06/massive-breach-spills-credentials-for-thousands-of-sensitive-networks/",
-    "headline": "Massive breach spills credentials for thousands of sensitive networks",
-    "date": "2026-06-18",
-    "ts": 1781785227.049253
-  },
-  {
-    "url": "https://arstechnica.com/tech-policy/2026/06/california-says-att-lied-to-fcc-in-attempt-to-shut-off-old-phone-network/",
-    "headline": "California says AT&T lied to FCC in attempt to shut off old phone network",
-    "date": "2026-06-18",
-    "ts": 1781785227.049253
   }
 ]
