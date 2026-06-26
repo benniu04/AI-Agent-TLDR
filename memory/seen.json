@@ -1,5 +1,131 @@
 [
   {
+    "url": "https://www.cnbc.com/2026/06/25/iraq-opec-oil-supply-quota-exports-subdued.html",
+    "headline": "Iraq threatens OPEC exit if oil quota not raised after UAE departure",
+    "date": "2026-06-26",
+    "ts": 1782482435.283998
+  },
+  {
+    "url": "https://www.bloomberg.com/news/articles/2026-06-25/india-set-to-approve-geely-backed-investment-as-china-ties-thaw",
+    "headline": "India set to approve $370M Geely-backed investment as China ties thaw",
+    "date": "2026-06-26",
+    "ts": 1782482435.283998
+  },
+  {
+    "url": "https://www.finextra.com/newsarticle/47993/bis-warns-of-stablecoin-structural-flaws",
+    "headline": "BIS warns stablecoins have 'structural flaws' threatening financial stability",
+    "date": "2026-06-26",
+    "ts": 1782482435.283998
+  },
+  {
+    "url": "https://www.paymentsdive.com/news/illinois-enacts-bnpl-law-pritzker-consumer-crypto/823835/",
+    "headline": "Illinois enacts BNPL consumer protection law",
+    "date": "2026-06-26",
+    "ts": 1782482435.283998
+  },
+  {
+    "url": "https://www.paymentsjournal.com/google-cuts-app-store-fees-opens-up-external-payments/",
+    "headline": "Google cuts Play Store fees and opens external payment links for developers",
+    "date": "2026-06-26",
+    "ts": 1782482435.283998
+  },
+  {
+    "url": "https://www.paymentsdive.com/news/cash-app-brings-credit-to-debit-spending-bnpl-lending/823778/",
+    "headline": "Cash App expands into BNPL, adding credit to debit card spending",
+    "date": "2026-06-26",
+    "ts": 1782482435.283998
+  },
+  {
+    "url": "https://www.paymentsjournal.com/how-banks-are-fighting-the-scourge-of-money-mules/",
+    "headline": "How banks are fighting the growing scourge of money mule fraud",
+    "date": "2026-06-26",
+    "ts": 1782482435.283998
+  },
+  {
+    "url": "https://www.wsj.com/economy/central-banking/warsh-taps-two-veteran-fed-economists-as-advisers-b5f31cba",
+    "headline": "Fed Chair Warsh taps veteran economists Covitz and Engstrom as advisers",
+    "date": "2026-06-26",
+    "ts": 1782482435.283998
+  },
+  {
+    "url": "https://www.wsj.com/finance/investing/jgbs-edge-lower-on-possible-position-adjustments-828a68bd",
+    "headline": "Treasury yields and dollar drift lower as inflation fears ease",
+    "date": "2026-06-26",
+    "ts": 1782482435.283998
+  },
+  {
+    "url": "https://www.wsj.com/economy/central-banking/feds-williams-current-monetary-policy-stance-well-positioned-to-restore-inflation-to-2-ca78c142",
+    "headline": "NY Fed's Williams: current policy stance well positioned to restore inflation to 2%",
+    "date": "2026-06-26",
+    "ts": 1782482435.283998
+  },
+  {
+    "url": "https://www.wsj.com/economy/central-banking/bank-of-mexico-leaves-benchmark-interest-rate-unchanged-052b377e",
+    "headline": "Bank of Mexico holds benchmark rate unchanged amid global risk uncertainty",
+    "date": "2026-06-26",
+    "ts": 1782482435.283998
+  },
+  {
+    "url": "https://techcrunch.com/2026/06/25/the-white-house-is-asking-openai-to-slow-roll-the-release-of-its-new-model-over-safety-concerns/",
+    "headline": "White House asks OpenAI to limit GPT-5.6 release to government-approved partners",
+    "date": "2026-06-26",
+    "ts": 1782482435.283998
+  },
+  {
+    "url": "https://techcrunch.com/2026/06/25/general-intuitions-2-3b-bet-that-video-games-can-train-ai-agents-for-the-real-world/",
+    "headline": "General Intuition raises $2.3B to train AI agents for the real world using video games",
+    "date": "2026-06-26",
+    "ts": 1782482435.283998
+  },
+  {
+    "url": "https://techcrunch.com/2026/06/25/patronus-ai-lands-50m-to-build-digital-worlds-that-stress-test-ai-agents/",
+    "headline": "Patronus AI lands $50M to build digital stress-test worlds for AI agents",
+    "date": "2026-06-26",
+    "ts": 1782482435.283998
+  },
+  {
+    "url": "https://techcrunch.com/2026/06/25/anthropics-claude-is-winning-over-paid-consumers-a-market-owned-by-chatgpt/",
+    "headline": "Claude gaining ground on ChatGPT among paying subscribers, new data shows",
+    "date": "2026-06-26",
+    "ts": 1782482435.283998
+  },
+  {
+    "url": "https://venturebeat.com/technology/liquid-ais-smallest-model-yet-lfm2-5-230m-beats-models-4x-its-size-at-data-extraction-can-run-anywhere",
+    "headline": "Liquid AI's tiny LFM2.5-230M model beats models 4x its size at data extraction",
+    "date": "2026-06-26",
+    "ts": 1782482435.283998
+  },
+  {
+    "url": "https://www.theverge.com/tech/957597/samsung-smartthings-api-charges",
+    "headline": "Samsung will start charging developers to access its SmartThings smart home API",
+    "date": "2026-06-26",
+    "ts": 1782482435.283998
+  },
+  {
+    "url": "https://techcrunch.com/2026/06/25/xbox-follows-apple-with-price-increases/",
+    "headline": "Xbox follows Apple with price hikes across consoles and accessories",
+    "date": "2026-06-26",
+    "ts": 1782482435.283998
+  },
+  {
+    "url": "https://techcrunch.com/2026/06/25/notion-mail-shuts-down-amid-agent-takeover/",
+    "headline": "Notion shuts down Notion Mail as users migrate to AI agents instead",
+    "date": "2026-06-26",
+    "ts": 1782482435.283998
+  },
+  {
+    "url": "https://arstechnica.com/gadgets/2026/06/microsoft-adds-another-year-to-windows-10-extended-update-program/",
+    "headline": "Microsoft extends Windows 10 Extended Security Updates program by one more year",
+    "date": "2026-06-26",
+    "ts": 1782482435.283998
+  },
+  {
+    "url": "https://arstechnica.com/tech-policy/2026/06/fcc-may-kill-2b-program-that-connects-schools-and-libraries-to-internet/",
+    "headline": "FCC eyes killing $2B E-Rate program that connects schools and libraries to internet",
+    "date": "2026-06-26",
+    "ts": 1782482435.283998
+  },
+  {
     "url": "https://www.cnbc.com/2026/06/25/micron-stock-3q-earnings-memory.html",
     "headline": "Micron Q3 revenue quadruples to $41.5B, stock jumps 15% on AI memory demand",
     "date": "2026-06-25",
@@ -550,125 +676,5 @@
     "headline": "Ubisoft co-founder Claude Guillemot killed in plane crash",
     "date": "2026-06-22",
     "ts": 1782130830.538234
-  },
-  {
-    "url": "https://www.cnbc.com/2026/06/19/us-iran-talks-switzerland-canceled-interim-deal-markets.html",
-    "headline": "US-Iran accord hits snag after Swiss follow-up talks cancelled",
-    "date": "2026-06-19",
-    "ts": 1781871628.052792
-  },
-  {
-    "url": "https://www.bnnbloomberg.ca/business/company-news/2026/06/18/accenture-strikes-us418-billion-cybersecurity-deal-shares-fall-on-forecast-cut/",
-    "headline": "Accenture tumbles 17% on Iran war outlook cut; bets $4.18B on cybersecurity",
-    "date": "2026-06-19",
-    "ts": 1781871628.052792
-  },
-  {
-    "url": "https://arstechnica.com/health/2026/06/fda-advisors-unanimously-vote-to-approve-modernas-mrna-after-agency-drama/",
-    "headline": "Moderna mRNA therapy wins unanimous FDA advisory panel backing",
-    "date": "2026-06-19",
-    "ts": 1781871628.052792
-  },
-  {
-    "url": "https://www.cnbc.com/2026/06/19/bob-iger-shanghai-disneyland-chinese-pullback.html",
-    "headline": "Bob Iger: Shanghai Disneyland defying China pullback 10 years on",
-    "date": "2026-06-19",
-    "ts": 1781871628.052792
-  },
-  {
-    "url": "https://www.pymnts.com/real-time-payments/2026/53percent-businesses-plan-rtp-adoption-payment-habits-shift/",
-    "headline": "53% of businesses plan RTP adoption as payment habits shift",
-    "date": "2026-06-19",
-    "ts": 1781871628.052792
-  },
-  {
-    "url": "https://www.theblock.co/post/405357/fidelity-stablecoin-money-market-fund",
-    "headline": "Fidelity launches GENIUS Act-aligned money market fund for stablecoin issuers",
-    "date": "2026-06-19",
-    "ts": 1781871628.052792
-  },
-  {
-    "url": "https://www.finextra.com/pressarticle/110192/repay-completes-stablecoin-payments-proof-of-concept",
-    "headline": "Repay completes stablecoin payments proof of concept",
-    "date": "2026-06-19",
-    "ts": 1781871628.052792
-  },
-  {
-    "url": "https://www.bankingdive.com/news/banks-scam-defenses-elder-fraud-fifth-third-star-one/823265/",
-    "headline": "Lenders ramp up scam defenses to confront elder fraud",
-    "date": "2026-06-19",
-    "ts": 1781871628.052792
-  },
-  {
-    "url": "https://www.wsj.com/economy/central-banking/dollar-rises-to-one-year-high-on-increased-prospects-of-higher-u-s-interest-rates-68817d97?mod=rss_markets_main",
-    "headline": "Dollar rises to one-year high on increased prospects of higher US interest rates",
-    "date": "2026-06-19",
-    "ts": 1781871628.052792
-  },
-  {
-    "url": "https://www.wsj.com/finance/jgbs-fall-tracking-declines-in-u-s-treasurys-0c086030?mod=rss_markets_main",
-    "headline": "Treasury yields slip following Warsh's FOMC debut",
-    "date": "2026-06-19",
-    "ts": 1781871628.052792
-  },
-  {
-    "url": "https://techcrunch.com/2026/06/18/openai-is-bringing-on-some-big-guns-in-the-lead-up-to-its-ipo/",
-    "headline": "OpenAI recruits Google's Noam Shazeer and other senior hires ahead of IPO",
-    "date": "2026-06-19",
-    "ts": 1781871628.052792
-  },
-  {
-    "url": "https://www.theverge.com/ai-artificial-intelligence/952837/barret-zoph-openai-thinking-machines-lab",
-    "headline": "Barret Zoph exits OpenAI again after just five months",
-    "date": "2026-06-19",
-    "ts": 1781871628.052792
-  },
-  {
-    "url": "https://techcrunch.com/2026/06/18/ai-inference-startup-baseten-reportedly-raising-1-5b-months-after-its-last-mega-round/",
-    "headline": "AI inference startup Baseten reportedly raising $1.5B months after last mega-round",
-    "date": "2026-06-19",
-    "ts": 1781871628.052792
-  },
-  {
-    "url": "https://techcrunch.com/2026/06/18/amazon-hopes-to-challenge-nvidia-more-directly-by-selling-its-ai-chips/",
-    "headline": "Amazon plans to sell Trainium AI chips externally to challenge Nvidia",
-    "date": "2026-06-19",
-    "ts": 1781871628.052792
-  },
-  {
-    "url": "https://techcrunch.com/2026/06/18/ai-data-centers-just-got-a-government-mandated-fast-lane-to-the-grid/",
-    "headline": "AI data centers get government-mandated fast lane to the power grid",
-    "date": "2026-06-19",
-    "ts": 1781871628.052792
-  },
-  {
-    "url": "https://techcrunch.com/2026/06/19/the-us-says-asmls-top-chip-tool-may-be-in-china-asml-says-it-isnt/",
-    "headline": "US says ASML's top chip tool may be in China; ASML says it isn't",
-    "date": "2026-06-19",
-    "ts": 1781871628.052792
-  },
-  {
-    "url": "https://techcrunch.com/2026/06/18/telegram-ban-in-india-sparks-a-rush-to-vpns-rival-apps/",
-    "headline": "Telegram ban in India sparks rush to VPNs and rival apps",
-    "date": "2026-06-19",
-    "ts": 1781871628.052792
-  },
-  {
-    "url": "https://arstechnica.com/security/2026/06/microsoft-spots-new-self-propagating-malware-for-stealing-cryptocurrency/",
-    "headline": "Microsoft spots new self-propagating malware stealing cryptocurrency",
-    "date": "2026-06-19",
-    "ts": 1781871628.052792
-  },
-  {
-    "url": "https://orchidfiles.com/github-repositories-distributing-malware/",
-    "headline": "10,000 GitHub repositories found distributing Trojan malware",
-    "date": "2026-06-19",
-    "ts": 1781871628.052792
-  },
-  {
-    "url": "https://techcrunch.com/2026/06/18/source-elastic-agrees-to-buy-crv-backed-deductiveai-for-up-to-85m/",
-    "headline": "Elastic acquires AI data-reasoning startup DeductiveAI for up to $85M",
-    "date": "2026-06-19",
-    "ts": 1781871628.052792
   }
 ]
