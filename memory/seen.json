@@ -1,5 +1,113 @@
 [
   {
+    "url": "https://www.cnbc.com/2026/06/29/comcast-announces-it-will-spin-off-media-and-tech-wings-into-separate-public-companies.html",
+    "headline": "Comcast splits off NBCUniversal and Sky in tax-free spinoff, shares surge 20%",
+    "date": "2026-06-29",
+    "ts": 1782741634.18569
+  },
+  {
+    "url": "https://www.theverge.com/science/958891/rocket-lab-iridium-acquisition-satellite-communications",
+    "headline": "Rocket Lab to acquire Iridium for $8B in cash-and-stock deal to rival SpaceX",
+    "date": "2026-06-29",
+    "ts": 1782741634.18569
+  },
+  {
+    "url": "https://money.usnews.com/investing/news/articles/2026-06-29/comcast-to-spin-off-nbcuniversal-and-sky-into-separate-companies",
+    "headline": "Wall St set to climb as US-Iran talks resume; Comcast surges on spin-off plan",
+    "date": "2026-06-29",
+    "ts": 1782741634.18569
+  },
+  {
+    "url": "https://www.paymentsjournal.com/ftc-reports-record-fraud-losses-warns-of-bank-imposter-scams/",
+    "headline": "FTC reports record fraud losses in 2025, warns of surge in bank imposter scams",
+    "date": "2026-06-29",
+    "ts": 1782741634.18569
+  },
+  {
+    "url": "https://www.theblock.co/post/405670/blackrock-ethena-partnership-usde?utm_source=rss&utm_medium=rss",
+    "headline": "BlackRock Aladdin platform adds deeper support for Ethena stablecoin products",
+    "date": "2026-06-29",
+    "ts": 1782741634.18569
+  },
+  {
+    "url": "https://www.pymnts.com/bnpl/2026/bnpl-loans-increasingly-backed-by-private-credit/",
+    "headline": "BNPL loans increasingly backed by private credit as mainstream lenders pull back",
+    "date": "2026-06-29",
+    "ts": 1782741634.18569
+  },
+  {
+    "url": "https://www.pymnts.com/real-time-payments/2026/robinhood-pushes-brokerages-to-end-the-waiting-game/",
+    "headline": "Robinhood pushes brokerages to end T+1 settlement waiting game via instant transfers",
+    "date": "2026-06-29",
+    "ts": 1782741634.18569
+  },
+  {
+    "url": "https://www.paymentsjournal.com/emvco-proposes-standards-for-stronger-payment-authentication/",
+    "headline": "EMVCo proposes new standards for stronger payment authentication across card rails",
+    "date": "2026-06-29",
+    "ts": 1782741634.18569
+  },
+  {
+    "url": "https://www.wsj.com/finance/investing/how-a-tight-lipped-fed-could-lead-to-higher-mortgage-rates-785f802f?mod=rss_markets_main",
+    "headline": "WSJ: Tight-lipped Fed stance could keep mortgage rates elevated longer",
+    "date": "2026-06-29",
+    "ts": 1782741634.18569
+  },
+  {
+    "url": "https://www.wsj.com/economy/central-banking/atlanta-fed-search-for-new-leader-stalls-4f4d810f",
+    "headline": "Atlanta Fed search for new president stalls as White House eyes candidate slate",
+    "date": "2026-06-29",
+    "ts": 1782741634.18569
+  },
+  {
+    "url": "https://techcrunch.com/2026/06/26/trump-admin-releases-anthropic-mythos-to-be-used-by-more-than-100-us-companies-agencies/",
+    "headline": "Trump admin clears Anthropic Mythos 5 for release to 100+ US companies and agencies",
+    "date": "2026-06-29",
+    "ts": 1782741634.18569
+  },
+  {
+    "url": "https://techcrunch.com/2026/06/27/apple-vision-pro-exec-is-reportedly-leaving-for-openai/",
+    "headline": "Apple Vision Pro exec reportedly leaving to join OpenAI",
+    "date": "2026-06-29",
+    "ts": 1782741634.18569
+  },
+  {
+    "url": "https://techcrunch.com/2026/06/28/ford-rehires-gray-beard-engineers-after-ai-falls-short/",
+    "headline": "Ford rehires veteran engineers after AI-driven engineering programs fall short",
+    "date": "2026-06-29",
+    "ts": 1782741634.18569
+  },
+  {
+    "url": "https://www.theverge.com/tech/958768/china-claims-the-worlds-fastest-supercomputer",
+    "headline": "China claims world's fastest supercomputer, topping the US and Japan",
+    "date": "2026-06-29",
+    "ts": 1782741634.18569
+  },
+  {
+    "url": "https://arstechnica.com/gadgets/2026/06/nasas-x-59-frankenjet-tests-supersonic-flight-without-the-sonic-boom/",
+    "headline": "NASA's X-59 quiet supersonic jet completes first flight tests without a sonic boom",
+    "date": "2026-06-29",
+    "ts": 1782741634.18569
+  },
+  {
+    "url": "https://techcrunch.com/2026/06/28/california-law-targeting-loud-streaming-ads-takes-effect-on-july-1/",
+    "headline": "California law banning excessively loud streaming ads takes effect July 1",
+    "date": "2026-06-29",
+    "ts": 1782741634.18569
+  },
+  {
+    "url": "https://www.eff.org/deeplinks/2026/06/kids-act-would-require-age-checks-get-online",
+    "headline": "KIDS Act would require age verification for all online access, EFF warns",
+    "date": "2026-06-29",
+    "ts": 1782741634.18569
+  },
+  {
+    "url": "https://techcrunch.com/2026/06/29/robot-hand-company-settles-tesla-trade-secret-suit-and-announces-11m-raise/",
+    "headline": "Robot hand startup settles Tesla trade secret suit, raises $11M",
+    "date": "2026-06-29",
+    "ts": 1782741634.18569
+  },
+  {
     "url": "https://www.cnbc.com/2026/06/25/iraq-opec-oil-supply-quota-exports-subdued.html",
     "headline": "Iraq threatens OPEC exit if oil quota not raised after UAE departure",
     "date": "2026-06-26",
@@ -580,101 +688,5 @@
     "headline": "Microsoft and Chevron plan one of the largest gas-powered data center projects in US",
     "date": "2026-06-23",
     "ts": 1782217231.989407
-  },
-  {
-    "url": "https://www.npr.org/2026/06/21/g-s1-129222/us-iran-deal-lebanon-israel-strait-hormuz-jd-vance",
-    "headline": "US-Iran Switzerland talks conclude with 60-day roadmap to final deal",
-    "date": "2026-06-22",
-    "ts": 1782130830.538234
-  },
-  {
-    "url": "https://www.theblock.co/post/405545/bank-of-england-drops-proposed-individual-holding-caps-for-sterling-stablecoins-sets-40-billion-issuance-guardrail",
-    "headline": "Bank of England drops sterling stablecoin holding caps, sets £40B issuance guardrail",
-    "date": "2026-06-22",
-    "ts": 1782130830.538234
-  },
-  {
-    "url": "https://www.theblock.co/post/405477/altura-winds-down-stablecoin-vault",
-    "headline": "Altura winds down stablecoin vault after unprecedented surge in withdrawal requests",
-    "date": "2026-06-22",
-    "ts": 1782130830.538234
-  },
-  {
-    "url": "https://www.finextra.com/pressarticle/110204/volume-secures-fca-authorisation",
-    "headline": "Volume secures FCA authorisation for UK payments operations",
-    "date": "2026-06-22",
-    "ts": 1782130830.538234
-  },
-  {
-    "url": "https://www.theblock.co/post/405468/fentanyl-linked-chinese-network-tied-to-crypto-fraud-from-japan-involving-fake-zksync-jp-token-nikkei",
-    "headline": "Fentanyl-linked Chinese network tied to fake ZKSync.jp crypto fraud scheme in Japan",
-    "date": "2026-06-22",
-    "ts": 1782130830.538234
-  },
-  {
-    "url": "https://investinglive.com/news/bofa-now-expects-fed-to-hike-interest-rates-three-times-this-year-20260622/",
-    "headline": "BofA now expects Fed to hike rates three times this year, no cuts until 2028",
-    "date": "2026-06-22",
-    "ts": 1782130830.538234
-  },
-  {
-    "url": "https://www.wsj.com/finance/investing/jgb-yields-higher-amid-middle-east-uncertainty-ca344a8a",
-    "headline": "Gilt yields fall after UK Labour's Streeting endorses Burnham for party leadership",
-    "date": "2026-06-22",
-    "ts": 1782130830.538234
-  },
-  {
-    "url": "https://www.marketwatch.com/story/a-major-test-is-coming-for-the-stock-market-and-morgan-stanley-warns-the-fed-wont-rescue-investors-2ae93faa",
-    "headline": "Morgan Stanley warns Fed won't rescue investors as major test looms for equities",
-    "date": "2026-06-22",
-    "ts": 1782130830.538234
-  },
-  {
-    "url": "https://finance.yahoo.com/economy/policy/articles/barclays-warns-hawkish-central-banks-153500332.html",
-    "headline": "Barclays warns hawkish central banks could challenge equity market momentum",
-    "date": "2026-06-22",
-    "ts": 1782130830.538234
-  },
-  {
-    "url": "https://techcrunch.com/2026/06/20/nobel-laureate-john-jumper-is-leaving-deepmind-for-rival-anthropic/",
-    "headline": "Nobel laureate John Jumper leaves DeepMind to join rival Anthropic",
-    "date": "2026-06-22",
-    "ts": 1782130830.538234
-  },
-  {
-    "url": "https://sakana.ai/fugu/",
-    "headline": "Sakana AI releases Fugu open-source reasoning model",
-    "date": "2026-06-22",
-    "ts": 1782130830.538234
-  },
-  {
-    "url": "https://techcrunch.com/2026/06/21/beyond-siri-here-are-the-practical-ai-features-coming-to-your-iphone-in-ios-27/",
-    "headline": "iOS 27 preview: practical on-device AI features set to go beyond Siri",
-    "date": "2026-06-22",
-    "ts": 1782130830.538234
-  },
-  {
-    "url": "https://docs.deno.com/runtime/desktop/",
-    "headline": "Deno Desktop launches, bringing the JS/TS runtime to a native app experience",
-    "date": "2026-06-22",
-    "ts": 1782130830.538234
-  },
-  {
-    "url": "https://www.theverge.com/ai-artificial-intelligence/950844/vibe-coding-security-risks-apps",
-    "headline": "Vibe-coded apps carry serious security risks developers are ignoring",
-    "date": "2026-06-22",
-    "ts": 1782130830.538234
-  },
-  {
-    "url": "https://www.theverge.com/tech/953285/polymarket-fake-viral-video-bets",
-    "headline": "Polymarket reportedly paid creators to post deceptive videos of fake bets",
-    "date": "2026-06-22",
-    "ts": 1782130830.538234
-  },
-  {
-    "url": "https://techcrunch.com/2026/06/21/ubisoft-co-founder-claude-guillemot-dies-in-plane-crash/",
-    "headline": "Ubisoft co-founder Claude Guillemot killed in plane crash",
-    "date": "2026-06-22",
-    "ts": 1782130830.538234
   }
 ]
