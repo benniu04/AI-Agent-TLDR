@@ -1,5 +1,125 @@
 [
   {
+    "url": "https://www.newstribune.com/news/2026/jul/01/sp-500-nasdaq-register-best-quarter-since-2020/",
+    "headline": "S&P 500 +14.9%, Nasdaq +21.4% close best quarter since 2020",
+    "date": "2026-07-01",
+    "ts": 1782914431.80835
+  },
+  {
+    "url": "https://www.cnbc.com/2026/07/01/private-payrolls-rose-by-98000-in-june-less-than-expected-adp-reports.html",
+    "headline": "ADP: June private payrolls miss at 98K, below 110K forecast, ahead of Friday jobs report",
+    "date": "2026-07-01",
+    "ts": 1782914431.80835
+  },
+  {
+    "url": "https://www.cnbc.com/2026/07/01/defense-stocks-uk-investment-plan-gilts-bae-systems.html",
+    "headline": "UK defense stocks surge on $20B spending plan; gilts fall under fiscal pressure",
+    "date": "2026-07-01",
+    "ts": 1782914431.80835
+  },
+  {
+    "url": "https://www.theblock.co/post/406736/visa-stripe-coinbase-join-open-usd-stablecoin-shares-reserve-revenue",
+    "headline": "Visa, Mastercard, Stripe, BlackRock and 140+ firms launch Open USD stablecoin consortium with shared reserve revenue",
+    "date": "2026-07-01",
+    "ts": 1782914431.80835
+  },
+  {
+    "url": "https://www.theblock.co/post/406877/bernstein-sees-203-upside-for-circle-even-as-new-stablecoin-rival-ousd-debuts",
+    "headline": "Bernstein sees 203% upside for Circle even as new OUSD stablecoin debuts as rival",
+    "date": "2026-07-01",
+    "ts": 1782914431.80835
+  },
+  {
+    "url": "https://www.finextra.com/newsarticle/48019/credit-agricole-launches-euro-stablecoin",
+    "headline": "Credit Agricole launches euro stablecoin",
+    "date": "2026-07-01",
+    "ts": 1782914431.80835
+  },
+  {
+    "url": "https://www.paymentsjournal.com/jpmorgan-expands-kinexys-blockchain-fx-network-to-asia-and-australia/",
+    "headline": "JPMorgan expands Kinexys blockchain FX settlement network to Asia and Australia",
+    "date": "2026-07-01",
+    "ts": 1782914431.80835
+  },
+  {
+    "url": "https://www.pymnts.com/legal/antitrust/2026/klarnas-pricerunner-awarded-1-9-billion-in-google-antitrust-case/",
+    "headline": "Klarna's PriceRunner unit awarded $1.9B in EU Google antitrust case",
+    "date": "2026-07-01",
+    "ts": 1782914431.80835
+  },
+  {
+    "url": "https://www.wsj.com/economy/central-banking/interest-rates-kevin-warsh-de137876",
+    "headline": "Warsh calls July rate debate a 'good family fight,' declines to signal direction at ECB Forum",
+    "date": "2026-07-01",
+    "ts": 1782914431.80835
+  },
+  {
+    "url": "https://www.wsj.com/finance/investing/jgbs-fall-tracking-declines-in-u-s-treasurys-ff5b8ed9",
+    "headline": "US Treasury yields and dollar rise as rate-hike bets firm",
+    "date": "2026-07-01",
+    "ts": 1782914431.80835
+  },
+  {
+    "url": "https://www.wsj.com/finance/investing/kevin-warsh-federal-reserve-markets-90b83b23",
+    "headline": "Warsh wants the Fed to talk less — Wall Street is listening harder",
+    "date": "2026-07-01",
+    "ts": 1782914431.80835
+  },
+  {
+    "url": "https://thereallo.dev/blog/claude-code-prompt-steganography",
+    "headline": "Claude Code found steganographically watermarking its own API requests",
+    "date": "2026-07-01",
+    "ts": 1782914431.80835
+  },
+  {
+    "url": "https://techcrunch.com/2026/06/30/anthropic-launches-claude-sonnet-5-as-a-cheaper-way-to-run-agents/",
+    "headline": "Anthropic launches Claude Sonnet 5 as a cheaper model built for agents",
+    "date": "2026-07-01",
+    "ts": 1782914431.80835
+  },
+  {
+    "url": "https://techcrunch.com/2026/06/30/nvidia-competitor-etched-hits-5b-valuation-1b-in-sales-for-ai-chip/",
+    "headline": "Nvidia rival Etched hits $5B valuation and $1B in revenue for its AI inference chip",
+    "date": "2026-07-01",
+    "ts": 1782914431.80835
+  },
+  {
+    "url": "https://techcrunch.com/2026/07/01/meta-like-spacex-looks-to-turn-excess-ai-compute-into-cash/",
+    "headline": "Meta plans to sell excess AI compute capacity externally, following SpaceX model",
+    "date": "2026-07-01",
+    "ts": 1782914431.80835
+  },
+  {
+    "url": "https://www.theverge.com/games/960160/sony-playstation-disc-production-ending",
+    "headline": "Sony ending physical disc production for all new PlayStation games in January 2028",
+    "date": "2026-07-01",
+    "ts": 1782914431.80835
+  },
+  {
+    "url": "https://www.theverge.com/games/960168/sony-playstation-ps3-vita-store-shut-down",
+    "headline": "Sony also closing PS3 and Vita digital storefronts",
+    "date": "2026-07-01",
+    "ts": 1782914431.80835
+  },
+  {
+    "url": "https://www.theverge.com/tech/960047/getty-shutterstock-merger-agreement-termination",
+    "headline": "Getty-Shutterstock merger collapses after UK regulator blocks the deal",
+    "date": "2026-07-01",
+    "ts": 1782914431.80835
+  },
+  {
+    "url": "https://www.pcgamer.com/gaming-industry/open-source-game-engine-godot-will-no-longer-accept-ai-authored-code-contributions-we-cant-trust-heavy-users-of-ai-to-understand-their-code-enough-to-fix-it/",
+    "headline": "Godot open-source game engine bans AI-authored code contributions",
+    "date": "2026-07-01",
+    "ts": 1782914431.80835
+  },
+  {
+    "url": "https://arstechnica.com/gadgets/2026/06/reddit-will-require-you-to-log-in-to-use-old-reddit-com/",
+    "headline": "Reddit to require login to access old.reddit.com",
+    "date": "2026-07-01",
+    "ts": 1782914431.80835
+  },
+  {
     "url": "https://www.cnbc.com/2026/06/30/warren-buffett-delays-gates-foundation-donation-epstein-review.html",
     "headline": "Buffett skips midyear Gates Foundation donation pending Epstein review, first pause in 20 years",
     "date": "2026-06-30",
@@ -598,101 +718,5 @@
     "headline": "Mark Zuckerberg wants Meta to launch its own prediction market",
     "date": "2026-06-24",
     "ts": 1782309649.211305
-  },
-  {
-    "url": "https://www.aol.com/articles/cerebras-set-report-first-earnings-221256000.html",
-    "headline": "Cerebras (CBRS) reports first earnings as public company after close, options imply 13% swing",
-    "date": "2026-06-23",
-    "ts": 1782228331.525199
-  },
-  {
-    "url": "https://www.proactiveinvestors.com/companies/news/1094288/cerebras-gets-set-for-inaugural-earnings-with-upside-potential-wedbush-says-1094288.html",
-    "headline": "Wedbush sees upside potential as Cerebras enters inaugural earnings with execution as key test",
-    "date": "2026-06-23",
-    "ts": 1782228331.525199
-  },
-  {
-    "url": "https://www.paymentsdive.com/news/nachas-fraud-rules-land/823378/",
-    "headline": "Nacha's ACH fraud rules take effect, tightening account validation requirements",
-    "date": "2026-06-23",
-    "ts": 1782228331.525199
-  },
-  {
-    "url": "https://www.paymentsdive.com/news/visa-mastercard-fend-off-fee-foes/823395/",
-    "headline": "Visa and Mastercard fend off interchange fee challengers in court",
-    "date": "2026-06-23",
-    "ts": 1782228331.525199
-  },
-  {
-    "url": "https://www.digitaltransactions.net/a-startup-works-with-visa-to-offer-real-time-payouts-cross-border/",
-    "headline": "Startup partners with Visa to offer real-time cross-border payouts",
-    "date": "2026-06-23",
-    "ts": 1782228331.525199
-  },
-  {
-    "url": "https://www.pymnts.com/news/artificial-intelligence/2026/sofi-ventures-into-ai-investing-with-composer-acquisition/",
-    "headline": "SoFi ventures into AI investing with Composer acquisition",
-    "date": "2026-06-23",
-    "ts": 1782228331.525199
-  },
-  {
-    "url": "https://www.finextra.com/blogposting/32082/why-banks-cannot-leave-stablecoin-acceptance-to-others",
-    "headline": "Why banks cannot afford to leave stablecoin acceptance to others",
-    "date": "2026-06-23",
-    "ts": 1782228331.525199
-  },
-  {
-    "url": "https://www.investing.com/news/stock-market-news/morgan-stanley-says-warsh-fed-is-a-credibility-boost-but-liquidity-risks-loom-4751882",
-    "headline": "Morgan Stanley: Warsh Fed is a credibility boost, but liquidity risks loom",
-    "date": "2026-06-23",
-    "ts": 1782228331.525199
-  },
-  {
-    "url": "https://mistral.ai/news/ocr-4/",
-    "headline": "Mistral releases OCR 4, its most capable document-parsing model yet",
-    "date": "2026-06-23",
-    "ts": 1782228331.525199
-  },
-  {
-    "url": "https://techcrunch.com/2026/06/22/spacex-inks-compute-deal-with-reflection-ai-an-open-source-ai-lab/",
-    "headline": "SpaceX inks compute deal with Reflection AI, an open-source AI lab",
-    "date": "2026-06-23",
-    "ts": 1782228331.525199
-  },
-  {
-    "url": "https://status.claude.com/incidents/jbhf20wjmzrf",
-    "headline": "Claude experiences elevated error rates across multiple models",
-    "date": "2026-06-23",
-    "ts": 1782228331.525199
-  },
-  {
-    "url": "https://techcrunch.com/2026/06/23/password-manager-maker-lastpass-says-hackers-stole-customer-support-case-data-during-klue-breach/",
-    "headline": "LastPass says hackers stole customer support data in Klue breach",
-    "date": "2026-06-23",
-    "ts": 1782228331.525199
-  },
-  {
-    "url": "https://techcrunch.com/2026/06/23/meta-debuts-new-cheaper-smart-glasses-under-its-own-brand/",
-    "headline": "Meta debuts cheaper smart glasses under its own brand, dropping Ray-Ban",
-    "date": "2026-06-23",
-    "ts": 1782228331.525199
-  },
-  {
-    "url": "https://www.theverge.com/games/952634/valve-intel-nvidia-steamos-gpus-linux",
-    "headline": "Valve confirms SteamOS expansion to Intel and Nvidia GPUs beyond Steam Deck",
-    "date": "2026-06-23",
-    "ts": 1782228331.525199
-  },
-  {
-    "url": "https://techcrunch.com/2026/06/22/tesla-pushes-back-on-autopilot-narrative-after-fatal-texas-crash/",
-    "headline": "Tesla pushes back on Autopilot narrative after fatal Texas crash",
-    "date": "2026-06-23",
-    "ts": 1782228331.525199
-  },
-  {
-    "url": "https://arstechnica.com/space/2026/06/with-starfall-spacex-eyes-an-edge-in-global-cargo-delivery-from-orbit/",
-    "headline": "SpaceX's Starfall aims to deliver cargo anywhere on Earth from orbit",
-    "date": "2026-06-23",
-    "ts": 1782228331.525199
   }
 ]
