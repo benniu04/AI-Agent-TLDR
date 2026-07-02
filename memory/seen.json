@@ -1,5 +1,119 @@
 [
   {
+    "url": "https://techcrunch.com/2026/07/02/tesla-saw-a-massive-sales-jump-in-the-second-quarter/",
+    "headline": "Tesla Q2 deliveries surge to 480K, crushing 406K Wall Street consensus",
+    "date": "2026-07-02",
+    "ts": 1783000833.234086
+  },
+  {
+    "url": "https://www.cnbc.com/2026/07/02/alphabet-google-android-eu-antitrust-fine-4-1-billion-euro-appeal.html",
+    "headline": "Google loses appeal on record $4.7B EU Android antitrust fine",
+    "date": "2026-07-02",
+    "ts": 1783000833.234086
+  },
+  {
+    "url": "https://techcrunch.com/2026/07/01/bending-spoons-defies-saas-slump-surges-40-on-first-day-of-trading/",
+    "headline": "Bending Spoons surges 40% on first day of trading after $18B IPO",
+    "date": "2026-07-02",
+    "ts": 1783000833.234086
+  },
+  {
+    "url": "https://www.finextra.com/newsarticle/48030/major-uk-banks-adopt-swift-consumer-payments-framework",
+    "headline": "Major UK banks adopt Swift consumer cross-border payments framework",
+    "date": "2026-07-02",
+    "ts": 1783000833.234086
+  },
+  {
+    "url": "https://www.digitaltransactions.net/fednow-marks-a-third-anniversary-tally-at-more-than-1800-banks-and-credit-unions/",
+    "headline": "FedNow marks third anniversary with more than 1,800 banks and credit unions",
+    "date": "2026-07-02",
+    "ts": 1783000833.234086
+  },
+  {
+    "url": "https://www.paymentsdive.com/news/amazon-settles-ftc-card-fraud-case/824203/",
+    "headline": "Amazon settles FTC card fraud case",
+    "date": "2026-07-02",
+    "ts": 1783000833.234086
+  },
+  {
+    "url": "https://www.finextra.com/pressarticle/110322/lightspark-becomes-first-payments-company-in-estonia-to-get-mica-licence",
+    "headline": "Lightspark becomes first payments company in Estonia to receive MiCA license",
+    "date": "2026-07-02",
+    "ts": 1783000833.234086
+  },
+  {
+    "url": "https://www.cnbc.com/2026/07/02/jobs-report-june-2026-.html",
+    "headline": "June nonfarm payrolls disappoint at 57K; unemployment rate holds at 4.2%",
+    "date": "2026-07-02",
+    "ts": 1783000833.234086
+  },
+  {
+    "url": "https://www.wsj.com/economy/central-banking/warren-asks-fed-watchdog-to-review-bowman-appearance-at-bank-event-9962dc2d",
+    "headline": "Warren asks Fed watchdog to review Bowman appearance at private Bank of America client dinner",
+    "date": "2026-07-02",
+    "ts": 1783000833.234086
+  },
+  {
+    "url": "https://techcrunch.com/2026/07/02/microsoft-launches-its-own-ai-deployment-company-with-2-5-billion-commitment/",
+    "headline": "Microsoft launches AI deployment company with $2.5B commitment",
+    "date": "2026-07-02",
+    "ts": 1783000833.234086
+  },
+  {
+    "url": "https://www.cnbc.com/2026/07/02/openai-proposes-us-government-own-5percent-stake-to-address-political-blowback.html",
+    "headline": "OpenAI proposes giving US government a 5% stake worth ~$42.6B to ease Washington pressure",
+    "date": "2026-07-02",
+    "ts": 1783000833.234086
+  },
+  {
+    "url": "https://techcrunch.com/2026/06/30/trump-drops-restrictions-on-anthropics-mythos-and-fable-models/",
+    "headline": "Trump lifts export restrictions on Anthropic's Mythos and Fable frontier models",
+    "date": "2026-07-02",
+    "ts": 1783000833.234086
+  },
+  {
+    "url": "https://techcrunch.com/2026/07/01/cloudflares-new-policy-pushes-ai-companies-to-pay-for-publishers-content/",
+    "headline": "Cloudflare's new policy pushes AI companies to pay publishers for scraped content",
+    "date": "2026-07-02",
+    "ts": 1783000833.234086
+  },
+  {
+    "url": "https://venturebeat.com/technology/z-ai-launches-zcode-to-challenge-cursor-claude-code-and-github-copilot-in-ai-coding",
+    "headline": "Z.ai launches ZCode to challenge Cursor, Claude Code, and GitHub Copilot in AI coding",
+    "date": "2026-07-02",
+    "ts": 1783000833.234086
+  },
+  {
+    "url": "https://arstechnica.com/ai/2026/07/googles-ai-buildout-drove-37-increase-in-electricity-use-in-2025/",
+    "headline": "Google's AI buildout drove 37% increase in electricity use in 2025",
+    "date": "2026-07-02",
+    "ts": 1783000833.234086
+  },
+  {
+    "url": "https://www.theverge.com/science/960563/amazon-leo-service-tipping-point",
+    "headline": "Amazon reaches satellite threshold to launch Starlink competitor",
+    "date": "2026-07-02",
+    "ts": 1783000833.234086
+  },
+  {
+    "url": "https://arstechnica.com/information-technology/2026/07/t-mobile-moving-tens-of-thousands-of-virtual-machines-off-vmware-amid-lawsuit/",
+    "headline": "T-Mobile moving tens of thousands of virtual machines off VMware amid lawsuit",
+    "date": "2026-07-02",
+    "ts": 1783000833.234086
+  },
+  {
+    "url": "https://techcrunch.com/2026/07/01/apples-hide-my-email-feature-has-a-bug-thats-been-exposing-real-email-addresses-researcher-claims/",
+    "headline": "Apple Hide My Email bug was exposing real email addresses, researcher claims",
+    "date": "2026-07-02",
+    "ts": 1783000833.234086
+  },
+  {
+    "url": "https://f-droid.org/2026/07/01/adv-malware.html",
+    "headline": "Android Developer Verification tool found masquerading as protection while delivering malware",
+    "date": "2026-07-02",
+    "ts": 1783000833.234086
+  },
+  {
     "url": "https://www.newstribune.com/news/2026/jul/01/sp-500-nasdaq-register-best-quarter-since-2020/",
     "headline": "S&P 500 +14.9%, Nasdaq +21.4% close best quarter since 2020",
     "date": "2026-07-01",
@@ -598,125 +712,5 @@
     "headline": "Disney agrees to pay $50M settlement to YouTube TV and DirecTV subscribers",
     "date": "2026-06-25",
     "ts": 1782396036.002439
-  },
-  {
-    "url": "https://www.cnbc.com/2026/06/24/qualcomm-ai-chip-modular-software.html",
-    "headline": "Qualcomm acquires AI software firm Modular in ~$3.9B stock deal",
-    "date": "2026-06-24",
-    "ts": 1782309649.211305
-  },
-  {
-    "url": "https://www.cnbc.com/2026/06/24/treasury-secretary-bessent-says-us-gdp-growth-can-return-to-3percent-before-end-of-the-year.html",
-    "headline": "Bessent says US GDP growth can return to 3% before year-end as Iran war winds down",
-    "date": "2026-06-24",
-    "ts": 1782309649.211305
-  },
-  {
-    "url": "https://www.cnbc.com/2026/06/24/vix-owner-cboe-jumps-into-prediction-markets-to-build-on-0dte-growth.html",
-    "headline": "Cboe jumps into prediction markets, building on zero-day options growth",
-    "date": "2026-06-24",
-    "ts": 1782309649.211305
-  },
-  {
-    "url": "https://www.cnbc.com/2026/06/23/cftc-sues-kentucky-over-actions-against-prediction-markets.html",
-    "headline": "CFTC sues Kentucky over its crackdown on prediction markets in first-ever federal vs. red-state clash",
-    "date": "2026-06-24",
-    "ts": 1782309649.211305
-  },
-  {
-    "url": "https://www.theblock.co/post/405952/japan-sbi-group-launches-jpysc",
-    "headline": "SBI Group launches Japan's first trust bank-backed yen stablecoin JPYSC",
-    "date": "2026-06-24",
-    "ts": 1782309649.211305
-  },
-  {
-    "url": "https://www.paymentsjournal.com/digital-euro-moves-closer-to-reality-after-key-eu-vote/",
-    "headline": "Digital Euro moves closer to reality after key EU Parliament vote",
-    "date": "2026-06-24",
-    "ts": 1782309649.211305
-  },
-  {
-    "url": "https://www.paymentsdive.com/news/judge-rules-against-fiserv/823537/",
-    "headline": "Judge rules against Fiserv in payments dispute",
-    "date": "2026-06-24",
-    "ts": 1782309649.211305
-  },
-  {
-    "url": "https://www.pymnts.com/disbursements/2026/fast-payments-push-governments-to-rethink-tax-refunds/",
-    "headline": "Fast payments push governments to rethink how tax refunds are disbursed",
-    "date": "2026-06-24",
-    "ts": 1782309649.211305
-  },
-  {
-    "url": "https://www.paymentsjournal.com/fed-proposes-aml-rules-for-stablecoin-issuers/",
-    "headline": "Fed proposes AML rules for stablecoin issuers",
-    "date": "2026-06-24",
-    "ts": 1782309649.211305
-  },
-  {
-    "url": "https://www.wsj.com/finance/jgb-futures-edge-higher-tracking-mild-gains-in-u-s-treasury-market-adfa0a58",
-    "headline": "Treasury yields slip amid easing Middle East tensions and Hormuz expectations",
-    "date": "2026-06-24",
-    "ts": 1782309649.211305
-  },
-  {
-    "url": "https://www.wsj.com/economy/central-banking/bank-of-japan-members-signal-push-for-regular-rate-increases-to-control-inflation-45f77015",
-    "headline": "Bank of Japan members signal push for regular rate increases to control inflation",
-    "date": "2026-06-24",
-    "ts": 1782309649.211305
-  },
-  {
-    "url": "https://www.wsj.com/finance/investing/life-insurers-arent-just-investors-in-private-credit-theyre-major-lenders-too-c64ea527",
-    "headline": "Life insurers aren't just investors in private credit — they're major lenders too",
-    "date": "2026-06-24",
-    "ts": 1782309649.211305
-  },
-  {
-    "url": "https://www.wsj.com/economy/central-banking/thai-central-bank-stays-on-hold-as-it-gauges-risks-0aaefe01",
-    "headline": "Thai central bank holds rates steady as it weighs global risks",
-    "date": "2026-06-24",
-    "ts": 1782309649.211305
-  },
-  {
-    "url": "https://techcrunch.com/2026/06/23/anthropics-claude-tag-is-learning-your-company-one-slack-message-at-a-time/",
-    "headline": "Anthropic launches Claude Tag, a shared AI agent that works directly inside Slack channels",
-    "date": "2026-06-24",
-    "ts": 1782309649.211305
-  },
-  {
-    "url": "https://techcrunch.com/2026/06/23/after-betting-the-firm-on-anthropic-menlo-ventures-raises-victorious-3b-fund/",
-    "headline": "Menlo Ventures raises $3B fund after its early Anthropic bet paid off",
-    "date": "2026-06-24",
-    "ts": 1782309649.211305
-  },
-  {
-    "url": "https://venturebeat.com/technology/enterprise-grade-ai-image-generation-in-2-seconds-is-here-krea-2-raw-and-turbo-available-as-open-weights-under-custom-license",
-    "headline": "Krea 2 open-weight AI image model delivers enterprise-grade generation in 2 seconds",
-    "date": "2026-06-24",
-    "ts": 1782309649.211305
-  },
-  {
-    "url": "https://www.theverge.com/transportation/955738/slate-auto-truck-ev-price-availability",
-    "headline": "Slate Auto EV pickup truck launches at $24,950, targeting bare-bones market",
-    "date": "2026-06-24",
-    "ts": 1782309649.211305
-  },
-  {
-    "url": "https://arstechnica.com/ai/2026/06/oracles-21000-layoffs-help-drive-its-debt-fueled-ai-investments/",
-    "headline": "Oracle's 21,000 layoffs help fund its debt-fueled AI infrastructure push",
-    "date": "2026-06-24",
-    "ts": 1782309649.211305
-  },
-  {
-    "url": "https://arstechnica.com/information-technology/2026/06/executive-order-bumps-up-deadline-to-move-off-quantum-vulnerable-crypto/",
-    "headline": "White House drastically shortens deadline to migrate off quantum-vulnerable cryptography",
-    "date": "2026-06-24",
-    "ts": 1782309649.211305
-  },
-  {
-    "url": "https://techcrunch.com/2026/06/23/mark-zuckerberg-wants-meta-to-launch-its-own-prediction-market/",
-    "headline": "Mark Zuckerberg wants Meta to launch its own prediction market",
-    "date": "2026-06-24",
-    "ts": 1782309649.211305
   }
 ]
