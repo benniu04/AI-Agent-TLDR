@@ -1,5 +1,137 @@
 [
   {
+    "url": "https://www.cnbc.com/2026/07/02/jersey-mikes-files-for-ipo.html",
+    "headline": "Blackstone-backed Jersey Mike's publicly files S-1 for NYSE IPO under ticker JMKE",
+    "date": "2026-07-03",
+    "ts": 1783087240.349146
+  },
+  {
+    "url": "https://www.cnbc.com/2026/07/02/job-seekers-giving-up-labor-force-participation-rate-falls-to-lowest-in-50-years-outside-of-covid-era.html",
+    "headline": "Labor force participation rate falls to lowest in 50 years outside of Covid era",
+    "date": "2026-07-03",
+    "ts": 1783087240.349146
+  },
+  {
+    "url": "https://www.pymnts.com/legal/2026/new-jersey-lawmakers-send-surveillance-pricing-ban-to-governor/",
+    "headline": "New Jersey lawmakers send surveillance pricing ban to governor",
+    "date": "2026-07-03",
+    "ts": 1783087240.349146
+  },
+  {
+    "url": "https://www.cnbc.com/2026/07/02/stock-market-gains-new-millionaires-ubs.html",
+    "headline": "Stock market gains minted nearly 1 million new millionaires in 2025, UBS report says",
+    "date": "2026-07-03",
+    "ts": 1783087240.349146
+  },
+  {
+    "url": "https://www.finextra.com/newsarticle/48031/standard-chartered-gives-institutional-clients-access-to-usdc-minting-and-redemption",
+    "headline": "Standard Chartered gives institutional clients access to USDC minting and redemption",
+    "date": "2026-07-03",
+    "ts": 1783087240.349146
+  },
+  {
+    "url": "https://www.digitaltransactions.net/cross-river-teams-with-stripe-on-issuance-for-agentic-commerce/",
+    "headline": "Cross River teams with Stripe on card issuance for agentic commerce",
+    "date": "2026-07-03",
+    "ts": 1783087240.349146
+  },
+  {
+    "url": "https://www.paymentsdive.com/news/amex-apple-team-on-rewards-cards-digital-wallets/824268/",
+    "headline": "Amex and Apple team on rewards and digital wallets",
+    "date": "2026-07-03",
+    "ts": 1783087240.349146
+  },
+  {
+    "url": "https://www.finextra.com/newsarticle/48035/visa-launches-visa-destinations-offering-discounts-for-travellers",
+    "headline": "Visa launches Visa Destinations travel discount program",
+    "date": "2026-07-03",
+    "ts": 1783087240.349146
+  },
+  {
+    "url": "https://www.paymentsdive.com/news/ramp-names-karim-atiyeh-co-ceo-glyman-cto-Rahul-Sengottuvelu/824283/",
+    "headline": "Ramp elevates CTO Karim Atiyeh to co-CEO alongside Glyman",
+    "date": "2026-07-03",
+    "ts": 1783087240.349146
+  },
+  {
+    "url": "https://www.wsj.com/finance/investing/investors-seek-to-pull-nearly-16-billion-from-private-credit-funds-81b6fe37?mod=rss_markets_main",
+    "headline": "Investors seek to pull nearly $16B from private-credit funds",
+    "date": "2026-07-03",
+    "ts": 1783087240.349146
+  },
+  {
+    "url": "https://www.wsj.com/articles/jgbs-edge-lower-tracking-declines-in-u-s-treasurys-c94e4528?mod=rss_markets_main",
+    "headline": "Treasury yields rise in holiday-shortened week",
+    "date": "2026-07-03",
+    "ts": 1783087240.349146
+  },
+  {
+    "url": "https://www.wsj.com/finance/stocks/u-s-stocks-mixed-as-june-jobs-data-cools-rate-hike-concerns-5074457e?mod=rss_markets_main",
+    "headline": "US stocks mixed as June jobs data cools rate-hike concerns",
+    "date": "2026-07-03",
+    "ts": 1783087240.349146
+  },
+  {
+    "url": "https://www.wsj.com/economy/week-ahead-for-fx-bonds-fed-minutes-in-focus-e7f43f94",
+    "headline": "Week ahead for FX and bonds: Fed minutes in focus",
+    "date": "2026-07-03",
+    "ts": 1783087240.349146
+  },
+  {
+    "url": "https://www.reuters.com/world/china/alibaba-ban-claude-code-workplace-over-alleged-backdoor-risks-source-says-2026-07-03/",
+    "headline": "Alibaba bans Claude Code at work over alleged backdoor risks, effective July 10",
+    "date": "2026-07-03",
+    "ts": 1783087240.349146
+  },
+  {
+    "url": "https://techcrunch.com/2026/07/02/mark-zuckerberg-tells-staff-that-ai-agents-havent-progressed-as-quickly-as-hed-hoped/",
+    "headline": "Zuckerberg tells Meta staff AI agents haven't progressed as quickly as he'd hoped",
+    "date": "2026-07-03",
+    "ts": 1783087240.349146
+  },
+  {
+    "url": "https://www.theverge.com/ai-artificial-intelligence/961311/anthropic-claude-science-ai-drug-development",
+    "headline": "Anthropic launches Claude Science AI workbench for drug discovery and pharma R&D",
+    "date": "2026-07-03",
+    "ts": 1783087240.349146
+  },
+  {
+    "url": "https://techcrunch.com/2026/07/02/anthropic-is-discussing-a-new-custom-chip-with-samsung/",
+    "headline": "Anthropic in talks with Samsung to develop a custom AI inference chip",
+    "date": "2026-07-03",
+    "ts": 1783087240.349146
+  },
+  {
+    "url": "https://techcrunch.com/2026/06/30/wayve-launches-85m-employee-tender-offer-at-8-5b-valuation/",
+    "headline": "Wayve launches $85M employee tender offer at $8.5B valuation",
+    "date": "2026-07-03",
+    "ts": 1783087240.349146
+  },
+  {
+    "url": "https://techcrunch.com/2026/07/02/politician-who-investigated-spyware-abuses-had-his-phone-hacked-with-pegasus-spyware/",
+    "headline": "Politician who investigated spyware abuses had his phone hacked with Pegasus",
+    "date": "2026-07-03",
+    "ts": 1783087240.349146
+  },
+  {
+    "url": "https://www.theverge.com/transportation/961161/tesla-fsd-katy-tx-manslaughter-charges",
+    "headline": "Tesla driver faces manslaughter charges over Texas FSD crash that killed woman inside her home",
+    "date": "2026-07-03",
+    "ts": 1783087240.349146
+  },
+  {
+    "url": "https://arstechnica.com/security/2026/07/new-pamstealer-macos-malware-uses-clever-tradecraft-to-remain-stealthy/",
+    "headline": "New PamStealer macOS malware uses clever tradecraft to remain stealthy",
+    "date": "2026-07-03",
+    "ts": 1783087240.349146
+  },
+  {
+    "url": "https://blog.podman.io/2026/07/introducing-podman-v6-0-0/",
+    "headline": "Podman v6.0.0 released",
+    "date": "2026-07-03",
+    "ts": 1783087240.349146
+  },
+  {
     "url": "https://techcrunch.com/2026/07/02/tesla-saw-a-massive-sales-jump-in-the-second-quarter/",
     "headline": "Tesla Q2 deliveries surge to 480K, crushing 406K Wall Street consensus",
     "date": "2026-07-02",
@@ -454,263 +586,5 @@
     "headline": "Robot hand startup settles Tesla trade secret suit, raises $11M",
     "date": "2026-06-29",
     "ts": 1782741634.18569
-  },
-  {
-    "url": "https://www.cnbc.com/2026/06/25/iraq-opec-oil-supply-quota-exports-subdued.html",
-    "headline": "Iraq threatens OPEC exit if oil quota not raised after UAE departure",
-    "date": "2026-06-26",
-    "ts": 1782482435.283998
-  },
-  {
-    "url": "https://www.bloomberg.com/news/articles/2026-06-25/india-set-to-approve-geely-backed-investment-as-china-ties-thaw",
-    "headline": "India set to approve $370M Geely-backed investment as China ties thaw",
-    "date": "2026-06-26",
-    "ts": 1782482435.283998
-  },
-  {
-    "url": "https://www.finextra.com/newsarticle/47993/bis-warns-of-stablecoin-structural-flaws",
-    "headline": "BIS warns stablecoins have 'structural flaws' threatening financial stability",
-    "date": "2026-06-26",
-    "ts": 1782482435.283998
-  },
-  {
-    "url": "https://www.paymentsdive.com/news/illinois-enacts-bnpl-law-pritzker-consumer-crypto/823835/",
-    "headline": "Illinois enacts BNPL consumer protection law",
-    "date": "2026-06-26",
-    "ts": 1782482435.283998
-  },
-  {
-    "url": "https://www.paymentsjournal.com/google-cuts-app-store-fees-opens-up-external-payments/",
-    "headline": "Google cuts Play Store fees and opens external payment links for developers",
-    "date": "2026-06-26",
-    "ts": 1782482435.283998
-  },
-  {
-    "url": "https://www.paymentsdive.com/news/cash-app-brings-credit-to-debit-spending-bnpl-lending/823778/",
-    "headline": "Cash App expands into BNPL, adding credit to debit card spending",
-    "date": "2026-06-26",
-    "ts": 1782482435.283998
-  },
-  {
-    "url": "https://www.paymentsjournal.com/how-banks-are-fighting-the-scourge-of-money-mules/",
-    "headline": "How banks are fighting the growing scourge of money mule fraud",
-    "date": "2026-06-26",
-    "ts": 1782482435.283998
-  },
-  {
-    "url": "https://www.wsj.com/economy/central-banking/warsh-taps-two-veteran-fed-economists-as-advisers-b5f31cba",
-    "headline": "Fed Chair Warsh taps veteran economists Covitz and Engstrom as advisers",
-    "date": "2026-06-26",
-    "ts": 1782482435.283998
-  },
-  {
-    "url": "https://www.wsj.com/finance/investing/jgbs-edge-lower-on-possible-position-adjustments-828a68bd",
-    "headline": "Treasury yields and dollar drift lower as inflation fears ease",
-    "date": "2026-06-26",
-    "ts": 1782482435.283998
-  },
-  {
-    "url": "https://www.wsj.com/economy/central-banking/feds-williams-current-monetary-policy-stance-well-positioned-to-restore-inflation-to-2-ca78c142",
-    "headline": "NY Fed's Williams: current policy stance well positioned to restore inflation to 2%",
-    "date": "2026-06-26",
-    "ts": 1782482435.283998
-  },
-  {
-    "url": "https://www.wsj.com/economy/central-banking/bank-of-mexico-leaves-benchmark-interest-rate-unchanged-052b377e",
-    "headline": "Bank of Mexico holds benchmark rate unchanged amid global risk uncertainty",
-    "date": "2026-06-26",
-    "ts": 1782482435.283998
-  },
-  {
-    "url": "https://techcrunch.com/2026/06/25/the-white-house-is-asking-openai-to-slow-roll-the-release-of-its-new-model-over-safety-concerns/",
-    "headline": "White House asks OpenAI to limit GPT-5.6 release to government-approved partners",
-    "date": "2026-06-26",
-    "ts": 1782482435.283998
-  },
-  {
-    "url": "https://techcrunch.com/2026/06/25/general-intuitions-2-3b-bet-that-video-games-can-train-ai-agents-for-the-real-world/",
-    "headline": "General Intuition raises $2.3B to train AI agents for the real world using video games",
-    "date": "2026-06-26",
-    "ts": 1782482435.283998
-  },
-  {
-    "url": "https://techcrunch.com/2026/06/25/patronus-ai-lands-50m-to-build-digital-worlds-that-stress-test-ai-agents/",
-    "headline": "Patronus AI lands $50M to build digital stress-test worlds for AI agents",
-    "date": "2026-06-26",
-    "ts": 1782482435.283998
-  },
-  {
-    "url": "https://techcrunch.com/2026/06/25/anthropics-claude-is-winning-over-paid-consumers-a-market-owned-by-chatgpt/",
-    "headline": "Claude gaining ground on ChatGPT among paying subscribers, new data shows",
-    "date": "2026-06-26",
-    "ts": 1782482435.283998
-  },
-  {
-    "url": "https://venturebeat.com/technology/liquid-ais-smallest-model-yet-lfm2-5-230m-beats-models-4x-its-size-at-data-extraction-can-run-anywhere",
-    "headline": "Liquid AI's tiny LFM2.5-230M model beats models 4x its size at data extraction",
-    "date": "2026-06-26",
-    "ts": 1782482435.283998
-  },
-  {
-    "url": "https://www.theverge.com/tech/957597/samsung-smartthings-api-charges",
-    "headline": "Samsung will start charging developers to access its SmartThings smart home API",
-    "date": "2026-06-26",
-    "ts": 1782482435.283998
-  },
-  {
-    "url": "https://techcrunch.com/2026/06/25/xbox-follows-apple-with-price-increases/",
-    "headline": "Xbox follows Apple with price hikes across consoles and accessories",
-    "date": "2026-06-26",
-    "ts": 1782482435.283998
-  },
-  {
-    "url": "https://techcrunch.com/2026/06/25/notion-mail-shuts-down-amid-agent-takeover/",
-    "headline": "Notion shuts down Notion Mail as users migrate to AI agents instead",
-    "date": "2026-06-26",
-    "ts": 1782482435.283998
-  },
-  {
-    "url": "https://arstechnica.com/gadgets/2026/06/microsoft-adds-another-year-to-windows-10-extended-update-program/",
-    "headline": "Microsoft extends Windows 10 Extended Security Updates program by one more year",
-    "date": "2026-06-26",
-    "ts": 1782482435.283998
-  },
-  {
-    "url": "https://arstechnica.com/tech-policy/2026/06/fcc-may-kill-2b-program-that-connects-schools-and-libraries-to-internet/",
-    "headline": "FCC eyes killing $2B E-Rate program that connects schools and libraries to internet",
-    "date": "2026-06-26",
-    "ts": 1782482435.283998
-  },
-  {
-    "url": "https://www.cnbc.com/2026/06/25/micron-stock-3q-earnings-memory.html",
-    "headline": "Micron Q3 revenue quadruples to $41.5B, stock jumps 15% on AI memory demand",
-    "date": "2026-06-25",
-    "ts": 1782396036.002439
-  },
-  {
-    "url": "https://www.cnbc.com/2026/06/24/jpmorgan-goldman-sachs-fed-stress-test.html",
-    "headline": "JPMorgan unveils $50B buyback, Goldman raises dividend after all 32 banks clear Fed stress test",
-    "date": "2026-06-25",
-    "ts": 1782396036.002439
-  },
-  {
-    "url": "https://www.pymnts.com/personnel/2026/jpmorgan-names-2-potential-ceo-successors-as-co-presidents/",
-    "headline": "JPMorgan names 2 co-presidents as potential successors to Jamie Dimon",
-    "date": "2026-06-25",
-    "ts": 1782396036.002439
-  },
-  {
-    "url": "https://techcrunch.com/2026/06/24/cerebras-stock-plunges-after-earnings-as-ceo-says-margin-outlook-was-misunderstood/",
-    "headline": "Cerebras stock plunges after earnings as CEO says margin outlook was misunderstood",
-    "date": "2026-06-25",
-    "ts": 1782396036.002439
-  },
-  {
-    "url": "https://www.paymentsdive.com/news/boston-fed-forms-payments-council/823641/",
-    "headline": "Boston Fed forms payments council to advance industry coordination",
-    "date": "2026-06-25",
-    "ts": 1782396036.002439
-  },
-  {
-    "url": "https://www.theblock.co/post/406067/ripple-launches-rlusd-stablecoin-japan",
-    "headline": "Ripple launches RLUSD stablecoin in Japan after regulatory approval",
-    "date": "2026-06-25",
-    "ts": 1782396036.002439
-  },
-  {
-    "url": "https://www.theblock.co/post/406154/spark-uniswap-build-stablecoin-fx-layer-seeded-with-150-million-liquidity-migration",
-    "headline": "Spark and Uniswap build stablecoin FX Layer seeded with $150M in liquidity",
-    "date": "2026-06-25",
-    "ts": 1782396036.002439
-  },
-  {
-    "url": "https://www.finextra.com/newsarticle/47987/stablecore-launches-stablecoin-and-digital-asset-programme-for-credit-unions",
-    "headline": "Stablecore launches stablecoin and digital asset program for credit unions",
-    "date": "2026-06-25",
-    "ts": 1782396036.002439
-  },
-  {
-    "url": "https://www.finextra.com/pressarticle/110245/modern-treasury-partners-sardine-to-help-businesses-detect-fraud-earlier",
-    "headline": "Modern Treasury partners Sardine to help businesses detect payments fraud earlier",
-    "date": "2026-06-25",
-    "ts": 1782396036.002439
-  },
-  {
-    "url": "https://www.cnbc.com/2026/06/25/pce-inflation-report-may-2026-.html",
-    "headline": "PCE core inflation hits 3.4% in May, highest since October 2023",
-    "date": "2026-06-25",
-    "ts": 1782396036.002439
-  },
-  {
-    "url": "https://www.wsj.com/economy/central-banking/hawkish-boj-member-sees-scope-to-bring-policy-rate-closer-to-2-736e76ee",
-    "headline": "Hawkish BoJ member sees scope to bring policy rate closer to 2%",
-    "date": "2026-06-25",
-    "ts": 1782396036.002439
-  },
-  {
-    "url": "https://www.bankingdive.com/news/banks-overdraft-fees-credit-card-interest-cap-senate-banking/823661/",
-    "headline": "GOP senator slams banks over deposit posting and overdraft fee practices",
-    "date": "2026-06-25",
-    "ts": 1782396036.002439
-  },
-  {
-    "url": "https://www.reuters.com/world/china/anthropic-says-alibaba-illicitly-extracted-claude-ai-model-capabilities-2026-06-24/",
-    "headline": "Anthropic accuses Alibaba of largest known Claude distillation attack via 28.8M fraudulent exchanges",
-    "date": "2026-06-25",
-    "ts": 1782396036.002439
-  },
-  {
-    "url": "https://techcrunch.com/2026/06/25/amazon-ups-india-bet-with-fresh-13b-ai-infrastructure-investment/",
-    "headline": "Amazon ups India bet with fresh $13B AI infrastructure investment",
-    "date": "2026-06-25",
-    "ts": 1782396036.002439
-  },
-  {
-    "url": "https://techcrunch.com/2026/06/25/adobe-acquires-image-and-video-enhancement-tool-maker-topaz-labs/",
-    "headline": "Adobe acquires Topaz Labs, an image and video AI enhancement tool maker",
-    "date": "2026-06-25",
-    "ts": 1782396036.002439
-  },
-  {
-    "url": "https://techcrunch.com/2026/06/24/agility-robotics-plans-to-go-public-via-spac-in-a-2-5b-deal/",
-    "headline": "Agility Robotics plans to go public via SPAC in a $2.5B deal",
-    "date": "2026-06-25",
-    "ts": 1782396036.002439
-  },
-  {
-    "url": "https://techcrunch.com/2026/06/24/figma-adds-code-layers-support-for-animations-more-ai-features-in-new-update/",
-    "headline": "Figma adds code layers, animations, and AI features in major design tool update",
-    "date": "2026-06-25",
-    "ts": 1782396036.002439
-  },
-  {
-    "url": "https://www.theverge.com/tech/952162/apple-price-increase-ram-shortage",
-    "headline": "Apple raises prices on Macs and iPads by hundreds of dollars due to memory shortage",
-    "date": "2026-06-25",
-    "ts": 1782396036.002439
-  },
-  {
-    "url": "https://arstechnica.com/gadgets/2026/06/ibm-claims-worlds-first-sub-1-nanometer-chip-technology/",
-    "headline": "IBM claims world's first sub-1 nanometer chip technology",
-    "date": "2026-06-25",
-    "ts": 1782396036.002439
-  },
-  {
-    "url": "https://techcrunch.com/2026/06/25/trump-admin-proposes-axing-brake-pedal-requirement-for-avs-in-a-boost-for-tesla/",
-    "headline": "Trump admin proposes axing brake pedal requirement for autonomous vehicles",
-    "date": "2026-06-25",
-    "ts": 1782396036.002439
-  },
-  {
-    "url": "https://arstechnica.com/gaming/2026/06/grand-theft-auto-vi-will-cost-80-without-a-physical-disc/",
-    "headline": "GTA VI will cost $80 without a physical disc, more than other AAA games",
-    "date": "2026-06-25",
-    "ts": 1782396036.002439
-  },
-  {
-    "url": "https://www.theverge.com/streaming/956712/disney-youtube-tv-directv-streaming-settlement",
-    "headline": "Disney agrees to pay $50M settlement to YouTube TV and DirecTV subscribers",
-    "date": "2026-06-25",
-    "ts": 1782396036.002439
   }
 ]
