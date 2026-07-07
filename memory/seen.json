@@ -1,5 +1,113 @@
 [
   {
+    "url": "https://www.cnbc.com/2026/07/07/samsung-electronics-preliminary-second-quarter-profit-hits-fresh-high.html",
+    "headline": "Samsung Q2 profit jumps 19-fold to record $58.4B on AI chip boom; shares fall 7%",
+    "date": "2026-07-07",
+    "ts": 1783432851.837231
+  },
+  {
+    "url": "https://www.cnbc.com/2026/07/06/klarna-seeks-us-bank-charter-in-push-beyond-buy-now-pay-later.html",
+    "headline": "Klarna files for FDIC-insured Utah industrial bank charter, targeting 30M US users",
+    "date": "2026-07-07",
+    "ts": 1783432851.837231
+  },
+  {
+    "url": "https://www.paymentsdive.com/news/how-real-time-payments-expand-stripe-fintechs-fednow-rtp-consumers-banks/824410/",
+    "headline": "How real-time payments expand: FedNow, RTP, and the race to reach consumers via fintechs",
+    "date": "2026-07-07",
+    "ts": 1783432851.837231
+  },
+  {
+    "url": "https://www.paymentsjournal.com/build-momentum-behind-zelle-for-business/",
+    "headline": "Zelle for Business momentum builds as banks push small-business P2P adoption",
+    "date": "2026-07-07",
+    "ts": 1783432851.837231
+  },
+  {
+    "url": "https://www.finextra.com/pressarticle/110353/nuvion-adds-ripple-stablecoin-to-payments-stack",
+    "headline": "Nuvion adds Ripple stablecoin to payments stack for settlement",
+    "date": "2026-07-07",
+    "ts": 1783432851.837231
+  },
+  {
+    "url": "https://www.finextra.com/pressarticle/110354/open-banking-fraud-rates-remain-below-wider-uk-payments-industry-benchmarks",
+    "headline": "UK open banking fraud rates stay well below wider payments industry benchmarks",
+    "date": "2026-07-07",
+    "ts": 1783432851.837231
+  },
+  {
+    "url": "https://www.npr.org/2026/07/07/g-s1-132265/tanker-attack-strait-of-hormuz",
+    "headline": "Tanker set ablaze near Strait of Hormuz after Iran-linked projectile strike, threatening energy flows",
+    "date": "2026-07-07",
+    "ts": 1783432851.837231
+  },
+  {
+    "url": "https://www.bankingdive.com/news/regions-acquisition-frazer-lanier-municipal-bond-underwriter-debt-placement-bolt-on/824466/",
+    "headline": "Regions Financial acquires muni bond specialist Frazer Lanier in bolt-on deal",
+    "date": "2026-07-07",
+    "ts": 1783432851.837231
+  },
+  {
+    "url": "https://www.wsj.com/economy/central-banking/canada-cpi-expectations-ramped-up-prior-to-u-s-iran-deal-central-bank-survey-says-faafa0ef",
+    "headline": "Canada CPI expectations ramped up before US-Iran deal, central bank survey finds",
+    "date": "2026-07-07",
+    "ts": 1783432851.837231
+  },
+  {
+    "url": "https://venturebeat.com/technology/anthropics-new-j-lens-reveals-a-silent-workspace-inside-claude-that-mirrors-a-leading-theory-of-consciousness",
+    "headline": "Anthropic's 'J-lens' reveals a silent global workspace inside Claude mirroring consciousness theory",
+    "date": "2026-07-07",
+    "ts": 1783432851.837231
+  },
+  {
+    "url": "https://techcrunch.com/2026/07/06/the-first-ai-run-ransomware-attack-still-needed-a-human/",
+    "headline": "First AI-run ransomware attack documented — but still required a human operator",
+    "date": "2026-07-07",
+    "ts": 1783432851.837231
+  },
+  {
+    "url": "https://techcrunch.com/2026/07/07/savis-app-aims-to-protect-consumers-from-realistic-ai-scams-like-kidnappers-demanding-ransom/",
+    "headline": "Savi launches app to protect consumers from AI-powered voice scams including fake kidnapping calls",
+    "date": "2026-07-07",
+    "ts": 1783432851.837231
+  },
+  {
+    "url": "https://techcrunch.com/2026/07/05/amazon-will-stop-accepting-new-customers-for-mechanical-turk/",
+    "headline": "Amazon will stop accepting new Mechanical Turk customers as AI displaces human task market",
+    "date": "2026-07-07",
+    "ts": 1783432851.837231
+  },
+  {
+    "url": "https://techcrunch.com/2026/07/06/microsoft-lays-off-nearly-5000-employees-across-xbox-commercial-sales/",
+    "headline": "Microsoft cuts ~4,800 jobs — 1,600 from Xbox, bulk from commercial sales — in AI restructuring",
+    "date": "2026-07-07",
+    "ts": 1783432851.837231
+  },
+  {
+    "url": "https://techcrunch.com/2026/07/07/hacktivists-call-out-trump-by-hacking-and-defacing-us-army-websites/",
+    "headline": "Hacktivists hack and deface US Army websites in protest against Trump",
+    "date": "2026-07-07",
+    "ts": 1783432851.837231
+  },
+  {
+    "url": "https://arstechnica.com/tech-policy/2026/07/fcc-to-end-biden-era-rule-that-forces-isps-to-list-all-their-fees/",
+    "headline": "FCC to end Biden-era rule requiring ISPs to disclose all fees to consumers",
+    "date": "2026-07-07",
+    "ts": 1783432851.837231
+  },
+  {
+    "url": "https://openwrt.org/toh/openwrt/one",
+    "headline": "OpenWrt One open-hardware router ships, tops Hacker News as developer alternative to commercial gear",
+    "date": "2026-07-07",
+    "ts": 1783432851.837231
+  },
+  {
+    "url": "https://www.pcmag.com/news/a-hackers-arrest-reveals-microsoft-can-track-users-via-a-windows-device",
+    "headline": "Hacker arrest reveals Microsoft can track users across devices via a hidden Windows Device ID",
+    "date": "2026-07-07",
+    "ts": 1783432851.837231
+  },
+  {
     "url": "https://www.cnbc.com/2026/07/02/jersey-mikes-files-for-ipo.html",
     "headline": "Blackstone-backed Jersey Mike's publicly files S-1 for NYSE IPO under ticker JMKE",
     "date": "2026-07-03",
@@ -364,227 +472,5 @@
     "headline": "Reddit to require login to access old.reddit.com",
     "date": "2026-07-01",
     "ts": 1782914431.80835
-  },
-  {
-    "url": "https://www.cnbc.com/2026/06/30/warren-buffett-delays-gates-foundation-donation-epstein-review.html",
-    "headline": "Buffett skips midyear Gates Foundation donation pending Epstein review, first pause in 20 years",
-    "date": "2026-06-30",
-    "ts": 1782828037.701959
-  },
-  {
-    "url": "https://www.cnbc.com/2026/06/29/eli-lilly-regeneron-in-fda-precheck-manufacturing-program.html",
-    "headline": "Eli Lilly, Regeneron among first companies selected for FDA fast-track manufacturing review program",
-    "date": "2026-06-30",
-    "ts": 1782828037.701959
-  },
-  {
-    "url": "https://www.finextra.com/newsarticle/48012/real-time-payments-out-of-reach-for-most-banks---survey?utm_medium=rssfinextra&utm_source=finextrafeed",
-    "headline": "Real-time payments out of reach for most banks due to cost and complexity, survey finds",
-    "date": "2026-06-30",
-    "ts": 1782828037.701959
-  },
-  {
-    "url": "https://www.pymnts.com/cryptocurrency/2026/uk-reduces-capital-requirements-for-stablecoin-issuers/",
-    "headline": "UK cuts capital requirements for stablecoin issuers in new regulatory framework",
-    "date": "2026-06-30",
-    "ts": 1782828037.701959
-  },
-  {
-    "url": "https://www.theblock.co/post/406599/jpmorgan-execs-draw-comparison-between-yield-stablecoins-shadow-banking?utm_source=rss&utm_medium=rss",
-    "headline": "JPMorgan execs liken yield-bearing stablecoins to shadow banking, flag systemic risk",
-    "date": "2026-06-30",
-    "ts": 1782828037.701959
-  },
-  {
-    "url": "https://www.theblock.co/post/406581/bny-circle-expand-partnership-adding-mint-burn-capabilities-usdc?utm_source=rss&utm_medium=rss",
-    "headline": "BNY and Circle expand partnership, adding mint and burn capabilities for USDC",
-    "date": "2026-06-30",
-    "ts": 1782828037.701959
-  },
-  {
-    "url": "https://www.finextra.com/pressarticle/110286/friendly-fraud-on-the-rise-say-enterprise-merchants?utm_medium=rssfinextra&utm_source=finextrafeed",
-    "headline": "Friendly fraud on the rise among enterprise merchants, new survey shows",
-    "date": "2026-06-30",
-    "ts": 1782828037.701959
-  },
-  {
-    "url": "https://www.pymnts.com/apple/2026/apple-and-google-urged-to-offer-alternative-uk-payment-paths/",
-    "headline": "Apple and Google urged by UK regulator to offer alternative in-app payment paths",
-    "date": "2026-06-30",
-    "ts": 1782828037.701959
-  },
-  {
-    "url": "https://www.bankingdive.com/news/federal-reserve-lisa-cook-trump-supreme-court-cause-due-process/823991/",
-    "headline": "Supreme Court blocks Trump from firing Fed Governor Lisa Cook 5-4, shielding central bank independence",
-    "date": "2026-06-30",
-    "ts": 1782828037.701959
-  },
-  {
-    "url": "https://venturebeat.com/technology/meituan-open-sources-longcat-2-0-the-1-6t-near-frontier-agentic-coding-model-thats-been-leading-openrouter-trained-entirely-on-chinese-chips",
-    "headline": "Meituan open-sources LongCat-2.0, a 1.6T-parameter model trained entirely on domestic Chinese chips",
-    "date": "2026-06-30",
-    "ts": 1782828037.701959
-  },
-  {
-    "url": "https://techcrunch.com/2026/06/29/anthropic-and-gov-newsom-forge-deal-allowing-california-government-to-use-claude-at-half-price/",
-    "headline": "Anthropic and Gov. Newsom strike deal allowing California government to use Claude at half price",
-    "date": "2026-06-30",
-    "ts": 1782828037.701959
-  },
-  {
-    "url": "https://techcrunch.com/2026/06/29/geminis-personalized-ai-image-generation-is-now-free-for-u-s-users/",
-    "headline": "Google makes Gemini personalized AI image generation free for all US users",
-    "date": "2026-06-30",
-    "ts": 1782828037.701959
-  },
-  {
-    "url": "https://techcrunch.com/2026/06/29/cursor-now-has-a-mobile-app-for-guiding-your-coding-agent-on-the-go/",
-    "headline": "Cursor launches mobile app to let developers guide AI coding agents on the go",
-    "date": "2026-06-30",
-    "ts": 1782828037.701959
-  },
-  {
-    "url": "https://techcrunch.com/2026/06/29/vibe-coding-platform-base44-launches-own-model-as-ai-startups-seek-defensibility/",
-    "headline": "Vibe-coding platform Base44 launches its own model to build competitive moat",
-    "date": "2026-06-30",
-    "ts": 1782828037.701959
-  },
-  {
-    "url": "https://arstechnica.com/space/2026/06/ars-live-whats-the-latest-in-the-aftermath-of-the-new-glenn-catastrophe/",
-    "headline": "New Glenn rocket catastrophe: latest aftermath details as investigation continues",
-    "date": "2026-06-30",
-    "ts": 1782828037.701959
-  },
-  {
-    "url": "https://arstechnica.com/information-technology/2026/06/us-offers-10-million-for-info-on-group-behind-signal-and-whatsapp-hacking-spree/",
-    "headline": "US offers $10 million reward for info on group behind Signal and WhatsApp hacking spree",
-    "date": "2026-06-30",
-    "ts": 1782828037.701959
-  },
-  {
-    "url": "https://arstechnica.com/tech-policy/2026/06/supreme-court-ruling-guts-governments-use-of-geofence-warrants/",
-    "headline": "Supreme Court guts government's use of geofence warrants in major privacy ruling",
-    "date": "2026-06-30",
-    "ts": 1782828037.701959
-  },
-  {
-    "url": "https://arstechnica.com/gadgets/2026/06/sony-erases-digital-content-from-libraries-were-reminded-we-dont-own-what-we-buy/",
-    "headline": "Sony erases purchased digital content from user libraries, reminding customers they don't own what they buy",
-    "date": "2026-06-30",
-    "ts": 1782828037.701959
-  },
-  {
-    "url": "https://www.theverge.com/tech/959144/t-mobile-legacy-plan-retire-sprint",
-    "headline": "T-Mobile begins booting customers off its oldest legacy Sprint-era plans",
-    "date": "2026-06-30",
-    "ts": 1782828037.701959
-  },
-  {
-    "url": "https://www.cnbc.com/2026/06/29/comcast-announces-it-will-spin-off-media-and-tech-wings-into-separate-public-companies.html",
-    "headline": "Comcast splits off NBCUniversal and Sky in tax-free spinoff, shares surge 20%",
-    "date": "2026-06-29",
-    "ts": 1782741634.18569
-  },
-  {
-    "url": "https://www.theverge.com/science/958891/rocket-lab-iridium-acquisition-satellite-communications",
-    "headline": "Rocket Lab to acquire Iridium for $8B in cash-and-stock deal to rival SpaceX",
-    "date": "2026-06-29",
-    "ts": 1782741634.18569
-  },
-  {
-    "url": "https://money.usnews.com/investing/news/articles/2026-06-29/comcast-to-spin-off-nbcuniversal-and-sky-into-separate-companies",
-    "headline": "Wall St set to climb as US-Iran talks resume; Comcast surges on spin-off plan",
-    "date": "2026-06-29",
-    "ts": 1782741634.18569
-  },
-  {
-    "url": "https://www.paymentsjournal.com/ftc-reports-record-fraud-losses-warns-of-bank-imposter-scams/",
-    "headline": "FTC reports record fraud losses in 2025, warns of surge in bank imposter scams",
-    "date": "2026-06-29",
-    "ts": 1782741634.18569
-  },
-  {
-    "url": "https://www.theblock.co/post/405670/blackrock-ethena-partnership-usde?utm_source=rss&utm_medium=rss",
-    "headline": "BlackRock Aladdin platform adds deeper support for Ethena stablecoin products",
-    "date": "2026-06-29",
-    "ts": 1782741634.18569
-  },
-  {
-    "url": "https://www.pymnts.com/bnpl/2026/bnpl-loans-increasingly-backed-by-private-credit/",
-    "headline": "BNPL loans increasingly backed by private credit as mainstream lenders pull back",
-    "date": "2026-06-29",
-    "ts": 1782741634.18569
-  },
-  {
-    "url": "https://www.pymnts.com/real-time-payments/2026/robinhood-pushes-brokerages-to-end-the-waiting-game/",
-    "headline": "Robinhood pushes brokerages to end T+1 settlement waiting game via instant transfers",
-    "date": "2026-06-29",
-    "ts": 1782741634.18569
-  },
-  {
-    "url": "https://www.paymentsjournal.com/emvco-proposes-standards-for-stronger-payment-authentication/",
-    "headline": "EMVCo proposes new standards for stronger payment authentication across card rails",
-    "date": "2026-06-29",
-    "ts": 1782741634.18569
-  },
-  {
-    "url": "https://www.wsj.com/finance/investing/how-a-tight-lipped-fed-could-lead-to-higher-mortgage-rates-785f802f?mod=rss_markets_main",
-    "headline": "WSJ: Tight-lipped Fed stance could keep mortgage rates elevated longer",
-    "date": "2026-06-29",
-    "ts": 1782741634.18569
-  },
-  {
-    "url": "https://www.wsj.com/economy/central-banking/atlanta-fed-search-for-new-leader-stalls-4f4d810f",
-    "headline": "Atlanta Fed search for new president stalls as White House eyes candidate slate",
-    "date": "2026-06-29",
-    "ts": 1782741634.18569
-  },
-  {
-    "url": "https://techcrunch.com/2026/06/26/trump-admin-releases-anthropic-mythos-to-be-used-by-more-than-100-us-companies-agencies/",
-    "headline": "Trump admin clears Anthropic Mythos 5 for release to 100+ US companies and agencies",
-    "date": "2026-06-29",
-    "ts": 1782741634.18569
-  },
-  {
-    "url": "https://techcrunch.com/2026/06/27/apple-vision-pro-exec-is-reportedly-leaving-for-openai/",
-    "headline": "Apple Vision Pro exec reportedly leaving to join OpenAI",
-    "date": "2026-06-29",
-    "ts": 1782741634.18569
-  },
-  {
-    "url": "https://techcrunch.com/2026/06/28/ford-rehires-gray-beard-engineers-after-ai-falls-short/",
-    "headline": "Ford rehires veteran engineers after AI-driven engineering programs fall short",
-    "date": "2026-06-29",
-    "ts": 1782741634.18569
-  },
-  {
-    "url": "https://www.theverge.com/tech/958768/china-claims-the-worlds-fastest-supercomputer",
-    "headline": "China claims world's fastest supercomputer, topping the US and Japan",
-    "date": "2026-06-29",
-    "ts": 1782741634.18569
-  },
-  {
-    "url": "https://arstechnica.com/gadgets/2026/06/nasas-x-59-frankenjet-tests-supersonic-flight-without-the-sonic-boom/",
-    "headline": "NASA's X-59 quiet supersonic jet completes first flight tests without a sonic boom",
-    "date": "2026-06-29",
-    "ts": 1782741634.18569
-  },
-  {
-    "url": "https://techcrunch.com/2026/06/28/california-law-targeting-loud-streaming-ads-takes-effect-on-july-1/",
-    "headline": "California law banning excessively loud streaming ads takes effect July 1",
-    "date": "2026-06-29",
-    "ts": 1782741634.18569
-  },
-  {
-    "url": "https://www.eff.org/deeplinks/2026/06/kids-act-would-require-age-checks-get-online",
-    "headline": "KIDS Act would require age verification for all online access, EFF warns",
-    "date": "2026-06-29",
-    "ts": 1782741634.18569
-  },
-  {
-    "url": "https://techcrunch.com/2026/06/29/robot-hand-company-settles-tesla-trade-secret-suit-and-announces-11m-raise/",
-    "headline": "Robot hand startup settles Tesla trade secret suit, raises $11M",
-    "date": "2026-06-29",
-    "ts": 1782741634.18569
   }
 ]
