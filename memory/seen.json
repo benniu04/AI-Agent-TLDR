@@ -1,5 +1,119 @@
 [
   {
+    "url": "https://www.biopharmadive.com/news/vertex-crinetics-acquire-deal-palsonify-acromegaly/824545/",
+    "headline": "Vertex acquires Crinetics for $10B at 102% premium in largest deal in company history",
+    "date": "2026-07-08",
+    "ts": 1783519304.098263
+  },
+  {
+    "url": "https://techcrunch.com/2026/07/06/us-investors-will-soon-get-access-to-sk-hynix-another-memory-maker-riding-the-ai-boom/",
+    "headline": "SK Hynix prices $28B US ADR offering as chip stocks slide on AI valuation concerns",
+    "date": "2026-07-08",
+    "ts": 1783519304.098263
+  },
+  {
+    "url": "https://www.americanbanker.com/payments/news/jpmorganchase-wells-fargo-pnc-reportedly-want-to-buy-fiservs-star-network",
+    "headline": "JPMorgan, BofA, Wells Fargo, PNC explore $15B bid for Fiserv's Star debit network",
+    "date": "2026-07-08",
+    "ts": 1783519304.098263
+  },
+  {
+    "url": "https://www.pymnts.com/news/banking/2026/us-bank-debuts-tool-for-faster-small-business-money-movement/",
+    "headline": "US Bank debuts real-time money movement tool aimed at small businesses",
+    "date": "2026-07-08",
+    "ts": 1783519304.098263
+  },
+  {
+    "url": "https://www.pymnts.com/news/cross-border-payments/2026/bank-of-america-cross-border-payments-must-work-like-local-ones/",
+    "headline": "Bank of America exec: Cross-border payments must work like local transactions",
+    "date": "2026-07-08",
+    "ts": 1783519304.098263
+  },
+  {
+    "url": "https://www.paymentsjournal.com/illinois-becomes-first-state-to-tax-crypto-transactions/",
+    "headline": "Illinois becomes first US state to tax crypto transactions",
+    "date": "2026-07-08",
+    "ts": 1783519304.098263
+  },
+  {
+    "url": "https://www.digitaltransactions.net/southwest-adds-klarna/",
+    "headline": "Southwest Airlines adds Klarna BNPL as payment option",
+    "date": "2026-07-08",
+    "ts": 1783519304.098263
+  },
+  {
+    "url": "https://www.techtimes.com/articles/319827/20260707/fed-minutes-due-wednesday-nine-hawkish-dots-warshs-deliberate-silence.htm",
+    "headline": "FOMC June minutes drop today at 2pm ET; markets brace for hawkish signal as 9 of 18 officials favored 2026 rate hike",
+    "date": "2026-07-08",
+    "ts": 1783519304.098263
+  },
+  {
+    "url": "https://www.wsj.com/finance/jgbs-fall-tracking-declines-in-u-s-treasurys-168e6a33?mod=rss_markets_main",
+    "headline": "Treasury yields spike toward 4.58% as renewed Iran hostilities reignite inflation fears",
+    "date": "2026-07-08",
+    "ts": 1783519304.098263
+  },
+  {
+    "url": "https://www.wsj.com/economy/central-banking/new-zealands-central-bank-raises-rates-in-tentative-move-to-combat-inflation-risks-380b9758",
+    "headline": "New Zealand central bank raises rates in tentative move to combat inflation risks",
+    "date": "2026-07-08",
+    "ts": 1783519304.098263
+  },
+  {
+    "url": "https://techcrunch.com/2026/07/08/sambanova-draws-1b-at-11b-valuation-in-series-f-first-close/",
+    "headline": "SambaNova raises $1B at $11B valuation in Series F, 5 months after prior mega-round",
+    "date": "2026-07-08",
+    "ts": 1783519304.098263
+  },
+  {
+    "url": "https://techcrunch.com/2026/07/08/hot-french-startup-zml-releases-free-product-to-speed-inference-across-lots-of-ai-chips/",
+    "headline": "French startup ZML releases free tool to accelerate AI inference across heterogeneous chips",
+    "date": "2026-07-08",
+    "ts": 1783519304.098263
+  },
+  {
+    "url": "https://techcrunch.com/2026/07/07/meta-rolls-out-muse-a-new-ai-image-generator/",
+    "headline": "Meta launches Muse Image AI generator; users push back over use of Instagram photos",
+    "date": "2026-07-08",
+    "ts": 1783519304.098263
+  },
+  {
+    "url": "https://arstechnica.com/security/2026/07/hackers-can-use-9-of-the-most-popular-ai-tools-to-assemble-massive-botnets/",
+    "headline": "Hackers can exploit 9 major AI tools to assemble massive botnets, researchers warn",
+    "date": "2026-07-08",
+    "ts": 1783519304.098263
+  },
+  {
+    "url": "https://noma.security/blog/gitlost-how-we-tricked-githubs-ai-agent-into-leaking-private-repos/",
+    "headline": "GitLost: Researchers trick GitHub's AI coding agent into leaking private repositories",
+    "date": "2026-07-08",
+    "ts": 1783519304.098263
+  },
+  {
+    "url": "https://www.apple.com/newsroom/2026/07/apple-to-increase-spend-with-broadcom-to-produce-billions-more-us-chips/",
+    "headline": "Apple to increase Broadcom spend to produce billions more US chips",
+    "date": "2026-07-08",
+    "ts": 1783519304.098263
+  },
+  {
+    "url": "https://arstechnica.com/tech-policy/2026/07/supreme-court-lets-texas-enforce-age-verification-law-on-app-stores/",
+    "headline": "SCOTUS lets Texas enforce app store age-verification law that Big Tech calls censorship",
+    "date": "2026-07-08",
+    "ts": 1783519304.098263
+  },
+  {
+    "url": "https://techcrunch.com/2026/07/07/figma-acquires-team-behind-a-vibe-coding-app/",
+    "headline": "Figma acquires team behind vibe-coding app in design-to-code push",
+    "date": "2026-07-08",
+    "ts": 1783519304.098263
+  },
+  {
+    "url": "https://www.theverge.com/tech/962658/samsung-galaxy-unpacked-wide-foldable-watch-july",
+    "headline": "Samsung Galaxy Unpacked set for July 22 featuring new wide-format foldable phone",
+    "date": "2026-07-08",
+    "ts": 1783519304.098263
+  },
+  {
     "url": "https://www.cnbc.com/2026/07/07/samsung-electronics-preliminary-second-quarter-profit-hits-fresh-high.html",
     "headline": "Samsung Q2 profit jumps 19-fold to record $58.4B on AI chip boom; shares fall 7%",
     "date": "2026-07-07",
@@ -352,125 +466,5 @@
     "headline": "Android Developer Verification tool found masquerading as protection while delivering malware",
     "date": "2026-07-02",
     "ts": 1783000833.234086
-  },
-  {
-    "url": "https://www.newstribune.com/news/2026/jul/01/sp-500-nasdaq-register-best-quarter-since-2020/",
-    "headline": "S&P 500 +14.9%, Nasdaq +21.4% close best quarter since 2020",
-    "date": "2026-07-01",
-    "ts": 1782914431.80835
-  },
-  {
-    "url": "https://www.cnbc.com/2026/07/01/private-payrolls-rose-by-98000-in-june-less-than-expected-adp-reports.html",
-    "headline": "ADP: June private payrolls miss at 98K, below 110K forecast, ahead of Friday jobs report",
-    "date": "2026-07-01",
-    "ts": 1782914431.80835
-  },
-  {
-    "url": "https://www.cnbc.com/2026/07/01/defense-stocks-uk-investment-plan-gilts-bae-systems.html",
-    "headline": "UK defense stocks surge on $20B spending plan; gilts fall under fiscal pressure",
-    "date": "2026-07-01",
-    "ts": 1782914431.80835
-  },
-  {
-    "url": "https://www.theblock.co/post/406736/visa-stripe-coinbase-join-open-usd-stablecoin-shares-reserve-revenue",
-    "headline": "Visa, Mastercard, Stripe, BlackRock and 140+ firms launch Open USD stablecoin consortium with shared reserve revenue",
-    "date": "2026-07-01",
-    "ts": 1782914431.80835
-  },
-  {
-    "url": "https://www.theblock.co/post/406877/bernstein-sees-203-upside-for-circle-even-as-new-stablecoin-rival-ousd-debuts",
-    "headline": "Bernstein sees 203% upside for Circle even as new OUSD stablecoin debuts as rival",
-    "date": "2026-07-01",
-    "ts": 1782914431.80835
-  },
-  {
-    "url": "https://www.finextra.com/newsarticle/48019/credit-agricole-launches-euro-stablecoin",
-    "headline": "Credit Agricole launches euro stablecoin",
-    "date": "2026-07-01",
-    "ts": 1782914431.80835
-  },
-  {
-    "url": "https://www.paymentsjournal.com/jpmorgan-expands-kinexys-blockchain-fx-network-to-asia-and-australia/",
-    "headline": "JPMorgan expands Kinexys blockchain FX settlement network to Asia and Australia",
-    "date": "2026-07-01",
-    "ts": 1782914431.80835
-  },
-  {
-    "url": "https://www.pymnts.com/legal/antitrust/2026/klarnas-pricerunner-awarded-1-9-billion-in-google-antitrust-case/",
-    "headline": "Klarna's PriceRunner unit awarded $1.9B in EU Google antitrust case",
-    "date": "2026-07-01",
-    "ts": 1782914431.80835
-  },
-  {
-    "url": "https://www.wsj.com/economy/central-banking/interest-rates-kevin-warsh-de137876",
-    "headline": "Warsh calls July rate debate a 'good family fight,' declines to signal direction at ECB Forum",
-    "date": "2026-07-01",
-    "ts": 1782914431.80835
-  },
-  {
-    "url": "https://www.wsj.com/finance/investing/jgbs-fall-tracking-declines-in-u-s-treasurys-ff5b8ed9",
-    "headline": "US Treasury yields and dollar rise as rate-hike bets firm",
-    "date": "2026-07-01",
-    "ts": 1782914431.80835
-  },
-  {
-    "url": "https://www.wsj.com/finance/investing/kevin-warsh-federal-reserve-markets-90b83b23",
-    "headline": "Warsh wants the Fed to talk less — Wall Street is listening harder",
-    "date": "2026-07-01",
-    "ts": 1782914431.80835
-  },
-  {
-    "url": "https://thereallo.dev/blog/claude-code-prompt-steganography",
-    "headline": "Claude Code found steganographically watermarking its own API requests",
-    "date": "2026-07-01",
-    "ts": 1782914431.80835
-  },
-  {
-    "url": "https://techcrunch.com/2026/06/30/anthropic-launches-claude-sonnet-5-as-a-cheaper-way-to-run-agents/",
-    "headline": "Anthropic launches Claude Sonnet 5 as a cheaper model built for agents",
-    "date": "2026-07-01",
-    "ts": 1782914431.80835
-  },
-  {
-    "url": "https://techcrunch.com/2026/06/30/nvidia-competitor-etched-hits-5b-valuation-1b-in-sales-for-ai-chip/",
-    "headline": "Nvidia rival Etched hits $5B valuation and $1B in revenue for its AI inference chip",
-    "date": "2026-07-01",
-    "ts": 1782914431.80835
-  },
-  {
-    "url": "https://techcrunch.com/2026/07/01/meta-like-spacex-looks-to-turn-excess-ai-compute-into-cash/",
-    "headline": "Meta plans to sell excess AI compute capacity externally, following SpaceX model",
-    "date": "2026-07-01",
-    "ts": 1782914431.80835
-  },
-  {
-    "url": "https://www.theverge.com/games/960160/sony-playstation-disc-production-ending",
-    "headline": "Sony ending physical disc production for all new PlayStation games in January 2028",
-    "date": "2026-07-01",
-    "ts": 1782914431.80835
-  },
-  {
-    "url": "https://www.theverge.com/games/960168/sony-playstation-ps3-vita-store-shut-down",
-    "headline": "Sony also closing PS3 and Vita digital storefronts",
-    "date": "2026-07-01",
-    "ts": 1782914431.80835
-  },
-  {
-    "url": "https://www.theverge.com/tech/960047/getty-shutterstock-merger-agreement-termination",
-    "headline": "Getty-Shutterstock merger collapses after UK regulator blocks the deal",
-    "date": "2026-07-01",
-    "ts": 1782914431.80835
-  },
-  {
-    "url": "https://www.pcgamer.com/gaming-industry/open-source-game-engine-godot-will-no-longer-accept-ai-authored-code-contributions-we-cant-trust-heavy-users-of-ai-to-understand-their-code-enough-to-fix-it/",
-    "headline": "Godot open-source game engine bans AI-authored code contributions",
-    "date": "2026-07-01",
-    "ts": 1782914431.80835
-  },
-  {
-    "url": "https://arstechnica.com/gadgets/2026/06/reddit-will-require-you-to-log-in-to-use-old-reddit-com/",
-    "headline": "Reddit to require login to access old.reddit.com",
-    "date": "2026-07-01",
-    "ts": 1782914431.80835
   }
 ]
