@@ -1,5 +1,113 @@
 [
   {
+    "url": "https://www.bloomberg.com/news/articles/2026-07-09/us-iran-trade-attacks-for-second-day-testing-fragile-ceasefire",
+    "headline": "US-Iran ceasefire collapses as both sides trade strikes for second day; global markets roiled",
+    "date": "2026-07-09",
+    "ts": 1783605644.92966
+  },
+  {
+    "url": "https://www.cnbc.com/2026/07/08/levi-strauss-levi-q2-2026-earnings.html",
+    "headline": "Levi Strauss beats Q2 expectations, raises full-year guidance and dividend",
+    "date": "2026-07-09",
+    "ts": 1783605644.92966
+  },
+  {
+    "url": "https://www.paymentsdive.com/news/fiserv-president-exits/824708/",
+    "headline": "Fiserv president Dhivya Suryadevara resigns weeks after CEO departure, interim leaders named",
+    "date": "2026-07-09",
+    "ts": 1783605644.92966
+  },
+  {
+    "url": "https://www.swift.com/news-events/press-releases/swifts-blockchain-ledger-ready-use-17-banks-set-pioneer-tokenised-cross-border-payments-trusted-global-infrastructure",
+    "headline": "Swift launches blockchain ledger for 24/7 tokenized-deposit cross-border payments with 17 banks",
+    "date": "2026-07-09",
+    "ts": 1783605644.92966
+  },
+  {
+    "url": "https://www.finextra.com/newsarticle/48064/sony-bank-wins-us-regulatory-approval-for-stablecoin-trust-bank",
+    "headline": "Sony Bank wins conditional OCC approval for US stablecoin trust bank",
+    "date": "2026-07-09",
+    "ts": 1783605644.92966
+  },
+  {
+    "url": "https://www.theblock.co/post/407719/paypal-seeks-increase-pyusd-stablecoin-native-issuance-on-polygon",
+    "headline": "PayPal seeks to expand PYUSD stablecoin via native issuance on Polygon",
+    "date": "2026-07-09",
+    "ts": 1783605644.92966
+  },
+  {
+    "url": "https://www.paymentsdive.com/news/fiserv-debit-network-sale-skepticism-abounds/824706/",
+    "headline": "Fiserv Star debit network sale draws widespread skepticism from industry analysts",
+    "date": "2026-07-09",
+    "ts": 1783605644.92966
+  },
+  {
+    "url": "https://www.wsj.com/economy/central-banking/fed-officials-flagged-risks-that-would-warrant-higher-rates-6f584cba",
+    "headline": "Fed June minutes: officials flagged inflation risks from tariffs, oil, and AI that could warrant higher rates",
+    "date": "2026-07-09",
+    "ts": 1783605644.92966
+  },
+  {
+    "url": "https://www.wsj.com/finance/investing/jgbs-fall-tracking-declines-in-u-s-treasurys-c87454e8?mod=rss_markets_main",
+    "headline": "Treasury yields little changed as markets assess renewed US-Iran ceasefire hopes",
+    "date": "2026-07-09",
+    "ts": 1783605644.92966
+  },
+  {
+    "url": "https://techcrunch.com/2026/07/09/popular-open-source-ai-developer-tool-ollama-raises-65m-grows-to-nearly-9m-users/",
+    "headline": "Ollama raises $65M Series A, local AI inference tool now at nearly 9M users",
+    "date": "2026-07-09",
+    "ts": 1783605644.92966
+  },
+  {
+    "url": "https://venturebeat.com/technology/spacexs-grok-4-5-launches-at-half-the-price-of-rivals-heres-why-that-could-rattle-anthropic-and-openai",
+    "headline": "SpaceX xAI releases Grok 4.5 at half the price of rivals, Elon calls it 'Opus-class'",
+    "date": "2026-07-09",
+    "ts": 1783605644.92966
+  },
+  {
+    "url": "https://techcrunch.com/2026/07/08/openai-releases-new-voice-models-for-more-natural-live-conversations/",
+    "headline": "OpenAI releases new real-time voice models for more natural live conversations",
+    "date": "2026-07-09",
+    "ts": 1783605644.92966
+  },
+  {
+    "url": "https://techcrunch.com/2026/07/08/lovable-reportedly-in-talks-to-double-its-valuation-to-13-2b/",
+    "headline": "Lovable vibe-coding startup reportedly in talks to double valuation to $13.2B",
+    "date": "2026-07-09",
+    "ts": 1783605644.92966
+  },
+  {
+    "url": "https://www.patrick-breyer.de/en/eu-parliament-greenlights-chat-control-1-0-breyer-our-children-lose-out/",
+    "headline": "EU Parliament passes Chat Control 1.0, allowing mass private-message scanning through 2028",
+    "date": "2026-07-09",
+    "ts": 1783605644.92966
+  },
+  {
+    "url": "https://apnews.com/article/john-deere-right-to-repair-agriculture-equipment-cb7514ffedb95c130a976af661f2bc02",
+    "headline": "John Deere FTC settlement gives farm equipment owners right to repair their own machines",
+    "date": "2026-07-09",
+    "ts": 1783605644.92966
+  },
+  {
+    "url": "https://www.cloudflare.com/drop/",
+    "headline": "Cloudflare launches Drop, a new network product",
+    "date": "2026-07-09",
+    "ts": 1783605644.92966
+  },
+  {
+    "url": "https://www.theverge.com/tech/963138/meta-smart-glasses-recording-super-sensing-ai",
+    "headline": "Meta reportedly developing always-recording smart glasses with 'super-sensing' AI",
+    "date": "2026-07-09",
+    "ts": 1783605644.92966
+  },
+  {
+    "url": "https://techcrunch.com/2026/07/08/feds-demand-autonomous-vehicle-companies-stop-interfering-with-first-responders/",
+    "headline": "Feds order autonomous vehicle companies to stop blocking emergency-responder access",
+    "date": "2026-07-09",
+    "ts": 1783605644.92966
+  },
+  {
     "url": "https://www.biopharmadive.com/news/vertex-crinetics-acquire-deal-palsonify-acromegaly/824545/",
     "headline": "Vertex acquires Crinetics for $10B at 102% premium in largest deal in company history",
     "date": "2026-07-08",
@@ -352,119 +460,5 @@
     "headline": "Podman v6.0.0 released",
     "date": "2026-07-03",
     "ts": 1783087240.349146
-  },
-  {
-    "url": "https://techcrunch.com/2026/07/02/tesla-saw-a-massive-sales-jump-in-the-second-quarter/",
-    "headline": "Tesla Q2 deliveries surge to 480K, crushing 406K Wall Street consensus",
-    "date": "2026-07-02",
-    "ts": 1783000833.234086
-  },
-  {
-    "url": "https://www.cnbc.com/2026/07/02/alphabet-google-android-eu-antitrust-fine-4-1-billion-euro-appeal.html",
-    "headline": "Google loses appeal on record $4.7B EU Android antitrust fine",
-    "date": "2026-07-02",
-    "ts": 1783000833.234086
-  },
-  {
-    "url": "https://techcrunch.com/2026/07/01/bending-spoons-defies-saas-slump-surges-40-on-first-day-of-trading/",
-    "headline": "Bending Spoons surges 40% on first day of trading after $18B IPO",
-    "date": "2026-07-02",
-    "ts": 1783000833.234086
-  },
-  {
-    "url": "https://www.finextra.com/newsarticle/48030/major-uk-banks-adopt-swift-consumer-payments-framework",
-    "headline": "Major UK banks adopt Swift consumer cross-border payments framework",
-    "date": "2026-07-02",
-    "ts": 1783000833.234086
-  },
-  {
-    "url": "https://www.digitaltransactions.net/fednow-marks-a-third-anniversary-tally-at-more-than-1800-banks-and-credit-unions/",
-    "headline": "FedNow marks third anniversary with more than 1,800 banks and credit unions",
-    "date": "2026-07-02",
-    "ts": 1783000833.234086
-  },
-  {
-    "url": "https://www.paymentsdive.com/news/amazon-settles-ftc-card-fraud-case/824203/",
-    "headline": "Amazon settles FTC card fraud case",
-    "date": "2026-07-02",
-    "ts": 1783000833.234086
-  },
-  {
-    "url": "https://www.finextra.com/pressarticle/110322/lightspark-becomes-first-payments-company-in-estonia-to-get-mica-licence",
-    "headline": "Lightspark becomes first payments company in Estonia to receive MiCA license",
-    "date": "2026-07-02",
-    "ts": 1783000833.234086
-  },
-  {
-    "url": "https://www.cnbc.com/2026/07/02/jobs-report-june-2026-.html",
-    "headline": "June nonfarm payrolls disappoint at 57K; unemployment rate holds at 4.2%",
-    "date": "2026-07-02",
-    "ts": 1783000833.234086
-  },
-  {
-    "url": "https://www.wsj.com/economy/central-banking/warren-asks-fed-watchdog-to-review-bowman-appearance-at-bank-event-9962dc2d",
-    "headline": "Warren asks Fed watchdog to review Bowman appearance at private Bank of America client dinner",
-    "date": "2026-07-02",
-    "ts": 1783000833.234086
-  },
-  {
-    "url": "https://techcrunch.com/2026/07/02/microsoft-launches-its-own-ai-deployment-company-with-2-5-billion-commitment/",
-    "headline": "Microsoft launches AI deployment company with $2.5B commitment",
-    "date": "2026-07-02",
-    "ts": 1783000833.234086
-  },
-  {
-    "url": "https://www.cnbc.com/2026/07/02/openai-proposes-us-government-own-5percent-stake-to-address-political-blowback.html",
-    "headline": "OpenAI proposes giving US government a 5% stake worth ~$42.6B to ease Washington pressure",
-    "date": "2026-07-02",
-    "ts": 1783000833.234086
-  },
-  {
-    "url": "https://techcrunch.com/2026/06/30/trump-drops-restrictions-on-anthropics-mythos-and-fable-models/",
-    "headline": "Trump lifts export restrictions on Anthropic's Mythos and Fable frontier models",
-    "date": "2026-07-02",
-    "ts": 1783000833.234086
-  },
-  {
-    "url": "https://techcrunch.com/2026/07/01/cloudflares-new-policy-pushes-ai-companies-to-pay-for-publishers-content/",
-    "headline": "Cloudflare's new policy pushes AI companies to pay publishers for scraped content",
-    "date": "2026-07-02",
-    "ts": 1783000833.234086
-  },
-  {
-    "url": "https://venturebeat.com/technology/z-ai-launches-zcode-to-challenge-cursor-claude-code-and-github-copilot-in-ai-coding",
-    "headline": "Z.ai launches ZCode to challenge Cursor, Claude Code, and GitHub Copilot in AI coding",
-    "date": "2026-07-02",
-    "ts": 1783000833.234086
-  },
-  {
-    "url": "https://arstechnica.com/ai/2026/07/googles-ai-buildout-drove-37-increase-in-electricity-use-in-2025/",
-    "headline": "Google's AI buildout drove 37% increase in electricity use in 2025",
-    "date": "2026-07-02",
-    "ts": 1783000833.234086
-  },
-  {
-    "url": "https://www.theverge.com/science/960563/amazon-leo-service-tipping-point",
-    "headline": "Amazon reaches satellite threshold to launch Starlink competitor",
-    "date": "2026-07-02",
-    "ts": 1783000833.234086
-  },
-  {
-    "url": "https://arstechnica.com/information-technology/2026/07/t-mobile-moving-tens-of-thousands-of-virtual-machines-off-vmware-amid-lawsuit/",
-    "headline": "T-Mobile moving tens of thousands of virtual machines off VMware amid lawsuit",
-    "date": "2026-07-02",
-    "ts": 1783000833.234086
-  },
-  {
-    "url": "https://techcrunch.com/2026/07/01/apples-hide-my-email-feature-has-a-bug-thats-been-exposing-real-email-addresses-researcher-claims/",
-    "headline": "Apple Hide My Email bug was exposing real email addresses, researcher claims",
-    "date": "2026-07-02",
-    "ts": 1783000833.234086
-  },
-  {
-    "url": "https://f-droid.org/2026/07/01/adv-malware.html",
-    "headline": "Android Developer Verification tool found masquerading as protection while delivering malware",
-    "date": "2026-07-02",
-    "ts": 1783000833.234086
   }
 ]
