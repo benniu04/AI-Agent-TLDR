@@ -1,5 +1,113 @@
 [
   {
+    "url": "https://www.cnbc.com/2026/07/09/goldman-sachs-asset-management-deals-verizon-lockheed-martin.html",
+    "headline": "Goldman Sachs wins $70B OCIO mandate from Verizon and Lockheed Martin pensions",
+    "date": "2026-07-10",
+    "ts": 1783692045.085449
+  },
+  {
+    "url": "https://www.cnbc.com/2026/07/09/june-home-sales-prices.html",
+    "headline": "June home sales disappoint as US prices hit an all-time high",
+    "date": "2026-07-10",
+    "ts": 1783692045.085449
+  },
+  {
+    "url": "https://www.cnbc.com/2026/07/10/circle-gets-an-occ-bank-charter-as-stablecoin-competition-heats-up-shares-surge-14percent.html",
+    "headline": "Circle wins final OCC approval for national trust bank to custody USDC reserves",
+    "date": "2026-07-10",
+    "ts": 1783692045.085449
+  },
+  {
+    "url": "https://www.finextra.com/newsarticle/48069/block-reaches-45m-cash-app-fraud-probe-settlement-with-us-states",
+    "headline": "Block pays $45M to settle multistate Cash App fraud probe",
+    "date": "2026-07-10",
+    "ts": 1783692045.085449
+  },
+  {
+    "url": "https://www.paymentsdive.com/news/debit-cards-top-payments-fed-says/824840/",
+    "headline": "Debit cards top all other US payment methods, Fed report finds",
+    "date": "2026-07-10",
+    "ts": 1783692045.085449
+  },
+  {
+    "url": "https://www.paymentsjournal.com/n-c-banks-can-freeze-some-payments-for-30-days/",
+    "headline": "North Carolina law lets banks freeze suspicious payments for up to 30 days",
+    "date": "2026-07-10",
+    "ts": 1783692045.085449
+  },
+  {
+    "url": "https://www.cnbc.com/2026/07/09/kevin-warsh-names-members-of-his-federal-reserve-task-forces-including-marc-andreessen-doug-mcmillon.html",
+    "headline": "Fed Chair Warsh names Andreessen, McMillon and ex-central bankers to five policy task forces",
+    "date": "2026-07-10",
+    "ts": 1783692045.085449
+  },
+  {
+    "url": "https://www.wsj.com/finance/investing/jgbs-edge-higher-tracking-gains-in-u-s-treasurys-2cb325e7?mod=rss_markets_main",
+    "headline": "Treasury yields rise as geopolitical tensions ease and data recalibrate rate outlook",
+    "date": "2026-07-10",
+    "ts": 1783692045.085449
+  },
+  {
+    "url": "https://www.wsj.com/economy/central-banking/feds-williams-says-inflation-still-too-high-expects-retreat-in-energy-prices-5b7a84ed",
+    "headline": "Fed's Williams: Inflation still too high; expects energy prices to retreat",
+    "date": "2026-07-10",
+    "ts": 1783692045.085449
+  },
+  {
+    "url": "https://techcrunch.com/2026/07/09/openai-launches-its-new-family-of-models-with-gpt-5-6/",
+    "headline": "OpenAI launches GPT-5.6 family, named preferred model for Microsoft Copilot 365",
+    "date": "2026-07-10",
+    "ts": 1783692045.085449
+  },
+  {
+    "url": "https://techcrunch.com/2026/07/09/fidji-simo-steps-down-from-openais-no-2-role/",
+    "headline": "Fidji Simo steps down from OpenAI's No. 2 role due to illness",
+    "date": "2026-07-10",
+    "ts": 1783692045.085449
+  },
+  {
+    "url": "https://techcrunch.com/2026/07/09/meta-enters-the-crowded-ai-coding-battle-with-muse-spark-1-1/",
+    "headline": "Meta enters AI coding battle with Muse Spark 1.1",
+    "date": "2026-07-10",
+    "ts": 1783692045.085449
+  },
+  {
+    "url": "https://techcrunch.com/2026/07/09/paris-based-ai-voice-startup-gradium-raises-100m-seed-backed-by-nvidia/",
+    "headline": "Paris-based AI voice startup Gradium raises $100M seed backed by Nvidia",
+    "date": "2026-07-10",
+    "ts": 1783692045.085449
+  },
+  {
+    "url": "https://www.cnbc.com/2026/07/09/anthropic-fed-chair-bernanke-independent-trust.html",
+    "headline": "Anthropic appoints former Fed Chair Ben Bernanke to its independent trust",
+    "date": "2026-07-10",
+    "ts": 1783692045.085449
+  },
+  {
+    "url": "https://www.cnbc.com/2026/07/10/meta-instagram-facebook-addictive-design-breach-eu-laws.html",
+    "headline": "EU charges Meta with addictive Facebook and Instagram design, faces up to 6% revenue fine",
+    "date": "2026-07-10",
+    "ts": 1783692045.085449
+  },
+  {
+    "url": "https://techcrunch.com/2026/07/09/openai-is-shutting-down-atlas-but-its-ai-browser-ambitions-are-still-growing/",
+    "headline": "OpenAI shuts down Atlas browser but says AI browser ambitions are still growing",
+    "date": "2026-07-10",
+    "ts": 1783692045.085449
+  },
+  {
+    "url": "https://www.theverge.com/tech/963728/microsoft-sustainability-report-2026",
+    "headline": "Microsoft carbon emissions rose 25% last year as AI data centers expand",
+    "date": "2026-07-10",
+    "ts": 1783692045.085449
+  },
+  {
+    "url": "https://www.theverge.com/transportation/963399/polestar-owners-ban-dealers-service-warranty-lease",
+    "headline": "Polestar owners left stranded as EV brand pulls out of the US market",
+    "date": "2026-07-10",
+    "ts": 1783692045.085449
+  },
+  {
     "url": "https://www.bloomberg.com/news/articles/2026-07-09/us-iran-trade-attacks-for-second-day-testing-fragile-ceasefire",
     "headline": "US-Iran ceasefire collapses as both sides trade strikes for second day; global markets roiled",
     "date": "2026-07-09",
@@ -328,137 +436,5 @@
     "headline": "Hacker arrest reveals Microsoft can track users across devices via a hidden Windows Device ID",
     "date": "2026-07-07",
     "ts": 1783432851.837231
-  },
-  {
-    "url": "https://www.cnbc.com/2026/07/02/jersey-mikes-files-for-ipo.html",
-    "headline": "Blackstone-backed Jersey Mike's publicly files S-1 for NYSE IPO under ticker JMKE",
-    "date": "2026-07-03",
-    "ts": 1783087240.349146
-  },
-  {
-    "url": "https://www.cnbc.com/2026/07/02/job-seekers-giving-up-labor-force-participation-rate-falls-to-lowest-in-50-years-outside-of-covid-era.html",
-    "headline": "Labor force participation rate falls to lowest in 50 years outside of Covid era",
-    "date": "2026-07-03",
-    "ts": 1783087240.349146
-  },
-  {
-    "url": "https://www.pymnts.com/legal/2026/new-jersey-lawmakers-send-surveillance-pricing-ban-to-governor/",
-    "headline": "New Jersey lawmakers send surveillance pricing ban to governor",
-    "date": "2026-07-03",
-    "ts": 1783087240.349146
-  },
-  {
-    "url": "https://www.cnbc.com/2026/07/02/stock-market-gains-new-millionaires-ubs.html",
-    "headline": "Stock market gains minted nearly 1 million new millionaires in 2025, UBS report says",
-    "date": "2026-07-03",
-    "ts": 1783087240.349146
-  },
-  {
-    "url": "https://www.finextra.com/newsarticle/48031/standard-chartered-gives-institutional-clients-access-to-usdc-minting-and-redemption",
-    "headline": "Standard Chartered gives institutional clients access to USDC minting and redemption",
-    "date": "2026-07-03",
-    "ts": 1783087240.349146
-  },
-  {
-    "url": "https://www.digitaltransactions.net/cross-river-teams-with-stripe-on-issuance-for-agentic-commerce/",
-    "headline": "Cross River teams with Stripe on card issuance for agentic commerce",
-    "date": "2026-07-03",
-    "ts": 1783087240.349146
-  },
-  {
-    "url": "https://www.paymentsdive.com/news/amex-apple-team-on-rewards-cards-digital-wallets/824268/",
-    "headline": "Amex and Apple team on rewards and digital wallets",
-    "date": "2026-07-03",
-    "ts": 1783087240.349146
-  },
-  {
-    "url": "https://www.finextra.com/newsarticle/48035/visa-launches-visa-destinations-offering-discounts-for-travellers",
-    "headline": "Visa launches Visa Destinations travel discount program",
-    "date": "2026-07-03",
-    "ts": 1783087240.349146
-  },
-  {
-    "url": "https://www.paymentsdive.com/news/ramp-names-karim-atiyeh-co-ceo-glyman-cto-Rahul-Sengottuvelu/824283/",
-    "headline": "Ramp elevates CTO Karim Atiyeh to co-CEO alongside Glyman",
-    "date": "2026-07-03",
-    "ts": 1783087240.349146
-  },
-  {
-    "url": "https://www.wsj.com/finance/investing/investors-seek-to-pull-nearly-16-billion-from-private-credit-funds-81b6fe37?mod=rss_markets_main",
-    "headline": "Investors seek to pull nearly $16B from private-credit funds",
-    "date": "2026-07-03",
-    "ts": 1783087240.349146
-  },
-  {
-    "url": "https://www.wsj.com/articles/jgbs-edge-lower-tracking-declines-in-u-s-treasurys-c94e4528?mod=rss_markets_main",
-    "headline": "Treasury yields rise in holiday-shortened week",
-    "date": "2026-07-03",
-    "ts": 1783087240.349146
-  },
-  {
-    "url": "https://www.wsj.com/finance/stocks/u-s-stocks-mixed-as-june-jobs-data-cools-rate-hike-concerns-5074457e?mod=rss_markets_main",
-    "headline": "US stocks mixed as June jobs data cools rate-hike concerns",
-    "date": "2026-07-03",
-    "ts": 1783087240.349146
-  },
-  {
-    "url": "https://www.wsj.com/economy/week-ahead-for-fx-bonds-fed-minutes-in-focus-e7f43f94",
-    "headline": "Week ahead for FX and bonds: Fed minutes in focus",
-    "date": "2026-07-03",
-    "ts": 1783087240.349146
-  },
-  {
-    "url": "https://www.reuters.com/world/china/alibaba-ban-claude-code-workplace-over-alleged-backdoor-risks-source-says-2026-07-03/",
-    "headline": "Alibaba bans Claude Code at work over alleged backdoor risks, effective July 10",
-    "date": "2026-07-03",
-    "ts": 1783087240.349146
-  },
-  {
-    "url": "https://techcrunch.com/2026/07/02/mark-zuckerberg-tells-staff-that-ai-agents-havent-progressed-as-quickly-as-hed-hoped/",
-    "headline": "Zuckerberg tells Meta staff AI agents haven't progressed as quickly as he'd hoped",
-    "date": "2026-07-03",
-    "ts": 1783087240.349146
-  },
-  {
-    "url": "https://www.theverge.com/ai-artificial-intelligence/961311/anthropic-claude-science-ai-drug-development",
-    "headline": "Anthropic launches Claude Science AI workbench for drug discovery and pharma R&D",
-    "date": "2026-07-03",
-    "ts": 1783087240.349146
-  },
-  {
-    "url": "https://techcrunch.com/2026/07/02/anthropic-is-discussing-a-new-custom-chip-with-samsung/",
-    "headline": "Anthropic in talks with Samsung to develop a custom AI inference chip",
-    "date": "2026-07-03",
-    "ts": 1783087240.349146
-  },
-  {
-    "url": "https://techcrunch.com/2026/06/30/wayve-launches-85m-employee-tender-offer-at-8-5b-valuation/",
-    "headline": "Wayve launches $85M employee tender offer at $8.5B valuation",
-    "date": "2026-07-03",
-    "ts": 1783087240.349146
-  },
-  {
-    "url": "https://techcrunch.com/2026/07/02/politician-who-investigated-spyware-abuses-had-his-phone-hacked-with-pegasus-spyware/",
-    "headline": "Politician who investigated spyware abuses had his phone hacked with Pegasus",
-    "date": "2026-07-03",
-    "ts": 1783087240.349146
-  },
-  {
-    "url": "https://www.theverge.com/transportation/961161/tesla-fsd-katy-tx-manslaughter-charges",
-    "headline": "Tesla driver faces manslaughter charges over Texas FSD crash that killed woman inside her home",
-    "date": "2026-07-03",
-    "ts": 1783087240.349146
-  },
-  {
-    "url": "https://arstechnica.com/security/2026/07/new-pamstealer-macos-malware-uses-clever-tradecraft-to-remain-stealthy/",
-    "headline": "New PamStealer macOS malware uses clever tradecraft to remain stealthy",
-    "date": "2026-07-03",
-    "ts": 1783087240.349146
-  },
-  {
-    "url": "https://blog.podman.io/2026/07/introducing-podman-v6-0-0/",
-    "headline": "Podman v6.0.0 released",
-    "date": "2026-07-03",
-    "ts": 1783087240.349146
   }
 ]
