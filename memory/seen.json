@@ -1,5 +1,101 @@
 [
   {
+    "url": "https://www.wsj.com/economy/central-banking/warshs-first-big-call-whether-to-undo-last-years-cuts-cdcdb367",
+    "headline": "Warsh faces first big call: whether to reverse last year's rate cuts",
+    "date": "2026-07-13",
+    "ts": 1783951252.84852
+  },
+  {
+    "url": "https://www.wsj.com/finance/investing/the-quarter-trillion-dollar-onslaught-of-ai-bonds-is-testing-investors-limits-e4cd2bda?mod=rss_markets_main",
+    "headline": "Quarter-trillion-dollar AI bond wave is testing investor limits",
+    "date": "2026-07-13",
+    "ts": 1783951252.84852
+  },
+  {
+    "url": "https://www.finextra.com/newsarticle/48079/mastercard-examines-sale-of-vocalink---ft",
+    "headline": "Mastercard explores selling majority stake in UK payments rail Vocalink back to British banks",
+    "date": "2026-07-13",
+    "ts": 1783951252.84852
+  },
+  {
+    "url": "https://www.finextra.com/pressarticle/110405/ace-money-transfer-joins-forces-with-visa-to-promote-account-funding-transactions",
+    "headline": "ACE Money Transfer joins Visa to promote account-funding transactions globally",
+    "date": "2026-07-13",
+    "ts": 1783951252.84852
+  },
+  {
+    "url": "https://www.paymentsdive.com/news/merchants-blast-credit-union-card-fee-rule/824904/",
+    "headline": "Merchants blast credit union card fee rule in new broadside",
+    "date": "2026-07-13",
+    "ts": 1783951252.84852
+  },
+  {
+    "url": "https://www.wsj.com/economy/central-banking/bank-of-canada-set-to-keep-rates-steady-wsj-survey-shows-2a59301e",
+    "headline": "Bank of Canada set to hold rates steady, WSJ survey shows",
+    "date": "2026-07-13",
+    "ts": 1783951252.84852
+  },
+  {
+    "url": "https://www.cnbc.com/2026/07/10/stock-market-next-week-outlook-for-july-13-17-2026.html",
+    "headline": "June CPI report due Tuesday — last major inflation read before July 28-29 FOMC meeting",
+    "date": "2026-07-13",
+    "ts": 1783951252.84852
+  },
+  {
+    "url": "https://www.cnbc.com/2026/07/10/apple-openai-lawsuit-trade-secrets.html",
+    "headline": "Apple sues OpenAI for trade secret theft, alleges hardware secrets stolen at every level",
+    "date": "2026-07-13",
+    "ts": 1783951252.84852
+  },
+  {
+    "url": "https://systima.ai/blog/claude-code-vs-opencode-token-overhead",
+    "headline": "Claude Code sends 33k tokens before reading the prompt vs. OpenCode's 7k, study finds",
+    "date": "2026-07-13",
+    "ts": 1783951252.84852
+  },
+  {
+    "url": "https://venturebeat.com/security/forget-typosquatting-slopsquatting-is-the-software-supply-chain-threat-created-by-ai-coding-tools",
+    "headline": "Slopsquatting emerges as new AI-coding supply chain threat as models hallucinate package names",
+    "date": "2026-07-13",
+    "ts": 1783951252.84852
+  },
+  {
+    "url": "https://www.theverge.com/transportation/964132/waze-gemini-ai-voice-commands-less-chatty",
+    "headline": "Waze integrates Gemini AI for voice commands and less-chatty navigation",
+    "date": "2026-07-13",
+    "ts": 1783951252.84852
+  },
+  {
+    "url": "https://techcrunch.com/2026/07/11/openai-bets-on-families-as-chatgpt-goes-deeper-into-households/",
+    "headline": "OpenAI expands ChatGPT into households with new family-focused features",
+    "date": "2026-07-13",
+    "ts": 1783951252.84852
+  },
+  {
+    "url": "https://techcrunch.com/2026/07/13/ubers-robotaxi-lobbying-effort-has-put-it-on-a-collision-course-with-waymo/",
+    "headline": "Uber's robotaxi lobbying push puts it on collision course with Waymo",
+    "date": "2026-07-13",
+    "ts": 1783951252.84852
+  },
+  {
+    "url": "https://www.theverge.com/tech/964565/eu-children-social-media-online-safety-rules",
+    "headline": "EU moves to cap social media access for teens across Europe",
+    "date": "2026-07-13",
+    "ts": 1783951252.84852
+  },
+  {
+    "url": "https://www.wired.com/story/sfpd-drone-video-leak-surveillance/",
+    "headline": "Leaked SFPD drone footage exposes scale of urban surveillance in San Francisco",
+    "date": "2026-07-13",
+    "ts": 1783951252.84852
+  },
+  {
+    "url": "https://www.theverge.com/tech/964519/apple-silicon-self-driving-car-ai-m7-ultra",
+    "headline": "Apple's cancelled self-driving car program left legacy of powerful AI chips",
+    "date": "2026-07-13",
+    "ts": 1783951252.84852
+  },
+  {
     "url": "https://www.cnbc.com/2026/07/09/goldman-sachs-asset-management-deals-verizon-lockheed-martin.html",
     "headline": "Goldman Sachs wins $70B OCIO mandate from Verizon and Lockheed Martin pensions",
     "date": "2026-07-10",
