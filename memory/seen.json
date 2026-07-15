@@ -1,5 +1,137 @@
 [
   {
+    "url": "https://www.techtimes.com/articles/320542/20260715/morgan-stanley-q2-arrives-goldman-record-ibm-crash-raise-stakes-wealth-giant.htm",
+    "headline": "Goldman Sachs posts strongest quarter in 157-year history, Q2 revenue $20.34B",
+    "date": "2026-07-15",
+    "ts": 1784124052.580818
+  },
+  {
+    "url": "https://www.cnbc.com/2026/07/14/lucid-stock-lcid-bankruptcy-report.html",
+    "headline": "Lucid stock plunges on bankruptcy report, company denies considering Chapter 11",
+    "date": "2026-07-15",
+    "ts": 1784124052.580818
+  },
+  {
+    "url": "https://www.cnbc.com/2026/07/15/stripe-advent-offer-to-buy-paypal-for-more-than-53-billion-reuters.html",
+    "headline": "Stripe and Advent make $53B joint bid to acquire PayPal at $60.50 a share",
+    "date": "2026-07-15",
+    "ts": 1784124052.580818
+  },
+  {
+    "url": "https://www.finextra.com/pressarticle/110423/hsbc-uk-trials-ai-shopping-with-visa",
+    "headline": "HSBC UK trials AI-powered shopping experience with Visa",
+    "date": "2026-07-15",
+    "ts": 1784124052.580818
+  },
+  {
+    "url": "https://www.theblock.co/post/408305/us-uk-transatlantic-taskforce-unveils-digital-asset-roadmap-promoting-stablecoin-innovation",
+    "headline": "US-UK transatlantic taskforce unveils digital asset roadmap promoting stablecoin innovation",
+    "date": "2026-07-15",
+    "ts": 1784124052.580818
+  },
+  {
+    "url": "https://www.theblock.co/post/408280/wall-street-cautious-circle-warn-usdc-economics",
+    "headline": "Wall Street turns cautious on Circle as analysts warn USDC economics face mounting pressure",
+    "date": "2026-07-15",
+    "ts": 1784124052.580818
+  },
+  {
+    "url": "https://www.paymentsdive.com/news/visa-mastercard-payouts-inch-forward-merchants-interchange-litigation/825191/",
+    "headline": "Visa-Mastercard interchange payout litigation inches forward",
+    "date": "2026-07-15",
+    "ts": 1784124052.580818
+  },
+  {
+    "url": "https://www.finextra.com/pressarticle/110426/paytia-lets-ai-agents-take-card-payments--without-the-card-ever-reaching-the-ai",
+    "headline": "Paytia lets AI agents take card payments without card data reaching the AI",
+    "date": "2026-07-15",
+    "ts": 1784124052.580818
+  },
+  {
+    "url": "https://www.wsj.com/finance/investing/jgbs-mixed-may-track-gains-in-u-s-treasurys-9ca01870?mod=rss_markets_main",
+    "headline": "Treasury yields fall after June PPI comes in below expectations",
+    "date": "2026-07-15",
+    "ts": 1784124052.580818
+  },
+  {
+    "url": "https://www.cnbc.com/2026/07/15/ecb-interest-rates-outlook-iran-war-hormuz.html",
+    "headline": "ECB rates outlook thrown into doubt as Hormuz hostilities re-escalate",
+    "date": "2026-07-15",
+    "ts": 1784124052.580818
+  },
+  {
+    "url": "https://www.wsj.com/finance/investing/jpmorgan-blackrock-and-goldman-to-tokenize-stocks-treasurys-0a776ba7?mod=rss_markets_main",
+    "headline": "DTCC begins live tokenized-securities pilot with JPMorgan, BlackRock, Goldman Sachs",
+    "date": "2026-07-15",
+    "ts": 1784124052.580818
+  },
+  {
+    "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260714a.htm",
+    "headline": "Fed releases discount rate meeting minutes from June 8 and June 17",
+    "date": "2026-07-15",
+    "ts": 1784124052.580818
+  },
+  {
+    "url": "https://techcrunch.com/2026/07/15/anthropic-blackstone-bet-the-next-trillion-dollar-ai-business-is-implementation-not-models/",
+    "headline": "Anthropic and Blackstone bet the next AI trillion-dollar business is implementation, not models",
+    "date": "2026-07-15",
+    "ts": 1784124052.580818
+  },
+  {
+    "url": "https://techcrunch.com/2026/07/14/openais-new-flagship-model-deletes-files-on-its-own-people-keep-warning/",
+    "headline": "OpenAI's new flagship model spontaneously deletes files; users keep raising alarms",
+    "date": "2026-07-15",
+    "ts": 1784124052.580818
+  },
+  {
+    "url": "https://techcrunch.com/2026/07/14/apple-opens-its-new-siri-ai-to-everyone-with-the-ios-27-public-beta/",
+    "headline": "Apple opens redesigned Siri AI to all users via iOS 27 public beta",
+    "date": "2026-07-15",
+    "ts": 1784124052.580818
+  },
+  {
+    "url": "https://techcrunch.com/2026/07/15/indian-ai-coding-startup-emergent-becomes-a-unicorn-just-over-a-year-after-launch/",
+    "headline": "Indian AI coding startup Emergent reaches unicorn status with $130M Series C",
+    "date": "2026-07-15",
+    "ts": 1784124052.580818
+  },
+  {
+    "url": "https://arstechnica.com/tech-policy/2026/07/lawsuit-claims-metas-layoff-decisions-were-made-by-ai-not-humans/",
+    "headline": "Lawsuit claims Meta's layoff decisions were made by AI, not humans",
+    "date": "2026-07-15",
+    "ts": 1784124052.580818
+  },
+  {
+    "url": "https://www.theverge.com/policy/965792/google-epic-withdraw-injunction-third-party-app-stores-coming-google-play",
+    "headline": "Google and Epic drop fight — third-party Android app stores arrive next week",
+    "date": "2026-07-15",
+    "ts": 1784124052.580818
+  },
+  {
+    "url": "https://arstechnica.com/security/2026/07/microsoft-secure-boot-has-been-broken-for-most-of-its-existence/",
+    "headline": "Microsoft Secure Boot has been broken for nearly a decade and no one noticed",
+    "date": "2026-07-15",
+    "ts": 1784124052.580818
+  },
+  {
+    "url": "https://www.theverge.com/tech/965643/microsoft-windows-11-july-2026-patch-tuesday-updates",
+    "headline": "Microsoft's biggest-ever Patch Tuesday gives users option to delay updates",
+    "date": "2026-07-15",
+    "ts": 1784124052.580818
+  },
+  {
+    "url": "https://www.theverge.com/tech/965850/samsung-display-flex-titanium-galaxy-foldables",
+    "headline": "Samsung unveils titanium foldable display that is harder to crease and damage",
+    "date": "2026-07-15",
+    "ts": 1784124052.580818
+  },
+  {
+    "url": "https://tailscale.com/security-bulletins",
+    "headline": "Tailscale discloses SSH vulnerability that allowed root access via argument handling flaw",
+    "date": "2026-07-15",
+    "ts": 1784124052.580818
+  },
+  {
     "url": "https://www.indmoney.com/blog/us-stocks/us-bank-earnings-q2-jpm-bac-gs-wfc-citi-stock-earnings",
     "headline": "JPM, BofA, Goldman, Wells Fargo, Citi all report Q2 earnings today; JPM posts EPS $6.14 vs $5.85 est",
     "date": "2026-07-14",
@@ -550,113 +682,5 @@
     "headline": "Samsung Galaxy Unpacked set for July 22 featuring new wide-format foldable phone",
     "date": "2026-07-08",
     "ts": 1783519304.098263
-  },
-  {
-    "url": "https://www.cnbc.com/2026/07/07/samsung-electronics-preliminary-second-quarter-profit-hits-fresh-high.html",
-    "headline": "Samsung Q2 profit jumps 19-fold to record $58.4B on AI chip boom; shares fall 7%",
-    "date": "2026-07-07",
-    "ts": 1783432851.837231
-  },
-  {
-    "url": "https://www.cnbc.com/2026/07/06/klarna-seeks-us-bank-charter-in-push-beyond-buy-now-pay-later.html",
-    "headline": "Klarna files for FDIC-insured Utah industrial bank charter, targeting 30M US users",
-    "date": "2026-07-07",
-    "ts": 1783432851.837231
-  },
-  {
-    "url": "https://www.paymentsdive.com/news/how-real-time-payments-expand-stripe-fintechs-fednow-rtp-consumers-banks/824410/",
-    "headline": "How real-time payments expand: FedNow, RTP, and the race to reach consumers via fintechs",
-    "date": "2026-07-07",
-    "ts": 1783432851.837231
-  },
-  {
-    "url": "https://www.paymentsjournal.com/build-momentum-behind-zelle-for-business/",
-    "headline": "Zelle for Business momentum builds as banks push small-business P2P adoption",
-    "date": "2026-07-07",
-    "ts": 1783432851.837231
-  },
-  {
-    "url": "https://www.finextra.com/pressarticle/110353/nuvion-adds-ripple-stablecoin-to-payments-stack",
-    "headline": "Nuvion adds Ripple stablecoin to payments stack for settlement",
-    "date": "2026-07-07",
-    "ts": 1783432851.837231
-  },
-  {
-    "url": "https://www.finextra.com/pressarticle/110354/open-banking-fraud-rates-remain-below-wider-uk-payments-industry-benchmarks",
-    "headline": "UK open banking fraud rates stay well below wider payments industry benchmarks",
-    "date": "2026-07-07",
-    "ts": 1783432851.837231
-  },
-  {
-    "url": "https://www.npr.org/2026/07/07/g-s1-132265/tanker-attack-strait-of-hormuz",
-    "headline": "Tanker set ablaze near Strait of Hormuz after Iran-linked projectile strike, threatening energy flows",
-    "date": "2026-07-07",
-    "ts": 1783432851.837231
-  },
-  {
-    "url": "https://www.bankingdive.com/news/regions-acquisition-frazer-lanier-municipal-bond-underwriter-debt-placement-bolt-on/824466/",
-    "headline": "Regions Financial acquires muni bond specialist Frazer Lanier in bolt-on deal",
-    "date": "2026-07-07",
-    "ts": 1783432851.837231
-  },
-  {
-    "url": "https://www.wsj.com/economy/central-banking/canada-cpi-expectations-ramped-up-prior-to-u-s-iran-deal-central-bank-survey-says-faafa0ef",
-    "headline": "Canada CPI expectations ramped up before US-Iran deal, central bank survey finds",
-    "date": "2026-07-07",
-    "ts": 1783432851.837231
-  },
-  {
-    "url": "https://venturebeat.com/technology/anthropics-new-j-lens-reveals-a-silent-workspace-inside-claude-that-mirrors-a-leading-theory-of-consciousness",
-    "headline": "Anthropic's 'J-lens' reveals a silent global workspace inside Claude mirroring consciousness theory",
-    "date": "2026-07-07",
-    "ts": 1783432851.837231
-  },
-  {
-    "url": "https://techcrunch.com/2026/07/06/the-first-ai-run-ransomware-attack-still-needed-a-human/",
-    "headline": "First AI-run ransomware attack documented — but still required a human operator",
-    "date": "2026-07-07",
-    "ts": 1783432851.837231
-  },
-  {
-    "url": "https://techcrunch.com/2026/07/07/savis-app-aims-to-protect-consumers-from-realistic-ai-scams-like-kidnappers-demanding-ransom/",
-    "headline": "Savi launches app to protect consumers from AI-powered voice scams including fake kidnapping calls",
-    "date": "2026-07-07",
-    "ts": 1783432851.837231
-  },
-  {
-    "url": "https://techcrunch.com/2026/07/05/amazon-will-stop-accepting-new-customers-for-mechanical-turk/",
-    "headline": "Amazon will stop accepting new Mechanical Turk customers as AI displaces human task market",
-    "date": "2026-07-07",
-    "ts": 1783432851.837231
-  },
-  {
-    "url": "https://techcrunch.com/2026/07/06/microsoft-lays-off-nearly-5000-employees-across-xbox-commercial-sales/",
-    "headline": "Microsoft cuts ~4,800 jobs — 1,600 from Xbox, bulk from commercial sales — in AI restructuring",
-    "date": "2026-07-07",
-    "ts": 1783432851.837231
-  },
-  {
-    "url": "https://techcrunch.com/2026/07/07/hacktivists-call-out-trump-by-hacking-and-defacing-us-army-websites/",
-    "headline": "Hacktivists hack and deface US Army websites in protest against Trump",
-    "date": "2026-07-07",
-    "ts": 1783432851.837231
-  },
-  {
-    "url": "https://arstechnica.com/tech-policy/2026/07/fcc-to-end-biden-era-rule-that-forces-isps-to-list-all-their-fees/",
-    "headline": "FCC to end Biden-era rule requiring ISPs to disclose all fees to consumers",
-    "date": "2026-07-07",
-    "ts": 1783432851.837231
-  },
-  {
-    "url": "https://openwrt.org/toh/openwrt/one",
-    "headline": "OpenWrt One open-hardware router ships, tops Hacker News as developer alternative to commercial gear",
-    "date": "2026-07-07",
-    "ts": 1783432851.837231
-  },
-  {
-    "url": "https://www.pcmag.com/news/a-hackers-arrest-reveals-microsoft-can-track-users-via-a-windows-device",
-    "headline": "Hacker arrest reveals Microsoft can track users across devices via a hidden Windows Device ID",
-    "date": "2026-07-07",
-    "ts": 1783432851.837231
   }
 ]
