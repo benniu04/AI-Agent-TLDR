@@ -1,5 +1,107 @@
 [
   {
+    "url": "https://variety.com/2026/tv/news/netflix-q2-2026-earnings-1236812558/",
+    "headline": "Netflix shares fall 9% after hours on soft Q3 revenue guidance ($12.86B vs $13B est)",
+    "date": "2026-07-17",
+    "ts": 1784296840.974231
+  },
+  {
+    "url": "https://www.pymnts.com/news/acquiring/2026/paypal-board-calls-53-billion-stripe-advent-bid-inadequate/",
+    "headline": "PayPal board calls $53B Stripe-Advent bid inadequate, cites regulatory and financing hurdles",
+    "date": "2026-07-17",
+    "ts": 1784296840.974231
+  },
+  {
+    "url": "https://scanx.trade/stock-market-news/companies/travelers-companies-fifth-third-bancorp-report-earnings-july-17/45835089",
+    "headline": "Travelers Q2 core EPS $10.04 nearly doubles $5.38 estimate on strong underwriting",
+    "date": "2026-07-17",
+    "ts": 1784296840.974231
+  },
+  {
+    "url": "https://techcrunch.com/2026/07/17/why-the-first-gpu-financiers-are-turning-to-inference-chips-in-a-400-million-deal/",
+    "headline": "Chip selloff drags Nasdaq down 1.6% as AI-spend ROI doubts mount",
+    "date": "2026-07-17",
+    "ts": 1784296840.974231
+  },
+  {
+    "url": "https://www.finextra.com/newsarticle/48110/visa-launches-stablecoin-platform",
+    "headline": "Visa launches stablecoin platform giving clients access to OUSD",
+    "date": "2026-07-17",
+    "ts": 1784296840.974231
+  },
+  {
+    "url": "https://www.finextra.com/newsarticle/48108/mastercard-rolls-out-service-to-help-developers-build-mobile-wallets",
+    "headline": "Mastercard rolls out developer service to help firms build in-app mobile wallets",
+    "date": "2026-07-17",
+    "ts": 1784296840.974231
+  },
+  {
+    "url": "https://www.finextra.com/pressarticle/110445/bbva-becomes-first-spanish-bank-to-launch-swifts-new-global-retail-payments-scheme",
+    "headline": "BBVA becomes first Spanish bank to launch Swift's new global retail payments scheme",
+    "date": "2026-07-17",
+    "ts": 1784296840.974231
+  },
+  {
+    "url": "https://www.paymentsdive.com/news/ewa-backers-push-cfpb-move/825418/",
+    "headline": "EWA industry groups push CFPB to finalize earned-wage access rule",
+    "date": "2026-07-17",
+    "ts": 1784296840.974231
+  },
+  {
+    "url": "https://www.wsj.com/finance/investing/how-sky-high-deficits-threaten-the-bond-market-eeddd168",
+    "headline": "Sky-high US deficits threaten bond market as record debt meets increasingly hostile buyers",
+    "date": "2026-07-17",
+    "ts": 1784296840.974231
+  },
+  {
+    "url": "https://www.wsj.com/economy/central-banking/bank-of-korea-raise-rates-for-first-time-since-2023-17dea183",
+    "headline": "Bank of Korea raises rates for first time since 2023 as inflation pressures persist",
+    "date": "2026-07-17",
+    "ts": 1784296840.974231
+  },
+  {
+    "url": "https://venturebeat.com/technology/chinas-moonshot-ai-releases-kimi-k3-the-largest-open-source-model-ever-rivaling-top-u-s-systems",
+    "headline": "Moonshot AI releases Kimi K3, the largest open-source model ever, rivaling top US systems",
+    "date": "2026-07-17",
+    "ts": 1784296840.974231
+  },
+  {
+    "url": "https://blog.google/innovation-and-ai/products/gemini-notebook/notebooklm-gemini-notebook/",
+    "headline": "Google renames NotebookLM as Gemini Notebook with deeper Gemini integration",
+    "date": "2026-07-17",
+    "ts": 1784296840.974231
+  },
+  {
+    "url": "https://techcrunch.com/2026/07/16/google-vids-now-lets-you-star-in-your-own-ai-videos/",
+    "headline": "Google Vids adds AI avatars so users can appear in their own generated videos",
+    "date": "2026-07-17",
+    "ts": 1784296840.974231
+  },
+  {
+    "url": "https://techcrunch.com/2026/07/16/spacex-suddenly-aborts-second-starship-v3-launch-after-ignition/",
+    "headline": "SpaceX aborts Starship V3 second launch attempt at ignition after engine failures",
+    "date": "2026-07-17",
+    "ts": 1784296840.974231
+  },
+  {
+    "url": "https://techcrunch.com/2026/07/16/coca-cola-suspended-production-at-its-fairlife-dairy-after-a-ransomware-attack/",
+    "headline": "Coca-Cola suspended Fairlife dairy production following a ransomware attack",
+    "date": "2026-07-17",
+    "ts": 1784296840.974231
+  },
+  {
+    "url": "https://arstechnica.com/ai/2026/07/fear-of-humanoid-robots-spurs-human-workers-to-strike-at-hyundai-auto-factory/",
+    "headline": "Hyundai factory workers strike as fear of humanoid robot replacements grows",
+    "date": "2026-07-17",
+    "ts": 1784296840.974231
+  },
+  {
+    "url": "https://arstechnica.com/security/2026/07/now-even-russias-most-elite-hackers-are-using-clickfix-to-infect-devices/",
+    "headline": "Russia's elite APT29 hackers are now using ClickFix to infect devices",
+    "date": "2026-07-17",
+    "ts": 1784296840.974231
+  },
+  {
     "url": "https://www.cnbc.com/2026/07/16/unitedhealth-group-unh-earnings-q2-2026.html",
     "headline": "UnitedHealth Q2 adj. EPS $6.38 beats $4.91 est.; raises full-year guidance to $19.50-$20.00",
     "date": "2026-07-16",
