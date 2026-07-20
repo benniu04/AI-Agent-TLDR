@@ -1,5 +1,107 @@
 [
   {
+    "url": "https://www.cnbc.com/2026/07/20/dominos-pizza-dpz-q2-earnings.html",
+    "headline": "Domino's Q2 revenue beats at $1.19B but EPS misses; US same-store sales +0.1%",
+    "date": "2026-07-20",
+    "ts": 1784556036.354956
+  },
+  {
+    "url": "https://www.pymnts.com/cybersecurity/2026/governments-weigh-ransomware-payment-bans-as-hackers-grow-bolder/",
+    "headline": "Governments weigh ransomware payment bans as hackers grow bolder",
+    "date": "2026-07-20",
+    "ts": 1784556036.354956
+  },
+  {
+    "url": "https://www.theblock.co/post/408843/us-regulators-miss-genius-acts-one-year-deadline-for-final-stablecoin-rules",
+    "headline": "US regulators miss GENIUS Act one-year deadline for final stablecoin rules",
+    "date": "2026-07-20",
+    "ts": 1784556036.354956
+  },
+  {
+    "url": "https://www.pymnts.com/next-gen-debit/2026/manual-debit-reviews-can-cost-banks-2-4-million-a-year/",
+    "headline": "Manual debit reviews can cost banks $2.4 million a year, new data shows",
+    "date": "2026-07-20",
+    "ts": 1784556036.354956
+  },
+  {
+    "url": "https://www.finextra.com/pressarticle/110452/stablecoin-infrastructure-startup-cyclops-raises-20-million",
+    "headline": "Stablecoin infrastructure startup Cyclops raises $20 million",
+    "date": "2026-07-20",
+    "ts": 1784556036.354956
+  },
+  {
+    "url": "https://www.cnbc.com/2026/07/20/treasury-yields-wall-street-iran-war-tensions.html",
+    "headline": "US Treasury yields edge higher as Wall Street monitors Middle East tensions",
+    "date": "2026-07-20",
+    "ts": 1784556036.354956
+  },
+  {
+    "url": "https://www.wsj.com/economy/central-banking/pce-inflation-data-updates-ca7bfd61",
+    "headline": "BEA to alter how it measures key PCE inflation components watched by the Fed",
+    "date": "2026-07-20",
+    "ts": 1784556036.354956
+  },
+  {
+    "url": "https://www.wsj.com/economy/central-banking/week-ahead-for-fx-bonds-u-s-european-pmi-data-ecb-decision-in-focus-4decf84c",
+    "headline": "Week ahead: ECB decision, US and European PMI data in focus for FX and bonds",
+    "date": "2026-07-20",
+    "ts": 1784556036.354956
+  },
+  {
+    "url": "https://techcrunch.com/2026/07/20/hugging-face-confirms-breach-affected-internal-datasets-and-credentials-urges-users-to-take-action/",
+    "headline": "Hugging Face confirms breach hit internal datasets and credentials, urges users to act",
+    "date": "2026-07-20",
+    "ts": 1784556036.354956
+  },
+  {
+    "url": "https://techcrunch.com/2026/07/19/netflix-paid-587m-for-ben-afflecks-ai-filmmaking-startup/",
+    "headline": "Netflix paid $587M to acquire Ben Affleck's AI filmmaking startup",
+    "date": "2026-07-20",
+    "ts": 1784556036.354956
+  },
+  {
+    "url": "https://techcrunch.com/2026/07/19/can-an-apple-lawsuit-derail-openais-hardware-plans/",
+    "headline": "Apple lawsuit against OpenAI could derail its hardware plans and IPO timeline",
+    "date": "2026-07-20",
+    "ts": 1784556036.354956
+  },
+  {
+    "url": "https://techcrunch.com/2026/07/19/nonprofit-current-ai-is-racing-to-build-the-world-wide-web-of-ai-free-for-all/",
+    "headline": "Nonprofit Current AI races to build open 'World Wide Web of AI' free for all",
+    "date": "2026-07-20",
+    "ts": 1784556036.354956
+  },
+  {
+    "url": "https://www.theverge.com/policy/967802/aliexpress-eu-dsa-fine-illegal-products",
+    "headline": "EU fines AliExpress nearly $630M for illegal product sales under DSA",
+    "date": "2026-07-20",
+    "ts": 1784556036.354956
+  },
+  {
+    "url": "https://www.theregister.com/columnists/2026/07/20/airbus-takes-flight-from-aws-what-happens-next-is-critical/5274109",
+    "headline": "Airbus takes flight from AWS in major cloud migration",
+    "date": "2026-07-20",
+    "ts": 1784556036.354956
+  },
+  {
+    "url": "https://news.risky.biz/risky-bulletin-hacker-wipes-romanias-entire-land-registry-database/",
+    "headline": "Hacker wipes Romania's entire land registry database",
+    "date": "2026-07-20",
+    "ts": 1784556036.354956
+  },
+  {
+    "url": "https://www.theverge.com/transportation/967891/archer-evtol-military-anduril-air-taxi-thunder",
+    "headline": "Archer eVTOL air taxis partnering with Anduril to go to war",
+    "date": "2026-07-20",
+    "ts": 1784556036.354956
+  },
+  {
+    "url": "https://arstechnica.com/space/2026/07/indias-first-privately-developed-rocket-reaches-orbit-on-dramatic-debut-launch/",
+    "headline": "India's first privately developed rocket reaches orbit on dramatic debut launch",
+    "date": "2026-07-20",
+    "ts": 1784556036.354956
+  },
+  {
     "url": "https://variety.com/2026/tv/news/netflix-q2-2026-earnings-1236812558/",
     "headline": "Netflix shares fall 9% after hours on soft Q3 revenue guidance ($12.86B vs $13B est)",
     "date": "2026-07-17",
@@ -562,113 +664,5 @@
     "headline": "Apple's cancelled self-driving car program left legacy of powerful AI chips",
     "date": "2026-07-13",
     "ts": 1783951252.84852
-  },
-  {
-    "url": "https://www.cnbc.com/2026/07/09/goldman-sachs-asset-management-deals-verizon-lockheed-martin.html",
-    "headline": "Goldman Sachs wins $70B OCIO mandate from Verizon and Lockheed Martin pensions",
-    "date": "2026-07-10",
-    "ts": 1783692045.085449
-  },
-  {
-    "url": "https://www.cnbc.com/2026/07/09/june-home-sales-prices.html",
-    "headline": "June home sales disappoint as US prices hit an all-time high",
-    "date": "2026-07-10",
-    "ts": 1783692045.085449
-  },
-  {
-    "url": "https://www.cnbc.com/2026/07/10/circle-gets-an-occ-bank-charter-as-stablecoin-competition-heats-up-shares-surge-14percent.html",
-    "headline": "Circle wins final OCC approval for national trust bank to custody USDC reserves",
-    "date": "2026-07-10",
-    "ts": 1783692045.085449
-  },
-  {
-    "url": "https://www.finextra.com/newsarticle/48069/block-reaches-45m-cash-app-fraud-probe-settlement-with-us-states",
-    "headline": "Block pays $45M to settle multistate Cash App fraud probe",
-    "date": "2026-07-10",
-    "ts": 1783692045.085449
-  },
-  {
-    "url": "https://www.paymentsdive.com/news/debit-cards-top-payments-fed-says/824840/",
-    "headline": "Debit cards top all other US payment methods, Fed report finds",
-    "date": "2026-07-10",
-    "ts": 1783692045.085449
-  },
-  {
-    "url": "https://www.paymentsjournal.com/n-c-banks-can-freeze-some-payments-for-30-days/",
-    "headline": "North Carolina law lets banks freeze suspicious payments for up to 30 days",
-    "date": "2026-07-10",
-    "ts": 1783692045.085449
-  },
-  {
-    "url": "https://www.cnbc.com/2026/07/09/kevin-warsh-names-members-of-his-federal-reserve-task-forces-including-marc-andreessen-doug-mcmillon.html",
-    "headline": "Fed Chair Warsh names Andreessen, McMillon and ex-central bankers to five policy task forces",
-    "date": "2026-07-10",
-    "ts": 1783692045.085449
-  },
-  {
-    "url": "https://www.wsj.com/finance/investing/jgbs-edge-higher-tracking-gains-in-u-s-treasurys-2cb325e7?mod=rss_markets_main",
-    "headline": "Treasury yields rise as geopolitical tensions ease and data recalibrate rate outlook",
-    "date": "2026-07-10",
-    "ts": 1783692045.085449
-  },
-  {
-    "url": "https://www.wsj.com/economy/central-banking/feds-williams-says-inflation-still-too-high-expects-retreat-in-energy-prices-5b7a84ed",
-    "headline": "Fed's Williams: Inflation still too high; expects energy prices to retreat",
-    "date": "2026-07-10",
-    "ts": 1783692045.085449
-  },
-  {
-    "url": "https://techcrunch.com/2026/07/09/openai-launches-its-new-family-of-models-with-gpt-5-6/",
-    "headline": "OpenAI launches GPT-5.6 family, named preferred model for Microsoft Copilot 365",
-    "date": "2026-07-10",
-    "ts": 1783692045.085449
-  },
-  {
-    "url": "https://techcrunch.com/2026/07/09/fidji-simo-steps-down-from-openais-no-2-role/",
-    "headline": "Fidji Simo steps down from OpenAI's No. 2 role due to illness",
-    "date": "2026-07-10",
-    "ts": 1783692045.085449
-  },
-  {
-    "url": "https://techcrunch.com/2026/07/09/meta-enters-the-crowded-ai-coding-battle-with-muse-spark-1-1/",
-    "headline": "Meta enters AI coding battle with Muse Spark 1.1",
-    "date": "2026-07-10",
-    "ts": 1783692045.085449
-  },
-  {
-    "url": "https://techcrunch.com/2026/07/09/paris-based-ai-voice-startup-gradium-raises-100m-seed-backed-by-nvidia/",
-    "headline": "Paris-based AI voice startup Gradium raises $100M seed backed by Nvidia",
-    "date": "2026-07-10",
-    "ts": 1783692045.085449
-  },
-  {
-    "url": "https://www.cnbc.com/2026/07/09/anthropic-fed-chair-bernanke-independent-trust.html",
-    "headline": "Anthropic appoints former Fed Chair Ben Bernanke to its independent trust",
-    "date": "2026-07-10",
-    "ts": 1783692045.085449
-  },
-  {
-    "url": "https://www.cnbc.com/2026/07/10/meta-instagram-facebook-addictive-design-breach-eu-laws.html",
-    "headline": "EU charges Meta with addictive Facebook and Instagram design, faces up to 6% revenue fine",
-    "date": "2026-07-10",
-    "ts": 1783692045.085449
-  },
-  {
-    "url": "https://techcrunch.com/2026/07/09/openai-is-shutting-down-atlas-but-its-ai-browser-ambitions-are-still-growing/",
-    "headline": "OpenAI shuts down Atlas browser but says AI browser ambitions are still growing",
-    "date": "2026-07-10",
-    "ts": 1783692045.085449
-  },
-  {
-    "url": "https://www.theverge.com/tech/963728/microsoft-sustainability-report-2026",
-    "headline": "Microsoft carbon emissions rose 25% last year as AI data centers expand",
-    "date": "2026-07-10",
-    "ts": 1783692045.085449
-  },
-  {
-    "url": "https://www.theverge.com/transportation/963399/polestar-owners-ban-dealers-service-warranty-lease",
-    "headline": "Polestar owners left stranded as EV brand pulls out of the US market",
-    "date": "2026-07-10",
-    "ts": 1783692045.085449
   }
 ]
