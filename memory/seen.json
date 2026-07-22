@@ -1,5 +1,137 @@
 [
   {
+    "url": "https://qz.com/ge-vernova-2026-revenue-guidance-second-quarter-earnings-072226",
+    "headline": "GE Vernova Q2 revenue $11.1B beats, orders surge 88% to $24.2B; raises 2026 outlook",
+    "date": "2026-07-22",
+    "ts": 1784728829.772466
+  },
+  {
+    "url": "https://www.cnbc.com/2026/07/21/goldman-sachs-private-markets-platform.html",
+    "headline": "Goldman Sachs launches private markets platform for wealthy investors eyeing next SpaceX, Stripe",
+    "date": "2026-07-22",
+    "ts": 1784728829.772466
+  },
+  {
+    "url": "https://www.cnbc.com/2026/07/21/nike-to-cut-off-thousands-of-online-distributors-in-china.html",
+    "headline": "Nike cuts off thousands of online distributors in China in digital restructuring",
+    "date": "2026-07-22",
+    "ts": 1784728829.772466
+  },
+  {
+    "url": "https://finance.yahoo.com/markets/live/earnings-live-second-quarter-results-tesla-google-july-115324842.html",
+    "headline": "S&P 500 Q2 earnings on pace for 24.7% growth, second straight quarter above 20%",
+    "date": "2026-07-22",
+    "ts": 1784728829.772466
+  },
+  {
+    "url": "https://www.theblock.co/post/409193/bis-warns-stablecoins-capital-controls",
+    "headline": "BIS warns USD stablecoins can evade capital controls, challenging market regulations",
+    "date": "2026-07-22",
+    "ts": 1784728829.772466
+  },
+  {
+    "url": "https://www.finextra.com/newsarticle/48127/natural-raises-30-million-to-build-ai-agent-payments-stack",
+    "headline": "Natural raises $30M to build AI agent payments stack",
+    "date": "2026-07-22",
+    "ts": 1784728829.772466
+  },
+  {
+    "url": "https://www.finextra.com/pressarticle/110471/ramp-opens-stablecoin-accounts",
+    "headline": "Ramp opens stablecoin accounts for business customers",
+    "date": "2026-07-22",
+    "ts": 1784728829.772466
+  },
+  {
+    "url": "https://www.paymentsdive.com/news/oregon-proposes-bnpl-rules/825792/",
+    "headline": "Oregon proposes BNPL rules for buy now, pay later lenders",
+    "date": "2026-07-22",
+    "ts": 1784728829.772466
+  },
+  {
+    "url": "https://www.bankingdive.com/news/ex-td-bank-employees-sentenced-prison-money-laundering-fraud/825662/",
+    "headline": "Ex-TD Bank employees sentenced to prison for money laundering and fraud",
+    "date": "2026-07-22",
+    "ts": 1784728829.772466
+  },
+  {
+    "url": "https://www.wsj.com/finance/investing/jgb-futures-fall-tracking-declines-in-u-s-treasury-market-54cd45d8",
+    "headline": "10-Year Treasury yield nears 2026 peak amid oil shock and deficit concerns",
+    "date": "2026-07-22",
+    "ts": 1784728829.772466
+  },
+  {
+    "url": "https://www.wsj.com/finance/investing/the-long-bond-is-making-people-nervous-5397f8b5",
+    "headline": "The Long Bond is making people nervous as duration risk mounts",
+    "date": "2026-07-22",
+    "ts": 1784728829.772466
+  },
+  {
+    "url": "https://www.wsj.com/economy/central-banking/bank-indonesia-defies-market-expectations-with-rate-hold-46ee5f61",
+    "headline": "Bank Indonesia defies market expectations, holds rates steady",
+    "date": "2026-07-22",
+    "ts": 1784728829.772466
+  },
+  {
+    "url": "https://www.wsj.com/finance/commodities-futures/gold-rises-amid-hopes-for-u-s-iran-deal-fe301cd7",
+    "headline": "Gold tops $4,100 as traders weigh Mideast risks and Fed outlook",
+    "date": "2026-07-22",
+    "ts": 1784728829.772466
+  },
+  {
+    "url": "https://openai.com/index/hugging-face-model-evaluation-security-incident/",
+    "headline": "OpenAI pre-release models broke containment and cyberattacked Hugging Face during evaluation",
+    "date": "2026-07-22",
+    "ts": 1784728829.772466
+  },
+  {
+    "url": "https://techcrunch.com/2026/07/21/the-anthropic-physical-intelligence-rumor-roiling-ai-twitter/",
+    "headline": "Anthropic held acquisition talks with robotics startup Physical Intelligence this spring, per The Information",
+    "date": "2026-07-22",
+    "ts": 1784728829.772466
+  },
+  {
+    "url": "https://techcrunch.com/2026/07/21/google-releases-three-new-gemini-models-but-no-3-5-pro/",
+    "headline": "Google releases Gemini 3.6 Flash, 3.5 Flash-Lite, and 3.5 Flash Cyber — but no 3.5 Pro",
+    "date": "2026-07-22",
+    "ts": 1784728829.772466
+  },
+  {
+    "url": "https://venturebeat.com/infrastructure/poolside-drops-laguna-s-2-1-an-open-weight-coding-model-that-beats-rivals-10x-its-size",
+    "headline": "Poolside releases Laguna S 2.1, an open-weight coding model that beats rivals 10x its size",
+    "date": "2026-07-22",
+    "ts": 1784728829.772466
+  },
+  {
+    "url": "https://www.theverge.com/tech/969208/samsung-galaxy-unpacked-2026-everything-announced",
+    "headline": "Samsung Galaxy Unpacked 2026: Z Fold 8 Ultra, Z Flip 8, and Galaxy Watch 9 announced",
+    "date": "2026-07-22",
+    "ts": 1784728829.772466
+  },
+  {
+    "url": "https://techcrunch.com/2026/07/21/jack-dorsey-is-taking-on-slack-with-buzz-a-group-chat-platform-for-teams-and-their-ai-agents/",
+    "headline": "Jack Dorsey launches Buzz, a team chat and AI agent platform taking on Slack",
+    "date": "2026-07-22",
+    "ts": 1784728829.772466
+  },
+  {
+    "url": "https://techcrunch.com/2026/07/22/whatsapp-adds-apple-carplay-and-android-auto-upgrades-ipad-sign-ups-and-more/",
+    "headline": "WhatsApp adds Apple CarPlay, Android Auto support, and iPad sign-ups",
+    "date": "2026-07-22",
+    "ts": 1784728829.772466
+  },
+  {
+    "url": "https://www.theverge.com/ai-artificial-intelligence/969137/us-utility-ai-electricty-data-center-rate-pledge-trump",
+    "headline": "US utilities pledge to spare consumers from AI's rising energy costs",
+    "date": "2026-07-22",
+    "ts": 1784728829.772466
+  },
+  {
+    "url": "https://techcrunch.com/2026/07/22/glow-emerges-from-stealth-at-1-2b-valuation-to-challenge-endpoint-security-in-the-ai-era/",
+    "headline": "Glow emerges from stealth at $1.2B valuation to challenge AI-era endpoint security",
+    "date": "2026-07-22",
+    "ts": 1784728829.772466
+  },
+  {
     "url": "https://www.cnbc.com/2026/07/21/iran-war-economy-markets-trump.html",
     "headline": "Iran-US war escalates to 10th night of strikes; markets and economy feel the pressure",
     "date": "2026-07-21",
@@ -544,131 +676,5 @@
     "headline": "Tailscale discloses SSH vulnerability that allowed root access via argument handling flaw",
     "date": "2026-07-15",
     "ts": 1784124052.580818
-  },
-  {
-    "url": "https://www.indmoney.com/blog/us-stocks/us-bank-earnings-q2-jpm-bac-gs-wfc-citi-stock-earnings",
-    "headline": "JPM, BofA, Goldman, Wells Fargo, Citi all report Q2 earnings today; JPM posts EPS $6.14 vs $5.85 est",
-    "date": "2026-07-14",
-    "ts": 1784037649.948207
-  },
-  {
-    "url": "https://www.cnbc.com/2026/07/13/imo-maritime-organization-strait-hormuz-tolls-trump-iran.html",
-    "headline": "US enforces Iran maritime blockade Tuesday; Trump imposes 20% Hormuz cargo transit fee",
-    "date": "2026-07-14",
-    "ts": 1784037649.948207
-  },
-  {
-    "url": "https://www.theblock.co/post/408228/european-central-bank-taps-36-payment-providers-for-yearlong-digital-euro-pilot",
-    "headline": "ECB taps 36 payment providers for year-long digital euro pilot",
-    "date": "2026-07-14",
-    "ts": 1784037649.948207
-  },
-  {
-    "url": "https://www.theblock.co/post/408144/us-banking-groups-urge-stablecoin-provisions-clarity-act",
-    "headline": "US banking groups urge Senate to strengthen stablecoin provisions in Clarity Act",
-    "date": "2026-07-14",
-    "ts": 1784037649.948207
-  },
-  {
-    "url": "https://www.finextra.com/pressarticle/110410/jcb-signs-stablecoin-mou-with-circle",
-    "headline": "JCB signs stablecoin MoU with Circle to explore digital-currency payments",
-    "date": "2026-07-14",
-    "ts": 1784037649.948207
-  },
-  {
-    "url": "https://www.paymentsdive.com/news/fednow-advances-over-hurdles/825071/",
-    "headline": "FedNow advances over hurdles as instant-payment adoption gains momentum",
-    "date": "2026-07-14",
-    "ts": 1784037649.948207
-  },
-  {
-    "url": "https://www.pymnts.com/news/payment-methods/mobile-payments/2026/mobile-wallet-cannot-distinguish-privacy-guard-from-fraudster/",
-    "headline": "Mobile wallets can't distinguish privacy guards from fraudsters — and that is the problem",
-    "date": "2026-07-14",
-    "ts": 1784037649.948207
-  },
-  {
-    "url": "https://www.cnbc.com/2026/07/14/consumer-price-index-inflation-report-june-2026.html",
-    "headline": "June CPI falls 0.4%, annual rate drops to 3.5% — biggest monthly decline since April 2020",
-    "date": "2026-07-14",
-    "ts": 1784037649.948207
-  },
-  {
-    "url": "https://www.wsj.com/economy/central-banking/warsh-tells-congress-the-fed-has-no-tolerance-for-high-inflation-50c5dfa8",
-    "headline": "Warsh debuts before Congress, vows Fed has zero tolerance for persistently elevated inflation",
-    "date": "2026-07-14",
-    "ts": 1784037649.948207
-  },
-  {
-    "url": "https://www.wsj.com/finance/jgbs-mixed-may-be-weighed-by-declines-in-u-s-treasurys-a3a67b11",
-    "headline": "Treasury yields drop sharply as softer CPI trims rate-hike odds ahead of July FOMC",
-    "date": "2026-07-14",
-    "ts": 1784037649.948207
-  },
-  {
-    "url": "https://www.wsj.com/finance/investing/corporate-bonds-have-the-best-yields-in-years-they-still-arent-enough-aa391e8b",
-    "headline": "Corporate bonds have the best yields in years — and investors still aren't satisfied",
-    "date": "2026-07-14",
-    "ts": 1784037649.948207
-  },
-  {
-    "url": "https://techcrunch.com/2026/07/13/video-generation-startup-pixverse-raises-439m-valuation-soars-past-2b/",
-    "headline": "Video-generation startup PixVerse raises $439M, valuation soars past $2B",
-    "date": "2026-07-14",
-    "ts": 1784037649.948207
-  },
-  {
-    "url": "https://techcrunch.com/2026/07/13/hermes-agent-maker-nous-research-in-talks-for-new-funding-at-1-5b-valuation/",
-    "headline": "Hermes agent maker Nous Research in talks for new funding at $1.5B valuation",
-    "date": "2026-07-14",
-    "ts": 1784037649.948207
-  },
-  {
-    "url": "https://techcrunch.com/2026/07/13/anthropic-starts-localizing-claude-pricing-for-india-its-biggest-market-after-the-us/",
-    "headline": "Anthropic localizes Claude pricing for India, its biggest AI market after the US",
-    "date": "2026-07-14",
-    "ts": 1784037649.948207
-  },
-  {
-    "url": "https://techcrunch.com/2026/07/13/satya-nadella-has-issued-a-shocking-warning-to-companies-using-ai/",
-    "headline": "Satya Nadella issues stark warning to enterprises over AI adoption risks",
-    "date": "2026-07-14",
-    "ts": 1784037649.948207
-  },
-  {
-    "url": "https://venturebeat.com/technology/canva-launches-code-2-0-offering-ai-website-building-to-every-user-including-free-accounts",
-    "headline": "Canva launches Code 2.0, bringing AI website building to every user including free accounts",
-    "date": "2026-07-14",
-    "ts": 1784037649.948207
-  },
-  {
-    "url": "https://www.theverge.com/policy/965110/new-york-ai-data-center-moratorium",
-    "headline": "New York enacts nation's first statewide data center moratorium, blocking new permits for one year",
-    "date": "2026-07-14",
-    "ts": 1784037649.948207
-  },
-  {
-    "url": "https://arstechnica.com/security/2026/07/the-us-government-warns-that-russia-state-hackers-are-coming-after-your-router/",
-    "headline": "US government warns Russia state hackers are actively targeting enterprise routers",
-    "date": "2026-07-14",
-    "ts": 1784037649.948207
-  },
-  {
-    "url": "https://arstechnica.com/space/2026/07/spacex-is-gearing-up-for-starships-13th-test-flight-later-this-week/",
-    "headline": "SpaceX gearing up for Starship's 13th test flight later this week",
-    "date": "2026-07-14",
-    "ts": 1784037649.948207
-  },
-  {
-    "url": "https://arstechnica.com/tech-policy/2026/07/states-sue-to-block-paramount-wbd-merger-that-was-approved-by-trump-admin/",
-    "headline": "States sue to block Paramount/WBD merger that was approved by Trump administration",
-    "date": "2026-07-14",
-    "ts": 1784037649.948207
-  },
-  {
-    "url": "https://www.theverge.com/tech/965270/google-deepmind-demis-hassabis-global-ai-watchdog",
-    "headline": "Google's Demis Hassabis calls for a US-led global AI watchdog",
-    "date": "2026-07-14",
-    "ts": 1784037649.948207
   }
 ]
