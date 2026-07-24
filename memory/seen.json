@@ -1,5 +1,119 @@
 [
   {
+    "url": "https://www.wsj.com/finance/investing/is-the-fed-about-to-hike-rates-9307037d?mod=rss_markets_main",
+    "headline": "WSJ asks: Is the Fed about to hike rates ahead of next week's FOMC meeting?",
+    "date": "2026-07-24",
+    "ts": 1784901629.65316
+  },
+  {
+    "url": "https://www.cnbc.com/2026/07/23/jpmorgan-dramatic-jump-in-ai-etfs-despite-rough-quarter.html",
+    "headline": "JPMorgan finds dramatic jump in AI-themed ETFs despite rough Q2 for the sector",
+    "date": "2026-07-24",
+    "ts": 1784901629.65316
+  },
+  {
+    "url": "https://www.pymnts.com/legal/aml/2026/fatf-warns-defi-label-is-leaving-centralized-platforms-outside-aml-rules/",
+    "headline": "FATF warns 'DeFi' label leaves centralized crypto platforms outside AML rules",
+    "date": "2026-07-24",
+    "ts": 1784901629.65316
+  },
+  {
+    "url": "https://www.finextra.com/pressarticle/110488/visa-and-lianlian-enable-chinas-first-b2b-agentic-transaction?utm_medium=rssfinextra&utm_source=finextrafeed",
+    "headline": "Visa and Lianlian enable China's first B2B agentic payment transaction",
+    "date": "2026-07-24",
+    "ts": 1784901629.65316
+  },
+  {
+    "url": "https://www.finextra.com/pressarticle/110490/mastercard-expands-virtual-card-programme?utm_medium=rssfinextra&utm_source=finextrafeed",
+    "headline": "Mastercard expands virtual card programme for commercial spend",
+    "date": "2026-07-24",
+    "ts": 1784901629.65316
+  },
+  {
+    "url": "https://www.finextra.com/newsarticle/48140/verifone-patents-tech-that-lets-payment-terminals-detect-tampering?utm_medium=rssfinextra&utm_source=finextrafeed",
+    "headline": "Verifone patents technology that lets payment terminals detect tampering",
+    "date": "2026-07-24",
+    "ts": 1784901629.65316
+  },
+  {
+    "url": "https://www.wsj.com/finance/investing/jgbs-edge-lower-tracking-declines-in-u-s-treasurys-f3e6bacb?mod=rss_markets_main",
+    "headline": "Dollar and Treasury yields edge lower Friday as oil prices retreat from $100",
+    "date": "2026-07-24",
+    "ts": 1784901629.65316
+  },
+  {
+    "url": "https://www.wsj.com/economy/housing/mortgage-rates-hit-highest-levels-in-nearly-a-year-ba480ebf",
+    "headline": "Mortgage rates hit highest level in nearly a year as Middle East tensions stoke inflation fears",
+    "date": "2026-07-24",
+    "ts": 1784901629.65316
+  },
+  {
+    "url": "https://www.wsj.com/finance/investing/what-surging-bond-yields-mean-for-consumers-and-markets-cb37b61f?mod=rss_markets_main",
+    "headline": "What surging bond yields mean for consumers and markets",
+    "date": "2026-07-24",
+    "ts": 1784901629.65316
+  },
+  {
+    "url": "https://venturebeat.com/technology/black-forest-labs-launches-flux-3-capable-of-generating-images-and-20-second-video-with-audio-but-in-limited-release-to-start",
+    "headline": "Black Forest Labs launches FLUX 3: unified multimodal model generates 20-sec video with native audio, images, and action prediction",
+    "date": "2026-07-24",
+    "ts": 1784901629.65316
+  },
+  {
+    "url": "https://venturebeat.com/orchestration/agentic-coding-goes-hands-free-as-openai-brings-gpt-lives-full-duplex-voice-control-to-codex-and-chatgpt-on-the-desktop",
+    "headline": "OpenAI brings full-duplex GPT-Live voice control to ChatGPT desktop and Codex",
+    "date": "2026-07-24",
+    "ts": 1784901629.65316
+  },
+  {
+    "url": "https://venturebeat.com/infrastructure/microsoft-launches-new-in-house-ai-models-it-says-cut-costs-up-to-89-versus-openai",
+    "headline": "Microsoft launches in-house AI models it says cut costs up to 89% vs OpenAI",
+    "date": "2026-07-24",
+    "ts": 1784901629.65316
+  },
+  {
+    "url": "https://techcrunch.com/2026/07/23/anthropic-updates-claude-voice-mode-with-more-capable-models/",
+    "headline": "Anthropic upgrades Claude voice mode with Opus and Sonnet models",
+    "date": "2026-07-24",
+    "ts": 1784901629.65316
+  },
+  {
+    "url": "https://techcrunch.com/2026/07/23/ai-chip-startup-etched-defies-skeptics-hits-10-3b-valuation-from-big-name-investors/",
+    "headline": "AI chip startup Etched defies skeptics, hits $10.3B valuation from big-name investors",
+    "date": "2026-07-24",
+    "ts": 1784901629.65316
+  },
+  {
+    "url": "https://houseofsaud.com/irgc-claims-destroyed-amazon-bahrain-data-center/",
+    "headline": "IRGC claims it destroyed Amazon's Bahrain data center amid US-Iran war",
+    "date": "2026-07-24",
+    "ts": 1784901629.65316
+  },
+  {
+    "url": "https://techcrunch.com/2026/07/24/facebook-launches-a-dedicated-marketplace-app-for-sellers-adds-a-free-verification-system/",
+    "headline": "Facebook launches dedicated Marketplace app for sellers with free verification system",
+    "date": "2026-07-24",
+    "ts": 1784901629.65316
+  },
+  {
+    "url": "https://techcrunch.com/2026/07/23/amd-takes-on-nvidia-with-its-helios-ai-rack-scale-system/",
+    "headline": "AMD takes on Nvidia with Helios AI rack-scale system",
+    "date": "2026-07-24",
+    "ts": 1784901629.65316
+  },
+  {
+    "url": "https://techcrunch.com/2026/07/23/mobileye-ceo-amnon-shashua-to-step-aside-as-company-pushes-into-robotaxis-robotics/",
+    "headline": "Mobileye CEO Amnon Shashua to step aside as company pushes into robotaxis and robotics",
+    "date": "2026-07-24",
+    "ts": 1784901629.65316
+  },
+  {
+    "url": "https://techcrunch.com/2026/07/23/patreon-lays-off-off-20-of-its-workforce/",
+    "headline": "Patreon lays off 20% of its workforce",
+    "date": "2026-07-24",
+    "ts": 1784901629.65316
+  },
+  {
     "url": "https://www.cnbc.com/2026/07/23/american-airlines-aal-2q-2026-earnings.html",
     "headline": "American Airlines Q2 profit crashes 88% to $71M, slashes full-year EPS outlook on fuel spike",
     "date": "2026-07-23",
@@ -556,113 +670,5 @@
     "headline": "Russia's elite APT29 hackers are now using ClickFix to infect devices",
     "date": "2026-07-17",
     "ts": 1784296840.974231
-  },
-  {
-    "url": "https://www.cnbc.com/2026/07/16/unitedhealth-group-unh-earnings-q2-2026.html",
-    "headline": "UnitedHealth Q2 adj. EPS $6.38 beats $4.91 est.; raises full-year guidance to $19.50-$20.00",
-    "date": "2026-07-16",
-    "ts": 1784210445.968105
-  },
-  {
-    "url": "https://www.cnbc.com/2026/07/15/spacex-spcx-stock-ipo-price.html",
-    "headline": "SpaceX (SPCX) hits all-time low at $132.75, below $135 IPO price, as lockup fears mount",
-    "date": "2026-07-16",
-    "ts": 1784210445.968105
-  },
-  {
-    "url": "https://www.wsj.com/finance/jgbs-mixed-as-investors-grapple-with-gains-in-u-s-treasurys-rising-oil-prices-6753ed21?mod=rss_markets_main",
-    "headline": "Treasury yields rise as resilient US jobs data tempers rate-cut expectations",
-    "date": "2026-07-16",
-    "ts": 1784210445.968105
-  },
-  {
-    "url": "https://www.cnbc.com/2026/07/15/apples-china-breakthrough-provides-another-tailwind-for-its-stock.html",
-    "headline": "Apple Intelligence clears Chinese regulatory approval, launching with Alibaba and Baidu AI",
-    "date": "2026-07-16",
-    "ts": 1784210445.968105
-  },
-  {
-    "url": "https://www.finextra.com/newsarticle/48105/finance-and-tech-firms-unite-around-internet-payments-protocol-x402",
-    "headline": "Linux Foundation launches x402 Foundation — Visa, Mastercard, Stripe, Google back open AI-agent payment standard",
-    "date": "2026-07-16",
-    "ts": 1784210445.968105
-  },
-  {
-    "url": "https://www.theblock.co/post/408574/visa-stablecoins-agentic-ai-commerce?utm_source=rss&utm_medium=rss",
-    "headline": "Visa says stablecoins will power micro-commerce in the AI agentic economy",
-    "date": "2026-07-16",
-    "ts": 1784210445.968105
-  },
-  {
-    "url": "https://www.theblock.co/post/408525/stripe-paypal-deal-accelerate-stablecoins-blockchain",
-    "headline": "Stripe-PayPal deal could accelerate shift to blockchain-based money, Polygon exec says",
-    "date": "2026-07-16",
-    "ts": 1784210445.968105
-  },
-  {
-    "url": "https://www.wsj.com/finance/currencies/dollar-stuck-near-162-yen-despite-fresh-intervention-warning-ab84cf73?mod=rss_markets_main",
-    "headline": "Dollar could fall if Fed opts for QT over rate rises, analysts warn",
-    "date": "2026-07-16",
-    "ts": 1784210445.968105
-  },
-  {
-    "url": "https://www.bankingdive.com/news/custodia-petition-supreme-court-fed-master-account/825334/",
-    "headline": "Custodia Bank petitions Supreme Court for access to Fed master account",
-    "date": "2026-07-16",
-    "ts": 1784210445.968105
-  },
-  {
-    "url": "https://www.wsj.com/finance/banking/why-high-credit-card-delinquencies-arent-showing-up-at-the-big-banks-3476c217?mod=rss_markets_main",
-    "headline": "Big banks' credit-card delinquencies stay low despite broader consumer stress, WSJ finds",
-    "date": "2026-07-16",
-    "ts": 1784210445.968105
-  },
-  {
-    "url": "https://venturebeat.com/technology/thinking-machines-open-sources-first-multimodal-language-model-inkling-focused-on-low-cost-and-resistance-to-censorship",
-    "headline": "Thinking Machines open-sources Inkling, its first multimodal model, touting low cost and censorship resistance",
-    "date": "2026-07-16",
-    "ts": 1784210445.968105
-  },
-  {
-    "url": "https://techcrunch.com/2026/07/15/microsoft-is-reportedly-training-salespeople-to-talk-down-openai-and-anthropic/",
-    "headline": "Microsoft reportedly training enterprise salespeople to talk down OpenAI and Anthropic",
-    "date": "2026-07-16",
-    "ts": 1784210445.968105
-  },
-  {
-    "url": "https://techcrunch.com/2026/07/14/openai-researcher-miles-wang-in-talks-to-launch-ai-drug-discovery-startup-valued-at-2b/",
-    "headline": "OpenAI researcher Miles Wang in talks to launch AI drug discovery startup valued at $2B",
-    "date": "2026-07-16",
-    "ts": 1784210445.968105
-  },
-  {
-    "url": "https://www.theverge.com/policy/966438/eu-google-android-ai-interoperability-search-data-dma",
-    "headline": "EU orders Google to open Android and Search to rivals under DMA interoperability rules",
-    "date": "2026-07-16",
-    "ts": 1784210445.968105
-  },
-  {
-    "url": "https://www.theverge.com/tech/966404/oneplus-oppo-us-europe-withdrawal-realme",
-    "headline": "OnePlus officially halts new phone sales in the US and Europe",
-    "date": "2026-07-16",
-    "ts": 1784210445.968105
-  },
-  {
-    "url": "https://www.theverge.com/tech/966442/1password-anthropic-claude-browser-integration",
-    "headline": "Claude can now use your 1Password credentials on your behalf via browser integration",
-    "date": "2026-07-16",
-    "ts": 1784210445.968105
-  },
-  {
-    "url": "https://techcrunch.com/2026/07/16/meta-now-alerts-parents-if-their-teen-discussed-suicide-or-self-harm-with-its-ai-chatbot/",
-    "headline": "Meta alerts parents when teens discuss suicide or self-harm with its AI chatbot",
-    "date": "2026-07-16",
-    "ts": 1784210445.968105
-  },
-  {
-    "url": "https://arstechnica.com/information-technology/2026/07/sheetz-moves-838-stores-off-vmware-broadcom-created-too-much-uncertainty/",
-    "headline": "Sheetz dumps VMware, migrating 11,000 virtual machines across 838 stores",
-    "date": "2026-07-16",
-    "ts": 1784210445.968105
   }
 ]
