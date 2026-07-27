@@ -1,5 +1,119 @@
 [
   {
+    "url": "https://fortune.com/2026/07/26/big-tech-earnings-meta-microsoft-apple-amazon-market-revolt-ai-spending/",
+    "headline": "Alphabet falls 7.8%, Tesla -17.8% as AI capex revolt deepens ahead of this week's Mag Seven results",
+    "date": "2026-07-27",
+    "ts": 1785160828.839526
+  },
+  {
+    "url": "https://www.paymentsdive.com/news/occ-denies-wise-trust-charter-application-aml-deficiencies/826166/",
+    "headline": "OCC denies Wise trust charter application over AML deficiencies",
+    "date": "2026-07-27",
+    "ts": 1785160828.839526
+  },
+  {
+    "url": "https://www.pymnts.com/blockchain/2026/fis-links-digital-money-to-smarter-bank-networks/",
+    "headline": "FIS links digital money capabilities to broader bank network infrastructure",
+    "date": "2026-07-27",
+    "ts": 1785160828.839526
+  },
+  {
+    "url": "https://www.theblock.co/post/409702/kb-kookmin-bank-payment-jpmorgans-kinexys",
+    "headline": "South Korea's KB Kookmin Bank to launch cross-border payments on JPMorgan's Kinexys",
+    "date": "2026-07-27",
+    "ts": 1785160828.839526
+  },
+  {
+    "url": "https://www.paymentsdive.com/news/maryland-issuing-chip-enabled-ebt-cards-statewide/826144/",
+    "headline": "Maryland rolls out chip-enabled EBT cards statewide to cut food-stamp fraud",
+    "date": "2026-07-27",
+    "ts": 1785160828.839526
+  },
+  {
+    "url": "https://www.digitaltransactions.net/amex-posts-an-8-year-high-in-consumer-billing/",
+    "headline": "Amex posts 8-year high in consumer billing volume in Q2",
+    "date": "2026-07-27",
+    "ts": 1785160828.839526
+  },
+  {
+    "url": "https://www.bloomberg.com/news/articles/2026-07-27/singapore-tightens-monetary-policy-further-on-price-pressures",
+    "headline": "Singapore MAS surprises with second straight policy tightening on oil-driven inflation risk",
+    "date": "2026-07-27",
+    "ts": 1785160828.839526
+  },
+  {
+    "url": "https://www.wsj.com/finance/stocks/big-tech-earnings-and-fed-rate-decision-put-stock-rally-to-the-test-be602633",
+    "headline": "Big Tech earnings and Fed rate decision converge in pivotal test for stock rally",
+    "date": "2026-07-27",
+    "ts": 1785160828.839526
+  },
+  {
+    "url": "https://www.wsj.com/economy/central-banking/indonesia-central-bank-chief-resigns-unexpectedly-36620c11",
+    "headline": "Indonesia central bank chief resigns unexpectedly",
+    "date": "2026-07-27",
+    "ts": 1785160828.839526
+  },
+  {
+    "url": "https://huggingface.co/moonshotai/Kimi-K3",
+    "headline": "Moonshot AI drops Kimi K3 open weights today — world's first open 3T-class model",
+    "date": "2026-07-27",
+    "ts": 1785160828.839526
+  },
+  {
+    "url": "https://techcrunch.com/2026/07/24/anthropic-launches-opus-5/",
+    "headline": "Anthropic launches Opus 5, its most capable and commercially available model yet",
+    "date": "2026-07-27",
+    "ts": 1785160828.839526
+  },
+  {
+    "url": "https://techcrunch.com/2026/07/26/hugging-face-ceo-calls-for-radical-transparency-after-unprecedented-openai-hack/",
+    "headline": "Hugging Face CEO demands radical AI transparency after OpenAI's unprecedented sandbox hack",
+    "date": "2026-07-27",
+    "ts": 1785160828.839526
+  },
+  {
+    "url": "https://techcrunch.com/2026/07/27/enigma-raises-70m-to-make-controlling-a-robot-as-easy-as-adjusting-the-volume/",
+    "headline": "Enigma raises $70M to make robot control as intuitive as adjusting a volume knob",
+    "date": "2026-07-27",
+    "ts": 1785160828.839526
+  },
+  {
+    "url": "https://techcrunch.com/2026/07/24/as-us-weighs-response-to-chinese-ai-industry-urges-against-broad-open-weight-restrictions/",
+    "headline": "US AI industry pushes back against broad open-weight restrictions in response to Chinese AI",
+    "date": "2026-07-27",
+    "ts": 1785160828.839526
+  },
+  {
+    "url": "https://www.theverge.com/policy/971097/us-charging-american-citizen-wiping-phone-duress-password",
+    "headline": "US citizen criminally charged after wiping GrapheneOS phone during border search",
+    "date": "2026-07-27",
+    "ts": 1785160828.839526
+  },
+  {
+    "url": "https://www.theverge.com/ai-artificial-intelligence/971281/nvidia-open-secure-ai-alliance-cybersecurity",
+    "headline": "Nvidia and Microsoft launch open AI security alliance — without OpenAI, Google, or Anthropic",
+    "date": "2026-07-27",
+    "ts": 1785160828.839526
+  },
+  {
+    "url": "https://arstechnica.com/tech-policy/2026/07/artist-sues-ai-meme-generator-for-selling-deeply-personal-comic-as-ad-template/",
+    "headline": "Artist sues AI meme generator for using personal comic as ad template without consent",
+    "date": "2026-07-27",
+    "ts": 1785160828.839526
+  },
+  {
+    "url": "https://www.theverge.com/tech/970948/meta-smart-glasses-privacy-wearables",
+    "headline": "Meta's smart glasses rollout stumbles over growing privacy concerns",
+    "date": "2026-07-27",
+    "ts": 1785160828.839526
+  },
+  {
+    "url": "https://techcrunch.com/2026/07/25/warner-bros-lawsuit-accuses-amazon-of-illegally-poaching-executives/",
+    "headline": "Warner Bros. sues Amazon alleging illegal executive poaching",
+    "date": "2026-07-27",
+    "ts": 1785160828.839526
+  },
+  {
     "url": "https://www.wsj.com/finance/investing/is-the-fed-about-to-hike-rates-9307037d?mod=rss_markets_main",
     "headline": "WSJ asks: Is the Fed about to hike rates ahead of next week's FOMC meeting?",
     "date": "2026-07-24",
@@ -568,107 +682,5 @@
     "headline": "India's first privately developed rocket reaches orbit on dramatic debut launch",
     "date": "2026-07-20",
     "ts": 1784556036.354956
-  },
-  {
-    "url": "https://variety.com/2026/tv/news/netflix-q2-2026-earnings-1236812558/",
-    "headline": "Netflix shares fall 9% after hours on soft Q3 revenue guidance ($12.86B vs $13B est)",
-    "date": "2026-07-17",
-    "ts": 1784296840.974231
-  },
-  {
-    "url": "https://www.pymnts.com/news/acquiring/2026/paypal-board-calls-53-billion-stripe-advent-bid-inadequate/",
-    "headline": "PayPal board calls $53B Stripe-Advent bid inadequate, cites regulatory and financing hurdles",
-    "date": "2026-07-17",
-    "ts": 1784296840.974231
-  },
-  {
-    "url": "https://scanx.trade/stock-market-news/companies/travelers-companies-fifth-third-bancorp-report-earnings-july-17/45835089",
-    "headline": "Travelers Q2 core EPS $10.04 nearly doubles $5.38 estimate on strong underwriting",
-    "date": "2026-07-17",
-    "ts": 1784296840.974231
-  },
-  {
-    "url": "https://techcrunch.com/2026/07/17/why-the-first-gpu-financiers-are-turning-to-inference-chips-in-a-400-million-deal/",
-    "headline": "Chip selloff drags Nasdaq down 1.6% as AI-spend ROI doubts mount",
-    "date": "2026-07-17",
-    "ts": 1784296840.974231
-  },
-  {
-    "url": "https://www.finextra.com/newsarticle/48110/visa-launches-stablecoin-platform",
-    "headline": "Visa launches stablecoin platform giving clients access to OUSD",
-    "date": "2026-07-17",
-    "ts": 1784296840.974231
-  },
-  {
-    "url": "https://www.finextra.com/newsarticle/48108/mastercard-rolls-out-service-to-help-developers-build-mobile-wallets",
-    "headline": "Mastercard rolls out developer service to help firms build in-app mobile wallets",
-    "date": "2026-07-17",
-    "ts": 1784296840.974231
-  },
-  {
-    "url": "https://www.finextra.com/pressarticle/110445/bbva-becomes-first-spanish-bank-to-launch-swifts-new-global-retail-payments-scheme",
-    "headline": "BBVA becomes first Spanish bank to launch Swift's new global retail payments scheme",
-    "date": "2026-07-17",
-    "ts": 1784296840.974231
-  },
-  {
-    "url": "https://www.paymentsdive.com/news/ewa-backers-push-cfpb-move/825418/",
-    "headline": "EWA industry groups push CFPB to finalize earned-wage access rule",
-    "date": "2026-07-17",
-    "ts": 1784296840.974231
-  },
-  {
-    "url": "https://www.wsj.com/finance/investing/how-sky-high-deficits-threaten-the-bond-market-eeddd168",
-    "headline": "Sky-high US deficits threaten bond market as record debt meets increasingly hostile buyers",
-    "date": "2026-07-17",
-    "ts": 1784296840.974231
-  },
-  {
-    "url": "https://www.wsj.com/economy/central-banking/bank-of-korea-raise-rates-for-first-time-since-2023-17dea183",
-    "headline": "Bank of Korea raises rates for first time since 2023 as inflation pressures persist",
-    "date": "2026-07-17",
-    "ts": 1784296840.974231
-  },
-  {
-    "url": "https://venturebeat.com/technology/chinas-moonshot-ai-releases-kimi-k3-the-largest-open-source-model-ever-rivaling-top-u-s-systems",
-    "headline": "Moonshot AI releases Kimi K3, the largest open-source model ever, rivaling top US systems",
-    "date": "2026-07-17",
-    "ts": 1784296840.974231
-  },
-  {
-    "url": "https://blog.google/innovation-and-ai/products/gemini-notebook/notebooklm-gemini-notebook/",
-    "headline": "Google renames NotebookLM as Gemini Notebook with deeper Gemini integration",
-    "date": "2026-07-17",
-    "ts": 1784296840.974231
-  },
-  {
-    "url": "https://techcrunch.com/2026/07/16/google-vids-now-lets-you-star-in-your-own-ai-videos/",
-    "headline": "Google Vids adds AI avatars so users can appear in their own generated videos",
-    "date": "2026-07-17",
-    "ts": 1784296840.974231
-  },
-  {
-    "url": "https://techcrunch.com/2026/07/16/spacex-suddenly-aborts-second-starship-v3-launch-after-ignition/",
-    "headline": "SpaceX aborts Starship V3 second launch attempt at ignition after engine failures",
-    "date": "2026-07-17",
-    "ts": 1784296840.974231
-  },
-  {
-    "url": "https://techcrunch.com/2026/07/16/coca-cola-suspended-production-at-its-fairlife-dairy-after-a-ransomware-attack/",
-    "headline": "Coca-Cola suspended Fairlife dairy production following a ransomware attack",
-    "date": "2026-07-17",
-    "ts": 1784296840.974231
-  },
-  {
-    "url": "https://arstechnica.com/ai/2026/07/fear-of-humanoid-robots-spurs-human-workers-to-strike-at-hyundai-auto-factory/",
-    "headline": "Hyundai factory workers strike as fear of humanoid robot replacements grows",
-    "date": "2026-07-17",
-    "ts": 1784296840.974231
-  },
-  {
-    "url": "https://arstechnica.com/security/2026/07/now-even-russias-most-elite-hackers-are-using-clickfix-to-infect-devices/",
-    "headline": "Russia's elite APT29 hackers are now using ClickFix to infect devices",
-    "date": "2026-07-17",
-    "ts": 1784296840.974231
   }
 ]
