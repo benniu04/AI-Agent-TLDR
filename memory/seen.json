@@ -1,5 +1,125 @@
 [
   {
+    "url": "https://www.cnbc.com/2026/07/29/humana-hum-earnings-q2-2026.html",
+    "headline": "Humana Q2 tops estimates, maintains full-year profit outlook as medical costs hold",
+    "date": "2026-07-29",
+    "ts": 1785333627.489341
+  },
+  {
+    "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/262060902-microsoft-msft-q4-fy2026-earnings-preview-july-29-azure-capex-tradingkey",
+    "headline": "Microsoft FY26 Q4 earnings after the bell: Azure growth and $40B+ capex in focus",
+    "date": "2026-07-29",
+    "ts": 1785333627.489341
+  },
+  {
+    "url": "https://www.cnbc.com/2026/07/29/world-cup-fifa-stake-sales-uefa-soccer.html",
+    "headline": "FIFA embroiled in $20B World Cup stake-sale controversy as UEFA pushes back",
+    "date": "2026-07-29",
+    "ts": 1785333627.489341
+  },
+  {
+    "url": "https://www.cnbc.com/2026/07/28/visa-is-cutting-7percent-of-employees-in-efficiency-push-as-ai-reshapes-work.html",
+    "headline": "Visa cuts 2,600 jobs (7% of workforce), cites AI efficiency and payments reinvestment",
+    "date": "2026-07-29",
+    "ts": 1785333627.489341
+  },
+  {
+    "url": "https://www.pymnts.com/disbursements/2026/visa-direct-modernizes-government-payouts-stuck-check-era/",
+    "headline": "Visa Direct moves to modernize government payouts still stuck in the paper-check era",
+    "date": "2026-07-29",
+    "ts": 1785333627.489341
+  },
+  {
+    "url": "https://www.digitaltransactions.net/some-improvement-for-paypal-as-a-stripe-takeover-offer-looms/",
+    "headline": "PayPal Q2 shows improvement as Stripe takeover speculation looms",
+    "date": "2026-07-29",
+    "ts": 1785333627.489341
+  },
+  {
+    "url": "https://www.paymentsjournal.com/circle-acquires-ibms-blockchain-patent-portfolio/",
+    "headline": "Circle acquires IBM's blockchain patent portfolio in stablecoin infrastructure push",
+    "date": "2026-07-29",
+    "ts": 1785333627.489341
+  },
+  {
+    "url": "https://www.finextra.com/pressarticle/110526/aci-worldwide-and-dlocal-bring-latin-american-payment-rails-to-global-merchants",
+    "headline": "ACI Worldwide and dLocal connect Latin American payment rails to global merchants",
+    "date": "2026-07-29",
+    "ts": 1785333627.489341
+  },
+  {
+    "url": "https://www.wsj.com/finance/currencies/asian-currencies-consolidate-ahead-of-fomc-decision-54e3b760",
+    "headline": "Dollar could fall if Fed holds steady, keeping currency markets on edge into decision",
+    "date": "2026-07-29",
+    "ts": 1785333627.489341
+  },
+  {
+    "url": "https://www.bankingdive.com/news/huntington-banks-fee-growth-amid-deposit-cost-competition/826247/",
+    "headline": "Huntington banks on fee growth as deposit cost competition intensifies",
+    "date": "2026-07-29",
+    "ts": 1785333627.489341
+  },
+  {
+    "url": "https://techcrunch.com/2026/07/28/cyera-agrees-to-acquire-oasis-security-for-1b-to-safeguard-proliferating-ai-agents/",
+    "headline": "Cyera acquires Oasis Security for $1B to safeguard proliferating AI agents",
+    "date": "2026-07-29",
+    "ts": 1785333627.489341
+  },
+  {
+    "url": "https://www.theverge.com/ai-artificial-intelligence/972441/openai-rogue-ai-agent-hacked-more-than-hugging-face",
+    "headline": "OpenAI's rogue AI agent hacked far more targets beyond Hugging Face, new details show",
+    "date": "2026-07-29",
+    "ts": 1785333627.489341
+  },
+  {
+    "url": "https://www.pymnts.com/google/2026/google-reshuffles-nobel-winning-deepmind-ai-team/",
+    "headline": "Google reshuffles its Nobel-winning DeepMind AI team",
+    "date": "2026-07-29",
+    "ts": 1785333627.489341
+  },
+  {
+    "url": "https://techcrunch.com/2026/07/29/as-ai-content-floods-the-internet-pangram-raises-9m-to-detect-it/",
+    "headline": "Pangram raises $9M to detect AI-generated content flooding the web",
+    "date": "2026-07-29",
+    "ts": 1785333627.489341
+  },
+  {
+    "url": "https://techcrunch.com/2026/07/28/sam-altman-is-ready-to-decelerate/",
+    "headline": "Sam Altman signals OpenAI is ready to decelerate its breakneck pace",
+    "date": "2026-07-29",
+    "ts": 1785333627.489341
+  },
+  {
+    "url": "https://www.theverge.com/science/970731/doordash-air-drone-delivery-faa",
+    "headline": "DoorDash launches DoorDash Air, building its own drone delivery business",
+    "date": "2026-07-29",
+    "ts": 1785333627.489341
+  },
+  {
+    "url": "https://enklypesalt.com/posts/context-collapse-part3-ai-worming-through-word/",
+    "headline": "AI worms can self-propagate through Microsoft Copilot for Word via document payloads",
+    "date": "2026-07-29",
+    "ts": 1785333627.489341
+  },
+  {
+    "url": "https://www.theverge.com/games/972416/xbox-outage-game-disc-entitlement-check-issue",
+    "headline": "Xbox outage disrupted disc-based games due to entitlement-check server bug",
+    "date": "2026-07-29",
+    "ts": 1785333627.489341
+  },
+  {
+    "url": "https://www.theverge.com/tech/972259/us-foreign-robots-power-inverter-ban",
+    "headline": "US bans foreign-made robots and power inverters in sweeping new tech trade rule",
+    "date": "2026-07-29",
+    "ts": 1785333627.489341
+  },
+  {
+    "url": "https://arstechnica.com/tech-policy/2026/07/ebay-former-execs-pay-56m-to-settle-bloody-pig-mask-harassment-case/",
+    "headline": "eBay pays $46M to journalists targeted in its executives' bizarre harassment campaign",
+    "date": "2026-07-29",
+    "ts": 1785333627.489341
+  },
+  {
     "url": "https://www.cnbc.com/2026/07/28/coca-cola-ko-q2-2026-earnings.html",
     "headline": "Coca-Cola Q2 beats on EPS and revenue, raises full-year outlook",
     "date": "2026-07-28",
