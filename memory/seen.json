@@ -1,5 +1,149 @@
 [
   {
+    "url": "https://www.cnbc.com/2026/07/29/microsoft-msft-q4-earnings-report-2026.html",
+    "headline": "Microsoft Q4 beats: Azure tops $100B annually, stock jumps 8% after hours",
+    "date": "2026-07-30",
+    "ts": 1785420030.239005
+  },
+  {
+    "url": "https://variety.com/2026/digital/news/meta-q2-2026-earnings-results-legal-proceedings-charge-1236823577/",
+    "headline": "Meta Q2 revenue +28% to $60.8B but EPS misses as AI costs and legal charges bite",
+    "date": "2026-07-30",
+    "ts": 1785420030.239005
+  },
+  {
+    "url": "https://qz.com/shell-q2-2026-earnings-profits-middle-east-war-oil-073026",
+    "headline": "Shell Q2 profit more than doubles to $9.84B, second-highest on record, on war-driven energy prices",
+    "date": "2026-07-30",
+    "ts": 1785420030.239005
+  },
+  {
+    "url": "https://www.cnbc.com/2026/07/30/ferrari-race-earnings-q2-2026.html",
+    "headline": "Ferrari raises 2026 guidance after Q2 earnings beat",
+    "date": "2026-07-30",
+    "ts": 1785420030.239005
+  },
+  {
+    "url": "https://www.cnbc.com/2026/07/30/samsung-q2-earnings-ai-chip-.html",
+    "headline": "Samsung Q2 operating profit beats estimates on soaring AI chip demand",
+    "date": "2026-07-30",
+    "ts": 1785420030.239005
+  },
+  {
+    "url": "https://www.pymnts.com/news/payment-methods/2026/nacha-reports-q2-same-day-ach-payments-surged-29-5percent/",
+    "headline": "Nacha: Q2 Same Day ACH volume surged 29.5% year over year",
+    "date": "2026-07-30",
+    "ts": 1785420030.239005
+  },
+  {
+    "url": "https://www.theblock.co/post/410048/tethers-genius-compliant-usat-stablecoin-launches-on-celo-marking-first-expansion-beyond-ethereum",
+    "headline": "Tether's GENIUS-compliant USAT stablecoin launches on Celo in first expansion beyond Ethereum",
+    "date": "2026-07-30",
+    "ts": 1785420030.239005
+  },
+  {
+    "url": "https://www.theblock.co/post/410064/visa-ceo-downplays-open-usd-challenger-tether-usdc-our-role-is-not-pick-winners",
+    "headline": "Visa CEO sidesteps labeling Open USD a challenger to Tether and USDC",
+    "date": "2026-07-30",
+    "ts": 1785420030.239005
+  },
+  {
+    "url": "https://www.theblock.co/post/410068/anchorage-digital-feds-proposed-payment-account-no-substitute-master-account",
+    "headline": "Anchorage Digital says Fed's proposed payment account is no substitute for a master account",
+    "date": "2026-07-30",
+    "ts": 1785420030.239005
+  },
+  {
+    "url": "https://www.finextra.com/newsarticle/48171/mifinity-taps-bvnk-for-global-stablecoin-payouts",
+    "headline": "MiFinity taps BVNK for global stablecoin payouts",
+    "date": "2026-07-30",
+    "ts": 1785420030.239005
+  },
+  {
+    "url": "https://www.cnbc.com/2026/07/30/us-economy-slowed-to-1point5percent-growth-rate-in-q2-june-core-inflation-at-3point3percent.html",
+    "headline": "US economy slowed to 1.5% in Q2; June core PCE inflation at 3.3%",
+    "date": "2026-07-30",
+    "ts": 1785420030.239005
+  },
+  {
+    "url": "https://www.wsj.com/economy/central-banking/fed-holds-rates-steady-but-three-officials-voted-for-increase-3a6903e0",
+    "headline": "Fed holds rates steady on 9-3 vote; three dissenters wanted a hike",
+    "date": "2026-07-30",
+    "ts": 1785420030.239005
+  },
+  {
+    "url": "https://www.wsj.com/economy/central-banking/u-s-treasury-yields-soar-as-market-struggles-to-interpret-fed-16885819",
+    "headline": "30-year Treasury yield hits 19-year high as markets struggle to read Warsh's Fed",
+    "date": "2026-07-30",
+    "ts": 1785420030.239005
+  },
+  {
+    "url": "https://www.wsj.com/economy/central-banking/kevin-warsh-asked-the-market-to-speak-it-answered-c5b589f9",
+    "headline": "Warsh asked markets to speak; investors answered by selling Treasuries",
+    "date": "2026-07-30",
+    "ts": 1785420030.239005
+  },
+  {
+    "url": "https://techcrunch.com/2026/07/29/microsoft-is-openly-competing-with-openai-anthropic-more-than-ever/",
+    "headline": "Microsoft now openly competing with OpenAI and Anthropic more than ever",
+    "date": "2026-07-30",
+    "ts": 1785420030.239005
+  },
+  {
+    "url": "https://www.bloomberg.com/news/articles/2026-07-29/chatgpt-roblox-to-fall-under-strictest-eu-rules-for-platforms",
+    "headline": "EU set to designate ChatGPT as 'very large online platform' under DSA, fines up to 6% of revenue",
+    "date": "2026-07-30",
+    "ts": 1785420030.239005
+  },
+  {
+    "url": "https://techcrunch.com/2026/07/29/mark-zuckerberg-predicts-that-billions-of-people-will-have-personal-ai-agents-in-five-years/",
+    "headline": "Zuckerberg: billions of people will have personal AI agents within five years",
+    "date": "2026-07-30",
+    "ts": 1785420030.239005
+  },
+  {
+    "url": "https://techcrunch.com/2026/07/29/thinking-machines-co-founder-lilian-weng-left-the-company-citing-health-reasons-then-joined-openai/",
+    "headline": "Thinking Machines co-founder Lilian Weng leaves startup, joins OpenAI",
+    "date": "2026-07-30",
+    "ts": 1785420030.239005
+  },
+  {
+    "url": "https://venturebeat.com/security/cisco-ai-supply-chain-provenance-explorer-fingerprints-900-open-models-replaces-self-reported-tags",
+    "headline": "Cisco fingerprints nearly 900 open AI models to fix unverified supply-chain lineage",
+    "date": "2026-07-30",
+    "ts": 1785420030.239005
+  },
+  {
+    "url": "https://techcrunch.com/2026/07/30/zoox-clears-final-federal-hurdle-to-launch-paid-robotaxi-service/",
+    "headline": "Zoox clears final federal hurdle to launch paid robotaxi service",
+    "date": "2026-07-30",
+    "ts": 1785420030.239005
+  },
+  {
+    "url": "https://techcrunch.com/2026/07/30/ftc-sues-hims-hers-for-allegedly-sharing-patients-medical-data-with-advertisers-meta-and-snap/",
+    "headline": "FTC sues Hims & Hers for sharing patients' medical data with Meta and Snap advertisers",
+    "date": "2026-07-30",
+    "ts": 1785420030.239005
+  },
+  {
+    "url": "https://arstechnica.com/security/2026/07/mythos-uncovers-crypto-weaknesses-that-went-unknown-for-years/",
+    "headline": "Mythos attack breaks third-round post-quantum cryptography algorithm candidate",
+    "date": "2026-07-30",
+    "ts": 1785420030.239005
+  },
+  {
+    "url": "https://www.theverge.com/tech/972894/qualcomm-price-hikes-q2-2026-earnings",
+    "headline": "Qualcomm raising phone chip prices starting September 1",
+    "date": "2026-07-30",
+    "ts": 1785420030.239005
+  },
+  {
+    "url": "https://www.theverge.com/policy/972850/xai-grok-minnesota-nudification-lawsuit",
+    "headline": "xAI mounts last-minute legal fight to block Minnesota's anti-nudification app law",
+    "date": "2026-07-30",
+    "ts": 1785420030.239005
+  },
+  {
     "url": "https://www.cnbc.com/2026/07/29/humana-hum-earnings-q2-2026.html",
     "headline": "Humana Q2 tops estimates, maintains full-year profit outlook as medical costs hold",
     "date": "2026-07-29",
@@ -586,137 +730,5 @@
     "headline": "Google launches video selfie sign-in as new account security option",
     "date": "2026-07-23",
     "ts": 1784815234.797209
-  },
-  {
-    "url": "https://qz.com/ge-vernova-2026-revenue-guidance-second-quarter-earnings-072226",
-    "headline": "GE Vernova Q2 revenue $11.1B beats, orders surge 88% to $24.2B; raises 2026 outlook",
-    "date": "2026-07-22",
-    "ts": 1784728829.772466
-  },
-  {
-    "url": "https://www.cnbc.com/2026/07/21/goldman-sachs-private-markets-platform.html",
-    "headline": "Goldman Sachs launches private markets platform for wealthy investors eyeing next SpaceX, Stripe",
-    "date": "2026-07-22",
-    "ts": 1784728829.772466
-  },
-  {
-    "url": "https://www.cnbc.com/2026/07/21/nike-to-cut-off-thousands-of-online-distributors-in-china.html",
-    "headline": "Nike cuts off thousands of online distributors in China in digital restructuring",
-    "date": "2026-07-22",
-    "ts": 1784728829.772466
-  },
-  {
-    "url": "https://finance.yahoo.com/markets/live/earnings-live-second-quarter-results-tesla-google-july-115324842.html",
-    "headline": "S&P 500 Q2 earnings on pace for 24.7% growth, second straight quarter above 20%",
-    "date": "2026-07-22",
-    "ts": 1784728829.772466
-  },
-  {
-    "url": "https://www.theblock.co/post/409193/bis-warns-stablecoins-capital-controls",
-    "headline": "BIS warns USD stablecoins can evade capital controls, challenging market regulations",
-    "date": "2026-07-22",
-    "ts": 1784728829.772466
-  },
-  {
-    "url": "https://www.finextra.com/newsarticle/48127/natural-raises-30-million-to-build-ai-agent-payments-stack",
-    "headline": "Natural raises $30M to build AI agent payments stack",
-    "date": "2026-07-22",
-    "ts": 1784728829.772466
-  },
-  {
-    "url": "https://www.finextra.com/pressarticle/110471/ramp-opens-stablecoin-accounts",
-    "headline": "Ramp opens stablecoin accounts for business customers",
-    "date": "2026-07-22",
-    "ts": 1784728829.772466
-  },
-  {
-    "url": "https://www.paymentsdive.com/news/oregon-proposes-bnpl-rules/825792/",
-    "headline": "Oregon proposes BNPL rules for buy now, pay later lenders",
-    "date": "2026-07-22",
-    "ts": 1784728829.772466
-  },
-  {
-    "url": "https://www.bankingdive.com/news/ex-td-bank-employees-sentenced-prison-money-laundering-fraud/825662/",
-    "headline": "Ex-TD Bank employees sentenced to prison for money laundering and fraud",
-    "date": "2026-07-22",
-    "ts": 1784728829.772466
-  },
-  {
-    "url": "https://www.wsj.com/finance/investing/jgb-futures-fall-tracking-declines-in-u-s-treasury-market-54cd45d8",
-    "headline": "10-Year Treasury yield nears 2026 peak amid oil shock and deficit concerns",
-    "date": "2026-07-22",
-    "ts": 1784728829.772466
-  },
-  {
-    "url": "https://www.wsj.com/finance/investing/the-long-bond-is-making-people-nervous-5397f8b5",
-    "headline": "The Long Bond is making people nervous as duration risk mounts",
-    "date": "2026-07-22",
-    "ts": 1784728829.772466
-  },
-  {
-    "url": "https://www.wsj.com/economy/central-banking/bank-indonesia-defies-market-expectations-with-rate-hold-46ee5f61",
-    "headline": "Bank Indonesia defies market expectations, holds rates steady",
-    "date": "2026-07-22",
-    "ts": 1784728829.772466
-  },
-  {
-    "url": "https://www.wsj.com/finance/commodities-futures/gold-rises-amid-hopes-for-u-s-iran-deal-fe301cd7",
-    "headline": "Gold tops $4,100 as traders weigh Mideast risks and Fed outlook",
-    "date": "2026-07-22",
-    "ts": 1784728829.772466
-  },
-  {
-    "url": "https://openai.com/index/hugging-face-model-evaluation-security-incident/",
-    "headline": "OpenAI pre-release models broke containment and cyberattacked Hugging Face during evaluation",
-    "date": "2026-07-22",
-    "ts": 1784728829.772466
-  },
-  {
-    "url": "https://techcrunch.com/2026/07/21/the-anthropic-physical-intelligence-rumor-roiling-ai-twitter/",
-    "headline": "Anthropic held acquisition talks with robotics startup Physical Intelligence this spring, per The Information",
-    "date": "2026-07-22",
-    "ts": 1784728829.772466
-  },
-  {
-    "url": "https://techcrunch.com/2026/07/21/google-releases-three-new-gemini-models-but-no-3-5-pro/",
-    "headline": "Google releases Gemini 3.6 Flash, 3.5 Flash-Lite, and 3.5 Flash Cyber — but no 3.5 Pro",
-    "date": "2026-07-22",
-    "ts": 1784728829.772466
-  },
-  {
-    "url": "https://venturebeat.com/infrastructure/poolside-drops-laguna-s-2-1-an-open-weight-coding-model-that-beats-rivals-10x-its-size",
-    "headline": "Poolside releases Laguna S 2.1, an open-weight coding model that beats rivals 10x its size",
-    "date": "2026-07-22",
-    "ts": 1784728829.772466
-  },
-  {
-    "url": "https://www.theverge.com/tech/969208/samsung-galaxy-unpacked-2026-everything-announced",
-    "headline": "Samsung Galaxy Unpacked 2026: Z Fold 8 Ultra, Z Flip 8, and Galaxy Watch 9 announced",
-    "date": "2026-07-22",
-    "ts": 1784728829.772466
-  },
-  {
-    "url": "https://techcrunch.com/2026/07/21/jack-dorsey-is-taking-on-slack-with-buzz-a-group-chat-platform-for-teams-and-their-ai-agents/",
-    "headline": "Jack Dorsey launches Buzz, a team chat and AI agent platform taking on Slack",
-    "date": "2026-07-22",
-    "ts": 1784728829.772466
-  },
-  {
-    "url": "https://techcrunch.com/2026/07/22/whatsapp-adds-apple-carplay-and-android-auto-upgrades-ipad-sign-ups-and-more/",
-    "headline": "WhatsApp adds Apple CarPlay, Android Auto support, and iPad sign-ups",
-    "date": "2026-07-22",
-    "ts": 1784728829.772466
-  },
-  {
-    "url": "https://www.theverge.com/ai-artificial-intelligence/969137/us-utility-ai-electricty-data-center-rate-pledge-trump",
-    "headline": "US utilities pledge to spare consumers from AI's rising energy costs",
-    "date": "2026-07-22",
-    "ts": 1784728829.772466
-  },
-  {
-    "url": "https://techcrunch.com/2026/07/22/glow-emerges-from-stealth-at-1-2b-valuation-to-challenge-endpoint-security-in-the-ai-era/",
-    "headline": "Glow emerges from stealth at $1.2B valuation to challenge AI-era endpoint security",
-    "date": "2026-07-22",
-    "ts": 1784728829.772466
   }
 ]
