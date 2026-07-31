@@ -1,5 +1,137 @@
 [
   {
+    "url": "https://www.cnbc.com/2026/07/30/amazon-amzn-q2-earnings-report-2026.html",
+    "headline": "Amazon Q2: AWS grows 37% to $42.2B, total revenue tops $200B for first time",
+    "date": "2026-07-31",
+    "ts": 1785506422.359542
+  },
+  {
+    "url": "https://www.theverge.com/tech/973430/apple-q3-2026-earnings",
+    "headline": "Apple Q3 beats but stock falls 6%+ on supply-constraint guidance warning",
+    "date": "2026-07-31",
+    "ts": 1785506422.359542
+  },
+  {
+    "url": "https://www.cnbc.com/2026/07/31/new-york-sues-kalshi-claims-it-is-illegal-gambling-operation.html",
+    "headline": "NY AG sues Kalshi, seeks $36B, says prediction market is illegal gambling operation",
+    "date": "2026-07-31",
+    "ts": 1785506422.359542
+  },
+  {
+    "url": "https://www.wsj.com/economy/central-banking/two-fed-officials-say-inflation-should-have-prompted-higher-rates-e203c5ac",
+    "headline": "Two Fed dissenters say stubborn inflation should have driven a rate hike this week",
+    "date": "2026-07-31",
+    "ts": 1785506422.359542
+  },
+  {
+    "url": "https://www.cnbc.com/2026/07/31/gm-in-vehicle-ai-system.html",
+    "headline": "GM to launch new in-vehicle AI assistant later this year",
+    "date": "2026-07-31",
+    "ts": 1785506422.359542
+  },
+  {
+    "url": "https://www.theblock.co/post/410275/circle-secures-nydfs-trust-charter-adding-state-layer-to-federal-usdc-oversight",
+    "headline": "Circle secures NYDFS trust charter, adding state layer to federal USDC oversight",
+    "date": "2026-07-31",
+    "ts": 1785506422.359542
+  },
+  {
+    "url": "https://www.pymnts.com/earnings/2026/western-union-pursues-ai-savings-as-falling-migration-hits-revenue/",
+    "headline": "Western Union revenue falls as declining migration volumes hit remittance demand",
+    "date": "2026-07-31",
+    "ts": 1785506422.359542
+  },
+  {
+    "url": "https://www.digitaltransactions.net/mastercard-focuses-on-gains-in-crypto-and-agentic-commerce/",
+    "headline": "Mastercard highlights crypto and agentic commerce as Q2 growth vectors",
+    "date": "2026-07-31",
+    "ts": 1785506422.359542
+  },
+  {
+    "url": "https://www.paymentsjournal.com/swift-builds-corridor-for-real-time-cross-border-payments-in-canada/",
+    "headline": "Swift builds real-time cross-border payments corridor for Canada",
+    "date": "2026-07-31",
+    "ts": 1785506422.359542
+  },
+  {
+    "url": "https://www.paymentsdive.com/news/stablecoins-complement-dollar-fed/826571/",
+    "headline": "Fed report says stablecoins complement rather than threaten the US dollar",
+    "date": "2026-07-31",
+    "ts": 1785506422.359542
+  },
+  {
+    "url": "https://www.wsj.com/finance/investing/kevin-warshs-honeymoon-with-the-bond-market-is-already-over-23bd0c6a",
+    "headline": "Warsh's honeymoon with the bond market is already over, WSJ analysis finds",
+    "date": "2026-07-31",
+    "ts": 1785506422.359542
+  },
+  {
+    "url": "https://www.wsj.com/economy/housing/mortgage-rates-jump-to-a-one-year-high-9ea35b8a",
+    "headline": "Mortgage rates jump to one-year high, dealing fresh blow to stalled housing market",
+    "date": "2026-07-31",
+    "ts": 1785506422.359542
+  },
+  {
+    "url": "https://www.wsj.com/economy/central-banking/boe-on-alert-for-signs-of-persistent-inflation-as-it-holds-rates-a1c57cb6",
+    "headline": "Bank of England holds rates but signals readiness to hike if Iran war stokes inflation",
+    "date": "2026-07-31",
+    "ts": 1785506422.359542
+  },
+  {
+    "url": "https://www.theverge.com/ai-artificial-intelligence/973670/anthropic-claude-hacked-organizations-during-cyber-tests",
+    "headline": "Anthropic: Claude accidentally breached three real companies during internal security tests",
+    "date": "2026-07-31",
+    "ts": 1785506422.359542
+  },
+  {
+    "url": "https://api-docs.deepseek.com/updates/",
+    "headline": "DeepSeek releases V4-Flash-0731 public beta API with major agent capability leap",
+    "date": "2026-07-31",
+    "ts": 1785506422.359542
+  },
+  {
+    "url": "https://venturebeat.com/technology/ai-price-wars-openai-cuts-gpt-5-6-luna-prices-by-80-as-model-competition-shifts-toward-cost",
+    "headline": "OpenAI cuts GPT-5.6 Luna API prices by 80% as model cost competition intensifies",
+    "date": "2026-07-31",
+    "ts": 1785506422.359542
+  },
+  {
+    "url": "https://deepmind.google/blog/gemini-robotics-2-brings-whole-body-intelligence-to-robots/",
+    "headline": "Google DeepMind unveils Gemini Robotics 2 with whole-body robot intelligence",
+    "date": "2026-07-31",
+    "ts": 1785506422.359542
+  },
+  {
+    "url": "https://techcrunch.com/2026/07/31/tesla-reportedly-might-sell-its-china-business-ahead-of-a-spacex-merger/",
+    "headline": "Tesla may sell China business ahead of a SpaceX merger, report says",
+    "date": "2026-07-31",
+    "ts": 1785506422.359542
+  },
+  {
+    "url": "https://github.blog/changelog/2026-07-30-stacked-pull-requests-are-now-in-public-preview/",
+    "headline": "GitHub stacked pull requests now live in public preview",
+    "date": "2026-07-31",
+    "ts": 1785506422.359542
+  },
+  {
+    "url": "https://www.theverge.com/tech/973621/sony-playstation-ending-discs-pushing-forward",
+    "headline": "Sony pushes forward with disc-less PlayStation despite customer backlash",
+    "date": "2026-07-31",
+    "ts": 1785506422.359542
+  },
+  {
+    "url": "https://techcrunch.com/2026/07/30/carecloud-begins-to-notify-hundreds-of-thousands-after-hackers-stole-medical-records/",
+    "headline": "CareCloud begins notifying hundreds of thousands after hackers stole medical records",
+    "date": "2026-07-31",
+    "ts": 1785506422.359542
+  },
+  {
+    "url": "https://krebsonsecurity.com/2026/07/read-this-before-you-buy-that-tv-streaming-stick/",
+    "headline": "Krebs: Rogue firmware in cheap TV streaming sticks poses serious security risk",
+    "date": "2026-07-31",
+    "ts": 1785506422.359542
+  },
+  {
     "url": "https://www.cnbc.com/2026/07/29/microsoft-msft-q4-earnings-report-2026.html",
     "headline": "Microsoft Q4 beats: Azure tops $100B annually, stock jumps 8% after hours",
     "date": "2026-07-30",
@@ -610,125 +742,5 @@
     "headline": "Patreon lays off 20% of its workforce",
     "date": "2026-07-24",
     "ts": 1784901629.65316
-  },
-  {
-    "url": "https://www.cnbc.com/2026/07/23/american-airlines-aal-2q-2026-earnings.html",
-    "headline": "American Airlines Q2 profit crashes 88% to $71M, slashes full-year EPS outlook on fuel spike",
-    "date": "2026-07-23",
-    "ts": 1784815234.797209
-  },
-  {
-    "url": "https://www.cnbc.com/2026/07/23/albertsons-stock-plunges-on-lowered-outlook-softened-grocery-trends.html",
-    "headline": "Albertsons stock plunges after grocer warns of weaker spending, cuts sales and earnings outlook",
-    "date": "2026-07-23",
-    "ts": 1784815234.797209
-  },
-  {
-    "url": "https://www.paymentsjournal.com/after-moving-debit-cards-to-discover-capital-one-turns-to-credit-card-migration/",
-    "headline": "Capital One begins migrating Discover credit cards to its platform starting July 27",
-    "date": "2026-07-23",
-    "ts": 1784815234.797209
-  },
-  {
-    "url": "https://www.pymnts.com/mastercard/2026/mastercard-enhances-virtual-cards-to-streamline-b2b-spend/",
-    "headline": "Mastercard enhances virtual cards to streamline B2B spend management",
-    "date": "2026-07-23",
-    "ts": 1784815234.797209
-  },
-  {
-    "url": "https://www.digitaltransactions.net/year-2026-may-become-an-ominous-year-for-id-theft-the-number-of-victims-already-exceeds-2025s-total/",
-    "headline": "2026 ID theft victims already exceed all of 2025 total, pace deemed ominous",
-    "date": "2026-07-23",
-    "ts": 1784815234.797209
-  },
-  {
-    "url": "https://www.digitaltransactions.net/zero-hash-and-marqeta-work-to-issue-cards-backed-by-stablecoins/",
-    "headline": "Zero Hash and Marqeta partner to issue debit cards backed by stablecoins",
-    "date": "2026-07-23",
-    "ts": 1784815234.797209
-  },
-  {
-    "url": "https://www.finextra.com/pressarticle/110480/boerse-stuttgart-adopts-socgen-stablecoin",
-    "headline": "Boerse Stuttgart adopts Societe Generale stablecoin for settlement",
-    "date": "2026-07-23",
-    "ts": 1784815234.797209
-  },
-  {
-    "url": "https://www.wsj.com/economy/central-banking/global-bond-yields-jump-as-oil-prices-surge-inflation-fears-mount-10715801",
-    "headline": "Global bond yields jump as oil prices surge past $100 a barrel, inflation fears mount",
-    "date": "2026-07-23",
-    "ts": 1784815234.797209
-  },
-  {
-    "url": "https://www.wsj.com/finance/investing/jgbs-fall-tracking-declines-in-u-s-treasurys-e9157d07",
-    "headline": "Treasury yields rise further as US job market remains resilient",
-    "date": "2026-07-23",
-    "ts": 1784815234.797209
-  },
-  {
-    "url": "https://www.wsj.com/economy/central-banking/the-fed-is-heading-into-one-of-its-most-unpredictable-meetings-in-years-849198f5",
-    "headline": "Fed heads into one of its most unpredictable meetings in years next week",
-    "date": "2026-07-23",
-    "ts": 1784815234.797209
-  },
-  {
-    "url": "https://www.cnbc.com/2026/07/23/moonshot-kimi-nvidia-ai-chips-export-ban.html",
-    "headline": "White House accuses Moonshot of accessing banned Nvidia GB300 chips via Thailand to train Kimi K3",
-    "date": "2026-07-23",
-    "ts": 1784815234.797209
-  },
-  {
-    "url": "https://techcrunch.com/2026/07/23/experts-say-exploiting-anthropics-fable-isnt-how-kimi-k3-got-so-good/",
-    "headline": "Experts say exploiting Anthropic's Fable isn't how Kimi K3 got so good",
-    "date": "2026-07-23",
-    "ts": 1784815234.797209
-  },
-  {
-    "url": "https://techcrunch.com/2026/07/22/travis-kalanicks-robotics-company-raises-1-7b-led-by-a16z/",
-    "headline": "Travis Kalanick's robotics company raises $1.7B in round led by a16z",
-    "date": "2026-07-23",
-    "ts": 1784815234.797209
-  },
-  {
-    "url": "https://techcrunch.com/2026/07/22/openais-ai-spending-spree-has-ballooned-to-750b/",
-    "headline": "OpenAI's AI spending spree has ballooned to $750B",
-    "date": "2026-07-23",
-    "ts": 1784815234.797209
-  },
-  {
-    "url": "https://techcrunch.com/2026/07/22/monday-com-lays-off-hundreds-to-focuses-on-ai/",
-    "headline": "Monday.com lays off hundreds of employees to focus on AI",
-    "date": "2026-07-23",
-    "ts": 1784815234.797209
-  },
-  {
-    "url": "https://www.bleepingcomputer.com/news/google/eu-fines-google-1-billion-for-digital-markets-act-breaches-in-search-and-play-store/",
-    "headline": "EU fines Google €890M ($1B) for DMA violations in Search and Play Store",
-    "date": "2026-07-23",
-    "ts": 1784815234.797209
-  },
-  {
-    "url": "https://techcrunch.com/2026/07/23/ford-bets-on-apple-for-its-next-generation-of-evs/",
-    "headline": "Ford picks Apple Maps and updated BlueCruise for its next-generation EV platform",
-    "date": "2026-07-23",
-    "ts": 1784815234.797209
-  },
-  {
-    "url": "https://techcrunch.com/2026/07/22/tesla-spending-skyrockets-as-cybercab-semi-megapack-production-timeline-slips/",
-    "headline": "Tesla spending skyrockets as Cybercab, Semi, and Megapack production timelines slip",
-    "date": "2026-07-23",
-    "ts": 1784815234.797209
-  },
-  {
-    "url": "https://techcrunch.com/2026/07/22/after-shocking-quarter-ibm-insists-that-ai-isnt-killing-the-mainframe/",
-    "headline": "IBM insists AI isn't killing the mainframe after a shocking quarterly miss",
-    "date": "2026-07-23",
-    "ts": 1784815234.797209
-  },
-  {
-    "url": "https://www.theverge.com/tech/969361/google-account-sign-in-selfie-video-security",
-    "headline": "Google launches video selfie sign-in as new account security option",
-    "date": "2026-07-23",
-    "ts": 1784815234.797209
   }
 ]
