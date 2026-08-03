@@ -1,5 +1,119 @@
 [
   {
+    "url": "https://www.cnbc.com/2026/08/03/astrazeneca-bristol-myers-squibb-merger-talks.html",
+    "headline": "AstraZeneca in early merger talks with Bristol Myers Squibb on ~$400B pharma deal",
+    "date": "2026-08-03",
+    "ts": 1785765625.859445
+  },
+  {
+    "url": "https://www.finextra.com/newsarticle/48185/visa-agrees-24-billion-deal-to-acquire-biocatch",
+    "headline": "Visa agrees $2.4B deal to acquire behavioral-biometrics fraud firm BioCatch",
+    "date": "2026-08-03",
+    "ts": 1785765625.859445
+  },
+  {
+    "url": "https://www.finextra.com/pressarticle/110553/infinios-goes-live-with-mastercard-on-stablecoin-settlement",
+    "headline": "Infinios goes live with Mastercard on stablecoin settlement",
+    "date": "2026-08-03",
+    "ts": 1785765625.859445
+  },
+  {
+    "url": "https://www.finextra.com/newsarticle/48180/partior-and-openassets-poc-proves-stablecoins-and-tokenised-deposits-can-settle-atomically",
+    "headline": "Partior and OpenAssets PoC proves stablecoins and tokenized deposits can settle atomically",
+    "date": "2026-08-03",
+    "ts": 1785765625.859445
+  },
+  {
+    "url": "https://www.paymentsdive.com/news/visa-loses-bid-to-dismiss-porn-lawsuit/826777/",
+    "headline": "Visa loses bid to dismiss lawsuit over processing payments for porn site",
+    "date": "2026-08-03",
+    "ts": 1785765625.859445
+  },
+  {
+    "url": "https://www.paymentsjournal.com/bis-completes-1-million-test-of-tokenized-cross-border-payments/",
+    "headline": "BIS completes $1M live test of tokenized cross-border payments",
+    "date": "2026-08-03",
+    "ts": 1785765625.859445
+  },
+  {
+    "url": "https://www.wsj.com/economy/central-banking/warsh-floats-fewer-fed-meetings-debf5a23",
+    "headline": "Warsh floats holding fewer Fed meetings per year, a substantial operational shift",
+    "date": "2026-08-03",
+    "ts": 1785765625.859445
+  },
+  {
+    "url": "https://www.benzinga.com/etfs/sector-etfs/26/08/60860260/tlt-etf-outflows-rise-as-bond-vigilantes-push-us-30-year-treasury-yields-to-5-26",
+    "headline": "Bond vigilantes push US 30-year Treasury yield to 5.26% as TLT ETF sees outflows",
+    "date": "2026-08-03",
+    "ts": 1785765625.859445
+  },
+  {
+    "url": "https://www.wsj.com/economy/central-banking/tom-barkin-fed-president-interest-rates-99f2b676",
+    "headline": "Richmond Fed's Barkin calls rate adequacy 'a close call' amid stubborn inflation",
+    "date": "2026-08-03",
+    "ts": 1785765625.859445
+  },
+  {
+    "url": "https://www.wsj.com/finance/investing/how-to-play-the-flood-of-ai-bonds-279f6ba5",
+    "headline": "WSJ: AI companies flooding the bond market — how to play it",
+    "date": "2026-08-03",
+    "ts": 1785765625.859445
+  },
+  {
+    "url": "https://www.theverge.com/ai-artificial-intelligence/974342/alibaba-qwen-max-open-weight-ai",
+    "headline": "Alibaba launches Qwen3.8-Max: 2.4T-param open-weight model to rival GPT-5.6 Sol, Claude Opus",
+    "date": "2026-08-03",
+    "ts": 1785765625.859445
+  },
+  {
+    "url": "https://research.jfrog.com/post/sqlite-critical-cves-or-llm-slops/",
+    "headline": "JFrog: LLM hallucinated a SQLite vulnerability that was filed as a real critical CVE",
+    "date": "2026-08-03",
+    "ts": 1785765625.859445
+  },
+  {
+    "url": "https://techcrunch.com/2026/07/31/openai-reportedly-finds-evidence-that-more-of-its-agents-ran-amok/",
+    "headline": "OpenAI finds evidence more AI agents ran amok in additional incidents beyond Anthropic breach",
+    "date": "2026-08-03",
+    "ts": 1785765625.859445
+  },
+  {
+    "url": "https://techcrunch.com/2026/08/01/judge-denies-xais-request-to-block-minnesota-ban-on-nudify-apps/",
+    "headline": "xAI loses court bid to block Minnesota's ban on AI 'nudify' apps",
+    "date": "2026-08-03",
+    "ts": 1785765625.859445
+  },
+  {
+    "url": "https://techcrunch.com/2026/08/03/horizon3-hits-2-billion-valuation-with-250m-series-e-as-ai-threats-escalate/",
+    "headline": "Horizon3 AI-threat detection hits $2B valuation with $250M Series E",
+    "date": "2026-08-03",
+    "ts": 1785765625.859445
+  },
+  {
+    "url": "https://techcrunch.com/2026/08/03/samsung-bans-smart-tv-apps-that-share-users-internet-connections-with-strangers/",
+    "headline": "Samsung bans smart TV apps that share users' internet connections with strangers",
+    "date": "2026-08-03",
+    "ts": 1785765625.859445
+  },
+  {
+    "url": "https://www.theverge.com/tech/974377/lenovo-googlebook-google-image-leaks-laptops",
+    "headline": "Lenovo Googlebook leaks reveal a laptop and 2-in-1 tablet in Google's hardware lineup",
+    "date": "2026-08-03",
+    "ts": 1785765625.859445
+  },
+  {
+    "url": "https://techcrunch.com/2026/08/02/the-global-memory-shortage-hits-the-macbook-air/",
+    "headline": "Global memory shortage hits MacBook Air, driving up prices",
+    "date": "2026-08-03",
+    "ts": 1785765625.859445
+  },
+  {
+    "url": "https://www.theverge.com/games/974253/xbox-prices-increasing-200-euros",
+    "headline": "Xbox prices rising by up to €200 or £170 across Europe",
+    "date": "2026-08-03",
+    "ts": 1785765625.859445
+  },
+  {
     "url": "https://www.cnbc.com/2026/07/30/amazon-amzn-q2-earnings-report-2026.html",
     "headline": "Amazon Q2: AWS grows 37% to $42.2B, total revenue tops $200B for first time",
     "date": "2026-07-31",
@@ -628,119 +742,5 @@
     "headline": "Warner Bros. sues Amazon alleging illegal executive poaching",
     "date": "2026-07-27",
     "ts": 1785160828.839526
-  },
-  {
-    "url": "https://www.wsj.com/finance/investing/is-the-fed-about-to-hike-rates-9307037d?mod=rss_markets_main",
-    "headline": "WSJ asks: Is the Fed about to hike rates ahead of next week's FOMC meeting?",
-    "date": "2026-07-24",
-    "ts": 1784901629.65316
-  },
-  {
-    "url": "https://www.cnbc.com/2026/07/23/jpmorgan-dramatic-jump-in-ai-etfs-despite-rough-quarter.html",
-    "headline": "JPMorgan finds dramatic jump in AI-themed ETFs despite rough Q2 for the sector",
-    "date": "2026-07-24",
-    "ts": 1784901629.65316
-  },
-  {
-    "url": "https://www.pymnts.com/legal/aml/2026/fatf-warns-defi-label-is-leaving-centralized-platforms-outside-aml-rules/",
-    "headline": "FATF warns 'DeFi' label leaves centralized crypto platforms outside AML rules",
-    "date": "2026-07-24",
-    "ts": 1784901629.65316
-  },
-  {
-    "url": "https://www.finextra.com/pressarticle/110488/visa-and-lianlian-enable-chinas-first-b2b-agentic-transaction?utm_medium=rssfinextra&utm_source=finextrafeed",
-    "headline": "Visa and Lianlian enable China's first B2B agentic payment transaction",
-    "date": "2026-07-24",
-    "ts": 1784901629.65316
-  },
-  {
-    "url": "https://www.finextra.com/pressarticle/110490/mastercard-expands-virtual-card-programme?utm_medium=rssfinextra&utm_source=finextrafeed",
-    "headline": "Mastercard expands virtual card programme for commercial spend",
-    "date": "2026-07-24",
-    "ts": 1784901629.65316
-  },
-  {
-    "url": "https://www.finextra.com/newsarticle/48140/verifone-patents-tech-that-lets-payment-terminals-detect-tampering?utm_medium=rssfinextra&utm_source=finextrafeed",
-    "headline": "Verifone patents technology that lets payment terminals detect tampering",
-    "date": "2026-07-24",
-    "ts": 1784901629.65316
-  },
-  {
-    "url": "https://www.wsj.com/finance/investing/jgbs-edge-lower-tracking-declines-in-u-s-treasurys-f3e6bacb?mod=rss_markets_main",
-    "headline": "Dollar and Treasury yields edge lower Friday as oil prices retreat from $100",
-    "date": "2026-07-24",
-    "ts": 1784901629.65316
-  },
-  {
-    "url": "https://www.wsj.com/economy/housing/mortgage-rates-hit-highest-levels-in-nearly-a-year-ba480ebf",
-    "headline": "Mortgage rates hit highest level in nearly a year as Middle East tensions stoke inflation fears",
-    "date": "2026-07-24",
-    "ts": 1784901629.65316
-  },
-  {
-    "url": "https://www.wsj.com/finance/investing/what-surging-bond-yields-mean-for-consumers-and-markets-cb37b61f?mod=rss_markets_main",
-    "headline": "What surging bond yields mean for consumers and markets",
-    "date": "2026-07-24",
-    "ts": 1784901629.65316
-  },
-  {
-    "url": "https://venturebeat.com/technology/black-forest-labs-launches-flux-3-capable-of-generating-images-and-20-second-video-with-audio-but-in-limited-release-to-start",
-    "headline": "Black Forest Labs launches FLUX 3: unified multimodal model generates 20-sec video with native audio, images, and action prediction",
-    "date": "2026-07-24",
-    "ts": 1784901629.65316
-  },
-  {
-    "url": "https://venturebeat.com/orchestration/agentic-coding-goes-hands-free-as-openai-brings-gpt-lives-full-duplex-voice-control-to-codex-and-chatgpt-on-the-desktop",
-    "headline": "OpenAI brings full-duplex GPT-Live voice control to ChatGPT desktop and Codex",
-    "date": "2026-07-24",
-    "ts": 1784901629.65316
-  },
-  {
-    "url": "https://venturebeat.com/infrastructure/microsoft-launches-new-in-house-ai-models-it-says-cut-costs-up-to-89-versus-openai",
-    "headline": "Microsoft launches in-house AI models it says cut costs up to 89% vs OpenAI",
-    "date": "2026-07-24",
-    "ts": 1784901629.65316
-  },
-  {
-    "url": "https://techcrunch.com/2026/07/23/anthropic-updates-claude-voice-mode-with-more-capable-models/",
-    "headline": "Anthropic upgrades Claude voice mode with Opus and Sonnet models",
-    "date": "2026-07-24",
-    "ts": 1784901629.65316
-  },
-  {
-    "url": "https://techcrunch.com/2026/07/23/ai-chip-startup-etched-defies-skeptics-hits-10-3b-valuation-from-big-name-investors/",
-    "headline": "AI chip startup Etched defies skeptics, hits $10.3B valuation from big-name investors",
-    "date": "2026-07-24",
-    "ts": 1784901629.65316
-  },
-  {
-    "url": "https://houseofsaud.com/irgc-claims-destroyed-amazon-bahrain-data-center/",
-    "headline": "IRGC claims it destroyed Amazon's Bahrain data center amid US-Iran war",
-    "date": "2026-07-24",
-    "ts": 1784901629.65316
-  },
-  {
-    "url": "https://techcrunch.com/2026/07/24/facebook-launches-a-dedicated-marketplace-app-for-sellers-adds-a-free-verification-system/",
-    "headline": "Facebook launches dedicated Marketplace app for sellers with free verification system",
-    "date": "2026-07-24",
-    "ts": 1784901629.65316
-  },
-  {
-    "url": "https://techcrunch.com/2026/07/23/amd-takes-on-nvidia-with-its-helios-ai-rack-scale-system/",
-    "headline": "AMD takes on Nvidia with Helios AI rack-scale system",
-    "date": "2026-07-24",
-    "ts": 1784901629.65316
-  },
-  {
-    "url": "https://techcrunch.com/2026/07/23/mobileye-ceo-amnon-shashua-to-step-aside-as-company-pushes-into-robotaxis-robotics/",
-    "headline": "Mobileye CEO Amnon Shashua to step aside as company pushes into robotaxis and robotics",
-    "date": "2026-07-24",
-    "ts": 1784901629.65316
-  },
-  {
-    "url": "https://techcrunch.com/2026/07/23/patreon-lays-off-off-20-of-its-workforce/",
-    "headline": "Patreon lays off 20% of its workforce",
-    "date": "2026-07-24",
-    "ts": 1784901629.65316
   }
 ]
