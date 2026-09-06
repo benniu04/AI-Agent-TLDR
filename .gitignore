@@ -3,3 +3,8 @@
 __pycache__/
 *.pyc
 logs/
+
+# Eval outputs. Reports are per-run artifacts; baselines and datasets under evals/ ARE
+# committed — they're the record a regression is measured against.
+evals/reports/
+evals/.cache/
