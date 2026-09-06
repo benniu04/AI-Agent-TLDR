@@ -168,11 +168,21 @@ def run_agent(
     *,
     log_dir: str = "logs",
     run_id: str | None = None,
+    dispatch_fn=None,
 ) -> AgentResult:
-    """Run the agent loop to completion and return the final text + run metadata."""
+    """Run the agent loop to completion and return the final text + run metadata.
+
+    `dispatch_fn` overrides how client tools are executed, mirroring how `tools` overrides
+    what's declared. Production leaves both alone; the replay eval passes a dispatcher backed
+    by a frozen source pool (plus a `tools` list with the server tools removed) so the model
+    does real editorial work on deterministic inputs. Provenance and recency still work in
+    that mode because both are scraped from the dispatched result string below, not from the
+    server-tool blocks.
+    """
     config.require_anthropic_key()
     client = anthropic.Anthropic(api_key=config.ANTHROPIC_API_KEY)
     tools = TOOLS if tools is None else tools
+    dispatch_fn = dispatch if dispatch_fn is None else dispatch_fn
 
     os.makedirs(log_dir, exist_ok=True)
     run_id = run_id or time.strftime("%Y%m%dT%H%M%SZ", time.gmtime())
@@ -258,7 +268,7 @@ def run_agent(
             for block in resp.content:
                 if getattr(block, "type", None) != "tool_use":
                     continue  # text + server_tool_use blocks are not ours to run
-                content, is_error = dispatch(block.name, block.input)
+                content, is_error = dispatch_fn(block.name, block.input)
                 if not is_error:
                     # Client tools return URLs (provenance) and publish timestamps (recency).
                     for m in _URL_RE.findall(content):

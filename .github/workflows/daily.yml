@@ -55,7 +55,10 @@ jobs:
           # Telegram delivery
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-        run: python run.py
+        # --save-run also dumps a run bundle (raw submission + provenance + timestamps) for
+        # the digest eval. It rides out as an artifact below rather than a commit, so the
+        # eval baseline stays stable — see the Digest evals step in tests.yml.
+        run: python run.py --save-run
 
       - name: Persist memory
         if: success()  # only record what was actually delivered
@@ -82,12 +85,17 @@ jobs:
           done
           [ "$ok" = "1" ] || echo "::warning::could not push memory update after 3 tries (non-fatal; next run re-records)"
 
-      - name: Upload trajectory logs
+      - name: Upload trajectory logs and run bundle
         if: always()  # keep logs even when the run fails, for debugging
         uses: actions/upload-artifact@v7
         with:
           name: tldr-logs
-          path: logs/
+          # The run bundle rides along so a day's digest can be graded after the fact
+          # (`python -m evals.run_evals digest --runs <downloaded>`), and a representative
+          # one can be committed into the reference set on purpose.
+          path: |
+            logs/
+            evals/runs/
           if-no-files-found: ignore
 
       - name: Alert on failure

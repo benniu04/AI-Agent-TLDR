@@ -148,6 +148,79 @@ pip install -r requirements-dev.txt
 pytest -q
 ```
 
+## Evals
+
+The unit suite covers the deterministic filter chain — the part that runs *after* the model has
+decided. The evals cover the part it can't: the editorial judgment in `prompts.py`, which is where
+nearly all the iteration happens.
+
+| Suite | Grades | Cost | Runs |
+|---|---|---|---|
+| `digest` | a recorded run against the pipeline's own rules | free | every push/PR |
+| `routing` | `prompts.py`'s section policy vs ~160 labeled headlines | ~$0.04 | on demand |
+
+```bash
+python -m evals.run_evals digest              # score the committed reference bundles
+python -m evals.run_evals digest --gate       # exit 2 if any metric fell below the baseline
+python -m evals.run_evals digest --update-baseline
+
+python -m evals.run_evals routing                            # score the shipping model
+python -m evals.run_evals routing --model claude-sonnet-4-6  # sweep another one
+```
+
+### The routing eval
+
+Sends `prompts.SYSTEM` **verbatim** as the system prompt and asks the model where each labeled
+headline belongs. Testing the real artifact rather than a paraphrase is the whole design: edit a
+tier in `prompts.py` and the number moves on the next run, with nothing to keep in sync.
+
+Determinism comes from a prediction cache keyed on the prompt hash — not `temperature=0`, which
+current models reject outright. An unchanged re-run is free and byte-identical; editing
+`prompts.py` invalidates every verdict, which is exactly the invalidation you want.
+
+Building the labels:
+
+```bash
+python -m evals.capture                  # freeze today's candidate pool (free, ~no keys)
+python -m evals.label bootstrap          # seed rows with a provisional guess
+python -m evals.label review             # confirm each one — only these are scored
+python -m evals.label stats              # class + tag coverage
+```
+
+The feed a story arrived on is a weak prior and is wrong about 40% of the time, which is why
+`bootstrap` guesses are never scored: the suite reads `reviewed: true` rows only.
+
+### Auditing the labels
+
+A routing run doubles as an audit of the dataset. Every disagreement is either a model error or a
+label error, and the model's stated reason usually settles which within seconds:
+
+```bash
+python -m evals.label review --disputed   # queue only the contested rows
+```
+
+Press `k` to uphold your label or a section key to correct it; either way the row records what
+happened and which model challenged it. Expect the first run to find more label bugs than model
+bugs — that's the normal outcome of a first eval, not a setback.
+
+**Why it grades the raw submission, not the delivered digest.** `formatting._iter_sections` is a
+*filter*: a banned URL, a duplicate, a stale story, an over-cap item — each is silently dropped
+before delivery. Grading what shipped would score ~100% on almost every rule by construction. So
+the graders score the untouched `submit_tldr` payload as a drop rate (`1 - bad/total`), which
+measures how much correcting the model needed. On the committed reference bundle that's
+`digest_integrity 0.958` — a real run where the model submitted three banned URLs and three
+borrowed links that the filter caught and no one ever saw.
+
+Every metric is a 0–1 rate where higher is better, so the gate is one-directional and generic:
+any metric that falls more than 2pp below `evals/baselines/<suite>.json` fails the build. Counts
+that aren't on that scale (items, thin sections) live in `counts` and are never gated — in
+particular section fill, because the brief explicitly prefers a short section to a padded one.
+
+Production runs record their own bundle with `python run.py --save-run`; in CI it rides out as an
+artifact rather than a commit, so one weak news day can't shift the mean and red-build unrelated
+PRs. Extending the reference set is a deliberate, reviewed act: commit a bundle and re-record the
+baseline in the same PR.
+
 ## Deploy
 
 [`.github/workflows/daily.yml`](.github/workflows/daily.yml) runs the agent via
