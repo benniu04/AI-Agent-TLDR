@@ -4,9 +4,12 @@ Order matters: deliver only AFTER the agent has fully finished. The send is the 
 job, not the agent's. The agent returns JSON; we format it as a Telegram message.
 
 Flags:
-  --dry-run   run the agent and print the formatted output, but do NOT deliver.
+  --dry-run    run the agent and print the formatted output, but do NOT deliver.
+  --save-run   also dump a run bundle to evals/runs/ for the digest eval to grade later.
 """
 
+import json
+import os
 import sys
 from datetime import datetime
 from zoneinfo import ZoneInfo
@@ -19,8 +22,42 @@ from formatting import delivered_count, delivered_items, format_telegram, parse_
 from prompts import SYSTEM, build_goal
 
 
+RUNS_DIR = "evals/runs"
+
+
+def _save_run_bundle(now, data, result, allowed, repeats, cap, section_caps) -> str:
+    """Record everything evals/graders.py needs to grade this run after the fact.
+
+    The graders score the RAW submission, not the delivered digest — the filter chain drops
+    every violation before delivery, so by then there is nothing left to measure. That means
+    the bundle has to carry the context the filters used (provenance, publish times, memory,
+    caps) alongside the untouched `data`, or the grades can't be reproduced.
+
+    Written by the production run, so each weekday's real digest becomes a graded sample for
+    free. Deliberately stdlib-only and best-effort: an eval artifact must never be able to
+    break the delivery it's observing.
+    """
+    os.makedirs(RUNS_DIR, exist_ok=True)
+    path = os.path.join(RUNS_DIR, f"{now.strftime('%Y-%m-%d')}.json")
+    with open(path, "w", encoding="utf-8") as fh:
+        json.dump({
+            "schema": 1,
+            "run_id": os.path.basename(result.log_path),
+            "now_ts": now.timestamp(),
+            "model": config.MODEL,
+            "stop": result.stop,
+            "data": data,
+            "seen_urls": sorted(allowed),
+            "url_ts": result.url_ts,
+            "repeat_urls": sorted(repeats),
+            "caps": {"default": cap, **section_caps},
+        }, fh, indent=2)
+    return path
+
+
 def main() -> int:
     dry_run = "--dry-run" in sys.argv
+    save_run = "--save-run" in sys.argv
 
     # One timestamp in the user's timezone, used both to anchor the agent's recency and to
     # stamp the display label — so the model never has to guess the date.
@@ -76,6 +113,12 @@ def main() -> int:
           f"{len(stale)} stale (>{config.MAX_STORY_AGE_DAYS}d), "
           f"{repeats_hit} repeats (memory: {len(repeats)} URLs) ---")
     print(f"\n--- formatted for telegram ({len(message)} chars) ---\n{message}")
+
+    if save_run:
+        try:
+            print(f"--- run bundle: {_save_run_bundle(now, data, result, allowed, repeats, cap, section_caps)} ---")
+        except OSError as exc:  # never let an eval artifact block the digest
+            print(f"WARNING: could not write run bundle ({exc})", file=sys.stderr)
 
     if result.stop in ("max_iterations", "unknown"):
         print(f"\nWARNING: agent stopped on '{result.stop}'; delivering anyway.", file=sys.stderr)

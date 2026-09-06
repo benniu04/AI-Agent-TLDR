@@ -1,0 +1,96 @@
+{
+  "schema": 1,
+  "run_id": "20260605T012654Z",
+  "now_ts": 1780622814.943609,
+  "model": "claude-sonnet-4-6",
+  "stop": "submitted",
+  "data": {
+    "date": "Fri, Jun 5",
+    "sections": [
+      {
+        "name": "Finance",
+        "items": [
+          {
+            "headline": "Broadcom tumbles 15% after AI chip revenue forecast falls short of Wall Street",
+            "url": "https://www.bloomberg.com/news/articles/2026-06-03/broadcom-outlook-disappoints-investors-seeking-ai-fueled-blowout"
+          },
+          {
+            "headline": "CrowdStrike drops 9% on weak Q2 revenue guidance, dragging chip stocks lower",
+            "url": "https://finance.yahoo.com/markets/stocks/articles/broadcom-q2-earnings-miss-drags-113626417.html"
+          },
+          {
+            "headline": "Quantinuum raises $1.68B in upsized quantum computing IPO on Nasdaq",
+            "url": "https://www.cnbc.com/2026/06/04/quantinuum-qnt-stock-first-trade-ipo.html"
+          },
+          {
+            "headline": "Anthropic files confidential S-1 with SEC, eyes IPO at ~$965B valuation",
+            "url": "https://www.cnbc.com/2026/06/01/anthropic-ipo-s1-prospectus.html"
+          },
+          {
+            "headline": "Initial jobless claims hit highest level since February at 225,000",
+            "url": "https://www.cnbc.com/2026/06/03/broadcom-avgo-earnings-report-q2-2026.html"
+          }
+        ]
+      },
+      {
+        "name": "AI",
+        "items": [
+          {
+            "headline": "Anthropic warns AI could soon build its own successors via recursive self-improvement",
+            "url": "https://www.axios.com/2026/06/04/anthropic-warns-ai-build-successors"
+          },
+          {
+            "headline": "Anthropic releases open-source framework for AI-powered vulnerability discovery",
+            "url": "https://github.com/anthropics/defending-code-reference-harness"
+          },
+          {
+            "headline": "Trump signs AI executive order requiring early government access to frontier models",
+            "url": "https://www.cnbc.com/2026/06/02/trump-executive-order-ai.html"
+          },
+          {
+            "headline": "Microsoft unveils MAI models at Build to compete with OpenAI and cut developer costs",
+            "url": "https://www.cnbc.com/2026/06/02/microsoft-unveils-new-ai-models-lessen-reliance-on-openai-lower-costs.html"
+          },
+          {
+            "headline": "Vermont bans AI therapy bots; California, Illinois advance major AI bill packages",
+            "url": "https://www.transparencycoalition.ai/news/ai-legislative-update-june5-2026"
+          }
+        ]
+      },
+      {
+        "name": "Tech",
+        "items": [
+          {
+            "headline": "Cloudflare acquires VoidZero, bringing Vite and Evan You's JS toolchain in-house",
+            "url": "https://www.cloudflare.com/press/press-releases/2026/cloudflare-acquires-voidzero-to-build-the-future-of-the-ai-native-web/"
+          },
+          {
+            "headline": "Anthropic Claude authors 80%+ of company's merged code in May, engineers ship 8x more",
+            "url": "https://www.anthropic.com/institute/recursive-self-improvement"
+          },
+          {
+            "headline": "WSL 2 is getting faster Windows file system access via per-device swiotlb pools",
+            "url": "https://www.boxofcables.dev/wsl2-per-device-swiotlb-pools-for-virtiofs-and-virtioproxy/"
+          },
+          {
+            "headline": "Huawei releases KVarN, a native vLLM backend for KV-cache quantization",
+            "url": "https://github.com/huawei-csl/KVarN"
+          },
+          {
+            "headline": "Siliconangle: Cloudflare's VoidZero deal aims to unify JS dev tooling with edge deployment",
+            "url": "https://siliconangle.com/2026/06/04/cloudflare-acquires-voidzero-maker-vite-javascript-toolchain/"
+          }
+        ]
+      }
+    ]
+  },
+  "seen_urls": [],
+  "url_ts": {},
+  "repeat_urls": [],
+  "caps": {
+    "default": 5,
+    "money movement": 8,
+    "liquidity": 8
+  },
+  "note": "Real submission recovered from a trajectory log (logs/ is gitignored). Provenance and publish times are absent because agent.py truncates tool results to 500 chars in the log, so those two checks fail open here by design. Bundles written by run.py --save-run carry both."
+}

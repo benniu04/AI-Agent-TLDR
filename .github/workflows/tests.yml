@@ -1,0 +1,50 @@
+name: Tests
+
+# The free, keyless suite: unit tests plus (from the digest eval onward) the deterministic
+# graders. Runs on every push and PR, including from forks — nothing here needs a secret, so
+# don't add a step that does. Paid evals live in a separate workflow_dispatch workflow so a
+# routine push can never spend money.
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+# Read-only. daily.yml needs contents:write to commit the memory file back; this job has no
+# business writing to the repo, so it doesn't get the token.
+permissions:
+  contents: read
+
+# A new push to the same branch supersedes the old run — nothing here is stateful.
+concurrency:
+  group: tests-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  pytest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5  # pure unit tests; if it's slower than this, something is calling out
+    steps:
+      - uses: actions/checkout@v6
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      # requirements-dev.txt pulls in requirements.txt via `-r`, so this is both.
+      - run: pip install -r requirements-dev.txt
+
+      - name: Unit tests
+        run: pytest -q
+
+      # Grades the committed reference run bundles in evals/runs/ against the pipeline's own
+      # rules and fails the build if any score dropped below the committed baseline. Free and
+      # keyless: it grades recorded output, it never calls a model.
+      #
+      # The reference set is deliberately fixed. Production bundles land as a CI artifact
+      # (see daily.yml), not as commits — otherwise one weak news day would shift the mean and
+      # red-build unrelated PRs. Extending the set is a reviewed act: commit a bundle on
+      # purpose, then re-record the baseline with --update-baseline in the same PR.
+      - name: Digest evals
+        run: python -m evals.run_evals digest --gate

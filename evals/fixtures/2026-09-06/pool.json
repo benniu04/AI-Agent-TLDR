@@ -1,0 +1,724 @@
+{
+  "schema": 1,
+  "date": "2026-09-06",
+  "captured_at": 1788715049.456513,
+  "limit": 40,
+  "tools": {
+    "get_finance_news": {
+      "content": "[]",
+      "is_error": false,
+      "duration_s": 4.48
+    },
+    "get_payments_news": {
+      "content": "[{\"title\": \"Halloween Is Coming Early and Bringing AI With It\", \"url\": \"https://www.pymnts.com/news/retail/2026/halloween-is-coming-early-bringing-ai/\", \"source\": \"PYMNTS\", \"published\": \"Sat, 05 Sep 2026 08:00:43 +0000\", \"ts\": 1788595243}, {\"title\": \"PayPal Pauses Venture Capital Portfolio Sale After Lowball Offers\", \"url\": \"https://www.pymnts.com/news/investment-tracker/2026/paypal-pauses-venture-capital-portfolio-sale-after-lowball-offers/\", \"source\": \"PYMNTS\", \"published\": \"Fri, 04 Sep 2026 23:48:00 +0000\", \"ts\": 1788565680}, {\"title\": \"Apple Set to Kick Off Yearslong Device Blitz at Wednesday Event\", \"url\": \"https://www.pymnts.com/apple/2026/apple-set-to-kick-off-yearslong-device-blitz-at-wednesday-event/\", \"source\": \"PYMNTS\", \"published\": \"Fri, 04 Sep 2026 23:05:24 +0000\", \"ts\": 1788563124}, {\"title\": \"FDIC Deposit Rule Gives Banks More Room for Business Cash\", \"url\": \"https://www.pymnts.com/legal/bank-regulation/2026/fdic-deposit-rule-gives-banks-more-room-for-business-cash/\", \"source\": \"PYMNTS\", \"published\": \"Fri, 04 Sep 2026 22:46:25 +0000\", \"ts\": 1788561985}, {\"title\": \"Yuno Fast-Tracks Merchant Access to Revolut Payment Stack\", \"url\": \"https://www.pymnts.com/partnerships/2026/yuno-fast-tracks-merchant-access-revolut-payment-stack/\", \"source\": \"PYMNTS\", \"published\": \"Fri, 04 Sep 2026 21:39:02 +0000\", \"ts\": 1788557942}, {\"title\": \"PicPay Launches Anthropic Claude Integration for Banking Inquiries\", \"url\": \"https://www.pymnts.com/news/artificial-intelligence/2026/picpay-launches-anthropic-claude-integration-for-banking-inquiries/\", \"source\": \"PYMNTS\", \"published\": \"Fri, 04 Sep 2026 20:31:18 +0000\", \"ts\": 1788553878}, {\"title\": \"Nexi, JCB and UnionPay team on Italian public transport payments\", \"url\": \"https://www.finextra.com/pressarticle/110816/nexi-jcb-and-unionpay-team-on-italian-public-transport-payments?utm_medium=rssfinextra&utm_source=finextrafeed\", \"source\": \"Finextra\", \"published\": \"Fri, 04 Sep 2026 18:29:00 GMT\", \"ts\": 1788546540}, {\"title\": \"5 Questions Every Payment Product Manager Should Ask About Checkout Performance\", \"url\": \"https://www.finextra.com/blogposting/32739/5-questions-every-payment-product-manager-should-ask-about-checkout-performance?utm_medium=rssfinextra&utm_source=finextrafeed\", \"source\": \"Finextra\", \"published\": \"Fri, 04 Sep 2026 18:12:37 GMT\", \"ts\": 1788545557}, {\"title\": \"Brazil\\u2019s Pix Explores Expansion to Europe\", \"url\": \"https://www.paymentsjournal.com/brazils-pix-explores-expansion-to-europe/\", \"source\": \"PaymentsJournal\", \"published\": \"Fri, 04 Sep 2026 18:00:00 +0000\", \"ts\": 1788544800}, {\"title\": \"FedNow Aims to Ignite Expansion with Discounts for Banks\", \"url\": \"https://www.paymentsjournal.com/fednow-aims-to-ignite-expansion-with-discounts-for-banks/\", \"source\": \"PaymentsJournal\", \"published\": \"Fri, 04 Sep 2026 16:40:57 +0000\", \"ts\": 1788540057}, {\"title\": \"FIS Launches Its Embedded Banking Platform To Meet Bank Demand\", \"url\": \"https://www.digitaltransactions.net/fis-launches-its-embedded-banking-platform-to-meet-bank-demand/\", \"source\": \"Digital Transactions\", \"published\": \"Fri, 04 Sep 2026 14:39:33 +0000\", \"ts\": 1788532773}, {\"title\": \"Subscription spending climbs\", \"url\": \"https://www.paymentsdive.com/news/subscription-spending-climbs/829682/\", \"source\": \"Payments Dive\", \"published\": \"Fri, 04 Sep 2026 10:39:00 -0400\", \"ts\": 1788532740}, {\"title\": \"Ramp takes on AI expense\", \"url\": \"https://www.paymentsdive.com/news/ramp-takes-on-ai-expense/829642/\", \"source\": \"Payments Dive\", \"published\": \"Fri, 04 Sep 2026 10:21:00 -0400\", \"ts\": 1788531660}, {\"title\": \"COMMENTARY: Stablecoins Are Moving From Crypto Debate to Payments Use Case\", \"url\": \"https://www.digitaltransactions.net/commentary-stablecoins-are-moving-from-crypto-debate-to-payments-use-case/\", \"source\": \"Digital Transactions\", \"published\": \"Fri, 04 Sep 2026 13:29:37 +0000\", \"ts\": 1788528577}, {\"title\": \"Motorola\\u2019s Watch And Wallet and other Digital Transactions News briefs from 9/4/26\", \"url\": \"https://www.digitaltransactions.net/motorolas-watch-and-wallet-and-other-digital-transactions-news-briefs-from-9-4-26/\", \"source\": \"Digital Transactions\", \"published\": \"Fri, 04 Sep 2026 13:00:03 +0000\", \"ts\": 1788526803}, {\"title\": \"Biometrics Are Here. Agentic Payments Aren\\u2019t\\u2014Yet.\", \"url\": \"https://www.paymentsjournal.com/biometrics-are-here-agentic-payments-arent-yet/\", \"source\": \"PaymentsJournal\", \"published\": \"Fri, 04 Sep 2026 13:00:00 +0000\", \"ts\": 1788526800}, {\"title\": \"Paymentology powers Maxim\\u2019s UK launch, expanding access to credit for the African diaspora\", \"url\": \"https://www.finextra.com/pressarticle/110815/paymentology-powers-maxims-uk-launch-expanding-access-to-credit-for-the-african-diaspora?utm_medium=rssfinextra&utm_source=finextrafeed\", \"source\": \"Finextra\", \"published\": \"Fri, 04 Sep 2026 12:48:00 GMT\", \"ts\": 1788526080}, {\"title\": \"Ant International secures payment institution licence from the Central Bank of Brazil\", \"url\": \"https://www.finextra.com/pressarticle/110813/ant-international-secures-payment-institution-licence-from-the-central-bank-of-brazil?utm_medium=rssfinextra&utm_source=finextrafeed\", \"source\": \"Finextra\", \"published\": \"Fri, 04 Sep 2026 11:29:00 GMT\", \"ts\": 1788521340}, {\"title\": \"Anthropic launches AI commerce agents with Visa and Mastercard\", \"url\": \"https://www.finextra.com/newsarticle/48346/anthropic-launches-ai-commerce-agents-with-visa-and-mastercard?utm_medium=rssfinextra&utm_source=finextrafeed\", \"source\": \"Finextra\", \"published\": \"Fri, 04 Sep 2026 10:20:00 GMT\", \"ts\": 1788517200}, {\"title\": \"Anthropic\\u2019s Merchant Blueprint: A Key Step for Agentic Commerce\", \"url\": \"https://www.paymentsjournal.com/anthropics-merchant-blueprint-a-key-step-for-agentic-commerce/\", \"source\": \"PaymentsJournal\", \"published\": \"Thu, 03 Sep 2026 18:30:00 +0000\", \"ts\": 1788460200}, {\"title\": \"Meta Unveils WhatsApp Bill Pay to Tap into India\\u2019s Payments Boom\", \"url\": \"https://www.paymentsjournal.com/meta-unveils-whatsapp-bill-pay-to-tap-into-indias-payments-boom/\", \"source\": \"PaymentsJournal\", \"published\": \"Thu, 03 Sep 2026 17:02:33 +0000\", \"ts\": 1788454953}, {\"title\": \"Stablecoin payments infrastructure startup Diameter Pay raises $10 million\", \"url\": \"https://www.theblock.co/news/deals/2026-09-03-diameter-pay-funding-stablecoin-payments-infrastructure-413454\", \"source\": \"The Block\", \"published\": \"Thu, 03 Sep 2026 16:00:03 +0000\", \"ts\": 1788451203}, {\"title\": \"KB Kookmin Bank leverages Kinexys by JPMorgan for import/export payments\", \"url\": \"https://www.finextra.com/pressarticle/110808/kb-kookmin-bank-leverages-kinexys-by-jpmorgan-for-importexport-payments?utm_medium=rssfinextra&utm_source=finextrafeed\", \"source\": \"Finextra\", \"published\": \"Thu, 03 Sep 2026 15:37:00 GMT\", \"ts\": 1788449820}, {\"title\": \"FedNow Eyes Expansion with Upcoming Discount Program\", \"url\": \"https://www.digitaltransactions.net/fednow-eyes-expansion-with-upcoming-discount-program/\", \"source\": \"Digital Transactions\", \"published\": \"Thu, 03 Sep 2026 15:16:06 +0000\", \"ts\": 1788448566}, {\"title\": \"Fiserv\\u2019s Small Business Index Stays Flat in August\", \"url\": \"https://www.digitaltransactions.net/fiservs-small-business-index-stays-flat-in-august/\", \"source\": \"Digital Transactions\", \"published\": \"Thu, 03 Sep 2026 15:03:59 +0000\", \"ts\": 1788447839}, {\"title\": \"Fiserv explores divestitures\", \"url\": \"https://www.paymentsdive.com/news/fiserv-explores-divestitures/829569/\", \"source\": \"Payments Dive\", \"published\": \"Thu, 03 Sep 2026 10:35:00 -0400\", \"ts\": 1788446100}, {\"title\": \"TabaPay eyes bank charter\", \"url\": \"https://www.paymentsdive.com/news/tabapay-to-buy-transact-bank-ftv-capital-155-million-investment-occ-charter/829487/\", \"source\": \"Payments Dive\", \"published\": \"Thu, 03 Sep 2026 10:26:00 -0400\", \"ts\": 1788445560}, {\"title\": \"Stripe taps new stablecoin executive\", \"url\": \"https://www.paymentsdive.com/news/stripe-taps-new-stablecoin-executive/829509/\", \"source\": \"Payments Dive\", \"published\": \"Thu, 03 Sep 2026 09:30:00 -0400\", \"ts\": 1788442200}, {\"title\": \"Shopline\\u2019s Splitit Integration and other Digital Transactions News briefs from 9/3/26\", \"url\": \"https://www.digitaltransactions.net/shoplines-splitit-integration-and-other-digital-transactions-news-briefs-from-9-3-26/\", \"source\": \"Digital Transactions\", \"published\": \"Thu, 03 Sep 2026 13:00:00 +0000\", \"ts\": 1788440400}, {\"title\": \"P2P Payments Have Changed How Consumers Move Money. What\\u2019s Next?\", \"url\": \"https://www.paymentsjournal.com/p2p-payments-have-changed-how-consumers-move-money-whats-next/\", \"source\": \"PaymentsJournal\", \"published\": \"Thu, 03 Sep 2026 13:00:00 +0000\", \"ts\": 1788440400}, {\"title\": \"Stablecoins lose ground\", \"url\": \"https://www.paymentsdive.com/news/stablecoins-lose-ground-tokenized-deposits-jackson-hole-hernandez-ed-cos/829438/\", \"source\": \"Payments Dive\", \"published\": \"Wed, 02 Sep 2026 10:39:00 -0400\", \"ts\": 1788359940}, {\"title\": \"Stablecoins lose ground to tokenized deposits\", \"url\": \"https://www.bankingdive.com/news/stablecoins-lose-ground-tokenized-deposits-jackson-hole-hernandez-ed-cos/829457/\", \"source\": \"Banking Dive\", \"published\": \"Wed, 02 Sep 2026 10:39:00 -0400\", \"ts\": 1788359940}, {\"title\": \"CFPB Reaches Settlement with FirstCash, Inc. and Its Subsidiaries for Military Lending Act Violations\", \"url\": \"https://www.consumerfinance.gov/about-us/newsroom/cfpb-reaches-settlement-with-firstcash-inc-and-its-subsidiaries-for-military-lending-act-violations/\", \"source\": \"CFPB\", \"published\": \"Fri, 11 Jul 2025 00:00:00 -0400\", \"ts\": 1752206400}, {\"title\": \"CFPB Amends Wise Order for Remittance Practices\", \"url\": \"https://www.consumerfinance.gov/about-us/newsroom/cfpb-amends-wise-order-for-remittance-practices/\", \"source\": \"CFPB\", \"published\": \"Thu, 15 May 2025 00:00:00 -0400\", \"ts\": 1747281600}]",
+      "is_error": false,
+      "duration_s": 5.11
+    },
+    "get_liquidity_news": {
+      "content": "[{\"title\": \"Trump turns up the heat on Warsh as Fed rate hike looms\", \"url\": \"https://www.cnbc.com/2026/09/05/trump-warsh-fed-september-rate-hike.html\", \"source\": \"CNBC Economy\", \"published\": \"Sat, 05 Sep 2026 19:12:53 GMT\", \"ts\": 1788635573}, {\"headline\": \"Toto, I Don\\u2019t Think It\\u2019s the Fed Anymore\", \"url\": \"https://www.jpmorgan.com/insights/markets-and-economy/top-market-takeaways/tmt-toto-i-dont-think-its-the-fed-anymore\", \"source\": \"J.P. Morgan\", \"datetime\": \"20260905\", \"ts\": 1788569307, \"sentiment\": \"Neutral\", \"sentiment_score\": 0.102417}, {\"headline\": \"Still Own the 'Safe' Bond Fund That Lost 13% in 2022? These 3 ETFs Do the Job It Was Supposed To\", \"url\": \"https://247wallst.com/investing/etf/2026/09/04/still-own-the-safe-bond-fund-that-lost-13-in-2022-these-3-etfs-do-the-job-it-was-supposed-to/\", \"source\": \"24/7 Wall St.\", \"datetime\": \"20260904\", \"ts\": 1788559211, \"sentiment\": \"Bearish\", \"sentiment_score\": -0.401033}, {\"title\": \"U.S. Stocks Fall as Robust August Jobs Data Spurs Yields, Rate-Hike Bets\", \"url\": \"https://www.wsj.com/finance/investing/u-s-stocks-fall-as-robust-august-jobs-data-spurs-yields-rate-hike-bets-0adff908?mod=rss_markets_main\", \"source\": \"WSJ Markets\", \"published\": \"Fri, 04 Sep 2026 21:18:00 GMT\", \"ts\": 1788556680}, {\"title\": \"Rates Climb, Stocks Dip After Strong U.S. Jobs Data\", \"url\": \"https://www.wsj.com/finance/stocks/rates-climb-stocks-dip-after-strong-u-s-jobs-data-a71b1a23?mod=rss_markets_main\", \"source\": \"WSJ Markets\", \"published\": \"Fri, 04 Sep 2026 20:54:00 GMT\", \"ts\": 1788555240}, {\"title\": \"U.S. Stocks Slip, Short-Term Treasury Yields Climb After Strong Jobs Report\", \"url\": \"https://www.wsj.com/finance/stocks/u-s-stock-futures-treasurys-little-moved-ahead-of-jobs-data-36dab277?mod=rss_markets_main\", \"source\": \"WSJ Markets\", \"published\": \"Fri, 04 Sep 2026 18:23:00 GMT\", \"ts\": 1788546180}, {\"title\": \"U.S. payrolls rose 162,000 in August, much more than expected; unemployment rate at 4.1%\", \"url\": \"https://www.cnbc.com/2026/09/04/jobs-report-august-2026.html\", \"source\": \"CNBC Economy\", \"published\": \"Fri, 04 Sep 2026 17:16:37 GMT\", \"ts\": 1788542197}, {\"headline\": \"Intel Climbs 4% as Chip Stocks Shrug Off Rising Rate Hike Odds; NVIDIA and AMD Move Higher\", \"url\": \"https://finance.yahoo.com/markets/stocks/articles/intel-climbs-4-chip-stocks-151207394.html\", \"source\": \"Yahoo Finance\", \"datetime\": \"20260904\", \"ts\": 1788536772, \"sentiment\": \"Bullish\", \"sentiment_score\": 0.438541}, {\"title\": \"Canadian Employment Retreats in August, Though Jobless Rate Holds Steady\", \"url\": \"https://www.wsj.com/economy/jobs/canada-unemployment-holds-at-6-4-though-employment-falls-821342b6?mod=rss_socialeconomyfeed\", \"source\": \"WSJ Economy\", \"published\": \"Fri, 04 Sep 2026 15:20:00 GMT\", \"ts\": 1788535200}, {\"title\": \"Week Ahead for FX, Bonds: U.S. Inflation Data in Focus; ECB Expected to Raise Rates\", \"url\": \"https://www.wsj.com/economy/week-ahead-for-fx-bonds-u-s-inflation-data-in-focus-ecb-expected-to-raise-rates-2e8f240b?mod=rss_socialeconomyfeed\", \"source\": \"WSJ Economy\", \"published\": \"Fri, 04 Sep 2026 15:09:00 GMT\", \"ts\": 1788534540}, {\"headline\": \"Micron, SanDisk Jump 4% Despite Hot Jobs Report Raising Fed Hike Odds - Micron Technology (NASDAQ:MU)\", \"url\": \"https://www.benzinga.com/markets/prediction-markets/26/09/61631763/micron-sandisk-hot-jobs-report\", \"source\": \"Benzinga\", \"datetime\": \"20260904\", \"ts\": 1788534508, \"sentiment\": \"Bullish\", \"sentiment_score\": 0.442548}, {\"title\": \"Treasury Yields, Fed Rate-Hike Bets Rise After Strong U.S. Jobs Data\", \"url\": \"https://www.wsj.com/economy/global/u-s-european-bond-yields-little-changed-ahead-of-key-jobs-data-6528bb59?mod=rss_socialeconomyfeed\", \"source\": \"WSJ Economy\", \"published\": \"Fri, 04 Sep 2026 13:43:00 GMT\", \"ts\": 1788529380}, {\"title\": \"Higher Bond Yields Have a Silver Lining\", \"url\": \"https://www.wsj.com/finance/investing/higher-bond-yields-have-a-silver-lining-044afb97?mod=rss_markets_main\", \"source\": \"WSJ Markets\", \"published\": \"Fri, 04 Sep 2026 10:16:00 GMT\", \"ts\": 1788516960}, {\"title\": \"Stock Market News, Sept. 4, 2026: Short-Term Treasury Yields Climb After Strong Jobs Report\", \"url\": \"https://www.wsj.com/livecoverage/august-jobs-report-stock-market-09-04-2026?mod=rss_markets_main\", \"source\": \"WSJ Markets\", \"published\": \"Fri, 04 Sep 2026 08:18:35 GMT\", \"ts\": 1788509915}, {\"headline\": \"[U.S. Stocks] Dow Inc extends significant gains, rising $624 as expectations of U.S. rate hikes recede (3rd) \\u2606Replacement\", \"url\": \"https://www.moomoo.com/news/post/75788016/us-stocks-dow-inc-extends-significant-gains-rising-624-as\", \"source\": \"Moomoo\", \"datetime\": \"20260903\", \"ts\": 1788470728, \"sentiment\": \"Bullish\", \"sentiment_score\": 0.502278}, {\"title\": \"Stocks, Bonds Rally After Dovish Fed Comments\", \"url\": \"https://www.wsj.com/finance/stocks/stocks-bonds-rally-after-dovish-fed-comments-b95763ae?mod=rss_markets_main\", \"source\": \"WSJ Markets\", \"published\": \"Thu, 03 Sep 2026 21:03:00 GMT\", \"ts\": 1788469380}, {\"title\": \"BOE\\u2019s Chief Economist Sees Need for Rate Rise as War\\u2019s Course Remains Uncertain\", \"url\": \"https://www.wsj.com/economy/central-banking/boes-chief-economist-sees-need-for-rate-rise-as-wars-course-remains-uncertain-3a2976f4?mod=rss_socialeconomyfeed\", \"source\": \"WSJ Economy\", \"published\": \"Thu, 03 Sep 2026 16:15:00 GMT\", \"ts\": 1788452100}, {\"title\": \"Global Bond Markets Take a Breather\", \"url\": \"https://www.wsj.com/economy/central-banking/global-bond-markets-take-a-breather-1572d1e3?mod=rss_socialeconomyfeed\", \"source\": \"WSJ Economy\", \"published\": \"Thu, 03 Sep 2026 16:08:00 GMT\", \"ts\": 1788451680}, {\"title\": \"The Dutch central bank said it moved around 86 metric tons of gold from New York and Ottawa to London as a result of \\u201cincreasing geopolitical unrest\\u201d\", \"url\": \"https://www.wsj.com/economy/central-banking/netherlands-moves-gold-from-new-york-to-london-citing-geopolitical-unrest-7a095eb8?mod=rss_socialeconomyfeed\", \"source\": \"WSJ Economy\", \"published\": \"Thu, 03 Sep 2026 14:50:00 GMT\", \"ts\": 1788447000}, {\"title\": \"Fed Governor Waller indicates he will support holding rates steady at September meeting\", \"url\": \"https://www.cnbc.com/2026/09/03/fed-governor-waller-indicates-he-will-support-holding-rates-steady-at-september-meeting.html\", \"source\": \"CNBC Economy\", \"published\": \"Thu, 03 Sep 2026 14:06:52 GMT\", \"ts\": 1788444412}, {\"headline\": \"What Does the S&P 500 Rate Shift Mean for Bank of America (NYSE:BAC)?\", \"url\": \"https://kalkinemedia.com/us/stocks/financial/what-does-the-sp-500-rate-shift-mean-for-bank-of-america-nysebac\", \"source\": \"Kalkine Media\", \"datetime\": \"20260903\", \"ts\": 1788427093, \"sentiment\": \"Somewhat-Bullish\", \"sentiment_score\": 0.265621}, {\"headline\": \"U.S. stock futures flat amid Iran, rate caution; Broadcom dips after earnings\", \"url\": \"https://www.investing.com/news/stock-market-news/us-stock-futures-flat-amid-iran-rate-caution-broadcom-dips-after-earnings-4886896\", \"source\": \"Investing.com\", \"datetime\": \"20260903\", \"ts\": 1788394762, \"sentiment\": \"Somewhat-Bearish\", \"sentiment_score\": -0.154714}, {\"title\": \"Stablecoins lose ground to tokenized deposits\", \"url\": \"https://www.bankingdive.com/news/stablecoins-lose-ground-tokenized-deposits-jackson-hole-hernandez-ed-cos/829457/\", \"source\": \"Banking Dive\", \"published\": \"Wed, 02 Sep 2026 10:39:00 -0400\", \"ts\": 1788359940}, {\"headline\": \"Maximizing Construction Margins in a High-Rate Environment\", \"url\": \"https://www.cbiz.com/insights/article/maximizing-construction-margins-in-a-high-rate-environment\", \"source\": \"CBIZ\", \"datetime\": \"20260902\", \"ts\": 1788348100, \"sentiment\": \"Neutral\", \"sentiment_score\": 0.12625}, {\"headline\": \"S&P Futures Tick Higher as Oil Prices and Bond Yields Fall, U.S. ADP Jobs Report and Broadcom Earnings on Tap\", \"url\": \"https://www.barchart.com/story/news/4395159/nasdaq-futures-slip-as-rising-yields-hit-chipmakers-u-s-adp-jobs-report-and-broadcom-earnings-on-tap\", \"source\": \"Barchart.com\", \"datetime\": \"20260902\", \"ts\": 1788345552, \"sentiment\": \"Neutral\", \"sentiment_score\": 0.029271}, {\"headline\": \"Stocks Fall on Rising Yields and Oil, With Apple the Lone Bright Spot\", \"url\": \"https://finance.yahoo.com/markets/stocks/articles/stocks-fall-rising-yields-oil-170338212.html\", \"source\": \"Yahoo Finance\", \"datetime\": \"20260901\", \"ts\": 1788282248, \"sentiment\": \"Neutral\", \"sentiment_score\": -0.107731}, {\"headline\": \"Trump Media Falls 3% as Rising Yields and Higher Oil Squeeze Risk Appetite\", \"url\": \"https://247wallst.com/investing/2026/09/01/trump-media-falls-3-as-rising-yields-and-higher-oil-squeeze-risk-appetite/\", \"source\": \"24/7 Wall St.\", \"datetime\": \"20260901\", \"ts\": 1788273296, \"sentiment\": \"Neutral\", \"sentiment_score\": 0.020541}, {\"headline\": \"Semiconductor Stocks Slide as Global Bond Selloff Lifts Yields: Intel Drops 3%, NVIDIA and AMD Slip\", \"url\": \"https://finance.yahoo.com/markets/stocks/articles/semiconductor-stocks-slide-global-bond-131516395.html\", \"source\": \"Yahoo Finance\", \"datetime\": \"20260901\", \"ts\": 1788270300, \"sentiment\": \"Somewhat-Bearish\", \"sentiment_score\": -0.23167}, {\"title\": \"Euro zone inflation is back above 3%. Higher interest rates are likely to follow\", \"url\": \"https://www.cnbc.com/2026/09/01/euro-zone-inflation-rate-hike.html\", \"source\": \"CNBC Economy\", \"published\": \"Tue, 01 Sep 2026 10:50:27 GMT\", \"ts\": 1788259827}, {\"title\": \"Fed Chairman Warsh expresses concern about inflation, advocates for 'quieter' central bank\", \"url\": \"https://www.cnbc.com/2026/08/28/kevin-warsh-jackson-hole-federal-reserve-inflation.html\", \"source\": \"CNBC Economy\", \"published\": \"Fri, 28 Aug 2026 16:11:51 GMT\", \"ts\": 1787933511}, {\"title\": \"Fed's Hammack says 'now is the time to act' on raising interest rates\", \"url\": \"https://www.cnbc.com/2026/08/27/feds-hammack-says-now-is-the-time-to-act-on-raising-interest-rates.html\", \"source\": \"CNBC Economy\", \"published\": \"Thu, 27 Aug 2026 17:31:09 GMT\", \"ts\": 1787851869}, {\"title\": \"Minutes of the Board's discount rate meetings on July 20 and July 29, 2026\", \"url\": \"https://www.federalreserve.gov/newsevents/pressreleases/monetary20260825a.htm\", \"source\": \"Federal Reserve\", \"published\": \"Tue, 25 Aug 2026 18:00:00 GMT\", \"ts\": 1787680800}, {\"title\": \"Federal Reserve issues FOMC statement\", \"url\": \"https://www.federalreserve.gov/newsevents/pressreleases/monetary20260729a.htm\", \"source\": \"Federal Reserve\", \"published\": \"Wed, 29 Jul 2026 18:00:00 GMT\", \"ts\": 1785348000}, {\"title\": \"Minutes of the Board's discount rate meetings on June 8 and June 17, 2026\", \"url\": \"https://www.federalreserve.gov/newsevents/pressreleases/monetary20260714a.htm\", \"source\": \"Federal Reserve\", \"published\": \"Tue, 14 Jul 2026 18:00:00 GMT\", \"ts\": 1784052000}, {\"title\": \"Federal Reserve announces the leadership and objectives of its task forces to advance the conduct of monetary policy\", \"url\": \"https://www.federalreserve.gov/newsevents/pressreleases/monetary20260709a.htm\", \"source\": \"Federal Reserve\", \"published\": \"Thu, 9 Jul 2026 19:00:00 GMT\", \"ts\": 1783623600}, {\"title\": \"Federal Reserve issues FOMC statement\", \"url\": \"https://www.federalreserve.gov/newsevents/pressreleases/monetary20260617a.htm\", \"source\": \"Federal Reserve\", \"published\": \"Wed, 17 Jun 2026 18:00:00 GMT\", \"ts\": 1781719200}, {\"title\": \"Federal Reserve Board and Federal Open Market Committee release economic projections from the June 16-17 FOMC meeting\", \"url\": \"https://www.federalreserve.gov/newsevents/pressreleases/monetary20260617b.htm\", \"source\": \"Federal Reserve\", \"published\": \"Wed, 17 Jun 2026 18:00:00 GMT\", \"ts\": 1781719200}]",
+      "is_error": false,
+      "duration_s": 2.37
+    },
+    "get_tech_news": {
+      "content": "[{\"title\": \"Travis Kalanick\\u2019s Atoms might be getting into the robotaxi business\", \"url\": \"https://techcrunch.com/2026/09/06/travis-kalanicks-atoms-might-be-getting-into-the-robotaxi-business/\", \"source\": \"TechCrunch\", \"published\": \"Sun, 06 Sep 2026 16:45:00 +0000\", \"ts\": 1788713100}, {\"title\": \"Boox\\u2019s tiny Picco e-reader should land in November\", \"url\": \"https://www.theverge.com/tech/990895/boox-picco-tiny-e-reader-november-ifa\", \"source\": \"The Verge\", \"published\": \"2026-09-06T12:28:58-04:00\", \"ts\": 1788712138}, {\"title\": \"TechCrunch Mobility: Tesla Cybercab hits the road \\u2014 and a snag\", \"url\": \"https://techcrunch.com/2026/09/06/techcrunch-mobility-tesla-cybercab-hits-the-road-and-a-snag/\", \"source\": \"TechCrunch\", \"published\": \"Sun, 06 Sep 2026 16:08:00 +0000\", \"ts\": 1788710880}, {\"title\": \"The Fairphone 6 Plus is the midrange phone we desperately needed\", \"url\": \"https://www.theverge.com/tech/990436/fairphone-6-plus-review\", \"source\": \"The Verge\", \"published\": \"2026-09-06T09:00:00-04:00\", \"ts\": 1788699600}, {\"title\": \"Competitive Pok\\u00e9mon is on phones now, but you still need a Switch to become a champion\", \"url\": \"https://www.theverge.com/games/990691/competitive-pokemon-champions-mobile-tournament-accessibility\", \"source\": \"The Verge\", \"published\": \"2026-09-06T09:00:00-04:00\", \"ts\": 1788699600}, {\"title\": \"DIY plug-in solar gains momentum in the US\", \"url\": \"https://www.theverge.com/column/990183/diy-plug-in-solar-us\", \"source\": \"The Verge\", \"published\": \"2026-09-06T08:00:00-04:00\", \"ts\": 1788696000}, {\"title\": \"German company becomes first in Europe to launch fully commercial orbital rocket\", \"url\": \"https://arstechnica.com/space/2026/09/german-company-becomes-first-in-europe-to-launch-fully-commercial-orbital-rocket/\", \"source\": \"Ars Technica\", \"published\": \"Sun, 06 Sep 2026 11:55:26 +0000\", \"ts\": 1788695726}, {\"title\": \"Farmed salmon may not be as nutritious as it once was, new research suggests\", \"url\": \"https://arstechnica.com/science/2026/09/farmed-salmon-may-not-be-as-nutritious-as-it-once-was-new-research-suggests/\", \"source\": \"Ars Technica\", \"published\": \"Sun, 06 Sep 2026 10:00:35 +0000\", \"ts\": 1788688835}, {\"title\": \"Seattle Times and Newsday are the latest publications to sue OpenAI and Microsoft\", \"url\": \"https://techcrunch.com/2026/09/05/seattle-times-and-newsday-are-the-latest-publications-to-sue-openai-and-microsoft/\", \"source\": \"TechCrunch\", \"published\": \"Sat, 05 Sep 2026 22:49:55 +0000\", \"ts\": 1788648595}, {\"title\": \"Explore the globe in field recordings\", \"url\": \"https://www.theverge.com/tech/990873/earth-garden-globe-field-recordings\", \"source\": \"The Verge\", \"published\": \"2026-09-05T17:31:34-04:00\", \"ts\": 1788643894}, {\"title\": \"iPhone Handoff will seamlessly share one number between two phones\", \"url\": \"https://www.theverge.com/tech/990868/iphone-handoff-ios-27\", \"source\": \"The Verge\", \"published\": \"2026-09-05T16:53:58-04:00\", \"ts\": 1788641638}, {\"title\": \"Hikers rescued after using Google Gemini for planning\", \"url\": \"https://techcrunch.com/2026/09/05/hikers-rescued-after-using-google-gemini-for-planning/\", \"source\": \"TechCrunch\", \"published\": \"Sat, 05 Sep 2026 19:35:24 +0000\", \"ts\": 1788636924}, {\"title\": \"OpenAI confirms \\u2018wiki incident,\\u2019 says it\\u2019s \\u2018working on a framework\\u2019 for more disclosure\", \"url\": \"https://techcrunch.com/2026/09/05/openai-confirms-wiki-incident-says-its-working-on-a-framework-for-more-disclosure/\", \"source\": \"TechCrunch\", \"published\": \"Sat, 05 Sep 2026 18:05:27 +0000\", \"ts\": 1788631527}, {\"title\": \"Clucky\\u2019s new alarm app wakes you up with a crowing rooster\", \"url\": \"https://techcrunch.com/2026/09/05/cluckys-new-alarm-app-wakes-you-up-with-a-crowing-rooster/\", \"source\": \"TechCrunch\", \"published\": \"Sat, 05 Sep 2026 17:00:00 +0000\", \"ts\": 1788627600}, {\"title\": \"CD sales are booming as physical media continues its resurgence\", \"url\": \"https://www.theverge.com/entertainment/990794/cd-sales-are-booming-as-physical-media-continues-its-resurgence\", \"source\": \"The Verge\", \"published\": \"2026-09-05T12:49:33-04:00\", \"ts\": 1788626973}, {\"title\": \"Tesla\\u2019s Cybercab has been deployed, and it\\u2019s already under investigation\", \"url\": \"https://arstechnica.com/cars/2026/09/teslas-cybercab-has-been-deployed-and-its-already-under-investigation/\", \"source\": \"Ars Technica\", \"published\": \"Sat, 05 Sep 2026 15:17:36 +0000\", \"ts\": 1788621456}, {\"title\": \"Oura is going public, but these smart ring companies are coming for its crown\", \"url\": \"https://techcrunch.com/2026/09/05/oura-is-going-public-but-these-smart-ring-companies-are-coming-for-its-crown/\", \"source\": \"TechCrunch\", \"published\": \"Sat, 05 Sep 2026 15:00:00 +0000\", \"ts\": 1788620400}, {\"title\": \"Fantasy Footballers\\u2019 Andy Holloway is a dedicated zero-inbox kinda guy\", \"url\": \"https://www.theverge.com/report/989270/fantasy-footballers-podcast-andy-holloway-interview\", \"source\": \"The Verge\", \"published\": \"2026-09-05T11:00:00-04:00\", \"ts\": 1788620400}, {\"title\": \"Content creators drop the ball\", \"url\": \"https://www.theverge.com/tech/990426/us-open-influencers-naomi-osaka-anastasia-zakharova-callaway-good-good-ad\", \"source\": \"The Verge\", \"published\": \"2026-09-05T10:00:16-04:00\", \"ts\": 1788616816}, {\"title\": \"The weird and wonderful headphones of CanJam 2026\", \"url\": \"https://www.theverge.com/tech/990706/a-day-at-canjam-socal-2026\", \"source\": \"The Verge\", \"published\": \"2026-09-05T09:00:00-04:00\", \"ts\": 1788613200}, {\"title\": \"XDOF, just three months out of stealth, is in talks for a Series B at a $1.2B valuation\", \"url\": \"https://techcrunch.com/2026/09/04/xdof-just-three-months-out-of-stealth-is-in-talks-for-a-series-b-at-a-1-2b-valuation/\", \"source\": \"TechCrunch\", \"published\": \"Fri, 04 Sep 2026 23:36:14 +0000\", \"ts\": 1788564974}, {\"title\": \"OpenAI\\u2019s rogue agents keep escaping, with no formal process to investigate them\", \"url\": \"https://techcrunch.com/2026/09/04/openais-rogue-agents-keep-escaping-with-no-formal-process-to-investigate-them/\", \"source\": \"TechCrunch\", \"published\": \"Fri, 04 Sep 2026 23:15:11 +0000\", \"ts\": 1788563711}, {\"title\": \"After 8 years, Europe's BepiColombo mission is on final approach to Mercury\", \"url\": \"https://arstechnica.com/space/2026/09/after-8-years-europes-bepicolombo-mission-is-on-final-approach-to-mercury/\", \"source\": \"Ars Technica\", \"published\": \"Fri, 04 Sep 2026 22:49:17 +0000\", \"ts\": 1788562157}, {\"title\": \"OpenAI agents discussed ways to escape their sandbox on public wiki\", \"url\": \"https://arstechnica.com/security/2026/09/openai-agents-discussed-ways-to-escape-their-sandbox-on-public-wiki/\", \"source\": \"Ars Technica\", \"published\": \"Fri, 04 Sep 2026 22:17:36 +0000\", \"ts\": 1788560256}, {\"title\": \"AI compute provider Nscale is looking for $3.5B in pre-IPO financing\", \"url\": \"https://techcrunch.com/2026/09/04/ai-compute-provider-nscale-is-looking-for-3-5b-in-pre-ipo-financing/\", \"source\": \"TechCrunch\", \"published\": \"Fri, 04 Sep 2026 21:12:11 +0000\", \"ts\": 1788556331}, {\"title\": \"Measles killed 6-week-old baby, coroner confirms after RFK Jr. disputed deaths\", \"url\": \"https://arstechnica.com/health/2026/09/measles-killed-6-week-old-baby-coroner-confirms-after-rfk-jr-disputed-deaths/\", \"source\": \"Ars Technica\", \"published\": \"Fri, 04 Sep 2026 20:22:41 +0000\", \"ts\": 1788553361}, {\"title\": \"Trump admin fights ABC lawsuit as watchdogs worry Disney will settle with FCC\", \"url\": \"https://arstechnica.com/tech-policy/2026/09/trump-admin-fights-abc-lawsuit-as-watchdogs-worry-disney-will-settle-with-fcc/\", \"source\": \"Ars Technica\", \"published\": \"Fri, 04 Sep 2026 19:46:34 +0000\", \"ts\": 1788551194}, {\"title\": \"Medieval manuscripts are \\\"biological time capsules\\\" for deadly sheeppox virus\", \"url\": \"https://arstechnica.com/science/2026/09/medieval-manuscripts-are-biological-time-capsules-for-deadly-sheeppox-virus/\", \"source\": \"Ars Technica\", \"published\": \"Fri, 04 Sep 2026 19:01:02 +0000\", \"ts\": 1788548462}, {\"title\": \"Judge blocks X rival from using Twitter name, but allows \\u2018Tweet\\u2019 for now\", \"url\": \"https://techcrunch.com/2026/09/04/judge-blocks-x-rival-from-using-twitter-name-but-allows-tweet-for-now/\", \"source\": \"TechCrunch\", \"published\": \"Fri, 04 Sep 2026 17:52:05 +0000\", \"ts\": 1788544325}, {\"title\": \"\\u201cTrust, not features, is the real deficit\\u201d: VMware tries to appease SMBs\", \"url\": \"https://arstechnica.com/information-technology/2026/09/trust-not-features-is-the-real-deficit-vmware-tries-to-appease-smbs/\", \"source\": \"Ars Technica\", \"published\": \"Fri, 04 Sep 2026 17:35:02 +0000\", \"ts\": 1788543302}, {\"title\": \"Once popular for attacking AI, ASCII smuggling is embraced by spammers\", \"url\": \"https://arstechnica.com/security/2026/09/once-popular-for-attacking-ai-ascii-smuggling-is-embraced-by-spammers/\", \"source\": \"Ars Technica\", \"published\": \"Fri, 04 Sep 2026 17:18:12 +0000\", \"ts\": 1788542292}, {\"title\": \"What will Apple\\u2019s John Ternus era look like?\", \"url\": \"https://techcrunch.com/video/what-will-apples-john-ternus-era-look-like/\", \"source\": \"TechCrunch\", \"published\": \"Fri, 04 Sep 2026 17:18:00 +0000\", \"ts\": 1788542280}, {\"title\": \"Pentagon rescinds new testosterone screening policy without explanation\", \"url\": \"https://arstechnica.com/health/2026/09/pentagon-releases-then-quickly-removes-testosterone-screening-policy/\", \"source\": \"Ars Technica\", \"published\": \"Fri, 04 Sep 2026 16:57:24 +0000\", \"ts\": 1788541044}, {\"title\": \"No little kids allowed, and other new info about Tesla\\u2019s Cybercab\", \"url\": \"https://techcrunch.com/2026/09/04/no-little-kids-allowed-and-other-new-info-about-teslas-cybercab/\", \"source\": \"TechCrunch\", \"published\": \"Fri, 04 Sep 2026 16:51:23 +0000\", \"ts\": 1788540683}, {\"title\": \"A ratings board wouldn't let Valve release a trailer. It \\\"leaked\\\" it instead.\", \"url\": \"https://arstechnica.com/gaming/2026/09/valve-secretly-leaked-a-left-4-dead-2-trailer-to-dodge-the-esrb/\", \"source\": \"Ars Technica\", \"published\": \"Fri, 04 Sep 2026 16:42:53 +0000\", \"ts\": 1788540173}, {\"title\": \"Second complete map of a fruit fly brain completed\", \"url\": \"https://arstechnica.com/science/2026/09/brain-of-a-male-fly-completely-mapped-joins-earlier-map-of-a-female-brain/\", \"source\": \"Ars Technica\", \"published\": \"Fri, 04 Sep 2026 16:24:24 +0000\", \"ts\": 1788539064}, {\"title\": \"Anthropic\\u2019s $2 trillion IPO puts powerful external trustees in spotlight\", \"url\": \"https://arstechnica.com/ai/2026/09/anthropics-2-trillion-ipo-puts-powerful-external-trustees-in-spotlight/\", \"source\": \"Ars Technica\", \"published\": \"Fri, 04 Sep 2026 16:22:18 +0000\", \"ts\": 1788538938}, {\"title\": \"Another swarm of OpenAI agents reached the open internet without the frontier lab\\u2019s knowledge\", \"url\": \"https://techcrunch.com/2026/09/04/another-swarm-of-openai-agents-reached-the-open-internet-without-the-frontier-labs-knowledge/\", \"source\": \"TechCrunch\", \"published\": \"Fri, 04 Sep 2026 16:21:11 +0000\", \"ts\": 1788538871}, {\"title\": \"Musk wins court order to block use of \\u201cTwitter,\\u201d but not \\u201ctweet\\u201d and bird logo\", \"url\": \"https://arstechnica.com/tech-policy/2026/09/musk-wins-court-order-to-block-use-of-twitter-but-not-tweet-and-bird-logo/\", \"source\": \"Ars Technica\", \"published\": \"Fri, 04 Sep 2026 15:59:47 +0000\", \"ts\": 1788537587}, {\"title\": \"Trump White House just tossed a grenade into international space relations\", \"url\": \"https://arstechnica.com/space/2026/09/why-did-us-space-companies-pull-out-of-a-french-space-meeting-its-complicated/\", \"source\": \"Ars Technica\", \"published\": \"Fri, 04 Sep 2026 15:46:33 +0000\", \"ts\": 1788536793}]",
+      "is_error": false,
+      "duration_s": 0.85
+    },
+    "get_ai_news": {
+      "content": "[{\"title\": \"Travis Kalanick\\u2019s Atoms might be getting into the robotaxi business\", \"url\": \"https://techcrunch.com/2026/09/06/travis-kalanicks-atoms-might-be-getting-into-the-robotaxi-business/\", \"source\": \"TechCrunch AI\", \"published\": \"Sun, 06 Sep 2026 16:45:00 +0000\", \"ts\": 1788713100}, {\"title\": \"Seattle Times and Newsday are the latest publications to sue OpenAI and Microsoft\", \"url\": \"https://techcrunch.com/2026/09/05/seattle-times-and-newsday-are-the-latest-publications-to-sue-openai-and-microsoft/\", \"source\": \"TechCrunch AI\", \"published\": \"Sat, 05 Sep 2026 22:49:55 +0000\", \"ts\": 1788648595}, {\"title\": \"Hikers rescued after using Google Gemini for planning\", \"url\": \"https://techcrunch.com/2026/09/05/hikers-rescued-after-using-google-gemini-for-planning/\", \"source\": \"TechCrunch AI\", \"published\": \"Sat, 05 Sep 2026 19:35:24 +0000\", \"ts\": 1788636924}, {\"title\": \"OpenAI confirms \\u2018wiki incident,\\u2019 says it\\u2019s \\u2018working on a framework\\u2019 for more disclosure\", \"url\": \"https://techcrunch.com/2026/09/05/openai-confirms-wiki-incident-says-its-working-on-a-framework-for-more-disclosure/\", \"source\": \"TechCrunch AI\", \"published\": \"Sat, 05 Sep 2026 18:05:27 +0000\", \"ts\": 1788631527}, {\"title\": \"XDOF, just three months out of stealth, is in talks for a Series B at a $1.2B valuation\", \"url\": \"https://techcrunch.com/2026/09/04/xdof-just-three-months-out-of-stealth-is-in-talks-for-a-series-b-at-a-1-2b-valuation/\", \"source\": \"TechCrunch AI\", \"published\": \"Fri, 04 Sep 2026 23:36:14 +0000\", \"ts\": 1788564974}, {\"title\": \"OpenAI\\u2019s rogue agents keep escaping, with no formal process to investigate them\", \"url\": \"https://techcrunch.com/2026/09/04/openais-rogue-agents-keep-escaping-with-no-formal-process-to-investigate-them/\", \"source\": \"TechCrunch AI\", \"published\": \"Fri, 04 Sep 2026 23:15:11 +0000\", \"ts\": 1788563711}, {\"title\": \"AI compute provider Nscale is looking for $3.5B in pre-IPO financing\", \"url\": \"https://techcrunch.com/2026/09/04/ai-compute-provider-nscale-is-looking-for-3-5b-in-pre-ipo-financing/\", \"source\": \"TechCrunch AI\", \"published\": \"Fri, 04 Sep 2026 21:12:11 +0000\", \"ts\": 1788556331}, {\"title\": \"What will Apple\\u2019s John Ternus era look like?\", \"url\": \"https://techcrunch.com/video/what-will-apples-john-ternus-era-look-like/\", \"source\": \"TechCrunch AI\", \"published\": \"Fri, 04 Sep 2026 17:18:00 +0000\", \"ts\": 1788542280}, {\"title\": \"Another swarm of OpenAI agents reached the open internet without the frontier lab\\u2019s knowledge\", \"url\": \"https://techcrunch.com/2026/09/04/another-swarm-of-openai-agents-reached-the-open-internet-without-the-frontier-labs-knowledge/\", \"source\": \"TechCrunch AI\", \"published\": \"Fri, 04 Sep 2026 16:21:11 +0000\", \"ts\": 1788538871}, {\"title\": \"Apple\\u2019s Ternus era begins as Nvidia bets on the whole AI stack\", \"url\": \"https://techcrunch.com/podcast/apples-ternus-era-begins-as-nvidia-bets-on-the-whole-ai-stack/\", \"source\": \"TechCrunch AI\", \"published\": \"Fri, 04 Sep 2026 16:04:08 +0000\", \"ts\": 1788537848}, {\"title\": \"Google\\u2019s Gemini Spark can now manage your Google Photos library\", \"url\": \"https://techcrunch.com/2026/09/04/googles-gemini-spark-can-now-manage-your-google-photos-library/\", \"source\": \"TechCrunch AI\", \"published\": \"Fri, 04 Sep 2026 14:47:11 +0000\", \"ts\": 1788533231}, {\"title\": \"Less than 24 hours to apply\\u00a0for your TechCrunch Disrupt\\u00a02026 Side Event\", \"url\": \"https://techcrunch.com/2026/09/04/less-than-24-hours-to-apply-for-your-techcrunch-disrupt-2026-side-event/\", \"source\": \"TechCrunch AI\", \"published\": \"Fri, 04 Sep 2026 14:00:00 +0000\", \"ts\": 1788530400}, {\"title\": \"The sameness problem behind those unappetizing AI-generated menus\", \"url\": \"https://techcrunch.com/2026/09/03/the-sameness-problem-behind-those-unappetizing-ai-generated-menus/\", \"source\": \"TechCrunch AI\", \"published\": \"Fri, 04 Sep 2026 04:21:03 +0000\", \"ts\": 1788495663}, {\"title\": \"Crusoe reportedly raises $3B at a  $30B valuation\", \"url\": \"https://techcrunch.com/2026/09/03/crusoe-reportedly-raises-3b-at-a-30b-valuation/\", \"source\": \"TechCrunch AI\", \"published\": \"Fri, 04 Sep 2026 00:48:42 +0000\", \"ts\": 1788482922}, {\"title\": \"Accel reportedly in talks to lead $1B round for Thinking Machines at $40B valuation\", \"url\": \"https://techcrunch.com/2026/09/03/accel-reportedly-in-talks-to-lead-1b-round-for-thinking-machines-at-40b-valuation/\", \"source\": \"TechCrunch AI\", \"published\": \"Thu, 03 Sep 2026 19:36:29 +0000\", \"ts\": 1788464189}, {\"title\": \"Abliteration.ai is making a business out of removing AI guardrails\", \"url\": \"https://techcrunch.com/2026/09/03/abliteration-ai-is-making-a-business-out-of-removing-ai-guardrails/\", \"source\": \"TechCrunch AI\", \"published\": \"Thu, 03 Sep 2026 18:37:57 +0000\", \"ts\": 1788460677}, {\"title\": \"Meta is paying to peek at how you use their latest AI model\", \"url\": \"https://techcrunch.com/2026/09/03/meta-is-paying-to-peek-at-how-you-use-their-latest-ai-model/\", \"source\": \"TechCrunch AI\", \"published\": \"Thu, 03 Sep 2026 18:19:56 +0000\", \"ts\": 1788459596}, {\"title\": \"OpenAI launches Astra, its powerful (and controversial) new model\", \"url\": \"https://techcrunch.com/2026/09/03/openai-launches-astra-its-powerful-and-controversial-new-model/\", \"source\": \"TechCrunch AI\", \"published\": \"Thu, 03 Sep 2026 18:01:45 +0000\", \"ts\": 1788458505}, {\"title\": \"Ollie is betting its focus on privacy can help it win the AI assistant race\", \"url\": \"https://techcrunch.com/2026/09/03/ollie-is-betting-privacy-can-win-the-ai-assistant-race/\", \"source\": \"TechCrunch AI\", \"published\": \"Thu, 03 Sep 2026 16:09:01 +0000\", \"ts\": 1788451741}, {\"title\": \"OpenAI agents discussed ways to escape their sandbox on public wiki\", \"url\": \"https://arstechnica.com/security/2026/09/openai-agents-discussed-ways-to-escape-their-sandbox-on-public-wiki/\", \"source\": \"Ars Technica\", \"published\": \"Fri, 04 Sep 2026 22:17:36 +0000\", \"ts\": 1788560256}, {\"title\": \"Once popular for attacking AI, ASCII smuggling is embraced by spammers\", \"url\": \"https://arstechnica.com/security/2026/09/once-popular-for-attacking-ai-ascii-smuggling-is-embraced-by-spammers/\", \"source\": \"Ars Technica\", \"published\": \"Fri, 04 Sep 2026 17:18:12 +0000\", \"ts\": 1788542292}, {\"title\": \"Anthropic\\u2019s $2 trillion IPO puts powerful external trustees in spotlight\", \"url\": \"https://arstechnica.com/ai/2026/09/anthropics-2-trillion-ipo-puts-powerful-external-trustees-in-spotlight/\", \"source\": \"Ars Technica\", \"published\": \"Fri, 04 Sep 2026 16:22:18 +0000\", \"ts\": 1788538938}]",
+      "is_error": false,
+      "duration_s": 0.95
+    },
+    "get_hacker_news": {
+      "content": "[{\"title\": \"Discovery of a new OpenAI agent message board\", \"url\": \"https://collusion.wiki/\", \"score\": 2244, \"published\": \"2026-09-04\", \"ts\": 1788522893}, {\"title\": \"QBittorrent breaks out of sandbox to commit crimes\", \"url\": \"https://beige.party/@intransitivelie/117057396732763183\", \"score\": 556, \"published\": \"2026-09-06\", \"ts\": 1788699761}, {\"title\": \"Cloud in a Bottle: making self-hosting accessible to everyone\", \"url\": \"https://cloudinabottle.org/blog/launch-post\", \"score\": 547, \"published\": \"2026-09-06\", \"ts\": 1788653009}, {\"title\": \"The revolt of the reader\", \"url\": \"https://bcantrill.dtrace.org/2026/09/05/the-revolt-of-the-reader/\", \"score\": 504, \"published\": \"2026-09-05\", \"ts\": 1788644269}, {\"title\": \"Isar Aerospace reaches orbit and deploys payloads on second flight\", \"url\": \"https://isaraerospace.com/press/history-for-european-spaceflight-isar-aerospace-reaches-orbit-and-deploys-payloads-on-second-flight\", \"score\": 429, \"published\": \"2026-09-06\", \"ts\": 1788679266}, {\"title\": \"Your intellectual fly is open (2025)\", \"url\": \"https://bcantrill.dtrace.org/2025/12/05/your-intellectual-fly-is-open/\", \"score\": 295, \"published\": \"2026-09-06\", \"ts\": 1788695803}, {\"title\": \"Music Theory for Programmers\", \"url\": \"https://runjs.app/blog/music-theory-for-programmers\", \"score\": 281, \"published\": \"2026-09-02\", \"ts\": 1788380353}, {\"title\": \"A/I shuts down \\u2013 Stay human\", \"url\": \"https://keepitfree.ai/announcements/a/i-shuts-down-stay-human/\", \"score\": 275, \"published\": \"2026-09-06\", \"ts\": 1788705274}, {\"title\": \"Doomscrolling Ourselves to Death\", \"url\": \"https://www.edwest.co.uk/p/doomscrolling-ourselves-to-death\", \"score\": 222, \"published\": \"2026-09-06\", \"ts\": 1788695620}, {\"title\": \"Asahi Linux Now Officially Supports Apple M3 Macs \\u2013 With Caveats\", \"url\": \"https://www.phoronix.com/news/Asahi-Linux-Official-M3\", \"score\": 140, \"published\": \"2026-09-06\", \"ts\": 1788703739}, {\"title\": \"M-DISC \\u2013 DVD/Blu-ray compatible discs that may last up to 1000 years\", \"url\": \"https://en.wikipedia.org/wiki/M-DISC\", \"score\": 136, \"published\": \"2026-09-02\", \"ts\": 1788322221}, {\"title\": \"AI, Tools and Transformation\", \"url\": \"https://www.ben-evans.com/benedictevans/2026/9/3/ai-tools-and-transformation\", \"score\": 128, \"published\": \"2026-09-06\", \"ts\": 1788660766}, {\"title\": \"The ColorChecker, photography's most important 24 squares, turns 50\", \"url\": \"https://www.dpreview.com/news/the-colorchecker-photographys-most-important-24-squares-turns-50/\", \"score\": 109, \"published\": \"2026-09-01\", \"ts\": 1788303255}, {\"title\": \"AMD Based FreeBSD Desktop Reloaded\", \"url\": \"https://vermaden.wordpress.com/2026/09/06/amd-based-freebsd-desktop-reloaded/\", \"score\": 99, \"published\": \"2026-09-06\", \"ts\": 1788661497}, {\"title\": \"IBM Quantum Nighthawk R2\", \"url\": \"https://www.ibm.com/quantum/blog/nighthawk-r2\", \"score\": 58, \"published\": \"2026-09-03\", \"ts\": 1788412564}, {\"title\": \"The many mysteries and lessons of the Bayeux tapestry\", \"url\": \"https://economist.com/interactive/culture/2026/09/03/the-many-mysteries-and-lessons-of-the-bayeux-tapestry\", \"score\": 38, \"published\": \"2026-09-06\", \"ts\": 1788701887}, {\"title\": \"The pencil case model of creativity\", \"url\": \"https://dub.uu.nl/en/column/pencil-case-model-creativity\", \"score\": 35, \"published\": \"2026-09-06\", \"ts\": 1788696334}, {\"title\": \"Household Laser Cuts\", \"url\": \"https://cceckman.com/writing/household-laser-cuts/\", \"score\": 35, \"published\": \"2026-09-04\", \"ts\": 1788554566}, {\"title\": \"Show HN: Kad\\u014d \\u2013 open-source habit tracker, with non-binary habit score, for iOS\", \"url\": \"https://github.com/scastiel/kado\", \"score\": 34, \"published\": \"2026-09-06\", \"ts\": 1788705286}, {\"title\": \"An Alien Mind\", \"url\": \"https://openai.com/index/an-alien-mind/\", \"score\": 32, \"published\": \"2026-09-06\", \"ts\": 1788712025}, {\"title\": \"I'm teaching an introductory 12 week course on Quantum Oracle Engineering\", \"url\": \"https://shukla.io/quantum-oracle-engineering/\", \"score\": 26, \"published\": \"2026-09-06\", \"ts\": 1788699634}, {\"title\": \"Is There I/O After Death? What Happens to Io_uring When a Process Dies\", \"url\": \"https://blog.ydb.tech/is-there-i-o-after-death-what-happens-to-io-uring-when-a-process-dies-92c65354873f?postPublishedType=repub\", \"score\": 25, \"published\": \"2026-09-02\", \"ts\": 1788382725}, {\"title\": \"NetBSD 9.5 released and EOL for NetBSD-9\", \"url\": \"https://blog.netbsd.org/tnf/entry/netbsd_9_5_released_and\", \"score\": 21, \"published\": \"2026-09-06\", \"ts\": 1788709464}, {\"title\": \"Research carried out using NetBSD\", \"url\": \"https://www.netbsd.org/gallery/research.html\", \"score\": 16, \"published\": \"2026-09-06\", \"ts\": 1788711005}, {\"title\": \"Research acceleration: The view inside OpenAI\", \"url\": \"https://openai.com/index/research-acceleration-view-inside-openai\", \"score\": 14, \"published\": \"2026-09-06\", \"ts\": 1788707324}, {\"title\": \"Ganon's Mysterious Origins (Revisited)\", \"url\": \"https://www.thrillingtalesofoldvideogames.com/blog/ganon-name-origin-kamen-rider\", \"score\": 11, \"published\": \"2026-09-05\", \"ts\": 1788640409}, {\"title\": \"Electronic skin for prosthetics to sense temperature and pressure\", \"url\": \"https://news.wsu.edu/press-release/2026/08/20/researchers-develop-electronic-skin-for-prosthetics-to-sense-temperature-and-pressure/\", \"score\": 11, \"published\": \"2026-09-02\", \"ts\": 1788372416}, {\"title\": \"Recreating Minecraft Is Not a Benchmark\", \"url\": \"https://kuber.studio/blog/Reflections/Recreating-Minecraft-is-Not-a-Benchmark\", \"score\": 10, \"published\": \"2026-09-06\", \"ts\": 1788706327}, {\"title\": \"OpenAI: We monitor internal coding agents for misalignment\", \"url\": \"https://openai.com/index/how-we-monitor-internal-coding-agents-misalignment/\", \"score\": 5, \"published\": \"2026-09-06\", \"ts\": 1788712675}, {\"title\": \"Cultivating Trust\", \"url\": \"https://kaeruct.github.io/posts/2026/09/06/conquering-entropy-cultivating-trust/\", \"score\": 3, \"published\": \"2026-09-06\", \"ts\": 1788710557}, {\"title\": \"Opalite Health (YC W26) Is Hiring \\u2013 Founding GTM\", \"url\": \"https://www.ycombinator.com/companies/opalite-health/jobs/bNedVAD-founding-gtm\", \"score\": 0, \"published\": \"2026-09-06\", \"ts\": 1788714028}]",
+      "is_error": false,
+      "duration_s": 0.45
+    }
+  },
+  "memory_snapshot": [
+    {
+      "url": "https://www.aol.com/articles/cerebras-set-report-first-earnings-221256000.html",
+      "headline": "Cerebras (CBRS) reports first earnings as public company after close, options imply 13% swing",
+      "date": "2026-06-23",
+      "ts": 1782228331.525199
+    },
+    {
+      "url": "https://www.proactiveinvestors.com/companies/news/1094288/cerebras-gets-set-for-inaugural-earnings-with-upside-potential-wedbush-says-1094288.html",
+      "headline": "Wedbush sees upside potential as Cerebras enters inaugural earnings with execution as key test",
+      "date": "2026-06-23",
+      "ts": 1782228331.525199
+    },
+    {
+      "url": "https://www.paymentsdive.com/news/nachas-fraud-rules-land/823378/",
+      "headline": "Nacha's ACH fraud rules take effect, tightening account validation requirements",
+      "date": "2026-06-23",
+      "ts": 1782228331.525199
+    },
+    {
+      "url": "https://www.paymentsdive.com/news/visa-mastercard-fend-off-fee-foes/823395/",
+      "headline": "Visa and Mastercard fend off interchange fee challengers in court",
+      "date": "2026-06-23",
+      "ts": 1782228331.525199
+    },
+    {
+      "url": "https://www.digitaltransactions.net/a-startup-works-with-visa-to-offer-real-time-payouts-cross-border/",
+      "headline": "Startup partners with Visa to offer real-time cross-border payouts",
+      "date": "2026-06-23",
+      "ts": 1782228331.525199
+    },
+    {
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/sofi-ventures-into-ai-investing-with-composer-acquisition/",
+      "headline": "SoFi ventures into AI investing with Composer acquisition",
+      "date": "2026-06-23",
+      "ts": 1782228331.525199
+    },
+    {
+      "url": "https://www.finextra.com/blogposting/32082/why-banks-cannot-leave-stablecoin-acceptance-to-others",
+      "headline": "Why banks cannot afford to leave stablecoin acceptance to others",
+      "date": "2026-06-23",
+      "ts": 1782228331.525199
+    },
+    {
+      "url": "https://www.investing.com/news/stock-market-news/morgan-stanley-says-warsh-fed-is-a-credibility-boost-but-liquidity-risks-loom-4751882",
+      "headline": "Morgan Stanley: Warsh Fed is a credibility boost, but liquidity risks loom",
+      "date": "2026-06-23",
+      "ts": 1782228331.525199
+    },
+    {
+      "url": "https://mistral.ai/news/ocr-4/",
+      "headline": "Mistral releases OCR 4, its most capable document-parsing model yet",
+      "date": "2026-06-23",
+      "ts": 1782228331.525199
+    },
+    {
+      "url": "https://techcrunch.com/2026/06/22/spacex-inks-compute-deal-with-reflection-ai-an-open-source-ai-lab/",
+      "headline": "SpaceX inks compute deal with Reflection AI, an open-source AI lab",
+      "date": "2026-06-23",
+      "ts": 1782228331.525199
+    },
+    {
+      "url": "https://status.claude.com/incidents/jbhf20wjmzrf",
+      "headline": "Claude experiences elevated error rates across multiple models",
+      "date": "2026-06-23",
+      "ts": 1782228331.525199
+    },
+    {
+      "url": "https://techcrunch.com/2026/06/23/password-manager-maker-lastpass-says-hackers-stole-customer-support-case-data-during-klue-breach/",
+      "headline": "LastPass says hackers stole customer support data in Klue breach",
+      "date": "2026-06-23",
+      "ts": 1782228331.525199
+    },
+    {
+      "url": "https://techcrunch.com/2026/06/23/meta-debuts-new-cheaper-smart-glasses-under-its-own-brand/",
+      "headline": "Meta debuts cheaper smart glasses under its own brand, dropping Ray-Ban",
+      "date": "2026-06-23",
+      "ts": 1782228331.525199
+    },
+    {
+      "url": "https://www.theverge.com/games/952634/valve-intel-nvidia-steamos-gpus-linux",
+      "headline": "Valve confirms SteamOS expansion to Intel and Nvidia GPUs beyond Steam Deck",
+      "date": "2026-06-23",
+      "ts": 1782228331.525199
+    },
+    {
+      "url": "https://techcrunch.com/2026/06/22/tesla-pushes-back-on-autopilot-narrative-after-fatal-texas-crash/",
+      "headline": "Tesla pushes back on Autopilot narrative after fatal Texas crash",
+      "date": "2026-06-23",
+      "ts": 1782228331.525199
+    },
+    {
+      "url": "https://arstechnica.com/space/2026/06/with-starfall-spacex-eyes-an-edge-in-global-cargo-delivery-from-orbit/",
+      "headline": "SpaceX's Starfall aims to deliver cargo anywhere on Earth from orbit",
+      "date": "2026-06-23",
+      "ts": 1782228331.525199
+    },
+    {
+      "url": "https://www.usnews.com/news/world/articles/2026-06-23/us-waives-iran-sanctions-trump-says-he-will-do-what-i-have-to-if-tehran-misbehaves",
+      "headline": "US waives Iran oil sanctions for 60 days as Vance hails peace progress",
+      "date": "2026-06-23",
+      "ts": 1782217231.989407
+    },
+    {
+      "url": "https://www.bloomberg.com/news/articles/2026-06-22/spacex-shares-poised-to-slide-again-as-us-market-reopens",
+      "headline": "SpaceX falls 23% in three days, erases $600B after first-ever bond plan",
+      "date": "2026-06-23",
+      "ts": 1782217231.989407
+    },
+    {
+      "url": "https://www.cnbc.com/2026/06/22/keir-starmer-resigns-uk-prime-minister.html",
+      "headline": "UK PM Starmer resigns, clearing path for Andy Burnham as next leader",
+      "date": "2026-06-23",
+      "ts": 1782217231.989407
+    },
+    {
+      "url": "https://www.cnbc.com/2026/06/22/apple-is-a-notable-outlier-in-mondays-drubbing-of-mega-cap-tech-stocks-.html",
+      "headline": "Apple bucks megacap rout as Alphabet, Amazon, Meta drop 2\u20135%",
+      "date": "2026-06-23",
+      "ts": 1782217231.989407
+    },
+    {
+      "url": "https://www.pymnts.com/consumer-finance/2026/subprime-revolvers-fall-12-points-as-borrowers-shift-how-they-pay/",
+      "headline": "Subprime revolvers fall 12 points as borrowers shift how they pay",
+      "date": "2026-06-23",
+      "ts": 1782217231.989407
+    },
+    {
+      "url": "https://www.pymnts.com/news/acquiring/2026/backbase-acquires-kasisto-to-promote-agentic-banking/",
+      "headline": "Backbase acquires Kasisto to advance agentic banking capabilities",
+      "date": "2026-06-23",
+      "ts": 1782217231.989407
+    },
+    {
+      "url": "https://www.pymnts.com/legal/2026/fintechs-face-a-tougher-road-on-cross-border-deals/",
+      "headline": "Fintechs face tougher road on cross-border deals amid regulatory headwinds",
+      "date": "2026-06-23",
+      "ts": 1782217231.989407
+    },
+    {
+      "url": "https://www.pymnts.com/news/payments-innovation/2026/payment-processors-cant-win-on-uptime-alone-anymore/",
+      "headline": "Payment processors can't win on uptime alone anymore",
+      "date": "2026-06-23",
+      "ts": 1782217231.989407
+    },
+    {
+      "url": "https://www.wsj.com/finance/jgb-futures-fall-tracking-declines-in-u-s-treasury-market-fe9eb621?mod=rss_markets_main",
+      "headline": "US Treasury yields decline on easing rate-hike expectations",
+      "date": "2026-06-23",
+      "ts": 1782217231.989407
+    },
+    {
+      "url": "https://siliconangle.com/2026/06/22/openai-expands-daybreak-patch-planet-full-gpt-5-5-cyber-release/",
+      "headline": "OpenAI expands Daybreak with GPT-5.5-Cyber and Patch the Planet open-source initiative",
+      "date": "2026-06-23",
+      "ts": 1782217231.989407
+    },
+    {
+      "url": "https://techcrunch.com/2026/06/22/ai-chipmaker-groq-confirms-650m-raise-re-staffs-after-nvidias-20b-not-acqui-hire-deal/",
+      "headline": "AI chipmaker Groq confirms $650M raise, re-staffs after Nvidia's $20B not-acqui-hire",
+      "date": "2026-06-23",
+      "ts": 1782217231.989407
+    },
+    {
+      "url": "https://techcrunch.com/2026/06/22/google-deepmind-bets-75m-on-ais-future-in-hollywood-with-a24-deal/",
+      "headline": "Google DeepMind bets $75M on AI's future in Hollywood via A24 deal",
+      "date": "2026-06-23",
+      "ts": 1782217231.989407
+    },
+    {
+      "url": "https://venturebeat.com/technology/alibabas-ai-video-model-rises-to-no-2-in-global-rankings-as-openais-sora-and-bytedances-seedance-fall-away",
+      "headline": "Alibaba AI video model rises to global No. 2 as OpenAI Sora and Seedance slip",
+      "date": "2026-06-23",
+      "ts": 1782217231.989407
+    },
+    {
+      "url": "https://unsloth.ai/docs/models/glm-5.2",
+      "headline": "GLM-5.2 open reasoning model draws developer interest on Hacker News",
+      "date": "2026-06-23",
+      "ts": 1782217231.989407
+    },
+    {
+      "url": "https://store.steampowered.com/news/group/45479024/view/685257114654870245",
+      "headline": "Valve's Steam Machine launches today to top of Hacker News",
+      "date": "2026-06-23",
+      "ts": 1782217231.989407
+    },
+    {
+      "url": "https://techcrunch.com/2026/06/22/tata-electronics-a-major-tech-supplier-to-apple-and-tesla-confirms-data-breach/",
+      "headline": "Tata Electronics, key Apple and Tesla supplier, confirms data breach",
+      "date": "2026-06-23",
+      "ts": 1782217231.989407
+    },
+    {
+      "url": "https://arstechnica.com/ai/2026/06/gm-installs-robots-at-flagship-ev-factory-after-laying-off-1300-workers/",
+      "headline": "GM installs robots at flagship EV factory after laying off 1,300 workers",
+      "date": "2026-06-23",
+      "ts": 1782217231.989407
+    },
+    {
+      "url": "https://techcrunch.com/2026/06/22/microsoft-and-chevron-plan-one-of-the-largest-gas-powered-data-center-projects-in-us/",
+      "headline": "Microsoft and Chevron plan one of the largest gas-powered data center projects in US",
+      "date": "2026-06-23",
+      "ts": 1782217231.989407
+    },
+    {
+      "url": "https://www.npr.org/2026/06/21/g-s1-129222/us-iran-deal-lebanon-israel-strait-hormuz-jd-vance",
+      "headline": "US-Iran Switzerland talks conclude with 60-day roadmap to final deal",
+      "date": "2026-06-22",
+      "ts": 1782130830.538234
+    },
+    {
+      "url": "https://www.theblock.co/post/405545/bank-of-england-drops-proposed-individual-holding-caps-for-sterling-stablecoins-sets-40-billion-issuance-guardrail",
+      "headline": "Bank of England drops sterling stablecoin holding caps, sets \u00a340B issuance guardrail",
+      "date": "2026-06-22",
+      "ts": 1782130830.538234
+    },
+    {
+      "url": "https://www.theblock.co/post/405477/altura-winds-down-stablecoin-vault",
+      "headline": "Altura winds down stablecoin vault after unprecedented surge in withdrawal requests",
+      "date": "2026-06-22",
+      "ts": 1782130830.538234
+    },
+    {
+      "url": "https://www.finextra.com/pressarticle/110204/volume-secures-fca-authorisation",
+      "headline": "Volume secures FCA authorisation for UK payments operations",
+      "date": "2026-06-22",
+      "ts": 1782130830.538234
+    },
+    {
+      "url": "https://www.theblock.co/post/405468/fentanyl-linked-chinese-network-tied-to-crypto-fraud-from-japan-involving-fake-zksync-jp-token-nikkei",
+      "headline": "Fentanyl-linked Chinese network tied to fake ZKSync.jp crypto fraud scheme in Japan",
+      "date": "2026-06-22",
+      "ts": 1782130830.538234
+    },
+    {
+      "url": "https://investinglive.com/news/bofa-now-expects-fed-to-hike-interest-rates-three-times-this-year-20260622/",
+      "headline": "BofA now expects Fed to hike rates three times this year, no cuts until 2028",
+      "date": "2026-06-22",
+      "ts": 1782130830.538234
+    },
+    {
+      "url": "https://www.wsj.com/finance/investing/jgb-yields-higher-amid-middle-east-uncertainty-ca344a8a",
+      "headline": "Gilt yields fall after UK Labour's Streeting endorses Burnham for party leadership",
+      "date": "2026-06-22",
+      "ts": 1782130830.538234
+    },
+    {
+      "url": "https://www.marketwatch.com/story/a-major-test-is-coming-for-the-stock-market-and-morgan-stanley-warns-the-fed-wont-rescue-investors-2ae93faa",
+      "headline": "Morgan Stanley warns Fed won't rescue investors as major test looms for equities",
+      "date": "2026-06-22",
+      "ts": 1782130830.538234
+    },
+    {
+      "url": "https://finance.yahoo.com/economy/policy/articles/barclays-warns-hawkish-central-banks-153500332.html",
+      "headline": "Barclays warns hawkish central banks could challenge equity market momentum",
+      "date": "2026-06-22",
+      "ts": 1782130830.538234
+    },
+    {
+      "url": "https://techcrunch.com/2026/06/20/nobel-laureate-john-jumper-is-leaving-deepmind-for-rival-anthropic/",
+      "headline": "Nobel laureate John Jumper leaves DeepMind to join rival Anthropic",
+      "date": "2026-06-22",
+      "ts": 1782130830.538234
+    },
+    {
+      "url": "https://sakana.ai/fugu/",
+      "headline": "Sakana AI releases Fugu open-source reasoning model",
+      "date": "2026-06-22",
+      "ts": 1782130830.538234
+    },
+    {
+      "url": "https://techcrunch.com/2026/06/21/beyond-siri-here-are-the-practical-ai-features-coming-to-your-iphone-in-ios-27/",
+      "headline": "iOS 27 preview: practical on-device AI features set to go beyond Siri",
+      "date": "2026-06-22",
+      "ts": 1782130830.538234
+    },
+    {
+      "url": "https://docs.deno.com/runtime/desktop/",
+      "headline": "Deno Desktop launches, bringing the JS/TS runtime to a native app experience",
+      "date": "2026-06-22",
+      "ts": 1782130830.538234
+    },
+    {
+      "url": "https://www.theverge.com/ai-artificial-intelligence/950844/vibe-coding-security-risks-apps",
+      "headline": "Vibe-coded apps carry serious security risks developers are ignoring",
+      "date": "2026-06-22",
+      "ts": 1782130830.538234
+    },
+    {
+      "url": "https://www.theverge.com/tech/953285/polymarket-fake-viral-video-bets",
+      "headline": "Polymarket reportedly paid creators to post deceptive videos of fake bets",
+      "date": "2026-06-22",
+      "ts": 1782130830.538234
+    },
+    {
+      "url": "https://techcrunch.com/2026/06/21/ubisoft-co-founder-claude-guillemot-dies-in-plane-crash/",
+      "headline": "Ubisoft co-founder Claude Guillemot killed in plane crash",
+      "date": "2026-06-22",
+      "ts": 1782130830.538234
+    },
+    {
+      "url": "https://www.cnbc.com/2026/06/19/us-iran-talks-switzerland-canceled-interim-deal-markets.html",
+      "headline": "US-Iran accord hits snag after Swiss follow-up talks cancelled",
+      "date": "2026-06-19",
+      "ts": 1781871628.052792
+    },
+    {
+      "url": "https://www.bnnbloomberg.ca/business/company-news/2026/06/18/accenture-strikes-us418-billion-cybersecurity-deal-shares-fall-on-forecast-cut/",
+      "headline": "Accenture tumbles 17% on Iran war outlook cut; bets $4.18B on cybersecurity",
+      "date": "2026-06-19",
+      "ts": 1781871628.052792
+    },
+    {
+      "url": "https://arstechnica.com/health/2026/06/fda-advisors-unanimously-vote-to-approve-modernas-mrna-after-agency-drama/",
+      "headline": "Moderna mRNA therapy wins unanimous FDA advisory panel backing",
+      "date": "2026-06-19",
+      "ts": 1781871628.052792
+    },
+    {
+      "url": "https://www.cnbc.com/2026/06/19/bob-iger-shanghai-disneyland-chinese-pullback.html",
+      "headline": "Bob Iger: Shanghai Disneyland defying China pullback 10 years on",
+      "date": "2026-06-19",
+      "ts": 1781871628.052792
+    },
+    {
+      "url": "https://www.pymnts.com/real-time-payments/2026/53percent-businesses-plan-rtp-adoption-payment-habits-shift/",
+      "headline": "53% of businesses plan RTP adoption as payment habits shift",
+      "date": "2026-06-19",
+      "ts": 1781871628.052792
+    },
+    {
+      "url": "https://www.theblock.co/post/405357/fidelity-stablecoin-money-market-fund",
+      "headline": "Fidelity launches GENIUS Act-aligned money market fund for stablecoin issuers",
+      "date": "2026-06-19",
+      "ts": 1781871628.052792
+    },
+    {
+      "url": "https://www.finextra.com/pressarticle/110192/repay-completes-stablecoin-payments-proof-of-concept",
+      "headline": "Repay completes stablecoin payments proof of concept",
+      "date": "2026-06-19",
+      "ts": 1781871628.052792
+    },
+    {
+      "url": "https://www.bankingdive.com/news/banks-scam-defenses-elder-fraud-fifth-third-star-one/823265/",
+      "headline": "Lenders ramp up scam defenses to confront elder fraud",
+      "date": "2026-06-19",
+      "ts": 1781871628.052792
+    },
+    {
+      "url": "https://www.wsj.com/economy/central-banking/dollar-rises-to-one-year-high-on-increased-prospects-of-higher-u-s-interest-rates-68817d97?mod=rss_markets_main",
+      "headline": "Dollar rises to one-year high on increased prospects of higher US interest rates",
+      "date": "2026-06-19",
+      "ts": 1781871628.052792
+    },
+    {
+      "url": "https://www.wsj.com/finance/jgbs-fall-tracking-declines-in-u-s-treasurys-0c086030?mod=rss_markets_main",
+      "headline": "Treasury yields slip following Warsh's FOMC debut",
+      "date": "2026-06-19",
+      "ts": 1781871628.052792
+    },
+    {
+      "url": "https://techcrunch.com/2026/06/18/openai-is-bringing-on-some-big-guns-in-the-lead-up-to-its-ipo/",
+      "headline": "OpenAI recruits Google's Noam Shazeer and other senior hires ahead of IPO",
+      "date": "2026-06-19",
+      "ts": 1781871628.052792
+    },
+    {
+      "url": "https://www.theverge.com/ai-artificial-intelligence/952837/barret-zoph-openai-thinking-machines-lab",
+      "headline": "Barret Zoph exits OpenAI again after just five months",
+      "date": "2026-06-19",
+      "ts": 1781871628.052792
+    },
+    {
+      "url": "https://techcrunch.com/2026/06/18/ai-inference-startup-baseten-reportedly-raising-1-5b-months-after-its-last-mega-round/",
+      "headline": "AI inference startup Baseten reportedly raising $1.5B months after last mega-round",
+      "date": "2026-06-19",
+      "ts": 1781871628.052792
+    },
+    {
+      "url": "https://techcrunch.com/2026/06/18/amazon-hopes-to-challenge-nvidia-more-directly-by-selling-its-ai-chips/",
+      "headline": "Amazon plans to sell Trainium AI chips externally to challenge Nvidia",
+      "date": "2026-06-19",
+      "ts": 1781871628.052792
+    },
+    {
+      "url": "https://techcrunch.com/2026/06/18/ai-data-centers-just-got-a-government-mandated-fast-lane-to-the-grid/",
+      "headline": "AI data centers get government-mandated fast lane to the power grid",
+      "date": "2026-06-19",
+      "ts": 1781871628.052792
+    },
+    {
+      "url": "https://techcrunch.com/2026/06/19/the-us-says-asmls-top-chip-tool-may-be-in-china-asml-says-it-isnt/",
+      "headline": "US says ASML's top chip tool may be in China; ASML says it isn't",
+      "date": "2026-06-19",
+      "ts": 1781871628.052792
+    },
+    {
+      "url": "https://techcrunch.com/2026/06/18/telegram-ban-in-india-sparks-a-rush-to-vpns-rival-apps/",
+      "headline": "Telegram ban in India sparks rush to VPNs and rival apps",
+      "date": "2026-06-19",
+      "ts": 1781871628.052792
+    },
+    {
+      "url": "https://arstechnica.com/security/2026/06/microsoft-spots-new-self-propagating-malware-for-stealing-cryptocurrency/",
+      "headline": "Microsoft spots new self-propagating malware stealing cryptocurrency",
+      "date": "2026-06-19",
+      "ts": 1781871628.052792
+    },
+    {
+      "url": "https://orchidfiles.com/github-repositories-distributing-malware/",
+      "headline": "10,000 GitHub repositories found distributing Trojan malware",
+      "date": "2026-06-19",
+      "ts": 1781871628.052792
+    },
+    {
+      "url": "https://techcrunch.com/2026/06/18/source-elastic-agrees-to-buy-crv-backed-deductiveai-for-up-to-85m/",
+      "headline": "Elastic acquires AI data-reasoning startup DeductiveAI for up to $85M",
+      "date": "2026-06-19",
+      "ts": 1781871628.052792
+    },
+    {
+      "url": "https://www.cnbc.com/2026/06/17/carmax-kmx-q1-earnings.html",
+      "headline": "CarMax shares fall after used-car retailer reports earnings beat; CEO details turnaround plan",
+      "date": "2026-06-18",
+      "ts": 1781785227.049253
+    },
+    {
+      "url": "https://www.cnbc.com/2026/06/18/here-are-the-odds-of-spacex-becoming-the-worlds-most-valuable-company.html",
+      "headline": "Here are the odds of SpaceX becoming the world's most valuable company",
+      "date": "2026-06-18",
+      "ts": 1781785227.049253
+    },
+    {
+      "url": "https://www.theblock.co/post/405190/tether-winds-down-ausdt?utm_source=rss&utm_medium=rss",
+      "headline": "Tether winds down aUSDT stablecoin and Alloy platform to sharpen focus",
+      "date": "2026-06-18",
+      "ts": 1781785227.049253
+    },
+    {
+      "url": "https://www.finextra.com/newsarticle/47953/hong-kong-pilots-wholesale-application-of-cbdc-in-a-live-market-environment?utm_medium=rssfinextra&utm_source=finextrafeed",
+      "headline": "Hong Kong pilots wholesale CBDC application in a live market environment",
+      "date": "2026-06-18",
+      "ts": 1781785227.049253
+    },
+    {
+      "url": "https://www.theblock.co/post/405197/bitcoin-rodney-pleads-guilty-in-1-8-billion-crypto-fraud-case?utm_source=rss&utm_medium=rss",
+      "headline": "'Bitcoin Rodney' pleads guilty in $1.8 billion crypto fraud case",
+      "date": "2026-06-18",
+      "ts": 1781785227.049253
+    },
+    {
+      "url": "https://www.theblock.co/post/405205/stablecoin-compliance-startup-range-fintech-crypto-vcs-series-a?utm_source=rss&utm_medium=rss",
+      "headline": "Stablecoin compliance startup Range raises $8.3M from fintech and crypto VCs",
+      "date": "2026-06-18",
+      "ts": 1781785227.049253
+    },
+    {
+      "url": "https://www.theblock.co/post/405207/aztec-investigates-2-million-exploit-of-deprecated-payments-product?utm_source=rss&utm_medium=rss",
+      "headline": "Aztec investigates $2 million exploit of deprecated payments product",
+      "date": "2026-06-18",
+      "ts": 1781785227.049253
+    },
+    {
+      "url": "https://www.wsj.com/finance/currencies/asian-currencies-consolidate-may-be-weighed-by-fed-rate-hike-expectations-50220365?mod=rss_markets_main",
+      "headline": "Short-end US Treasury yields and dollar rise after Fed hints at rate hikes",
+      "date": "2026-06-18",
+      "ts": 1781785227.049253
+    },
+    {
+      "url": "https://www.morningstar.com/economy/warshs-tenure-starts-with-fed-seen-laying-groundwork-rate-hike",
+      "headline": "Warsh's tenure starts with Fed seen laying groundwork for a rate hike",
+      "date": "2026-06-18",
+      "ts": 1781785227.049253
+    },
+    {
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260617b.htm",
+      "headline": "Fed releases FOMC economic projections from June 16-17 meeting",
+      "date": "2026-06-18",
+      "ts": 1781785227.049253
+    },
+    {
+      "url": "https://www.theverge.com/ai-artificial-intelligence/952011/midjourney-medical-ai-ultrasound-scan",
+      "headline": "Midjourney goes from generating cat images to full-body ultrasound scans",
+      "date": "2026-06-18",
+      "ts": 1781785227.049253
+    },
+    {
+      "url": "https://www.cnbc.com/2026/06/18/yann-lecun-elon-musk-xai-failure-ai-labs-bubble-risk.html",
+      "headline": "Yann LeCun blasts Musk's xAI as 'failure,' warns AI labs risk a 'big bubble explosion'",
+      "date": "2026-06-18",
+      "ts": 1781785227.049253
+    },
+    {
+      "url": "https://www.reuters.com/world/china/us-holds-off-blacklisting-chinas-deepseek-more-than-100-firms-deemed-security-2026-06-17/",
+      "headline": "US holds off blacklisting DeepSeek, flags more than 100 firms as security risks",
+      "date": "2026-06-18",
+      "ts": 1781785227.049253
+    },
+    {
+      "url": "https://techcrunch.com/2026/06/17/world-model-maker-odyssey-nabs-1-45b-valuation-backed-by-amazon-and-other-big-names/",
+      "headline": "World model maker Odyssey nabs $1.45B valuation backed by Amazon",
+      "date": "2026-06-18",
+      "ts": 1781785227.049253
+    },
+    {
+      "url": "https://venturebeat.com/technology/anthropic-ships-major-claude-design-overhaul-with-design-system-imports-code-round-trips-and-a-fix-for-its-token-burning-problem",
+      "headline": "Anthropic ships major Claude Design overhaul with code round-trips and token-burn fix",
+      "date": "2026-06-18",
+      "ts": 1781785227.049253
+    },
+    {
+      "url": "https://techcrunch.com/2026/06/18/waymo-recalls-nearly-4000-robotaxis-to-stop-them-driving-into-highway-construction-zones/",
+      "headline": "Waymo recalls nearly 4,000 robotaxis to stop them driving into highway construction zones",
+      "date": "2026-06-18",
+      "ts": 1781785227.049253
+    },
+    {
+      "url": "https://www.tomshardware.com/pc-components/cpus/amd-silently-removes-memory-encryption-from-consumer-ryzen-cpus-leaving-users-unaware-that-they-may-be-vulnerable-security-feature-vanishes-after-newer-agesa-firmware-amd-engineers-go-radio-silent-when-pressed-about-the-change",
+      "headline": "AMD silently removes memory encryption from consumer Ryzen CPUs, leaving users vulnerable",
+      "date": "2026-06-18",
+      "ts": 1781785227.049253
+    },
+    {
+      "url": "https://arstechnica.com/security/2026/06/massive-breach-spills-credentials-for-thousands-of-sensitive-networks/",
+      "headline": "Massive breach spills credentials for thousands of sensitive networks",
+      "date": "2026-06-18",
+      "ts": 1781785227.049253
+    },
+    {
+      "url": "https://arstechnica.com/tech-policy/2026/06/california-says-att-lied-to-fcc-in-attempt-to-shut-off-old-phone-network/",
+      "headline": "California says AT&T lied to FCC in attempt to shut off old phone network",
+      "date": "2026-06-18",
+      "ts": 1781785227.049253
+    },
+    {
+      "url": "https://finance.yahoo.com/markets/article/spacex-closes-in-on-amazon-in-sprint-toward-3-trillion-164918333.html",
+      "headline": "SpaceX hits $2.6T valuation, surpasses Amazon after options trading ignites surge",
+      "date": "2026-06-17",
+      "ts": 1781698828.531059
+    },
+    {
+      "url": "https://www.investing.com/news/stock-market-news/bmw-lowers-2026-outlook-on-china-downturn-iran-war-4745368",
+      "headline": "BMW slashes 2026 profit outlook to 1-3% on China slump and Iran war fallout",
+      "date": "2026-06-17",
+      "ts": 1781698828.531059
+    },
+    {
+      "url": "https://www.cnbc.com/2026/06/16/databricks-revenue-growth-tops-80percent-to-6point9-billion-annualized.html",
+      "headline": "Databricks sales growth tops 80% as annualized revenue hits $6.9B, margins shrink",
+      "date": "2026-06-17",
+      "ts": 1781698828.531059
+    },
+    {
+      "url": "https://arstechnica.com/tech-policy/2026/06/us-approval-of-paramount-warner-bros-deal-surprised-doj-lawyers-report-says/",
+      "headline": "US approval of Paramount/Warner Bros. deal surprised DOJ lawyers, report says",
+      "date": "2026-06-17",
+      "ts": 1781698828.531059
+    },
+    {
+      "url": "https://www.theblock.co/post/404941/state-street-launches-genius-compliant-money-market-fund-for-stablecoin-issuers",
+      "headline": "State Street launches GENIUS Act-compliant money market fund for stablecoin issuers",
+      "date": "2026-06-17",
+      "ts": 1781698828.531059
+    },
+    {
+      "url": "https://www.pymnts.com/healthcare/2026/visa-direct-takes-on-healthcares-paper-payout-problem/",
+      "headline": "Visa Direct takes on healthcare's paper payout problem with instant payment push",
+      "date": "2026-06-17",
+      "ts": 1781698828.531059
+    },
+    {
+      "url": "https://www.pymnts.com/cryptocurrency/2026/british-neobank-plasma-debuts-stablecoin-banking-product/",
+      "headline": "British neobank Plasma debuts stablecoin banking product",
+      "date": "2026-06-17",
+      "ts": 1781698828.531059
+    },
+    {
+      "url": "https://www.pymnts.com/partnerships/2026/klarna-pursues-everyday-spending-with-bolt-mobility-app-integration/",
+      "headline": "Klarna integrates with Bolt mobility app to pursue everyday consumer spending",
+      "date": "2026-06-17",
+      "ts": 1781698828.531059
+    },
+    {
+      "url": "https://www.finextra.com/pressarticle/110170/sabre-global-technologies-fined-1-million-for-circumventing-russian-sancctions",
+      "headline": "Sabre Global Technologies fined \u00a31M for circumventing Russian sanctions",
+      "date": "2026-06-17",
+      "ts": 1781698828.531059
+    },
+    {
+      "url": "https://www.techtimes.com/articles/318527/20260616/federal-reserve-june-2026-meeting-warsh-set-drop-dot-hike-risk-climbs.htm",
+      "headline": "Fed holds rates at 3.50-3.75%; Warsh chairs first FOMC meeting as dot plot signals end of easing",
+      "date": "2026-06-17",
+      "ts": 1781698828.531059
+    },
+    {
+      "url": "https://www.wsj.com/finance/investing/jgb-futures-rise-tracking-gains-in-u-s-treasury-market-7a7462ac",
+      "headline": "US Treasury yields and dollar edge up slightly ahead of Warsh's Fed debut",
+      "date": "2026-06-17",
+      "ts": 1781698828.531059
+    },
+    {
+      "url": "https://www.bloomberg.com/news/articles/2026-06-16/citi-chief-us-economist-defends-unpopular-fed-rate-cut-call",
+      "headline": "Citi chief US economist defends unpopular Fed rate-cut call",
+      "date": "2026-06-17",
+      "ts": 1781698828.531059
+    },
+    {
+      "url": "https://www.wsj.com/finance/investing/the-ai-booms-hunt-for-cash-hits-a-new-corner-of-the-bond-market-0ea6f36b",
+      "headline": "The AI boom's hunt for cash hits a new corner of the bond market",
+      "date": "2026-06-17",
+      "ts": 1781698828.531059
+    },
+    {
+      "url": "https://www.wsj.com/finance/stocks/oil-below-80-stock-futures-rise-before-warshs-first-fed-meeting-95970810",
+      "headline": "Tech stocks set for rebound as investors await Warsh's first Fed rate decision",
+      "date": "2026-06-17",
+      "ts": 1781698828.531059
+    },
+    {
+      "url": "https://venturebeat.com/technology/z-ais-open-weights-glm-5-2-beats-gpt-5-5-on-multiple-long-horizon-coding-benchmarks-for-1-6th-the-cost",
+      "headline": "Z.ai's open-weights GLM-5.2 beats GPT-5.5 on coding benchmarks at one-sixth the cost",
+      "date": "2026-06-17",
+      "ts": 1781698828.531059
+    },
+    {
+      "url": "https://techcrunch.com/2026/06/16/android-17-launches-with-new-multitasking-tools-as-google-expands-gemini-features/",
+      "headline": "Android 17 launches with new multitasking tools as Google expands Gemini features",
+      "date": "2026-06-17",
+      "ts": 1781698828.531059
+    },
+    {
+      "url": "https://techcrunch.com/2026/06/17/pinterest-launches-an-experimental-ai-shopping-app-called-ask-pinterest/",
+      "headline": "Pinterest launches experimental AI shopping app 'Ask Pinterest'",
+      "date": "2026-06-17",
+      "ts": 1781698828.531059
+    },
+    {
+      "url": "https://techcrunch.com/2026/06/17/deepl-acquires-mixhalo-for-live-event-audio-streaming-and-translation/",
+      "headline": "DeepL acquires Mixhalo for real-time live-event audio streaming and translation",
+      "date": "2026-06-17",
+      "ts": 1781698828.531059
+    },
+    {
+      "url": "https://techcrunch.com/2026/06/16/robinhoods-note-on-10-layoffs-shows-blaming-ai-isnt-cutting-it/",
+      "headline": "Robinhood cuts 10% of workforce; memo shows AI productivity framing backfiring",
+      "date": "2026-06-17",
+      "ts": 1781698828.531059
+    },
+    {
+      "url": "https://www.theverge.com/tech/950679/matter-1-6-spec-smart-home-joint-fabric-apple-amazon-google",
+      "headline": "Matter 1.6 spec adds joint fabric, finally enabling seamless cross-platform smart homes",
+      "date": "2026-06-17",
+      "ts": 1781698828.531059
+    },
+    {
+      "url": "https://arstechnica.com/ai/2026/06/anthropic-pauses-token-based-billing-for-its-claude-agent-sdk/",
+      "headline": "Anthropic pauses token-based billing for its Claude Agent SDK",
+      "date": "2026-06-17",
+      "ts": 1781698828.531059
+    },
+    {
+      "url": "https://arstechnica.com/tech-policy/2026/06/trump-admin-helps-xai-fight-pollution-lawsuit-says-military-needs-grok-for-war/",
+      "headline": "Trump admin moves to block Clean Air Act lawsuit over xAI's unpermitted gas turbines",
+      "date": "2026-06-17",
+      "ts": 1781698828.531059
+    },
+    {
+      "url": "https://techcrunch.com/2026/06/16/apple-plans-to-change-its-hide-my-email-privacy-feature-that-could-make-it-less-effective/",
+      "headline": "Apple plans changes to Hide My Email that could weaken its privacy protection",
+      "date": "2026-06-17",
+      "ts": 1781698828.531059
+    },
+    {
+      "url": "https://techcrunch.com/2026/06/17/uber-will-bring-its-premium-robotaxi-service-to-houston-in-2027/",
+      "headline": "Uber to bring premium robotaxi service to Houston in 2027",
+      "date": "2026-06-17",
+      "ts": 1781698828.531059
+    }
+  ],
+  "config": {
+    "MAX_STORY_AGE_DAYS": 3,
+    "MAX_HEADLINES_PER_SECTION": 5,
+    "MAX_HEADLINES_MONEY_MOVEMENT": 8,
+    "MAX_HEADLINES_LIQUIDITY": 8
+  }
+}
